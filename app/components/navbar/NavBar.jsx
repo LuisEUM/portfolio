@@ -7,7 +7,8 @@ import MainMenu from './main-menu/MainMenu'
 import { LanguageContext } from '../../context/languageContext'
 import Link from 'next/link.js'
 import imageData from '../../data/images.json'
-import SelectLanguage from './select-language/SelectLanguage.js'
+import SelectLanguage from './select-language/selectLanguage.jsx'
+
 
 const sidebar = {
   open: {
