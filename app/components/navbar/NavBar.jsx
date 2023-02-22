@@ -106,3 +106,21 @@ export default function NavBar () {
     </div>
   )
 }
+
+
+
+
+{/* <motion.div
+          className="absolute top-0 overflow-hidden bg-[#121212]"
+          initial={{height:0, width: '100%'}}
+          animate={{
+            height:100,
+            width: '100%',
+            transition:{
+              type: "spring",
+              duration: 1,
+              delay: 3,
+            }
+          }}
+          onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
+      /> */}

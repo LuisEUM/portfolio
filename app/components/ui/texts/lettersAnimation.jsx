@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion'
+'use client'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export default function LettersAnimation ({ text, tag, className, children, keyText }) {
   const words = text.split(' ')
@@ -86,12 +87,14 @@ export default function LettersAnimation ({ text, tag, className, children, keyT
 
 function Item ({ words, className, children }) {
   const container = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: 0, x: 0 },
     visible: (i = 1) => ({
       opacity: 1,
+      x: 0,
       transition: { staggerChildren: 0.15, delayChildren: 0.5 * i }
     })
   }
+
 
   const child = {
     visible: {
@@ -101,30 +104,72 @@ function Item ({ words, className, children }) {
       transition: {
         type: 'spring',
         damping: 12,
-        stiffness: 100
+        stiffness: 200
       }
     },
     hidden: {
       opacity: 0,
-      x: -20,
-      y: 10,
+      x: 0,
+      y: 20,
       transition: {
         type: 'spring',
         damping: 12,
-        stiffness: 100
+        stiffness: 200
       }
     }
   }
 
+  const dropIn = {
+    hidden: {
+      y: "-100vh",
+      opacity: 0,
+    },
+    visible: {
+      y: "0",
+      opacity: 1,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+    exit: {
+      y: "100vh",
+      opacity: 0,
+    },
+  };
+
+  const dropUp = {
+    hidden: {
+      y: "100vh",
+      opacity: 0,
+    },
+    visible: {
+      y: "40vh",
+      opacity: 1,
+      transition: {
+        duration: 0.1,
+        type: "spring",
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+    exit: {
+      y: "-100vh",
+      opacity: 0,
+    },
+  };
+
   return (
-    <>
+    <AnimatePresence>
       <motion.span variants={container} initial='hidden' animate='visible'>
         {words.map((word, index) => {
           if (word === '<br/>') {
             return <br key={index} />
           }
           if (word === '<span>') {
-            return <motion.span key={index} variants={child} className='text-tangle-cyan-process'>{words[index + 1]}</motion.span>
+            return <motion.span key={index} variants={dropUp} className='text-tangle-cyan-process'>{words[index + 1]}</motion.span>
           }
           if (words[index - 1] === '<span>') {
             return ''
@@ -133,7 +178,7 @@ function Item ({ words, className, children }) {
             return ''
           }
           if (word === '<em>') {
-            return <motion.em key={index} variants={child}>{words[index + 1]}</motion.em>
+            return <motion.em key={index} variants={dropUp} >{words[index + 1]}</motion.em>
           }
           if (words[index - 1] === '<em>') {
             return ''
@@ -148,19 +193,18 @@ function Item ({ words, className, children }) {
             >
               {word.split('').map((letter, i) => (
                 <motion.span
-                  variants={child}
+                  variants={dropUp}
                   key={i}
                   className='last:mr-0'
                 >
                   {letter}
                 </motion.span>
               ))}
-              {'\u00A0'}
             </motion.span>
           )
         })}
       </motion.span>
       {children}
-    </>
+    </AnimatePresence>
   )
 }

@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState } from "react";
 import NavBar from "../../navbar/NavBar";
+import LettersAnimation from "../texts/lettersAnimation";
+import WordsAnimation from "../texts/wordsAnimation";
+import WordsChangers from "../texts/wordsChangers";
 
 const containerVariants = {
   initial: {
@@ -38,6 +42,7 @@ const dotVariants = {
 };
 
 const DotsLoader = ({ count = 5, className, setLoading}) => {
+  const [safeRemove, setSafeRemove] = useState(false)
   return (
     <motion.div
       variants={containerVariants}
@@ -70,7 +75,7 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
             width: '450vw',
             transition:{
               type: "spring",
-              duration: 5,
+              duration: 1,
               delay: 2,
               bounce: 0.25
             }
@@ -87,22 +92,40 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
                   bounce: 0.25
                 }
               }}
+              // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
             />
 
-      <motion.div
-          className="absolute top-0 overflow-hidden bg-[#121212]"
-          initial={{height:0, width: '100%'}}
-          animate={{
-            height:100,
-            width: '100%',
-            transition:{
-              type: "spring",
-              duration: 1,
-              delay: 3,
-            }
-          }}
-          onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
-      >
+        <div
+        className="absolute h-screen w-3/4 bg-red- flex items-center"
+              initial={{height:'100vh', width: '100vw', backgroundColor:'red'}}
+              animate={{
+                y:0, 
+                transition:{
+                  type: "spring",
+                  duration: 2,
+                  bounce: 0.25
+                }
+              }}
+            >
+          <div className="bg-slate- items-center flex w-full">
+          {!safeRemove && <WordsChangers words={[`Don't`, `blink`]} alternative setSafeRemove={setSafeRemove}/> }
+            
+          </div>
+          {/* <WordsAnimation text={`don't blink`} className="text-center font-black text-9xl uppercase justify-center"/> */}
+          {/* <div className="bg-slate- items-center flex w-full">
+            <WordsChangers words={['Are', 'you', 'ready', 'for', 'Luis?']} />
+          </div> */}
+          {/* <div className="flex flex-wrap max-w-md bg-orange-900">
+            <span className="bg-blue-500 text-white px-2 py-1 rounded mr-2 mb-2 w-">Span 1</span>
+            <span className="bg-green-500 text-white px-2 py-1 rounded mr-2 mb-2">Span 2</span>
+            <span className="bg-yellow-500 text-white px-2 py-1 rounded mr-2 mb-2">Span 3</span>
+            <span className="bg-red-500 text-white px-2 py-1 rounded mr-2 mb-2">Span 4</span>
+            <span className="bg-indigo-500 text-white px-2 py-1 rounded mr-2 mb-2">Span 5</span>
+            <span className="bg-pink-500 text-white px-2 py-1 rounded mr-2 mb-2">Span 6</span>
+          </div> */}
+        </div>
+
+
         {/* <header className="p-4 bg-[#121212] ">
           <div className="container flex justify-between h-16 mx-auto">
             <Link rel="noopener noreferrer" href="/" aria-label="Back to homepage" className="flex items-center p-2">
@@ -139,7 +162,6 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
             </button>
           </div>
         </header> */}
-      </motion.div>
     </motion.div>
   );
 };
