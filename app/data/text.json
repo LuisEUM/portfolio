@@ -1,0 +1,84 @@
+{
+  "en": {
+    "menu":
+      {
+        "id": "en",
+        "current_language": "English",
+        "home":"Home",
+        "home_pathname": "/",
+        "contact":"Contact",
+        "contact_pathname":"/contact",
+        "projects":"Projects",
+        "projects_pathname":"/projects",
+        "languages":"Languages",
+        "languages_options":[
+          {
+            "name": "English",
+            "pathname": "en"
+          },
+          {
+            "name": "Spanish",
+            "pathname": "es"
+          }  
+        ]
+      }
+    ,
+    "footer":
+      {
+        "website": "© 2023 Luis Urdaneta",
+        "rights": "All rights reserved",
+        "policy":"Policy",
+        "policy_pathname": "/privacy-policy",
+        "email": "luiseum95@gmail.com"
+      }
+    ,
+    "home": 
+      {
+      }
+    ,
+    "projects": 
+      {
+      }
+  },
+  "es":{
+    "menu": 
+      {
+        "id": "es",
+        "current_language": "Español",
+        "home":"Inicio",
+        "home_pathname": "/",
+        "contact":"Contacto",
+        "contact_pathname":"/contact",
+        "projects":"Projects",
+        "projects_pathname":"/projects",
+        "languages":"Lenguajes",
+        "languages_options":[
+          {
+            "name": "Inglés",
+            "pathname": "en"
+          },
+          {
+            "name": "Español",
+            "pathname": "es"
+          }
+        ]
+      }
+    ,
+    "footer":
+      {
+        "website": "© 2023 Luis Urdaneta",
+        "rights": "Todos los derechos reservados",
+        "policy":"Políticas",
+        "policy_pathname": "/privacy-policy",
+        "email": "luiseum95@gmail.com"
+      }
+    ,
+    "home":
+      {
+      }
+    ,
+    "projects": 
+      {
+      }
+  }
+}
