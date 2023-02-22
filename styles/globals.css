@@ -1,4 +1,62 @@
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap');
+
+
+/* Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+  /* height: 10px; */
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #00BB31;
+}
+
+/* Mozilla (Firefox) */
+scrollbar {
+  width: 10px;
+  /* height: 10px; */
+  background-color: #000000;
+}
+
+scrollbar thumb {
+  border-radius: 10px;
+  background-color: #00BB31;
+}
+
+/* Microsoft (Edge, Internet Explorer) */
+scrollbar {
+  width: 10px;
+  /* height: 10px; */
+  background-color: #000000;
+}
+
+scrollbar thumb {
+  border-radius: 10px;
+  background-color: #00BB31;
+}
+
+/* Universal (todos los navegadores) */
+::-webkit-scrollbar,
+scrollbar,
+*::-ms-scrollbar {
+  width: 10px;
+  /* height: 10px; */
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb,
+scrollbar thumb,
+*::-ms-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #00BB31;
+}
+
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +67,7 @@
     font-family: Satoshi, system-ui, sans-serif;
     /* background-color: #0D0D0D ; */
     color: #E5E5E5;
+    overflow-y: scroll;
+    min-height: 200vh;
   }
 }
