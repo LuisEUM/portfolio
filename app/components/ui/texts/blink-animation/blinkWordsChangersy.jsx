@@ -43,7 +43,7 @@ export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, bli
 
 
   const afterTheEndOfAnimation = (blink, setBlink, setSafeRemove, setCount, count) => {
-      if(count === 1){
+      if(count >= 1){
         setTimeout(()=>{
           setBlink(!blink)
           console.log('First timeOut')
