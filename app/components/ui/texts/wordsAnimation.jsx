@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function WordsAnimation ({ text, tag, className, keyText }) {
+export default function WordsAnimation ({ text, tag, className, keyText, setReady }) {
   const words = text.split(' ')
   keyText = keyText || text
 
@@ -42,7 +42,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h1>
     )
   } else if (tag === 'h2') {
@@ -54,7 +54,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h2>
     )
   } else if (tag === 'h3') {
@@ -66,7 +66,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h3>
     )
   } else if (tag === 'h4') {
@@ -78,7 +78,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h4>
     )
   } else if (tag === 'h5') {
@@ -90,7 +90,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h5>
     )
   } else if (tag === 'h6') {
@@ -102,7 +102,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.h6>
     )
   } else {
@@ -114,15 +114,28 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
         animate='visible'
         key={keyText}
       >
-        <Item words={words} child={child} className={className} />
+        <Item words={words} child={child} className={className} setReady={setReady} />
       </motion.p>
     )
   }
 }
 
-function Item ({ words, child, className }) {
+function Item ({ words, child, className, setReady }) {
   return (
-    words.map((word, index) => (
+    words.map((word, index) => {
+      if (word === '<span>') {
+        return <motion.span key={index} variants={child} className='text-[#00BB31] ml-5 mr-1'>{words[index + 1]}</motion.span>
+      }
+      if (words[index - 1] === '<span>') {
+        return ''
+      }
+      if (word === '</span>') {
+        return ''
+      }
+      if (word === '?') {
+        return <motion.span key={index} variants={child} className='ml-5 mr-1' onAnimationComplete={() => { setTimeout(() => { setReady(true) }, 500) }}>?</motion.span>
+      }
+      return (
       <motion.span
         variants={child}
         style={{ marginRight: '5px' }}
@@ -131,6 +144,7 @@ function Item ({ words, child, className }) {
       >
         {word}
       </motion.span>
-    ))
+      )
+    })
   )
 }

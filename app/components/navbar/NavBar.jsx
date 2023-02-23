@@ -6,9 +6,8 @@ import { ToggleMenu } from './toggle-menu/ToggleMenu'
 import MainMenu from './main-menu/MainMenu'
 import { LanguageContext } from '../../context/languageContext'
 import Link from 'next/link.js'
-import imageData from '../../data/images.json'
+// import imageData from '../../data/images.json'
 import SelectLanguage from './select-language/selectLanguage.jsx'
-
 
 const sidebar = {
   open: {
@@ -38,7 +37,6 @@ export default function NavBar () {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
   const { height } = useDimensions(containerRef)
-
 
   return (
     <div className='top-0 z-50 w-full opacity-100'>
@@ -106,21 +104,3 @@ export default function NavBar () {
     </div>
   )
 }
-
-
-
-
-{/* <motion.div
-          className="absolute top-0 overflow-hidden bg-[#121212]"
-          initial={{height:0, width: '100%'}}
-          animate={{
-            height:100,
-            width: '100%',
-            transition:{
-              type: "spring",
-              duration: 1,
-              delay: 3,
-            }
-          }}
-          onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
-      /> */}

@@ -3,8 +3,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import WordsAnimation from './wordsAnimation'
 
-
-export default function WordsChangers({ words, alternative}) {
+export default function WordsChangers ({ words, alternative, setReady }) {
   const [index, setIndex] = useState(0)
 
   const currentWord = words[index]
@@ -14,7 +13,7 @@ export default function WordsChangers({ words, alternative}) {
       setIndex((i) => (i + 1) % words.length)
     }, alternative ? 1000 : 2000)
 
-    if(index === words.length - 1) {
+    if (index === words.length - 1) {
       clearInterval(i)
     }
 
@@ -71,11 +70,10 @@ export default function WordsChangers({ words, alternative}) {
           }}
           onAnimationComplete={() => {}}
         >
-          <WordsAnimation text={currentWord} />
-        </motion.strong> 
+          <WordsAnimation text={currentWord} setReady={setReady}/>
+        </motion.strong>
         {/* <span className='text-6xl md:text-8xl lg:text-9xl text-black header-invite self-baseline font-main_outline'>?</span> */}
       </motion.span>
     </>
-)
+  )
 }
-

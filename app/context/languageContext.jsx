@@ -1,11 +1,10 @@
 'use client'
 import { createContext, useEffect, useRef, useState } from 'react'
 import textData from '../data/text.json'
-import imageData from '../data/images.json'
+// import imageData from '../data/images.json'
 import { AnimatePresence, LayoutGroup, motion, useInView } from 'framer-motion'
 import { getCookie, setCookie } from 'cookies-next'
 import TextsLoader from '../components/loaders/textsLoader'
-import FloatingSoundButton from '../components/ui/buttons/floatingSoundButton'
 import CookiesSoundButton from '../components/ui/buttons/cookiesButton'
 
 export const LanguageContext = createContext()
@@ -28,28 +27,28 @@ export const LanguageProvider = ({ children }) => {
     })
   }
 
-  const child = {
-    show: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: {
-        ease: [0.6, 0.1, -0.05, 0.95],
-        duration: 3
-      }
-    },
-    hidden: {
-      opacity: 0,
-      scale: 0,
-      y: 200
-    },
-    exit: {
-      opacity: 0,
-      scale: 0,
-      y: 0,
-      x: 0
-    }
-  }
+  // const child = {
+  //   show: {
+  //     opacity: 1,
+  //     y: 0,
+  //     scale: 1,
+  //     transition: {
+  //       ease: [0.6, 0.1, -0.05, 0.95],
+  //       duration: 3
+  //     }
+  //   },
+  //   hidden: {
+  //     opacity: 0,
+  //     scale: 0,
+  //     y: 200
+  //   },
+  //   exit: {
+  //     opacity: 0,
+  //     scale: 0,
+  //     y: 0,
+  //     x: 0
+  //   }
+  // }
 
   useEffect(() => {
     if (languageCookie === undefined) {
@@ -72,10 +71,10 @@ export const LanguageProvider = ({ children }) => {
               variants={container}
               initial='hidden'
               animate={isInView ? 'show' : 'hidden'}
-              ref={ref} 
+              ref={ref}
               // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
             >
-            
+
               {/* <TextsLoader setLoading={setLoading}/> */}
               <TextsLoader setLoading={setLoading}/>
 

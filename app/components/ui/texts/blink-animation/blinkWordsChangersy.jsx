@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import BlinkWordsAnimation from './blinkWordsAnimation'
 
-export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, blink}) {
+export default function BlinkWordsChangers ({ words, setSafeRemove, setBlink, blink }) {
   const [index, setIndex] = useState(0)
   const [count, setCount] = useState(0)
 
@@ -14,7 +14,7 @@ export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, bli
       setIndex((i) => (i + 1) % words.length)
     }, 1000)
 
-    if(index === words.length - 1) {
+    if (index === words.length - 1) {
       clearInterval(i)
     }
 
@@ -41,29 +41,27 @@ export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, bli
     }
   }
 
-
   const afterTheEndOfAnimation = (blink, setBlink, setSafeRemove, setCount, count) => {
-      if(count === 0){
-        setTimeout(()=>{
-          setBlink(!blink)
-          console.log('First timeOut')
-        }, 1000)
-  
-        setTimeout(()=>{
-          setBlink(!blink)
-          console.log('Second timeOut')
-        }, 1100)
+    if (count === 0) {
+      setTimeout(() => {
+        setBlink(!blink)
+        console.log('First timeOut')
+      }, 1000)
 
-        setTimeout(()=>{
-          setSafeRemove(true),
-          setBlink(false),
-          console.log('Third timeOut')
-  
-        }, 1300)
-      }
+      setTimeout(() => {
+        setBlink(!blink)
+        console.log('Second timeOut')
+      }, 1100)
+
+      setTimeout(() => {
+        setSafeRemove(true)
+        setBlink(false)
+        console.log('Third timeOut')
+      }, 1300)
+    }
   }
 
-  console.log(count, 'counter') 
+  console.log(count, 'counter')
 
   return (
     <>
@@ -93,12 +91,11 @@ export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, bli
             stiffness: 500,
             damping: 80
           }}
-          onAnimationComplete={() => {afterTheEndOfAnimation(blink, setBlink, setSafeRemove, setCount, count), setCount(count => count + 1); }}
+          onAnimationComplete={() => { afterTheEndOfAnimation(blink, setBlink, setSafeRemove, setCount, count); setCount(count => count + 1) }}
         >
         <BlinkWordsAnimation text={currentWord} />
-        </motion.strong> 
+        </motion.strong>
       </motion.span>
     </>
-)
+  )
 }
-
