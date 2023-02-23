@@ -1,10 +1,9 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import WordsAnimation from './wordsAnimation'
+import BlinkWordsAnimation from './blinkWordsAnimation'
 
-
-export default function WordsChangers({ words, alternative, setSafeRemove, setBlink, blink}) {
+export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, blink}) {
   const [index, setIndex] = useState(0)
   const [count, setCount] = useState(0)
 
@@ -13,7 +12,7 @@ export default function WordsChangers({ words, alternative, setSafeRemove, setBl
   useEffect(() => {
     const i = setInterval(() => {
       setIndex((i) => (i + 1) % words.length)
-    }, alternative ? 1000 : 2000)
+    }, 1000)
 
     if(index === words.length - 1) {
       clearInterval(i)
@@ -44,17 +43,6 @@ export default function WordsChangers({ words, alternative, setSafeRemove, setBl
 
 
   const afterTheEndOfAnimation = (blink, setBlink, setSafeRemove, setCount, count) => {
-      // const interval = setInterval(()=>{
-      //   if (count <= 4 )
-      //   { 
-      //     setBlink(!blink), 
-      //     setCount(count => count + 1)}
-      //   },
-      //   console.log(count, ' another counter') 
-
-      //   , 200)
-      console.log(count, 'counter Inside') 
-
       if(count === 1){
         setTimeout(()=>{
           setBlink(!blink)
@@ -67,16 +55,12 @@ export default function WordsChangers({ words, alternative, setSafeRemove, setBl
         }, 400)
 
         setTimeout(()=>{
-          // clearInterval(interval),
           setSafeRemove(true),
           setBlink(false),
           console.log('Third timeOut')
   
         }, 600)
       }
-
-
-
   }
 
   console.log(count, 'counter') 
@@ -109,11 +93,10 @@ export default function WordsChangers({ words, alternative, setSafeRemove, setBl
             stiffness: 500,
             damping: 80
           }}
-          onAnimationComplete={() => {}}
+          onAnimationComplete={() => {afterTheEndOfAnimation(blink, setBlink, setSafeRemove, setCount, count), setCount(count => count + 1); }}
         >
-          <WordsAnimation text={currentWord} />
+        <BlinkWordsAnimation text={currentWord} />
         </motion.strong> 
-        {/* <span className='text-6xl md:text-8xl lg:text-9xl text-black header-invite self-baseline font-main_outline'>?</span> */}
       </motion.span>
     </>
 )

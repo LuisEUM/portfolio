@@ -7,6 +7,7 @@ import { getCookie, setCookie } from 'cookies-next'
 import LettersAnimation from '../components/ui/texts/lettersAnimation'
 import Image from 'next/image'
 import DotsLoader from '../components/ui/loaders/dotsLoader'
+import TextsLoader from '../components/ui/loaders/textsLoader'
 
 export const LanguageContext = createContext()
 
@@ -76,7 +77,9 @@ export const LanguageProvider = ({ children }) => {
               // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
             >
 
-              <DotsLoader setLoading={setLoading}/>
+              {/* <TextsLoader setLoading={setLoading}/> */}
+              <TextsLoader setLoading={setLoading}/>
+
               {/* <div
                 className='max-w-full bg-transparent'
                 variants={child}

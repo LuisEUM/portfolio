@@ -43,12 +43,14 @@ const dotVariants = {
 
 const DotsLoader = ({ count = 5, className, setLoading}) => {
   const [safeRemove, setSafeRemove] = useState(false)
+  const [blink, setBlink] = useState(false)
+
   return (
     <motion.div
       variants={containerVariants}
       initial="initial"
       animate="animate"
-      className={`flex gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
+      className={`flex bg-black ${blink && 'invert'} gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
     >
       {/* {Array(count)
         .fill(null)
@@ -66,7 +68,7 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
             />
           );
         })} */}
-        <motion.div
+        {/* <motion.div
           className="absolute"
           initial={{opacity: 1,height:'0vh', width:'0vw', borderRadius: 999999, backgroundColor:'#0D0D0D'}}
           animate={{
@@ -80,8 +82,8 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
               bounce: 0.25
             }
           }}
-        />
-        <motion.div
+        /> */}
+        {/* <motion.div
               className="absolute"
               initial={{y: '100vh',height:20, width: 20, borderRadius: 20, backgroundColor:'#0D0D0D'}}
               animate={{
@@ -93,7 +95,7 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
                 }
               }}
               // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
-            />
+            /> */}
 
         <div
         className="absolute h-screen w-3/4 bg-red- flex items-center"
@@ -107,9 +109,13 @@ const DotsLoader = ({ count = 5, className, setLoading}) => {
                 }
               }}
             >
-          <div className="bg-slate- items-center flex w-full">
-          {!safeRemove && <WordsChangers words={[`Don't`, `blink`]} alternative setSafeRemove={setSafeRemove}/> }
-            
+          <div className=" items-center flex w-full">
+          {!safeRemove && <WordsChangers words={[`Don't`, `blink`]} alternative setSafeRemove={setSafeRemove} setBlink={setBlink} blink={blink}/> }
+          {/* {safeRemove &&
+            <div className="bg-slate- items-center flex w-full">
+              <WordsChangers words={['Are', 'you', 'ready', 'for', 'Luis?']} />
+            </div>
+          } */}
           </div>
           {/* <WordsAnimation text={`don't blink`} className="text-center font-black text-9xl uppercase justify-center"/> */}
           {/* <div className="bg-slate- items-center flex w-full">
