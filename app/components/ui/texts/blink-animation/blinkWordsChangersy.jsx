@@ -47,19 +47,19 @@ export default function BlinkWordsChangers({ words, setSafeRemove, setBlink, bli
         setTimeout(()=>{
           setBlink(!blink)
           console.log('First timeOut')
-        }, 1200)
+        }, 1000)
   
         setTimeout(()=>{
           setBlink(!blink)
           console.log('Second timeOut')
-        }, 1300)
+        }, 1100)
 
         setTimeout(()=>{
           setSafeRemove(true),
           setBlink(false),
           console.log('Third timeOut')
   
-        }, 1500)
+        }, 1300)
       }
   }
 

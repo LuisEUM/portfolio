@@ -24,7 +24,7 @@ export default function WordsAnimation ({ text, tag, className, keyText }) {
     },
     hidden: {
       opacity: 0,
-      x: 20,
+      x: 150,
       transition: {
         type: 'spring',
         damping: 12,

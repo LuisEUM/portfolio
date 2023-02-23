@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import BlinkWordsChangers from "../texts/blink-animation/blinkWordsChangersy";
-import WordsAnimation from "../texts/wordsAnimation";
-import WordsChangers from "../texts/wordsChangers";
+import BlinkWordsChangers from "../ui/texts/blink-animation/blinkWordsChangersy";
+import WordsAnimation from "../ui/texts/wordsAnimation";
+import WordsChangers from "../ui/texts/wordsChangers";
 
 const containerVariants = {
   initial: {

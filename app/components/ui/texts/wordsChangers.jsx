@@ -4,9 +4,8 @@ import { motion } from 'framer-motion'
 import WordsAnimation from './wordsAnimation'
 
 
-export default function WordsChangers({ words, alternative, setSafeRemove, setBlink, blink}) {
+export default function WordsChangers({ words, alternative}) {
   const [index, setIndex] = useState(0)
-  const [count, setCount] = useState(0)
 
   const currentWord = words[index]
 
@@ -41,45 +40,6 @@ export default function WordsChangers({ words, alternative, setSafeRemove, setBl
       scale: 0
     }
   }
-
-
-  const afterTheEndOfAnimation = (blink, setBlink, setSafeRemove, setCount, count) => {
-      // const interval = setInterval(()=>{
-      //   if (count <= 4 )
-      //   { 
-      //     setBlink(!blink), 
-      //     setCount(count => count + 1)}
-      //   },
-      //   console.log(count, ' another counter') 
-
-      //   , 200)
-      console.log(count, 'counter Inside') 
-
-      if(count === 1){
-        setTimeout(()=>{
-          setBlink(!blink)
-          console.log('First timeOut')
-        }, 200)
-  
-        setTimeout(()=>{
-          setBlink(!blink)
-          console.log('Second timeOut')
-        }, 400)
-
-        setTimeout(()=>{
-          // clearInterval(interval),
-          setSafeRemove(true),
-          setBlink(false),
-          console.log('Third timeOut')
-  
-        }, 600)
-      }
-
-
-
-  }
-
-  console.log(count, 'counter') 
 
   return (
     <>

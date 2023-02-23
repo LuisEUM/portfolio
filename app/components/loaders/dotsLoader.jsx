@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useState } from "react";
-import NavBar from "../../navbar/NavBar";
-import LettersAnimation from "../texts/lettersAnimation";
-import WordsAnimation from "../texts/wordsAnimation";
-import WordsChangers from "../texts/wordsChangers";
+import WordsChangers from "../ui/texts/wordsChangers";
 
 const containerVariants = {
   initial: {

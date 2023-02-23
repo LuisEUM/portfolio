@@ -4,10 +4,9 @@ import textData from '../data/text.json'
 import imageData from '../data/images.json'
 import { AnimatePresence, LayoutGroup, motion, useInView } from 'framer-motion'
 import { getCookie, setCookie } from 'cookies-next'
-import LettersAnimation from '../components/ui/texts/lettersAnimation'
-import Image from 'next/image'
-import DotsLoader from '../components/ui/loaders/dotsLoader'
-import TextsLoader from '../components/ui/loaders/textsLoader'
+import TextsLoader from '../components/loaders/textsLoader'
+import FloatingSoundButton from '../components/ui/buttons/floatingSoundButton'
+import CookiesSoundButton from '../components/ui/buttons/cookiesButton'
 
 export const LanguageContext = createContext()
 
@@ -76,7 +75,7 @@ export const LanguageProvider = ({ children }) => {
               ref={ref} 
               // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
             >
-
+            
               {/* <TextsLoader setLoading={setLoading}/> */}
               <TextsLoader setLoading={setLoading}/>
 
@@ -95,6 +94,7 @@ export const LanguageProvider = ({ children }) => {
                 />
                 <p> loading </p>
               </div> */}
+              <CookiesSoundButton/>
             </motion.div>
             )
           : (
