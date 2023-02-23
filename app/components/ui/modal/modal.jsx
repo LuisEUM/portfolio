@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Backdrop from "./Backdrop";
+import Backdrop from "/Backdrop";
 
 const dropIn = {
     hidden: {
