@@ -84,7 +84,7 @@ export default function SelectLanguage () {
         </p>
         <motion.div
           variants={{
-            open: { rotate: 180},
+            open: { rotate: 180 },
             closed: { rotate: 0 }
           }}
           transition={{ duration: 0.2 }}

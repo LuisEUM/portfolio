@@ -8,6 +8,7 @@ import { LanguageContext } from '../../context/languageContext'
 import Link from 'next/link.js'
 // import imageData from '../../data/images.json'
 import SelectLanguage from './select-language/selectLanguage.jsx'
+import Backdrop from '../ui/backdrop/backdrop.jsx'
 
 const sidebar = {
   open: {
@@ -72,11 +73,11 @@ export default function NavBar () {
           custom={height}
           ref={containerRef}
           // if you prefer to make the elements behind touchable change to flex instead w-full
-          className={`absolute md:hidden top-0 right-0 bottom-0   ${isOpen ? 'bg-zinc-900 bg-opacity-50 w-full' : 'flex bg-red-400'}`}
+          className='absolute md:hidden top-0 right-0 bottom-0 '
         >
           <AnimatePresence>
             {isOpen &&
-              <>
+              <Backdrop onClick={() => toggleOpen()}>
                 <motion.div
                   className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden  ${isOpen ? 'bg-[#121212] w-9/12' : 'bg-[#121212]'} `}
                   initial='closed'
@@ -85,11 +86,12 @@ export default function NavBar () {
                   variants={sidebar}
                   layout
                   layoutId='sidebar'
+                  onClick={(e) => e.stopPropagation()}
                 >
                   <MainMenu isOpen={isOpen} toggleOpen={toggleOpen}/>
 
                 </motion.div>
-              </>}
+              </Backdrop>}
           </AnimatePresence>
 
           <ToggleMenu isOpen={isOpen} toggle={() => toggleOpen()} />

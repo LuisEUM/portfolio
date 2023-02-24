@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import Backdrop from '../modal/backdrop'
+import Backdrop from '../backdrop/backdrop'
 import AnimatedSwitch from '../switch/animatedSwitch'
 
 const dropIn = {

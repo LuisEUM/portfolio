@@ -7,7 +7,6 @@ import Link from 'next/link.js'
 
 const MainMenu = ({ isOpen, toggleOpen }) => {
   const [openLanguagues, setOpenLanguagues] = useState(false)
-  const [openPortfolio, setOpenPortfolio] = useState(false)
   const { text, setLanguageCookie } = useContext(LanguageContext)
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
@@ -110,7 +109,6 @@ const MainMenu = ({ isOpen, toggleOpen }) => {
                 setLanguageCookie={setLanguageCookie}
               />
             </motion.div>
-
 
           </>}
       </AnimatePresence>
