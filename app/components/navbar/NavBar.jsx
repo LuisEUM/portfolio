@@ -57,6 +57,16 @@ export default function NavBar () {
         </div>
         <div className='hidden md:flex'>
           <div className='flex justify-center px-4'>
+            <Link href={text.menu.projects_pathname} className='self-center flex items-center text-zinc-100 font-bold rounded-md px-4 h-8  uppercase'>
+                {text.menu.projects}
+            </Link>
+          </div>
+          <div className='flex justify-center px-4'>
+            <Link href={text.menu.blog_pathname} className='self-center flex items-center text-zinc-100 font-bold rounded-md px-4 h-8  uppercase'>
+                {text.menu.blog}
+            </Link>
+          </div>
+          <div className='flex justify-center px-4'>
             <Link href={text.menu.contact_pathname} className='self-center'>
               <motion.button className='bg-primary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'>
                 {text.menu.contact}

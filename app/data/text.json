@@ -10,6 +10,8 @@
         "contact_pathname":"/contact",
         "projects":"Projects",
         "projects_pathname":"/projects",
+        "blog":"Blog",
+        "blog_pathname":"/blog",
         "languages":"Languages",
         "languages_options":[
           {
@@ -51,6 +53,8 @@
         "contact_pathname":"/contact",
         "projects":"Proyectos",
         "projects_pathname":"/projects",
+        "blog":"Blog",
+        "blog_pathname":"/blog",
         "languages":"Lenguajes",
         "languages_options":[
           {
