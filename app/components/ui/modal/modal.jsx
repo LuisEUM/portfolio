@@ -29,7 +29,7 @@ const Modal = ({ handleClose }) => {
       <Backdrop onClick={handleClose}>
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className="modal w-[clamp(50%,700px,90px)] h-[min(50%,300px)] m-auto py-2 px-8 rounded-xl flex flex-col justify-evenly items-center border "
+            className="modal w-[clamp(50%,700px,90px)] h-[min(50%,300px)] m-auto py-2 px-8 rounded-xl flex flex-col justify-evenly items-center border bg-zinc-900 "
             variants={dropIn}
             initial="hidden"
             animate="visible"
@@ -55,7 +55,7 @@ function ModalContent () {
   const [isOn, setIsOn] = useState(true)
 
   return (
-  <div className="flex flex-col items-center ">
+  <div className="flex flex-col items-center  ">
   <section className='flex flex-col'>
     <h3 className='text-xl font-medium'>Would you allow me some cookies?</h3>
     <div className='flex-col flex md:flex-row gap-x-5 mt-5'>
