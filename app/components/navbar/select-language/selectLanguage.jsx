@@ -67,8 +67,9 @@ export default function SelectLanguage () {
       className=' flex flex-col self-center'
     >
       <motion.button
+        whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen(isOpen => !isOpen)}
         className='select-list relative cursor-pointer w-full flex justify-between items-center text-left '
       >
         <div className='self-center'>
@@ -78,12 +79,12 @@ export default function SelectLanguage () {
             <path d='M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
           </svg>
         </div>
-        <p className='fs-6 fw-normal text-white mx-2 font-main_regular '>
+        <p className='fs-6 fw-normal text-zinc-100 hover:text-zinc-300 mx-2 font-main_regular'>
           {selectedCategory || 'Language'}
         </p>
         <motion.div
           variants={{
-            open: { rotate: 180 },
+            open: { rotate: 180},
             closed: { rotate: 0 }
           }}
           transition={{ duration: 0.2 }}
@@ -92,45 +93,49 @@ export default function SelectLanguage () {
         >
 
           <svg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path d='M1 1L7 7L13 1' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
+            <path d='M1 1L7 7L13 1' stroke={isOpen ? 'rgb(0 187 49)' : 'rgb(244 244 245)'} strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
           </svg>
 
         </motion.div>
       </motion.button>
-      <AnimatePresence>
+      <AnimatePresence
+      mode='wait'
+      initial={false}
+      onExitComplete={() => null}
+      >
         {isOpen &&
           <motion.ul
             variants={mobileNavbar}
-            className={`select-list w-28 absolute bg-white top-16 right-8 ${isOpen ? 'p-2' : 'hidden'}`}
+            className={`select-list w-28 absolute bg-zinc-700 text-zinc-100 top-16   right-8 ${isOpen ? 'p-2' : 'hidden'}`}
             exit='closed'
             style={{ pointerEvents: isOpen ? 'auto' : 'none' }}
           >
-            <AnimatePresence>
-              {isOpen && (
-                <>
-                  {languageOptions && languageOptions.map((category, index) => (
-                    <motion.li
-                      key={index}
-                      className='text-center text-base last:border-b-0  border-b-2 text-neutral-600 font-main_light first:mt-0 mt-2 flex-row w-full content-center justify-center'
-                      whileHover={{ color: 'rgb(24,31,49)', fontSize: '18px' }}
-                      whileTap={{ color: 'rgb(24,31,49)', fontSize: '14px' }}
-                      variants={itemVariants}
-                      initial='closed'
-                      animate={isOpen ? 'open' : 'closed'}
-                      exit='closed'
-                      value={category.id}
-                      onClick={() => {
-                        setIsOpen(false)
-                        deleteCookie('language')
-                        setCookie('language', category.pathname)
-                        setLanguageCookie(category.pathname)
-                      }}
-                    >
-                      {category.name}
-                    </motion.li>
-                  ))}
-                </>
-              )}
+            <AnimatePresence
+            mode='wait'
+            initial={false}
+            onExitComplete={() => null}
+            >
+              {languageOptions && languageOptions.map((category, index) => (
+                <motion.li
+                  key={index}
+                  className='text-center text-base last:border-b-0 border-b-2  font-medium  first:pb-2 last:pt-2  flex-row w-full content-center justify-center cursor-pointer'
+                  whileHover={{ color: '#C7D1DA', fontSize: '18px' }}
+                  whileTap={{ color: '#C7D1DA', fontSize: '14px' }}
+                  variants={itemVariants}
+                  initial='closed'
+                  animate={isOpen ? 'open' : 'closed'}
+                  exit='closed'
+                  value={category.id}
+                  onClick={() => {
+                    setIsOpen(false)
+                    deleteCookie('language')
+                    setCookie('language', category.pathname)
+                    setLanguageCookie(category.pathname)
+                  }}
+                >
+                  {category.name}
+                </motion.li>
+              ))}
             </AnimatePresence>
           </motion.ul>}
       </AnimatePresence>

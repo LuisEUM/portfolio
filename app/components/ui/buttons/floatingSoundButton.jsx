@@ -20,7 +20,7 @@ function FloatingSoundButton ({ audioUrl }) {
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
-      <button className="bg-white hover:invert hover:border-black border-white border rounded-full w-16 h-16 flex items-center justify-center" onClick={toggleMute}>
+      <button className="bg-zinc-100 hover:invert hover:border-black border-white border rounded-full w-16 h-16 flex items-center justify-center" onClick={toggleMute}>
         {isMuted
           ? <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.25 7.74999L18.5 9.99999M18.5 9.99999L20.75 12.25M18.5 9.99999L20.75 7.74999M18.5 9.99999L16.25 12.25M5.75 6.24999L10.47 1.52999C10.575 1.42518 10.7086 1.35383 10.8541 1.32498C10.9996 1.29613 11.1504 1.31106 11.2874 1.3679C11.4244 1.42473 11.5415 1.52092 11.6238 1.64429C11.7062 1.76765 11.7501 1.91267 11.75 2.06099V17.94C11.7499 18.0882 11.7058 18.2331 11.6234 18.3563C11.541 18.4795 11.4239 18.5756 11.2869 18.6323C11.15 18.689 10.9993 18.7038 10.8539 18.675C10.7085 18.6461 10.5749 18.5747 10.47 18.47L5.75 13.75H3.51C2.63 13.75 1.806 13.244 1.572 12.396C1.35752 11.6154 1.24922 10.8095 1.25 9.99999C1.25 9.16999 1.362 8.36699 1.572 7.60499C1.806 6.75699 2.63 6.24999 3.51 6.24999H5.75Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>

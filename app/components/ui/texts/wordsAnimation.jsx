@@ -124,7 +124,7 @@ function Item ({ words, child, className, setReady }) {
   return (
     words.map((word, index) => {
       if (word === '<span>') {
-        return <motion.span key={index} variants={child} className='text-[#00BB31] ml-5 mr-1'>{words[index + 1]}</motion.span>
+        return <motion.span key={index} variants={child} className='text-primary ml-5 mr-1'>{words[index + 1]}</motion.span>
       }
       if (words[index - 1] === '<span>') {
         return ''

@@ -72,7 +72,7 @@ export default function WordsChangers ({ words, alternative, setReady }) {
         >
           <WordsAnimation text={currentWord} setReady={setReady}/>
         </motion.strong>
-        {/* <span className='text-6xl md:text-8xl lg:text-9xl text-black header-invite self-baseline font-main_outline'>?</span> */}
+        {/* <span className='text-6xl md:text-8xl lg:text-9xl text-zinc-900 header-invite self-baseline font-main_outline'>?</span> */}
       </motion.span>
     </>
   )

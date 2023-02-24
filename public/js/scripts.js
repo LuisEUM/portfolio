@@ -1,12 +1,11 @@
-const HELP = '/icons/help.json'
-const SIMPLEARROW =  '/icons/arrorForGousty.json'
-const PLAYANDPAUSE =  '/icons/playPause.json'
-const RESTART =  '/icons/restart.json'
-const DOWNARROWS =  '/icons/downArrows.json'
-const YESBUTTON =  '/icons/yesButton.json'
-const NOTBUTTON =  '/icons/noButton.json'
-const SETTINGS = '/icons/settings.json'
-
+// const HELP = '/icons/help.json'
+// const SIMPLEARROW = '/icons/arrorForGousty.json'
+// const PLAYANDPAUSE = '/icons/playPause.json'
+// const RESTART = '/icons/restart.json'
+// const DOWNARROWS = '/icons/downArrows.json'
+// const YESBUTTON = '/icons/yesButton.json'
+// const NOTBUTTON = '/icons/noButton.json'
+const SETTINGS = '../icons/settings.json'
 
 //  Botones animados
 // let info = document.querySelector('.buttonInfo');
@@ -16,9 +15,8 @@ const SETTINGS = '/icons/settings.json'
 //   loop: true,
 //   autoplay: false,
 //   path: HELP,
-//   mode:"cursor", 
+//   mode:"cursor",
 // })
-
 
 //   info.addEventListener('click', (e) => {
 //       showInfo.play();
@@ -27,7 +25,6 @@ const SETTINGS = '/icons/settings.json'
 
 //       }, 1500);
 //     });
-
 
 // let animationArrowGousty = bodymovin.loadAnimation({
 //   container: document.getElementById('gousty-arrow'),
@@ -44,10 +41,10 @@ const SETTINGS = '/icons/settings.json'
 //   loop: false,
 //   autoplay: false,
 //   path: PLAYANDPAUSE,
-//   mode:"cursor", 
+//   mode:"cursor",
 // })
 
-// var directionMenu = 1;  
+// var directionMenu = 1;
 //     iconPlay.addEventListener('click', (e) => {
 //       playButton.setDirection(directionMenu);
 //       playButton.play();
@@ -75,7 +72,7 @@ const SETTINGS = '/icons/settings.json'
 //   loop: false,
 //   autoplay: false,
 //   path: RESTART,
-//   mode:"cursor", 
+//   mode:"cursor",
 // })
 
 //   reload.addEventListener('click', (e) => {
@@ -85,7 +82,6 @@ const SETTINGS = '/icons/settings.json'
 //       }, 1000);
 //     });
 
-
 // let animation = bodymovin.loadAnimation({
 //     container: document.getElementById('downArrow'),
 //     remderer: 'svg',
@@ -94,12 +90,13 @@ const SETTINGS = '/icons/settings.json'
 //     path: DOWNARROWS,
 // })
 
-let animationYesButton = bodymovin.loadAnimation({
-    container: document.getElementById('yesButton'),
-    remderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: SETTINGS,
+// eslint-disable-next-line no-unused-vars, no-undef
+const settingsButton = bodymovin.loadAnimation({
+  container: document.getElementById('settingsButtom'),
+  remderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: SETTINGS
 })
 
 // let animationNoButton = bodymovin.loadAnimation({

@@ -49,15 +49,15 @@ export default function NavBar () {
         className='flex h-20 absolute justify-between md:fixed top-0 w-full  bg-[#121212]'
       >
         <div className=' ml-8 col-span-2 flex justify-center items-center'>
-          <Link href='/' className='w-full self-center flex items-center'>
+          <Link href='/' className='w-full self-center flex items-center cursor-pointer'>
             {/* <motion.img layoutId='navbarLogo' src={imageData.logos[0]} alt='Luis Urdaneta Logo' width='50px' height='50px' className='max-h-[50px] max-w-full' /> */}
-            <p className='font-main_regular  text-3xl '>Luis Urdaneta</p>
+            <motion.p className='font-main_regular  text-3xl font-bold '> <span className='text-primary'>&lt;</span>LuisUrdaneta<span className='text-primary'>/&gt;</span></motion.p>
           </Link>
         </div>
         <div className='hidden md:flex'>
           <div className='flex justify-center px-4'>
             <Link href={text.menu.contact_pathname} className='self-center'>
-              <motion.button className='bg-[#00BB31] text-black font-bold rounded-md px-4 h-8 self-center uppercase'>
+              <motion.button className='bg-primary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'>
                 {text.menu.contact}
               </motion.button>
             </Link>
@@ -71,13 +71,14 @@ export default function NavBar () {
           animate={isOpen ? 'open' : 'closed'}
           custom={height}
           ref={containerRef}
-          className='absolute md:hidden top-0 right-0 bottom-0 w-full'
+          // if you prefer to make the elements behind touchable change to flex instead w-full
+          className={`absolute md:hidden top-0 right-0 bottom-0   ${isOpen ? 'bg-zinc-900 bg-opacity-50 w-full' : 'flex bg-red-400'}`}
         >
           <AnimatePresence>
             {isOpen &&
               <>
                 <motion.div
-                  className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden ${isOpen ? 'bg-white w-screen' : 'bg-white'} `}
+                  className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden  ${isOpen ? 'bg-[#121212] w-9/12' : 'bg-[#121212]'} `}
                   initial='closed'
                   animate='open'
                   exit='closed'
@@ -85,15 +86,8 @@ export default function NavBar () {
                   layout
                   layoutId='sidebar'
                 >
-                  <MainMenu isOpen={isOpen} />
-                  {/* <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    className={`${isOpen ? 'fixed' : 'hidden'} left-0 bottom-0 w-full px-14 transition-all`}
-                    transition={{ duration: 0.1, delay: 1 }}
-                  >
-                    <p className='invite-place-two font-semibold text-sm'>{text.home[14].description}</p>
-                  </motion.div> */}
+                  <MainMenu isOpen={isOpen} toggleOpen={toggleOpen}/>
+
                 </motion.div>
               </>}
           </AnimatePresence>

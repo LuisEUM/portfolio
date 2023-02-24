@@ -9,14 +9,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#181F31',
-        'secondary': '#0D111B',
+        primary: '#00BB31',
+        secondary: '#007931'
       },
       fontFamily: {
         primary_regular: ['Hiruko Regular'],
         primary_bold: ['Hiruko Bold'],
         primary_black: ['Hiruko Black'],
-        primary_light: ['Hiruko Light'],
+        primary_light: ['Hiruko Light']
       },
       backgroundImage: {
       }

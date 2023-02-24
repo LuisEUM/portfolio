@@ -5,7 +5,7 @@
 ::-webkit-scrollbar {
   width: 10px;
   /* height: 10px; */
-  background-color: #000000;
+  background-color: #27272A;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -17,7 +17,7 @@
 scrollbar {
   width: 10px;
   /* height: 10px; */
-  background-color: #000000;
+  background-color: #27272A;
 }
 
 scrollbar thumb {
@@ -29,7 +29,7 @@ scrollbar thumb {
 scrollbar {
   width: 10px;
   /* height: 10px; */
-  background-color: #000000;
+  background-color: #27272A;
 }
 
 scrollbar thumb {
@@ -43,7 +43,7 @@ scrollbar,
 *::-ms-scrollbar {
   width: 10px;
   /* height: 10px; */
-  background-color: #000000;
+  background-color: #27272A;
 }
 
 ::-webkit-scrollbar-thumb,
@@ -65,7 +65,7 @@ scrollbar thumb,
 @layer base {
   html {
     font-family: Satoshi, system-ui, sans-serif;
-    background-color: black ;
+    background-color: #18181B ;
     color: white;
     overflow-y: scroll;
     min-height: 200vh;

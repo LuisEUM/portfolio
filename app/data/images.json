@@ -1,5 +1,8 @@
 {    
   "logos": [
     "/logos/tangleOfflineLogoWhite.svg"
-  ]
+  ],
+  "lotties": {
+    "settings": "/icons/settings.json"
+  }
 }

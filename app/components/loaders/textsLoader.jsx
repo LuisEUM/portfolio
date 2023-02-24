@@ -26,19 +26,10 @@ const TextsLoader = ({ className }) => {
       variants={containerVariants}
       initial="initial"
       animate="animate"
-      className={`flex bg-black ${blink && 'invert'} gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
+      className={`flex bg-zinc-900 ${blink && 'invert'} gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
     >
         <div
           className="absolute h-screen w-3/4 bg-red- flex items-center"
-          // initial={{ height: '100vh', width: '100vw', backgroundColor: 'red' }}
-          // animate={{
-          //   y: 0,
-          //   transition: {
-          //     type: 'spring',
-          //     duration: 2,
-          //     bounce: 0.25
-          //   }
-          // }}
         >
           {!safeRemove &&
             <BlinkWordsChangers
