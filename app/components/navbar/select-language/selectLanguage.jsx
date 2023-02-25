@@ -79,7 +79,7 @@ export default function SelectLanguage () {
             <path d='M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2V2Z' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
           </svg>
         </div>
-        <p className='fs-6 fw-normal text-zinc-100 hover:text-zinc-300 mx-2 font-main_regular'>
+        <p className='fs-6 fw-normal text-zinc-100  mx-2 font-main_regular'>
           {selectedCategory || 'Language'}
         </p>
         <motion.div

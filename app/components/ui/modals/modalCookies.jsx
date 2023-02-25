@@ -24,7 +24,7 @@ const dropIn = {
   }
 }
 
-const Modal = ({ handleClose }) => {
+const ModalCookies = ({ handleClose }) => {
   return (
       <Backdrop onClick={handleClose}>
           <motion.div
@@ -49,7 +49,7 @@ const Modal = ({ handleClose }) => {
   )
 }
 
-export default Modal
+export default ModalCookies
 
 function ModalContent () {
   const [isOn, setIsOn] = useState(true)

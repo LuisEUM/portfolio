@@ -1,8 +1,8 @@
 'use client'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import Modal from '../modal/modal'
 import Script from 'next/script'
+import ModalCookies from '../modals/modalCookies'
 
 export default function CookiesSoundButton () {
   const [show, setShow] = useState(false)
@@ -21,7 +21,11 @@ export default function CookiesSoundButton () {
           whileHover={{ filter: 'invert(100%)' }}
           whileTap={{ scale: 0.9, filter: 'invert(0%)' }}
         >
-        <AnimatePresence>
+        <AnimatePresence
+          initial={false}
+          mode='wait'
+          onExitComplete={() => null}
+        >
           {show && <motion.p className='text-zinc-900 font-bold' initial={{ scale: 0, width: 0, opacity: 0, marginLeft: 0, marginRight: 0 }} animate={{ scale: 1, width: 'auto', opacity: 1, marginLeft: 10, marginRight: 8 }} exit={{ scale: 0, width: 0, opacity: 0, marginLeft: 0, marginRight: 0 }} transition={{ duration: 1 }} >Settings</motion.p>}
         </AnimatePresence>
           <div className='w-6 h-6' id='settingsButtom'/>
@@ -38,10 +42,9 @@ export default function CookiesSoundButton () {
         // Fires when all exiting nodes have completed animating out
         onExitComplete={() => null}
       >
-        {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} /> }
+        {modalOpen && <ModalCookies modalOpen={modalOpen} handleClose={close} /> }
       </AnimatePresence>
       <Script src='/js/scripts.js' />
-
     </>
   )
 }

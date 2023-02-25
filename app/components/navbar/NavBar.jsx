@@ -9,6 +9,7 @@ import Link from 'next/link.js'
 // import imageData from '../../data/images.json'
 import SelectLanguage from './select-language/selectLanguage.jsx'
 import Backdrop from '../ui/backdrop/backdrop.jsx'
+import ContactButton from '../ui/buttons/contactButton.jsx'
 
 const sidebar = {
   open: {
@@ -56,22 +57,34 @@ export default function NavBar () {
           </Link>
         </div>
         <div className='hidden md:flex'>
-          <div className='flex justify-center px-4'>
-            <Link href={text.menu.projects_pathname} className='self-center flex items-center text-zinc-100 font-bold rounded-md px-4 h-8  uppercase'>
+          <div
+            className='flex justify-center px-4'
+          >
+            <Link href={text.menu.projects_pathname} className='self-center flex items-center text-zinc-100  hover:scale-105 hover:text-primary  transition-all   font-bold rounded-md px-4 h-8  uppercase'>
                 {text.menu.projects}
             </Link>
           </div>
-          <div className='flex justify-center px-4'>
-            <Link href={text.menu.blog_pathname} className='self-center flex items-center text-zinc-100 font-bold rounded-md px-4 h-8  uppercase'>
+          <div
+              className='flex justify-center px-4'
+            >
+            <Link href={text.menu.blog_pathname}
+              className='self-center flex items-center text-zinc-100 hover:scale-105 hover:text-primary  transition-all font-bold rounded-md px-4 h-8  uppercase'
+
+              >
                 {text.menu.blog}
             </Link>
           </div>
           <div className='flex justify-center px-4'>
-            <Link href={text.menu.contact_pathname} className='self-center'>
-              <motion.button className='bg-primary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'>
+            {/* <Link href={text.menu.contact_pathname} className='self-center'>
+              <motion.button
+              className='bg-gradient-to-r from-primary via-tertiary to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.93 }}
+              >
                 {text.menu.contact}
               </motion.button>
-            </Link>
+            </Link> */}
+            <ContactButton/>
           </div>
           <div className='flex justify-center pr-8 pl-4'>
             <SelectLanguage />
