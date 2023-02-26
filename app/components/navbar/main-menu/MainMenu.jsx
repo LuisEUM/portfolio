@@ -63,9 +63,6 @@ const MainMenu = ({ isOpen, toggleOpen }) => {
               >
                 <div className='flex justify-between align-middle items-center hover:text-primary hover:stroke-primary'>
                   <p>{text.menu.home}</p>
-                  <svg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                    <path className='hover:text-primary hover:stroke-primary stroke-zinc-100' d='M1 13.5L7 7.5L1 1.5' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-                  </svg>
                 </div>
               </motion.p>
             </Link>
@@ -81,9 +78,6 @@ const MainMenu = ({ isOpen, toggleOpen }) => {
               >
                 <div className='flex justify-between align-middle items-center'>
                   <p>{text.menu.projects}</p>
-                  <svg width='8' height='15' viewBox='0 0 8 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                    <path className='hover:text-primary hover:stroke-primary stroke-zinc-100' d='M1 13.5L7 7.5L1 1.5' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
-                  </svg>
                 </div>
               </motion.p>
             </Link>

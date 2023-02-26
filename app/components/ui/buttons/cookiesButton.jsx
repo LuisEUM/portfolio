@@ -1,10 +1,9 @@
 'use client'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import Script from 'next/script'
 import ModalCookies from '../modals/modalCookies'
 
-export default function CookiesSoundButton () {
+export default function CookiesButton () {
   const [show, setShow] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
   const close = () => setModalOpen(false)
@@ -28,7 +27,7 @@ export default function CookiesSoundButton () {
         >
           {show && <motion.p className='text-zinc-900 font-bold' initial={{ scale: 0, width: 0, opacity: 0, marginLeft: 0, marginRight: 0 }} animate={{ scale: 1, width: 'auto', opacity: 1, marginLeft: 10, marginRight: 8 }} exit={{ scale: 0, width: 0, opacity: 0, marginLeft: 0, marginRight: 0 }} transition={{ duration: 1 }} >Settings</motion.p>}
         </AnimatePresence>
-          <div className='w-6 h-6' id='settingsButtom'/>
+          <div className='w-6 h-6' id='settingsButton'/>
         </motion.button>
       </div>
       <AnimatePresence
@@ -44,7 +43,6 @@ export default function CookiesSoundButton () {
       >
         {modalOpen && <ModalCookies modalOpen={modalOpen} handleClose={close} /> }
       </AnimatePresence>
-      <Script src='/js/scripts.js' />
     </>
   )
 }

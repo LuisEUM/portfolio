@@ -1,7 +1,6 @@
 // const HELP = '/icons/help.json'
 // const SIMPLEARROW = '/icons/arrorForGousty.json'
 // const PLAYANDPAUSE = '/icons/playPause.json'
-// const RESTART = '/icons/restart.json'
 // const DOWNARROWS = '/icons/downArrows.json'
 // const YESBUTTON = '/icons/yesButton.json'
 // const NOTBUTTON = '/icons/noButton.json'
@@ -64,17 +63,6 @@ const SETTINGS = '../icons/settings.json'
 //       }
 //     });
 
-// let reload = document.querySelector('.buttonRestart');
-
-// let doReload = bodymovin.loadAnimation({
-//   container: reload,
-//   remderer: 'svg',
-//   loop: false,
-//   autoplay: false,
-//   path: RESTART,
-//   mode:"cursor",
-// })
-
 //   reload.addEventListener('click', (e) => {
 //       doReload.play();
 //       setTimeout(() => {
@@ -92,7 +80,7 @@ const SETTINGS = '../icons/settings.json'
 
 // eslint-disable-next-line no-unused-vars, no-undef
 const settingsButton = bodymovin.loadAnimation({
-  container: document.getElementById('settingsButtom'),
+  container: document.getElementById('settingsButton'),
   remderer: 'svg',
   loop: true,
   autoplay: true,

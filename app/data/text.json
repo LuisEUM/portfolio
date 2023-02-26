@@ -40,7 +40,40 @@
     ,
     "projects": 
       {
-      }
+      },
+    "contact": 
+      {
+        "header":"Contact",
+        "socialNetworksParagraph": "Check my social networks:",
+        "socialNetwoks": {
+          "whatsApp": {
+            "url": "https://wa.link/xrg8go",
+            "hidden": false
+
+          },
+          "linkedIn": {
+            "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+            "hidden": false
+
+          },
+          "instagram": {
+            "url": "https://www.instagram.com/luise.urdanetam/",
+            "hidden": false
+
+          },
+          "twitter": {
+            "url": "",
+            "hidden": true
+
+          },
+          "telegram": {
+            "url": "",
+            "hidden": true
+          }
+        },
+        "emailAddressParagraph": "Or send me an email:",
+        "email":"luiseum95@gmail.com",
+        "copied":"Copiado!"      }
   },
   "es":{
     "menu": 
@@ -83,6 +116,36 @@
     ,
     "projects": 
       {
+      },
+    "contact": 
+    {
+      "header":"Contacto",
+      "socialNetworksParagraph": "Puedes escribirme en mis redes sociales:",
+      "socialNetwoks": {
+        "whatsApp": {
+          "url": "https://wa.link/xrg8go",
+          "hidden": false
+        },
+        "linkedIn": {
+          "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+          "hidden": false
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/luise.urdanetam/",
+          "hidden": false
+        },
+        "twitter": {
+          "url": "",
+          "hidden": true
+        },
+        "telegram": {
+          "url": "",
+          "hidden": true
+        }
+      },
+      "emailAddressParagraph": "O escríbeme al correo:",
+      "email":"luiseum95@gmail.com",
+      "copied":"Copiado!"
       }
   }
 }

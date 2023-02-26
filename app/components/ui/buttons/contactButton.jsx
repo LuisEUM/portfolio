@@ -3,6 +3,7 @@ import { useContext, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { LanguageContext } from '../../../context/languageContext'
 import ModalContact from '../modals/modalContact'
+import Script from 'next/script'
 
 export default function ContactButton () {
   const { text } = useContext(LanguageContext)
@@ -14,7 +15,7 @@ export default function ContactButton () {
     <>
       <div className='self-center'>
         <motion.button
-        className='bg-gradient-to-r from-primary via-tertiary to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'
+        className='bg-gradient-to-r from-tertiary  to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.93 }}
         onClick={() => (modalOpen ? close() : open())}
@@ -28,6 +29,7 @@ export default function ContactButton () {
         onExitComplete={() => null}
       >
         {modalOpen && <ModalContact modalOpen={modalOpen} handleClose={close} /> }
+
       </AnimatePresence>
     </>
   )

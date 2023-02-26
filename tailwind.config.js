@@ -10,8 +10,8 @@ module.exports = {
     extend: {
       colors: {
         primary: '#00BB31',
-        secondary: '#007931',
-        tertiary: '#00E931'
+        secondary: '#00701D',
+        tertiary: '#00FF19'
       },
       fontFamily: {
         primary_regular: ['Hiruko Regular'],

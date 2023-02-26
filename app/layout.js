@@ -3,7 +3,8 @@ import '../styles/globals.css'
 import { LanguageProvider } from './context/languageContext'
 import NavBar from './components/navbar/NavBar'
 // import Script from 'next/script'
-import CookiesSoundButton from './components/ui/buttons/cookiesButton'
+import CookiesButton from './components/ui/buttons/cookiesButton'
+import Script from 'next/script'
 
 export default function RootLayout ({ children }) {
   return (
@@ -21,9 +22,8 @@ export default function RootLayout ({ children }) {
             {/* <Footer /> */}
           </section>
         </LanguageProvider>
-      {/* <Script src='/js/scripts.js' /> */}
-      <CookiesSoundButton/>
-
+      <CookiesButton/>
+      <Script src='/js/scripts.js' />
       </body>
     </html>
   )
