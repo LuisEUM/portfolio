@@ -112,7 +112,7 @@ function ModalContent ({ text, handleClose }) {
 
             {/* <!--WHATSAPP ICON--> */}
             <a
-              href={text.contact.socialNetwoks.linkedIn.url}
+              href={text.contact.socialNetwoks.whatsApp.url}
               target="_blank"
               rel="noreferrer"
               className={`${text.contact.socialNetwoks.whatsApp.hidden && 'hidden'} hover:fill-primary transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl  cursor-pointer`}
