@@ -21,9 +21,8 @@ export default function RootLayout ({ children }) {
           <section className='max-w-full '>
             {/* <Footer /> */}
           </section>
+          <CookiesButton/>
         </LanguageProvider>
-      <CookiesButton/>
-      <Script src='/js/scripts.js' />
       </body>
     </html>
   )

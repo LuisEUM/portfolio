@@ -3,7 +3,6 @@ import { LanguageContext } from '../../../context/languageContext'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useContext, useEffect, useState } from 'react'
 import Backdrop from '../backdrop/backdrop'
-import Link from 'next/link'
 
 const dropIn = {
   hidden: {
@@ -33,7 +32,7 @@ const ModalContact = ({ handleClose }) => {
       <Backdrop onClick={handleClose}>
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className='modal w-[clamp(75%,700px,90px)] md:max-w-lg h-[min(50%,300px)] m-auto py-2 px-8 rounded-xl flex flex-col justify-evenly items-center shadow bg-zinc-800 '
+            className=' w-[clamp(75%,700px,90px)] md:max-w-lg h-[min(50%,300px)] m-auto py-2 px-8 rounded-xl flex flex-col justify-evenly items-center shadow bg-zinc-800 '
             variants={dropIn}
             initial='hidden'
             animate='visible'
@@ -128,7 +127,7 @@ function ModalContent ({ text, handleClose }) {
               href={text.contact.socialNetwoks.linkedIn.url}
               target="_blank"
               rel="noreferrer"
-              className={`${text.contact.socialNetwoks.linkedIn.hidden && 'hidden'} hover:fill-[#1877f2] transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl cursor-pointer`} 
+              className={`${text.contact.socialNetwoks.linkedIn.hidden && 'hidden'} hover:fill-[#1877f2] transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl cursor-pointer`}
             >
               <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' >
                 <path d='M5.37214 24H0.396429V7.97643H5.37214V24ZM2.88161 5.79066C1.29054 5.79066 0 4.47278 0 2.88167C1.13882e-08 2.1174 0.303597 1.38444 0.844003 0.844022C1.38441 0.303604 2.11736 0 2.88161 0C3.64586 0 4.3788 0.303604 4.91921 0.844022C5.45962 1.38444 5.76321 2.1174 5.76321 2.88167C5.76321 4.47278 4.47214 5.79066 2.88161 5.79066ZM23.9946 24H19.0296V16.1998C19.0296 14.3409 18.9921 11.9569 16.4427 11.9569C13.8557 11.9569 13.4593 13.9766 13.4593 16.0659V24H8.48893V7.97643H13.2611V10.1622H13.3307C13.995 8.90323 15.6177 7.57463 18.0386 7.57463C23.0743 7.57463 24 10.8908 24 15.198V24H23.9946Z' />
@@ -154,15 +153,8 @@ function ModalContent ({ text, handleClose }) {
               rel="noreferrer"
               className={`${text.contact.socialNetwoks.twitter.hidden && 'hidden'} hover:fill-[#1d9bf0] transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl ursor-pointer'`}
             >
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='24'
-                height='24'
-                viewBox='0 0 24 24'
-              >
-                <path
-                  d='M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z'
-                ></path>
+              <svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.5331 4.85786C21.5483 5.07105 21.5483 5.28429 21.5483 5.49747C21.5483 12 16.5991 19.4924 7.55333 19.4924C4.7665 19.4924 2.17768 18.6853 0 17.2843C0.395955 17.33 0.776628 17.3452 1.18782 17.3452C3.48728 17.3452 5.60407 16.5686 7.29444 15.2437C5.13199 15.198 3.31979 13.7818 2.69542 11.8325C3.00001 11.8782 3.30456 11.9086 3.62439 11.9086C4.066 11.9086 4.50766 11.8477 4.9188 11.7412C2.66499 11.2843 0.974582 9.30458 0.974582 6.91371V6.85282C1.62938 7.21831 2.39087 7.44673 3.19792 7.47715C1.87304 6.59388 1.00505 5.08629 1.00505 3.38069C1.00505 2.46699 1.24866 1.62943 1.67508 0.898457C4.09642 3.88323 7.73605 5.83244 11.8172 6.04568C11.7411 5.68019 11.6954 5.29952 11.6954 4.9188C11.6954 2.2081 13.8883 0 16.6142 0C18.0304 0 19.3096 0.593909 20.2081 1.5533C21.3198 1.34011 22.3858 0.928926 23.33 0.365486C22.9644 1.50765 22.1878 2.46704 21.1675 3.07614C22.1574 2.96959 23.1168 2.69542 24 2.31474C23.3301 3.28933 22.4924 4.15731 21.5331 4.85786Z"/>
               </svg>
             </div>
 
