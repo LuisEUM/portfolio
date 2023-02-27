@@ -1,9 +1,15 @@
+'use client'
+import { useContext } from 'react'
+import { LanguageContext } from '../context/languageContext'
 
 export default function Portfolio () {
+  const { text } = useContext(LanguageContext)
+
   return (
     <>
-      <div className="h-[calc(100vh-100px)] bg-green-200">
-      </div>
+      <section>
+        <h1></h1>
+      </section>
     </>
   )
 }

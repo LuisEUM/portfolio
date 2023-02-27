@@ -1,4 +1,9 @@
+import { useContext } from 'react'
+import { LanguageContext } from './context/languageContext'
+
 export default function Home () {
+  const { text } = useContext(LanguageContext)
+
   return (
     <>
       <div>

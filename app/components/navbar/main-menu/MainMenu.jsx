@@ -1,17 +1,15 @@
 'use client'
-import { useContext, useRef, useState } from 'react'
-import { AnimatePresence, motion, useInView } from 'framer-motion'
-import SubMenu from '../sub-menu/SubMenu.jsx'
+import { useContext, useRef } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { LanguageContext } from '../../../context/languageContext.jsx'
 import Link from 'next/link.js'
 import ContactButton from '../../ui/buttons/contactButton.jsx'
 import LanguaguesSwitch from '../../ui/switch/languaguesSwitch.jsx'
 
 const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
-  const [openLanguagues, setOpenLanguagues] = useState(false)
-  const { text, setLanguageCookie } = useContext(LanguageContext)
+  const { text } = useContext(LanguageContext)
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: false })
+  // const isInView = useInView(ref, { once: false })
 
   const itemVariants = {
     open: (i = 1) => ({

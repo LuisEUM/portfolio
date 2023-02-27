@@ -40,6 +40,9 @@
     ,
     "projects": 
       {
+        "header":"Portfolio",
+        "description":"10,000+ beautiful, modern ios work, designs, illustrations, and graphic elements",
+        "categories":["Branding", "Web Design", "UI/UX", "Extended Reality", "3d Art", "Motion Design"]
       },
     "contact": 
       {
@@ -116,6 +119,9 @@
     ,
     "projects": 
       {
+        "header":"Portafolio",
+        "description":"Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",
+        "categories":["Creación de marca", "Diseño Web", "UI/UX", "Realidad Extendida", "Arte 3D", "Gráficos animados"]
       },
     "contact": 
     {
