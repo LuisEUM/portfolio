@@ -1,5 +1,5 @@
 'use client'
-import { useRef, React, useContext } from 'react'
+import { useRef, React, useContext, useState } from 'react'
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
 import { useDimensions } from './hook/use-dimensions.jsx'
 import { ToggleMenu } from './toggle-menu/ToggleMenu'
@@ -10,6 +10,7 @@ import Link from 'next/link.js'
 import SelectLanguage from './select-language/selectLanguage.jsx'
 import Backdrop from '../ui/backdrop/backdrop.jsx'
 import ContactButton from '../ui/buttons/contactButton.jsx'
+import ModalContact from '../ui/modals/modalContact.jsx'
 
 const sidebar = {
   open: {
@@ -39,6 +40,9 @@ export default function NavBar () {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
   const { height } = useDimensions(containerRef)
+  const [modalOpenNavbar, setModalOpenNavbar] = useState(false)
+  const close = () => setModalOpenNavbar(false)
+  const open = () => setModalOpenNavbar(true)
 
   return (
     <div className='top-0 z-50 w-full opacity-100'>
@@ -98,7 +102,11 @@ export default function NavBar () {
           // if you prefer to make the elements behind touchable change to flex instead w-full
           className='absolute md:hidden top-0 right-0 bottom-0 '
         >
-          <AnimatePresence>
+          <AnimatePresence
+              initial={false}
+              mode='wait'
+              onExitComplete={() => modalOpenNavbar && open()}
+          >
             {isOpen &&
               <Backdrop onClick={() => toggleOpen()}>
                 <motion.div
@@ -111,11 +119,12 @@ export default function NavBar () {
                   layoutId='sidebar'
                   onClick={(e) => e.stopPropagation()}
                 >
-                  <MainMenu isOpen={isOpen} toggleOpen={toggleOpen}/>
+                  <MainMenu isOpen={isOpen} setModalOpenNavbar={setModalOpenNavbar} toggleOpen={toggleOpen}/>
 
                 </motion.div>
               </Backdrop>}
           </AnimatePresence>
+          {modalOpenNavbar && <ModalContact handleClose={close} /> }
 
           <ToggleMenu isOpen={isOpen} toggle={() => toggleOpen()} />
         </motion.nav>

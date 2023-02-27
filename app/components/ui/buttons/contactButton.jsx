@@ -3,26 +3,23 @@ import { useContext, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { LanguageContext } from '../../../context/languageContext'
 import ModalContact from '../modals/modalContact'
-import Script from 'next/script'
 
-export default function ContactButton () {
+export default function ContactButton ({ className, setModalOpenNavbar }) {
   const { text } = useContext(LanguageContext)
   const [modalOpen, setModalOpen] = useState(false)
-  const close = () => setModalOpen(false)
-  const open = () => setModalOpen(true)
+  const close = () => (setModalOpenNavbar ? setModalOpenNavbar(false) : setModalOpen(false))
+  const open = () => (setModalOpenNavbar ? setModalOpenNavbar(true) : setModalOpen(true))
 
   return (
     <>
-      <div className='self-center'>
-        <motion.button
-        className='bg-gradient-to-r from-tertiary  to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 self-center uppercase'
+      <motion.button
+        className={className || 'self-center bg-gradient-to-r from-tertiary  to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 uppercase'}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.93 }}
         onClick={() => (modalOpen ? close() : open())}
         >
           {text.menu.contact}
-        </motion.button>
-      </div>
+      </motion.button>
       <AnimatePresence
         initial={false}
         mode='wait'
