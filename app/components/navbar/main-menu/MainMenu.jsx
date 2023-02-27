@@ -77,10 +77,10 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
                   </svg>
                     <p className='text-zinc-100 text-xl tracking-wider col-span-9 col-start-3 h-full'> {text.menu.languages} </p>
                 </div>
-                <div className='grid col-span-9 col-start-3 grid-cols-10 my-5 gap-x-2 items-center'>
-                    <p className='col-span-1 text-lg w-full tracking-wider'>ES</p>
-                    <LanguaguesSwitch className='col-span-3 m-auto'/>
-                    <p className='col-span-1 text-lg w-full tracking-wider'>EN</p>
+                <div className='flex col-span-9 col-start-3  my-5 gap-x-2 items-center'>
+                    <p className=' text-lg tracking-wider '>ES</p>
+                    <LanguaguesSwitch className='w-16'/>
+                    <p className=' text-lg tracking-wider'>EN</p>
 
                 </div>
               </div>

@@ -32,7 +32,7 @@ const ModalContact = ({ handleClose }) => {
       <Backdrop onClick={handleClose}>
           <motion.div
             onClick={(e) => e.stopPropagation()}
-            className=' w-[clamp(75%,700px,90px)] md:max-w-lg h-[min(50%,300px)] m-auto py-2 px-8 rounded-xl flex flex-col justify-evenly items-center shadow bg-zinc-800 '
+            className=' w-[clamp(75%,700px,90px)] md:max-w-lg m-auto py-2 px-8 rounded-xl flex flex-col justify-between items-center shadow bg-zinc-800 '
             variants={dropIn}
             initial='hidden'
             animate='visible'
@@ -171,28 +171,9 @@ function ModalContent ({ text, handleClose }) {
 
             </a>
           </div>
-
-          <p className='text-md'>{text.contact.emailAddressParagraph}</p>
-
-          {/* <!--BOX LINK--> */}
-          <div className='flex justify-start items-center mt-4 w-full  transition-all'>
-            {/* RECORDAR DE PREGUNTAR A UN PROFE */}
-            <div className='flex h-10 items-center justify-center rounded-l-lg  w-1/12 border-zinc-300 bg-zinc-300  fill-black'>
-            <div
-              className='w-6 h-6 flex items-center justify-center shadow-xl cursor-pointer'
-            >
-            <svg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg' >
-              <path d='M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z' fill='#18181B' />
-            </svg>
-
-            </div>
-
-            </div>
-            <div className='bg-zinc-900 flex items-center justify-center h-10 w-9/12 rounded-r-lg content-center  '>
-              <div className='w-8 h-8 mx-2 overflow-hidden  cursor-pointer' id='copyButton' onClick={handleCopy} />
-              <input id='emailInput' className='w-full outline-none bg-transparent font-medium  h-full tracking-widest uppercase text-lg' type='text' placeholder='email address' value={text.contact.email}/>
-            </div>
-            <div className='flex items-center justify-center h-10 w-2/12'>
+          <div className='flex justify-between'>
+            <p className='text-md'>{text.contact.emailAddressParagraph}</p>
+            <div className='flex items-center justify-center'>
               <AnimatePresence
                 initial={false}
                 mode='wait'
@@ -204,7 +185,7 @@ function ModalContent ({ text, handleClose }) {
                   animate={{ opacity: 1 }}
                   onAnimationComplete={() => (close())}
                   exit={{ opacity: 0, transition: { duration: 1, delay: 1 } }}
-                  className='text-xs text-center'
+                  className='text-sm text-center'
                   transition={{
                     duration: 1,
                     type: 'spring',
@@ -217,7 +198,26 @@ function ModalContent ({ text, handleClose }) {
                 )}
               </AnimatePresence>
             </div>
+          </div>
 
+          {/* <!--BOX LINK--> */}
+          <div className='flex flex-col justify-start items-center mt-4 w-full  transition-all'>
+            {/* RECORDAR DE PREGUNTAR A UN PROFE */}
+
+            <div className='grid grid-cols-9'>
+              <div className='col-span-1 flex h-10 items-center justify-center rounded-l-lg  px-5  border-zinc-300 bg-zinc-300  fill-black'>
+                <div className='w-6 h-6 flex items-center justify-center shadow-xl cursor-pointer'>
+                  <svg width='20' height='16' viewBox='0 0 20 16' fill='none' xmlns='http://www.w3.org/2000/svg' >
+                    <path d='M20 2C20 0.9 19.1 0 18 0H2C0.9 0 0 0.9 0 2V14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2ZM18 2L10 7L2 2H18ZM18 14H2V4L10 9L18 4V14Z' fill='#18181B' />
+                  </svg>
+                </div>
+              </div>
+
+              <div className='col-span-8 bg-zinc-900 flex items-center justify-center h-10  rounded-r-lg content-center  '>
+                <div className='w-8 h-8 mx-2 overflow-hidden  cursor-pointer' id='copyButton' onClick={handleCopy} />
+                <input id='emailInput' className='w-full outline-none bg-transparent font-medium  h-full tracking-widest uppercase text-lg' type='text' placeholder='email address' value={text.contact.email}/>
+              </div>
+            </div>
           </div>
         </div>
       </div>

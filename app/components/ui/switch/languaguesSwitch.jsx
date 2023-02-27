@@ -10,7 +10,7 @@ export default function LanguaguesSwitch ({ className }) {
   return (
     <>
       <div
-        className={`h-7 w-10/12 rounded-full flex items-center box-border py-0 px-1 cursor-pointer transition-all bg-primary ${className} ${isOn ? 'justify-end' : 'justify-start'}`}
+        className={`h-7  rounded-full flex items-center box-border py-0 px-1 cursor-pointer transition-all bg-primary ${className} ${isOn ? 'justify-end' : 'justify-start'}`}
         onClick={() => {
           setIsOn(!isOn)
           deleteCookie('language')

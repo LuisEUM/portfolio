@@ -45,7 +45,7 @@ export default function NavBar () {
   const open = () => setModalOpenNavbar(true)
 
   return (
-    <div className='top-0 z-50 w-full opacity-100'>
+    <div className='top-0 z-30 w-full opacity-100'>
       <div
         style={{
           transitionDuration: '600ms',
