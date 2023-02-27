@@ -215,7 +215,7 @@ function ModalContent ({ text, handleClose }) {
 
               <div className='col-span-9 md:col-span-8 bg-zinc-900 flex items-center justify-center h-10  rounded-r-lg content-center  '>
                 <div className='w-8 h-8 mx-2 overflow-hidden  cursor-pointer' id='copyButton' onClick={handleCopy} />
-                <input id='emailInput' className='w-full outline-none bg-transparent font-medium  h-full tracking-widest uppercase text-md sm:text-lg' type='text' placeholder='email address' value={text.contact.email}/>
+                <input id='emailInput' className='w-full outline-none bg-transparent font-medium  h-full sm:tracking-widest uppercase text-sm sm:text-lg' type='text' placeholder='email address' value={text.contact.email}/>
               </div>
             </div>
           </div>
