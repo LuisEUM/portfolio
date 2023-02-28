@@ -6,7 +6,6 @@ import { ToggleMenu } from './toggle-menu/ToggleMenu'
 import MainMenu from './main-menu/MainMenu'
 import { LanguageContext } from '../../context/languageContext'
 import Link from 'next/link.js'
-// import imageData from '../../data/images.json'
 import SelectLanguage from './select-language/selectLanguage.jsx'
 import Backdrop from '../ui/backdrop/backdrop.jsx'
 import ContactButton from '../ui/buttons/contactButton.jsx'
@@ -45,7 +44,7 @@ export default function NavBar () {
   const open = () => setModalOpenNavbar(true)
 
   return (
-    <div className='top-0 z-30 w-full opacity-100'>
+    <div className='top-0 z-30 w-full'>
       <div
         style={{
           transitionDuration: '600ms',
