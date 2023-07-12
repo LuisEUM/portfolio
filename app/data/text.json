@@ -8,7 +8,7 @@
       "contact": "Contact",
       "contact_pathname": "/contact",
       "projects": "Projects",
-      "projects_pathname": "/projects",
+      "projects_pathname": "/projects?category=All&page=1",
       "blog": "Blog",
       "blog_pathname": "/blog",
       "languages": "Languages",

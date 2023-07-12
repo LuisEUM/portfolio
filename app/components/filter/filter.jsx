@@ -2,8 +2,9 @@
 import { LanguageContext } from '../../context/languageContext'
 import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
-export default function Filter ({ projects, setProjects, search, setSearch, setKey, key, className, setTotalPages}) {
+export default function Filter ({ projects, search, setSearch, setKey, key, className, setCurrentPage}) {
   const { text } = useContext(LanguageContext)
   const controls = useDragControls()
   const handleX = useMotionValue(0)
@@ -15,7 +16,6 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
   useEffect(() => {
     const categoriesDiv = document.getElementById('categories')
     setCategoriesWidth(categoriesDiv.offsetWidth)
-
     const handleResize = () => {
       setWindowWidth(window.innerWidth)
       setKey(window.innerWidth)
@@ -27,8 +27,6 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
     if (windowWidth <= categoriesWidth) {
       setDraggable(false)
     }
-    console.log('handleX', handleX)
-    console.log('Ref', constraintsRef)
 
     return () => {
       window.removeEventListener('resize', handleResize)
@@ -37,9 +35,9 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
 
   const handleClick = (event) => {
     const { name } = event.currentTarget
-    setTotalPages(projects.length)
     setSearch(name)
     console.log(search)
+    setCurrentPage(1)
   }
 
   function startDrag (event) {
@@ -73,7 +71,8 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
           // }}
           whileTap={{ cursor: (draggable ? 'default' : 'grabbing') }}
         >
-          <button
+          <Link
+            href={'projects' + '?' + 'category=' + 'All' + '&' + 'page=' + 1 }
             className={`w-20 ml-5 mr-2 ${
               search === 'All'
                 ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase'
@@ -84,11 +83,12 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
             onClick={handleClick}
           >
             All
-          </button>
+          </Link>
 
-          {text.portfolio.categories.map((category, i) => {
+          {text && text.portfolio.categories.map((category, i) => {
             return (
-                <button
+                <Link
+                  href={'projects' + '?' + 'category=' + category.name + '&' + 'page=' + 1 }
                   key={category.id + i}
                   className={`mx-2 flex items-center ${search === category.name
                     ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase '
@@ -108,7 +108,7 @@ export default function Filter ({ projects, setProjects, search, setSearch, setK
                       )
                     })
                   }
-                </button>
+                </Link>
             )
           })}
         </motion.div>

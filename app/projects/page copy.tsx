@@ -8,31 +8,31 @@ import Pagination from "../components/pagination/Pagination";
 // import getMovies from "@/utils/getMovies"
 // import { MoviesType } from "@/utils/MovieTypes"
 // import Image from 'next/image'
-import { useSearchParams } from "next/navigation";
 
-const Portfolio = () => {
+const Portfolio = ({ searchParams }) => {
   const { text } = useContext(LanguageContext);
-  const searchParams = useSearchParams();
   const [key, setKey] = useState("keyName");
-  const [search, setSearch] = useState(searchParams.get("category"));
+  const [search, setSearch] = useState("All");
   const [projects, setProjects] = useState(text.portfolio.projects);
-  const [totalPages, setTotalPages] = useState(text.portfolio.projects.length);
-  const [totalPagination, setTotalPagination] = useState(1);
-  const [currentPage, setCurrentPage] = useState(
-    Number(searchParams.get("page"))
+  const [totalPages, setTotalPages] = useState(
+    text.portfolio.projects.length + 12
   );
-  const [contentStart, setContentStart] = useState((currentPage - 1) * 6);
-  const [contentEnd, setContentEnd] = useState(currentPage * 6);
+  const [totalPagination, setTotalPagination] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+  // const [movies, setMovies] = useState<MoviesType | null>(null);
 
   useEffect(() => {
     setTotalPagination(Math.ceil(totalPages / 6));
-    setContentEnd(currentPage * 6);
-    setContentStart((currentPage - 1) * 6);
-
-    console.log(currentPage);
-    console.log(Number(searchParams.get("page")));
     return () => {};
-  }, [totalPagination, currentPage]);
+  }, [totalPagination]);
+
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const movies = await getMovies(1500);
+  //     setMovies(movies);
+  //   }
+  //   fetchData();
+  // }, []);
 
   return (
     <>
@@ -49,10 +49,11 @@ const Portfolio = () => {
           key={key}
           setKey={setKey}
           projects={projects}
+          setProjects={setProjects}
           search={search}
           setSearch={setSearch}
+          setTotalPages={setTotalPages}
           className={undefined}
-          setCurrentPage={setCurrentPage}
         />
       </section>
       <section className=" w-full">
@@ -69,7 +70,7 @@ const Portfolio = () => {
                     return false;
                   }, false);
                 })
-                .slice(contentStart, contentEnd)
+                .slice(0, 6)
                 .map((project) => (
                   <ProjectCard
                     key={project.id}
@@ -82,26 +83,27 @@ const Portfolio = () => {
                 ))
             : ""}
         </ResponsiveList>
-        {projects.filter((projects) => {
-      if (search === 'All') {
-        return true
-      }
-      return projects.categories.reduce((category, next) => {
-        if (category === true) return category
-        if (category === search || next === search) return true
-        return false
-      }, false)
-    }).length > 6 ? (
-          <Pagination
-            key={currentPage}
-            search={search}
-            totalPagination={totalPagination}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-          />
+        {totalPagination}
+        {totalPages > 6 ? (
+          <Pagination search={search} totalPagination={totalPagination} />
         ) : (
           ""
         )}
+        {/* {results && results.map((movie) => (
+        <div
+          className="flex flex-col justify-center items-center my-12"
+          key={movie.id}
+        >
+          <h2 className="text-lg font-bold py-6">{movie.original_title}</h2>
+          <Image
+            src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+            width={1200}
+            height={1200}
+            className="w-full lg:w-1/2 h-auto rounded-2xl"
+            alt={movie.original_title}
+          />
+        </div>
+      ))} */}
       </section>
     </>
   );
