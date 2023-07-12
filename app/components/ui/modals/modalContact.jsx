@@ -91,7 +91,7 @@ function ModalContent ({ text, handleClose }) {
           className='flex justify-between items center border-b border-gray-200 py-3'
         >
           <div className='flex items-center justify-center'>
-            <p className='text-xl text-zinc-100 font-medium uppercase '>{text.contact.header}</p>
+            <p className='text-xl text-zinc-100 font-medium uppercase '>{text.contact.title}</p>
           </div>
           <motion.div
             className='bg-gray-300 cursor-pointer hover:text-gray-300 font-sans text-gray-500 w-9 h-9 flex items-center justify-center rounded-full'

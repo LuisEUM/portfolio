@@ -1,281 +1,341 @@
 {
   "en": {
-    "menu":
-      {
-        "id": "en",
-        "current_language": "English",
-        "home":"Home",
-        "home_pathname": "/",
-        "contact":"Contact",
-        "contact_pathname":"/contact",
-        "projects":"Projects",
-        "projects_pathname":"/projects",
-        "blog":"Blog",
-        "blog_pathname":"/blog",
-        "languages":"Languages",
-        "languages_options":[
-          {
-            "name": "English",
-            "pathname": "en"
-          },
-          {
-            "name": "Spanish",
-            "pathname": "es"
-          }  
-        ]
-      }
-    ,
-    "footer":
-      {
-        "website": "© 2023 Luis Urdaneta",
-        "rights": "All rights reserved",
-        "policy":"Policy",
-        "policy_pathname": "/privacy-policy",
-        "email": "luiseum95@gmail.com"
-      }
-    ,
-    "home": 
-      {
-      }
-    ,
-    "portfolio": 
-      {
-        "header":"Projects",
-        "description":"10,000+ beautiful, modern ios work, designs, illustrations, and graphic elements",
-        "categories":[
-          {
-            "id": "branding",
-            "name": "Branding"
-          },
-          {
-            "id": "webDesign",
-            "name": "Web_Design"
-          },          
-          {
-            "id": "uxUi",
-            "name": "UI/UX"
-          },         
-          {
-            "id": "extendedReality",
-            "name": "Extended_Reality"
-          },          
-          {
-            "id": "3dArt",
-            "name": "3d_Art"
-          },
-          {
-            "id": "motionDesign",
-            "name": "Motion_Design"
-          }
-        ],
-        "projects":[
-          {
-            "id": 1,
-            "header": "title",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 2,
-            "header": "Diseño_Web",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },          
-          {
-            "id": 3,
-            "header": "UI/UX",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },  
-          {
-            "id": 4,
-            "header": "Realidad_Extendida",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 5,
-            "header": "Arte_3D",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 6,
-            "header": "Gráficos_animados",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          }
-        ]
-      },
-    "contact": 
-      {
-        "header":"Contact",
-        "socialNetworksParagraph": "Check my social networks:",
-        "socialNetwoks": {
-          "whatsApp": {
-            "url": "https://wa.link/xrg8go",
-            "hidden": false
-
-          },
-          "linkedIn": {
-            "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
-            "hidden": false
-
-          },
-          "instagram": {
-            "url": "https://www.instagram.com/luise.urdanetam/",
-            "hidden": false
-
-          },
-          "twitter": {
-            "url": "",
-            "hidden": true
-
-          },
-          "telegram": {
-            "url": "",
-            "hidden": true
-          }
+    "menu": {
+      "id": "en",
+      "current_language": "English",
+      "home": "Home",
+      "home_pathname": "/",
+      "contact": "Contact",
+      "contact_pathname": "/contact",
+      "projects": "Projects",
+      "projects_pathname": "/projects",
+      "blog": "Blog",
+      "blog_pathname": "/blog",
+      "languages": "Languages",
+      "languages_options": [
+        {
+          "name": "English",
+          "pathname": "en"
         },
-        "emailAddressParagraph": "Or send me an email:",
-        "email":"luiseum95@gmail.com",
-        "copied":"Copyed 😎!"      }
-  },
-  "es":{
-    "menu": 
-      {
-        "id": "es",
-        "current_language": "Español",
-        "home":"Inicio",
-        "home_pathname": "/",
-        "contact":"Contacto",
-        "contact_pathname":"/contact",
-        "projects":"Proyectos",
-        "projects_pathname":"/projects",
-        "blog":"Blog",
-        "blog_pathname":"/blog",
-        "languages":"Lenguajes",
-        "languages_options":[
-          {
-            "name": "Inglés",
-            "pathname": "en"
-          },
-          {
-            "name": "Español",
-            "pathname": "es"
-          }
-        ]
-      }
-    ,
-    "footer":
-      {
-        "website": "© 2023 Luis Urdaneta",
-        "rights": "Todos los derechos reservados",
-        "policy":"Políticas",
-        "policy_pathname": "/privacy-policy",
-        "email": "luiseum95@gmail.com"
-      }
-    ,
-    "home":
-      {
-      }
-    ,
-    "portfolio": 
-      {
-        "header":"Proyectos",
-        "description":"Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",
-        "categories":[
-          {
-            "id": "branding",
-            "name": "Creación_de_marca"
-          },
-          {
-            "id": "webDesign",
-            "name": "Diseño_Web"
-          },          
-          {
-            "id": "uxUi",
-            "name": "UI/UX"
-          },         
-          {
-            "id": "extendedReality",
-            "name": "Realidad_Extendida"
-          },          
-          {
-            "id": "3dArt",
-            "name": "Arte_3D"
-          },
-          {
-            "id": "motionDesign",
-            "name": "Gráficos_animados"
-          }
-        ],
-        "projects":[
-          {
-            "id": 1,
-            "header": "title",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 2,
-            "header": "Diseño_Web",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },          
-          {
-            "id": 3,
-            "header": "UI/UX",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },  
-          {
-            "id": 4,
-            "header": "Realidad_Extendida",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 5,
-            "header": "Arte_3D",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          },
-          {
-            "id": 6,
-            "header": "Gráficos_animados",
-            "categories":["category_1", "category_2", "category_3", "category_4"],
-            "description":"description",
-            "tags":["tag_1", "tag_2", "tag_3", "tag_4"],
-            "image": "https://picsum.photos/600/300"
-          }
-        ]
+        {
+          "name": "Spanish",
+          "pathname": "es"
+        }
+      ]
+    },
+    "footer": {
+      "website": "© 2023 Luis Urdaneta",
+      "rights": "All rights reserved",
+      "policy": "Policy",
+      "policy_pathname": "/privacy-policy",
+      "email": "luiseum95@gmail.com"
+    },
+    "home": {},
+    "portfolio": {
+      "title": "Projects",
+      "description": "10,000+ beautiful, modern ios work, designs, illustrations, and graphic elements",
+      "categories": [
+        {
+          "id": "branding",
+          "name": "Branding"
+        },
+        {
+          "id": "webDesign",
+          "name": "Web_Design"
+        },
+        {
+          "id": "uxUi",
+          "name": "UI/UX"
+        },
+        {
+          "id": "extendedReality",
+          "name": "Extended_Reality"
+        },
+        {
+          "id": "3dArt",
+          "name": "3d_Art"
+        },
+        {
+          "id": "motionDesign",
+          "name": "Motion_Design"
+        }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "title": "Primer Item",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"primer_item"
+        },
+        {
+          "id": 2,
+          "title": "Diseño_Web",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 3,
+          "title": "UI/UX",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 4,
+          "title": "Realidad_Extendida",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 5,
+          "title": "Arte_3D",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 6,
+          "title": "Gráficos_animados",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 7,
+          "title": "Gráficos_animados",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "socialNetworksParagraph": "Check my social networks:",
+      "socialNetwoks": {
+        "whatsApp": {
+          "url": "https://wa.link/xrg8go",
+          "hidden": false
+        },
+        "linkedIn": {
+          "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+          "hidden": false
+        },
+        "instagram": {
+          "url": "https://www.instagram.com/luise.urdanetam/",
+          "hidden": false
+        },
+        "twitter": {
+          "url": "",
+          "hidden": true
+        },
+        "telegram": {
+          "url": "",
+          "hidden": true
+        }
       },
-    "contact": 
-    {
-      "header":"Contacto",
+      "emailAddressParagraph": "Or send me an email:",
+      "email": "luiseum95@gmail.com",
+      "copied": "Copyed 😎!"
+    }
+  },
+  "es": {
+    "menu": {
+      "id": "es",
+      "current_language": "Español",
+      "home": "Inicio",
+      "home_pathname": "/",
+      "contact": "Contacto",
+      "contact_pathname": "/contact",
+      "projects": "Proyectos",
+      "projects_pathname": "/projects",
+      "blog": "Blog",
+      "blog_pathname": "/blog",
+      "languages": "Lenguajes",
+      "languages_options": [
+        {
+          "name": "Inglés",
+          "pathname": "en"
+        },
+        {
+          "name": "Español",
+          "pathname": "es"
+        }
+      ]
+    },
+    "footer": {
+      "website": "© 2023 Luis Urdaneta",
+      "rights": "Todos los derechos reservados",
+      "policy": "Políticas",
+      "policy_pathname": "/privacy-policy",
+      "email": "luiseum95@gmail.com"
+    },
+    "home": {},
+    "portfolio": {
+      "title": "Proyectos",
+      "description": "Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",
+      "categories": [
+        {
+          "id": "branding",
+          "name": "Creación_de_marca"
+        },
+        {
+          "id": "webDesign",
+          "name": "Diseño_Web"
+        },
+        {
+          "id": "uxUi",
+          "name": "UI/UX"
+        },
+        {
+          "id": "extendedReality",
+          "name": "Realidad_Extendida"
+        },
+        {
+          "id": "3dArt",
+          "name": "Arte_3D"
+        },
+        {
+          "id": "motionDesign",
+          "name": "Gráficos_animados"
+        }
+      ],
+      "projects": [
+        {
+          "id": 1,
+          "title": "title",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 2,
+          "title": "Diseño_Web",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 3,
+          "title": "UI/UX",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 4,
+          "title": "Realidad_Extendida",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 5,
+          "title": "Arte_3D",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        },
+        {
+          "id": 6,
+          "title": "Gráficos_animados",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/600/300",
+          "url":"#"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contacto",
       "socialNetworksParagraph": "Puedes escribirme en mis redes sociales:",
       "socialNetwoks": {
         "whatsApp": {
@@ -300,8 +360,8 @@
         }
       },
       "emailAddressParagraph": "O escríbeme al correo:",
-      "email":"luiseum95@gmail.com",
-      "copied":"Copiado 😎!"
-      }
+      "email": "luiseum95@gmail.com",
+      "copied": "Copiado 😎!"
+    }
   }
 }

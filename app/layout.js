@@ -8,12 +8,12 @@ export default function RootLayout ({ children }) {
   return (
     <html>
       <Head />
-      <body className=' text-zinc-100 font-body grid grid-cols-1'>
+      <body className=' text-zinc-100 font-body grid grid-cols-1 bg-zinc-900'>
       <LanguageProvider>
           <section className='max-w-full z-50'>
             <NavBar />
           </section>
-          <section className='bg-[#0D0D0D] '>
+          <section className=' mt-20 py-8'>
             {children}
           </section>
           <section className='max-w-full '>

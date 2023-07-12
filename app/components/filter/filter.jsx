@@ -3,9 +3,8 @@ import { LanguageContext } from '../../context/languageContext'
 import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
 
-export default function Filter ({ searchedItems, setSearchedItems, setKey, key, className }) {
+export default function Filter ({ projects, setProjects, search, setSearch, setKey, key, className, setTotalPages}) {
   const { text } = useContext(LanguageContext)
-  const [search, setSearch] = useState('All')
   const controls = useDragControls()
   const handleX = useMotionValue(0)
   const [categoriesWidth, setCategoriesWidth] = useState(0)
@@ -28,6 +27,9 @@ export default function Filter ({ searchedItems, setSearchedItems, setKey, key, 
     if (windowWidth <= categoriesWidth) {
       setDraggable(false)
     }
+    console.log('handleX', handleX)
+    console.log('Ref', constraintsRef)
+
     return () => {
       window.removeEventListener('resize', handleResize)
     }
@@ -35,14 +37,17 @@ export default function Filter ({ searchedItems, setSearchedItems, setKey, key, 
 
   const handleClick = (event) => {
     const { name } = event.currentTarget
+    setTotalPages(projects.length)
     setSearch(name)
+    console.log(search)
   }
 
   function startDrag (event) {
     controls.start(event)
   }
 
-  console.log(key)
+  console.log(projects)
+
   return (
     <>
       <div
@@ -108,6 +113,7 @@ export default function Filter ({ searchedItems, setSearchedItems, setKey, key, 
           })}
         </motion.div>
       </div>
+
     </>
   )
 }

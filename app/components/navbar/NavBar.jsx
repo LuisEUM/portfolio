@@ -51,7 +51,7 @@ export default function NavBar () {
           transitionProperty: 'all',
           transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
         }}
-        className='flex h-20 absolute justify-between md:fixed top-0 w-full  bg-[#121212]'
+        className='flex h-20 absolute justify-between md:fixed top-0 w-full  bg-zinc-900 bg-opacity-80'
       >
         <div className=' ml-8 col-span-2 flex justify-center items-center'>
           <Link href='/' className='w-full self-center flex items-center cursor-pointer'>
