@@ -53,10 +53,6 @@ scrollbar thumb,
   background-color: #00BB31;
 }
 
-
-
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

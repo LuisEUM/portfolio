@@ -1,5 +1,5 @@
 "use client";
-import { useContext, useEffect, useState } from "react";
+import { Suspense, useContext, useEffect, useState } from "react";
 import Filter from "../components/filter/Filter";
 import { LanguageContext } from "../context/languageContext";
 import ProjectCard from "../components/card/ProjectCard";
@@ -9,6 +9,14 @@ import Pagination from "../components/pagination/Pagination";
 // import { MoviesType } from "@/utils/MovieTypes"
 // import Image from 'next/image'
 import { useSearchParams } from "next/navigation";
+
+// This component passed as a fallback to the Suspense boundary
+// will be rendered in place of the search bar in the initial HTML.
+// When the value is available during React hydration the fallback
+// will be replaced with the `<SearchBar>` component.
+function SearchBarFallback() {
+  return <>placeholder</>;
+}
 
 const Portfolio = () => {
   const { text } = useContext(LanguageContext);
@@ -56,52 +64,54 @@ const Portfolio = () => {
         />
       </section>
       <section className=" w-full">
-        <ResponsiveList>
-          {projects && totalPages > 6
-            ? projects
-                .filter((projects) => {
-                  if (search === "All") {
-                    return true;
-                  }
-                  return projects.categories.reduce((category, next) => {
-                    if (category === true) return category;
-                    if (category === search || next === search) return true;
-                    return false;
-                  }, false);
-                })
-                .slice(contentStart, contentEnd)
-                .map((project) => (
-                  <ProjectCard
-                    key={project.id}
-                    image={project.image}
-                    url={project.url}
-                    // project={project}
-                    // setprojects={setprojects}
-                    // {...project}
-                  />
-                ))
-            : ""}
-        </ResponsiveList>
-        {projects.filter((projects) => {
-      if (search === 'All') {
-        return true
-      }
-      return projects.categories.reduce((category, next) => {
-        if (category === true) return category
-        if (category === search || next === search) return true
-        return false
-      }, false)
-    }).length > 6 ? (
-          <Pagination
-            key={currentPage}
-            search={search}
-            totalPagination={totalPagination}
-            currentPage={currentPage}
-            setCurrentPage={setCurrentPage}
-          />
-        ) : (
-          ""
-        )}
+        <Suspense fallback={<SearchBarFallback />}>
+          <ResponsiveList>
+            {projects && totalPages > 6
+              ? projects
+                  .filter((projects) => {
+                    if (search === "All") {
+                      return true;
+                    }
+                    return projects.categories.reduce((category, next) => {
+                      if (category === true) return category;
+                      if (category === search || next === search) return true;
+                      return false;
+                    }, false);
+                  })
+                  .slice(contentStart, contentEnd)
+                  .map((project) => (
+                    <ProjectCard
+                      key={project.id}
+                      image={project.image}
+                      url={project.url}
+                      // project={project}
+                      // setprojects={setprojects}
+                      // {...project}
+                    />
+                  ))
+              : ""}
+          </ResponsiveList>
+
+          {projects.filter((projects) => {
+            if (search === "All") {
+              return true;
+            }
+            return projects.categories.reduce((category, next) => {
+              if (category === true) return category;
+              if (category === search || next === search) return true;
+              return false;
+            }, false);
+          }).length > 6 && (
+            <Pagination
+              key={currentPage}
+              search={search}
+              totalPagination={totalPagination}
+              currentPage={currentPage}
+              setCurrentPage={setCurrentPage}
+            />
+          )
+          }
+        </Suspense>
       </section>
     </>
   );
