@@ -3,7 +3,7 @@ import React from 'react'
 function SocialButtons ({ text }) {
   return (
     <>
-      <p className="text-md">{text.contact.socialNetworksParagraph}</p>
+      <p className="text-md font-medium">{text.contact.socialNetworksParagraph}</p>
       <div className="flex flex-wrap justify-start gap-7 my-4">
         {/* <!--WHATSAPP ICON--> */}
         <a
