@@ -1,7 +1,5 @@
 
 .slider-content {
-  display: inline-block;
-  white-space: nowrap;
   animation: slide 15s linear infinite
 }
 

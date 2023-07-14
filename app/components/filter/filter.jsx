@@ -4,7 +4,7 @@ import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-export default function Filter ({ projects, search, setSearch, setKey, key, className, setCurrentPage}) {
+export default function Filter ({ projects, search, setSearch, className, setCurrentPage }) {
   const { text } = useContext(LanguageContext)
   const controls = useDragControls()
   const handleX = useMotionValue(0)
@@ -12,14 +12,23 @@ export default function Filter ({ projects, search, setSearch, setKey, key, clas
   const constraintsRef = useRef(null)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
   const [draggable, setDraggable] = useState(windowWidth >= categoriesWidth)
+  const [key, setKey] = useState('keyName')
+  const categoriesRef = useRef(null)
 
   useEffect(() => {
     const categoriesDiv = document.getElementById('categories')
     setCategoriesWidth(categoriesDiv.offsetWidth)
+
     const handleResize = () => {
+      const filterContainerWidth = constraintsRef.current.offsetWidth
       setWindowWidth(window.innerWidth)
       setKey(window.innerWidth)
+      setDraggable(window.innerWidth >= filterContainerWidth)
+      if (window.innerWidth >= filterContainerWidth) {
+        handleX.set(0)
+      }
     }
+
     window.addEventListener('resize', handleResize)
     if (windowWidth >= categoriesWidth) {
       setDraggable(true)
@@ -27,7 +36,6 @@ export default function Filter ({ projects, search, setSearch, setKey, key, clas
     if (windowWidth <= categoriesWidth) {
       setDraggable(false)
     }
-
     return () => {
       window.removeEventListener('resize', handleResize)
     }
@@ -55,6 +63,7 @@ export default function Filter ({ projects, search, setSearch, setKey, key, clas
         className={`${draggable ? 'justify-center hover:cursor-default focus:cursor-grabbing target:cursor-grabbing' : 'justify-start hover:cursor-grab'} h-14 flex items-center  overflow-hidden  ${className}`}
       >
         <motion.div
+          ref={categoriesRef}
           dragPropagation
           drag={windowWidth >= categoriesWidth ? false : 'x'}
           dragConstraints={constraintsRef}
@@ -89,7 +98,7 @@ export default function Filter ({ projects, search, setSearch, setKey, key, clas
             return (
                 <Link
                   href={'projects' + '?' + 'category=' + category.name + '&' + 'page=' + 1 }
-                  key={category.id + i}
+                  key={category.name}
                   className={`mx-2 flex items-center ${search === category.name
                     ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase '
                     : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'}`}

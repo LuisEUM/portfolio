@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 import { useContext, useState } from 'react'
 import Backdrop from '../backdrop/backdrop'

@@ -45,8 +45,8 @@ function TextSlider () {
 
   return (
     <>
-      <div className="slider w-full -rotate-90 origin-top-right absolute -left-48 top-0">
-        <div className="slider-content z-100 w-[100vh] text flex " ref={sliderContentRef}>
+      <div className="slider w-full -rotate-90 origin-top-right absolute -left-48 top-0 pointer-events-none">
+        <div className="slider-content whitespace-nowrap z-100 w-[100vh] text flex " ref={sliderContentRef}>
           <p className='text-zinc-800 text-opacity-40 text-[135px] font-black'>
           {new Array(50).fill(0).map((_, i) => (
             content

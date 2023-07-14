@@ -3,7 +3,7 @@ import React from 'react'
 function SocialButtons ({ text }) {
   return (
     <>
-      <p className="text-md font-medium">{text.contact.socialNetworksParagraph}</p>
+      <p className="text-md font-bold">{text.contact.socialNetworksParagraph}</p>
       <div className="flex flex-wrap justify-start gap-7 my-4">
         {/* <!--WHATSAPP ICON--> */}
         <a
@@ -12,7 +12,7 @@ function SocialButtons ({ text }) {
           rel="noreferrer"
           className={`${
             text.contact.socialNetwoks.whatsApp.hidden && 'hidden'
-          } hover:fill-primary transition-all w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center shadow-xl  cursor-pointer`}
+          } hover:fill-primary transition-all w-12 h-12 bg-zinc-200 rounded-full flex items-center justify-center shadow-xl  cursor-pointer`}
         >
           <svg
             width="24"
@@ -31,7 +31,7 @@ function SocialButtons ({ text }) {
           rel="noreferrer"
           className={`${
             text.contact.socialNetwoks.linkedIn.hidden && 'hidden'
-          } hover:fill-[#1877f2] transition-all w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center shadow-xl cursor-pointer`}
+          } hover:fill-[#1877f2] transition-all w-12 h-12 bg-zinc-200 rounded-full flex items-center justify-center shadow-xl cursor-pointer`}
         >
           <svg
             width="24"
@@ -50,7 +50,7 @@ function SocialButtons ({ text }) {
           rel="noreferrer"
           className={`${
             text.contact.socialNetwoks.instagram.hidden && 'hidden'
-          } hover:fill-[#bc2a8d] transition-all w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center shadow-xl cursor-pointer`}
+          } hover:fill-[#bc2a8d] transition-all w-12 h-12 bg-zinc-200 rounded-full flex items-center justify-center shadow-xl cursor-pointer`}
         >
           <svg
             width="24"
@@ -69,7 +69,7 @@ function SocialButtons ({ text }) {
           rel="noreferrer"
           className={`${
             text.contact.socialNetwoks.twitter.hidden && 'hidden'
-          } hover:fill-[#1d9bf0] transition-all w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center shadow-xl ursor-pointer'`}
+          } hover:fill-[#1d9bf0] transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl ursor-pointer'`}
         >
           <svg
             width="24"
@@ -88,7 +88,7 @@ function SocialButtons ({ text }) {
           rel="noreferrer"
           className={`${
             text.contact.socialNetwoks.telegram.hidden && 'hidden'
-          }  hover:fill-[#229ED9] transition-all w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center shadow-xl ursor-pointer`}
+          }  hover:fill-[#229ED9] transition-all w-12 h-12 bg-zinc-300 rounded-full flex items-center justify-center shadow-xl ursor-pointer`}
         >
           <svg
             width="24"

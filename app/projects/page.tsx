@@ -1,5 +1,5 @@
 "use client";
-import { Suspense, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Filter from "../components/filter/Filter";
 import { LanguageContext } from "../context/languageContext";
 import ProjectCard from "../components/card/ProjectCard";
@@ -21,7 +21,6 @@ function SearchBarFallback() {
 const Portfolio = () => {
   const { text } = useContext(LanguageContext);
   const searchParams = useSearchParams();
-  const [key, setKey] = useState("keyName");
   const [search, setSearch] = useState(searchParams.get("category"));
   const [projects, setProjects] = useState(text.portfolio.projects);
   const [totalPages, setTotalPages] = useState(text.portfolio.projects.length);
@@ -54,8 +53,6 @@ const Portfolio = () => {
       </section>
       <section className="w-full flex justify-center items-center content-center pb-10 border-b border-white">
         <Filter
-          key={key}
-          setKey={setKey}
           projects={projects}
           search={search}
           setSearch={setSearch}
@@ -64,7 +61,6 @@ const Portfolio = () => {
         />
       </section>
       <section className=" w-full">
-        <Suspense fallback={<SearchBarFallback />}>
           <ResponsiveList>
             {projects && totalPages > 6
               ? projects
@@ -111,7 +107,6 @@ const Portfolio = () => {
             />
           )
           }
-        </Suspense>
       </section>
     </>
   );

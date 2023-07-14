@@ -7,8 +7,8 @@ import Script from 'next/script'
 export default function CookiesButton () {
   const [show, setShow] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
-  const close = () => setModalOpen(false)
-  const open = () => setModalOpen(true)
+  const close = () => (setModalOpen(false))
+  const open = () => (setModalOpen(true))
 
   return (
     <>
@@ -34,15 +34,8 @@ export default function CookiesButton () {
         </motion.button>
       </div>
       <AnimatePresence
-        // Disable any initial animations on children that
-        // are present when the component is first rendered
         initial={false}
-        // Only render one component at a time.
-        // The exiting component will finish its exit
-        // animation before entering component is rendered
-        mode='wait'
-        // Fires when all exiting nodes have completed animating out
-        onExitComplete={() => null}
+        onExitComplete={() => close}
       >
         {modalOpen && <ModalCookies modalOpen={modalOpen} handleClose={close} /> }
       </AnimatePresence>

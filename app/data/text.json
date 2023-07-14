@@ -63,11 +63,18 @@
       "projects": [
         {
           "id": 1,
-          "title": "Primer Item",
+          "title": "MOUTHFEELS",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "tags": ["Adobe Illustrator", "Adobe InDesign", "Figma", "Food Business"],
           "image": "https://picsum.photos/600/300",
+          "gallery": [
+            "https://picsum.photos/600/300",
+            "https://picsum.photos/600/300",
+            "https://picsum.photos/600/300",
+            "https://picsum.photos/600/300",
+            "https://picsum.photos/600/300"
+          ],
           "url":"primer_item"
         },
         {
