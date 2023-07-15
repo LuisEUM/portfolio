@@ -61,7 +61,7 @@ scrollbar thumb,
 @layer base {
   html {
     font-family: Satoshi, system-ui, sans-serif;
-    background-color: #18181B ;
+    background-color: #0F0F0F;
     color: white;
     overflow-y: scroll;
     min-height: 200vh;

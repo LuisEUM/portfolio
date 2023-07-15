@@ -2,17 +2,17 @@
   "en": {
     "menu": {
       "id": "en",
-      "current_language": "English",
+      "currentLanguage": "English",
       "home": "Home",
-      "home_pathname": "/",
+      "homePathname": "/",
       "contact": "Contact",
-      "contact_pathname": "/contact",
+      "contactPathname": "/contact",
       "projects": "Projects",
-      "projects_pathname": "/projects?category=All&page=1",
+      "projectsPathname": "/projects?category=All&page=1",
       "blog": "Blog",
-      "blog_pathname": "/blog",
+      "blogPathname": "/blog",
       "languages": "Languages",
-      "languages_options": [
+      "languagesOptions": [
         {
           "name": "English",
           "pathname": "en"
@@ -27,10 +27,30 @@
       "website": "© 2023 Luis Urdaneta",
       "rights": "All rights reserved",
       "policy": "Policy",
-      "policy_pathname": "/privacy-policy",
+      "policyPathname": "/privacy-policy",
       "email": "luiseum95@gmail.com"
     },
-    "home": {},
+    "home": {
+      "categoriesSection": {
+        "title": "I could be your Swiss Army knife in the digital world",
+        "subtitle": "How could I help you?",
+        "paragraph": "Web developer, graphic designer, and digital marketing specialist with more than 2 years of experience in each field.",
+        "categories": [
+          {
+            "name": "Web_Developer",
+            "icon": "/icons/web_developer.svg"
+          },
+          {
+            "name": "Designer",
+            "icon": "/icons/designer.svg"
+          },
+          {
+            "name": "Marketing",
+            "icon": "/icons/marketing.svg"
+          }
+        ]
+      }
+    },
     "portfolio": {
       "title": "Projects",
       "description": "10,000+ beautiful, modern ios work, designs, illustrations, and graphic elements",
@@ -66,7 +86,12 @@
           "title": "MOUTHFEELS",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
-          "tags": ["Adobe Illustrator", "Adobe InDesign", "Figma", "Food Business"],
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
+          ],
           "image": "https://picsum.photos/600/300",
           "gallery": [
             "https://picsum.photos/600/300",
@@ -75,7 +100,7 @@
             "https://picsum.photos/600/300",
             "https://picsum.photos/600/300"
           ],
-          "url":"primer_item"
+          "url": "primer_item"
         },
         {
           "id": 2,
@@ -89,7 +114,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 3,
@@ -103,7 +128,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 4,
@@ -117,7 +142,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 5,
@@ -131,7 +156,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 6,
@@ -145,7 +170,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 7,
@@ -159,7 +184,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         }
       ]
     },
@@ -196,17 +221,17 @@
   "es": {
     "menu": {
       "id": "es",
-      "current_language": "Español",
+      "currentLanguage": "Español",
       "home": "Inicio",
-      "home_pathname": "/",
+      "homePathname": "/",
       "contact": "Contacto",
-      "contact_pathname": "/contact",
+      "contactPathname": "/contact",
       "projects": "Proyectos",
-      "projects_pathname": "/projects",
+      "projectsPathname": "/projects",
       "blog": "Blog",
-      "blog_pathname": "/blog",
+      "blogPathname": "/blog",
       "languages": "Lenguajes",
-      "languages_options": [
+      "languagesOptions": [
         {
           "name": "Inglés",
           "pathname": "en"
@@ -221,7 +246,7 @@
       "website": "© 2023 Luis Urdaneta",
       "rights": "Todos los derechos reservados",
       "policy": "Políticas",
-      "policy_pathname": "/privacy-policy",
+      "policyPathname": "/privacy-policy",
       "email": "luiseum95@gmail.com"
     },
     "home": {},
@@ -267,7 +292,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 2,
@@ -281,7 +306,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 3,
@@ -295,7 +320,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 4,
@@ -309,7 +334,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 5,
@@ -323,7 +348,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         },
         {
           "id": 6,
@@ -337,7 +362,7 @@
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://picsum.photos/600/300",
-          "url":"#"
+          "url": "#"
         }
       ]
     },
