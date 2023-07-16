@@ -44,15 +44,12 @@ export default function Filter ({ projects, search, setSearch, className, setCur
   const handleClick = (event) => {
     const { name } = event.currentTarget
     setSearch(name)
-    console.log(search)
     setCurrentPage(1)
   }
 
   function startDrag (event) {
     controls.start(event)
   }
-
-  console.log(projects)
 
   return (
     <>

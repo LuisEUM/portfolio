@@ -23,7 +23,6 @@ export default function BlinkWordsChangers ({ words, setSafeRemove, setBlink, bl
     }
   }, [words, index])
 
-  console.log(index, words.length)
 
   const variants = {
     initial: {
@@ -45,23 +44,19 @@ export default function BlinkWordsChangers ({ words, setSafeRemove, setBlink, bl
     if (count === 0) {
       setTimeout(() => {
         setBlink(!blink)
-        console.log('First timeOut')
       }, 1000)
 
       setTimeout(() => {
         setBlink(!blink)
-        console.log('Second timeOut')
       }, 1100)
 
       setTimeout(() => {
         setSafeRemove(true)
         setBlink(false)
-        console.log('Third timeOut')
       }, 1300)
     }
   }
 
-  console.log(count, 'counter')
 
   return (
     <>

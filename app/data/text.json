@@ -32,20 +32,23 @@
     },
     "home": {
       "categoriesSection": {
-        "title": "I could be your Swiss Army knife in the digital world",
-        "subtitle": "How could I help you?",
-        "paragraph": "Web developer, graphic designer, and digital marketing specialist with more than 2 years of experience in each field.",
+        "title": "I will be your Swiss Army knife in the digital world",
+        "subtitle": "I could be your favorite ",
+        "paragraph": "I'm a web developer, graphic designer, and digital marketing strategist with more than 2 years of experience in each field.",
         "categories": [
           {
-            "name": "Web_Developer",
+            "name": "Developer",
+            "url": "/projects?category=Web_Developer&page=1",
             "icon": "/icons/web_developer.svg"
           },
           {
             "name": "Designer",
+            "url": "/projects?category=Graphic_Design&page=1",
             "icon": "/icons/designer.svg"
           },
           {
-            "name": "Marketing",
+            "name": "Marketer",
+            "url": "/projects?category=Marketing&page=1",
             "icon": "/icons/marketing.svg"
           }
         ]
@@ -92,29 +95,36 @@
             "Figma",
             "Food Business"
           ],
-          "image": "https://picsum.photos/600/300",
+          "image": "https://picsum.photos/id/1/600/300",
           "gallery": [
-            "https://picsum.photos/600/300",
-            "https://picsum.photos/600/300",
-            "https://picsum.photos/600/300",
-            "https://picsum.photos/600/300",
-            "https://picsum.photos/600/300"
+            "https://picsum.photos/id/1/600/300",
+            "https://picsum.photos/id/2/600/300",
+            "https://picsum.photos/id/3/600/300",
+            "https://picsum.photos/id/4/600/300",
+            "https://picsum.photos/id/5/600/300"
           ],
-          "url": "primer_item"
+          "url": "proyect_1"
         },
         {
           "id": 2,
-          "title": "Diseño_Web",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "title": "MOUTHFEELS",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/6//600/300",
+          "gallery": [
+            "https://picsum.photos/id/6/600/300",
+            "https://picsum.photos/id/7/600/300",
+            "https://picsum.photos/id/8/600/300",
+            "https://picsum.photos/id/9/600/300",
+            "https://picsum.photos/id/10/600/300"
+          ],
+          "url": "proyect_2"
         },
         {
           "id": 3,
@@ -127,8 +137,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/11//600/300",
+          "gallery": [
+            "https://picsum.photos/id/11/600/300",
+            "https://picsum.photos/id/12/600/300",
+            "https://picsum.photos/id/13/600/300",
+            "https://picsum.photos/id/14/600/300",
+            "https://picsum.photos/id/15/600/300"
+          ],
+          "url": "proyect_3"
         },
         {
           "id": 4,
@@ -141,8 +158,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/16//600/300",
+          "gallery": [
+            "https://picsum.photos/id/16/600/300",
+            "https://picsum.photos/id/17/600/300",
+            "https://picsum.photos/id/18/600/300",
+            "https://picsum.photos/id/19/600/300",
+            "https://picsum.photos/id/20/600/300"
+          ],
+          "url": "proyect_4"
         },
         {
           "id": 5,
@@ -155,8 +179,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/21//600/300",
+          "gallery": [
+            "https://picsum.photos/id/21/600/300",
+            "https://picsum.photos/id/22/600/300",
+            "https://picsum.photos/id/23/600/300",
+            "https://picsum.photos/id/24/600/300",
+            "https://picsum.photos/id/25/600/300"
+          ],
+          "url": "proyect_5"
         },
         {
           "id": 6,
@@ -169,8 +200,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/26//600/300",
+          "gallery": [
+            "https://picsum.photos/id/27/600/300",
+            "https://picsum.photos/id/28/600/300",
+            "https://picsum.photos/id/29/600/300",
+            "https://picsum.photos/id/30/600/300",
+            "https://picsum.photos/id/31/600/300"
+          ],
+          "url": "proyect_6"
         },
         {
           "id": 7,
@@ -183,8 +221,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/32//600/300",
+          "gallery": [
+            "https://picsum.photos/id/32/600/300",
+            "https://picsum.photos/id/33/600/300",
+            "https://picsum.photos/id/34/600/300",
+            "https://picsum.photos/id/35/600/300",
+            "https://picsum.photos/id/36/600/300"
+          ],
+          "url": "proyect_7"
         }
       ]
     },
@@ -249,7 +294,30 @@
       "policyPathname": "/privacy-policy",
       "email": "luiseum95@gmail.com"
     },
-    "home": {},
+    "home": {
+      "categoriesSection": {
+        "title": "I will be your Swiss Army knife in the digital world",
+        "subtitle": "I could be your favorite ",
+        "paragraph": "I'm a web developer, graphic designer, and digital marketing strategist with more than 2 years of experience in each field.",
+        "categories": [
+          {
+            "name": "Developer",
+            "url": "/projects?category=Web_Developer&page=1",
+            "icon": "/icons/web_developer.svg"
+          },
+          {
+            "name": "Designer",
+            "url": "/projects?category=Graphic_Design&page=1",
+            "icon": "/icons/designer.svg"
+          },
+          {
+            "name": "Marketer",
+            "url": "/projects?category=Marketing&page=1",
+            "icon": "/icons/marketing.svg"
+          }
+        ]
+      }
+    },
     "portfolio": {
       "title": "Proyectos",
       "description": "Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",

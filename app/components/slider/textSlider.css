@@ -1,6 +1,7 @@
 
 .slider-content {
-  animation: slide 15s linear infinite
+  animation: slide 15s linear infinite;
+  animation-direction:alternate-reverse
 }
 
 @keyframes slide {

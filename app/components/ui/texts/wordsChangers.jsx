@@ -22,8 +22,6 @@ export default function WordsChangers ({ words, alternative, setReady }) {
     }
   }, [words, index])
 
-  console.log(index, words.length)
-
   const variants = {
     initial: {
       opacity: 0,

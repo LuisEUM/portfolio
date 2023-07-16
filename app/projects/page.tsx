@@ -36,8 +36,6 @@ const Portfolio = () => {
     setContentEnd(currentPage * 6);
     setContentStart((currentPage - 1) * 6);
 
-    console.log(currentPage);
-    console.log(Number(searchParams.get("page")));
     return () => {};
   }, [totalPagination, currentPage]);
 
@@ -61,7 +59,7 @@ const Portfolio = () => {
         />
       </section>
       <section className=" w-full">
-          <ResponsiveList>
+          <ResponsiveList id="begin">
             {projects && totalPages > 6
               ? projects
                   .filter((projects) => {
@@ -78,11 +76,7 @@ const Portfolio = () => {
                   .map((project) => (
                     <ProjectCard
                       key={project.id}
-                      image={project.image}
-                      url={project.url}
-                      // project={project}
-                      // setprojects={setprojects}
-                      // {...project}
+                      project={project}
                     />
                   ))
               : ""}

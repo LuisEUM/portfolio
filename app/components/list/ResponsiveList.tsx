@@ -4,9 +4,10 @@ type ResponsiveListProps = {
   tablet?: number;
   desktop?: number;
   className?: string;
+  id?: string;
 };
 
-function ResponsiveList({ children, mobile = 1, tablet = 2, desktop = 3, className }: ResponsiveListProps) {
+function ResponsiveList({ children, mobile = 1, tablet = 2, desktop = 3, id, className }: ResponsiveListProps) {
   return (
     <>
       <div className={className ? className :  `mx-auto max-w-2xl px-4 sm:px-6 pt-12 lg:max-w-7xl lg:px-8 lg:min-h-[568px]`}>
@@ -50,7 +51,7 @@ function ResponsiveList({ children, mobile = 1, tablet = 2, desktop = 3, classNa
           ${desktop === 10 && `lg:grid-cols-10`}
           ${desktop === 11 && `lg:grid-cols-11`}
           ${desktop === 12 && `lg:grid-cols-12`}
-        `} id='begin'>
+        `} id={id && id}>
           {children}
         </div>
       </div>
