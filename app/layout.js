@@ -13,7 +13,7 @@ export default function RootLayout ({ children }) {
           <section className='max-w-full z-50'>
             <NavBar />
           </section>
-          <section className=' mt-20 py-8'>
+          <section className='max-w-full mt-20 py-8'>
             {children}
           </section>
           <section className='max-w-full '>

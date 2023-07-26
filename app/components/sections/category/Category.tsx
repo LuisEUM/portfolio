@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import secretIcon from "@/public/icons/secret_folder.svg";
-import ResponsiveList from "../list/ResponsiveList";
-import CategoryCard from "../card/CategoryCard";
+import ResponsiveList from "../../list/ResponsiveList";
+import CategoryCard from "../../card/CategoryCard";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -69,7 +69,7 @@ function Category({ text }) {
           <AnimatePresence
             initial={false}
             onExitComplete={() => null}
-            mode='wait'
+            mode="wait"
           >
             <motion.em
               className="inline-block relative w-[max-content] self-baseline mt-2 mr-2 text-3xl md:text-6xl lg:text-6xl font-black text-primary "
@@ -85,7 +85,8 @@ function Category({ text }) {
                 damping: 24,
               }}
             >
-              {currentWord.name || text.home.categoriesSection.categories[0].name }
+              {currentWord.name ||
+                text.home.categoriesSection.categories[0].name}
             </motion.em>
           </AnimatePresence>
         </motion.span>

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
-import ProjectCard from "../card/ProjectCard";
-import ResponsiveList from "../list/ResponsiveList";
-import ParallaxText from "../slider/ParallaxText";
+import ProjectCard from "../../card/ProjectCard";
+import ResponsiveList from "../../list/ResponsiveList";
+import ParallaxText from "../../slider/ParallaxText";
 
 function ProjectsPreview({ text }) {
   const projects = useState(text.portfolio.projects);
-  const [contentStart, setContentStart] = useState(Math.floor(Math.random() * (text.portfolio.projects.length - 6)));
-  const [contentEnd, setContentEnd] = useState(Math.min(contentStart + 6, text.portfolio.projects.length));
+  const [contentStart, setContentStart] = useState(
+    Math.floor(Math.random() * (text.portfolio.projects.length - 6))
+  );
+  const [contentEnd, setContentEnd] = useState(
+    Math.min(contentStart + 6, text.portfolio.projects.length)
+  );
 
   // useEffect(() => {
   //   // Generate a random number for contentStart
@@ -36,12 +40,11 @@ function ProjectsPreview({ text }) {
       </h3>
       <ResponsiveList>
         {text.portfolio.projects &&
-          projects[0].slice(contentStart, contentEnd).map((project) => (
-              <ProjectCard
-                key={project.url}
-                project={project}
-              />
-          ))}
+          projects[0]
+            .slice(contentStart, contentEnd)
+            .map((project) => (
+              <ProjectCard key={project.url} project={project} />
+            ))}
       </ResponsiveList>
     </section>
   );
