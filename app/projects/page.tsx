@@ -25,7 +25,7 @@ const Portfolio = () => {
   const [projects, setProjects] = useState(text.portfolio.projects);
   const [totalPages, setTotalPages] = useState(text.portfolio.projects.length);
   const [totalPagination, setTotalPagination] = useState(1);
-  const [currentPage, setCurrentPage] = useState(
+  const [currentPage, setCurrentPage] = useState<number>(
     Number(searchParams.get("page"))
   );
   const [contentStart, setContentStart] = useState((currentPage - 1) * 6);
@@ -51,7 +51,6 @@ const Portfolio = () => {
       </section>
       <section className="w-full flex justify-center items-center content-center pb-10 border-b border-white">
         <FilterCategories
-          projects={projects}
           search={search}
           setSearch={setSearch}
           className={undefined}

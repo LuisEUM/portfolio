@@ -4,13 +4,20 @@ import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-export default function FilterCategories ({ projects, search, setSearch, className, setCurrentPage }) {
+interface FilterCategories_Props {
+  search: string;
+  className: string;
+  setCurrentPage: (search: number) => void;
+  setSearch: (search: string) => void;
+}
+
+export default function FilterCategories ({ search, setSearch, className, setCurrentPage } : FilterCategories_Props) {
   const { text } = useContext(LanguageContext)
   const controls = useDragControls()
   const handleX = useMotionValue(0)
   const [categoriesWidth, setCategoriesWidth] = useState(0)
   const constraintsRef = useRef(null)
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
   const [draggable, setDraggable] = useState(windowWidth >= categoriesWidth)
   const [key, setKey] = useState('keyName')
   const categoriesRef = useRef(null)
@@ -20,14 +27,15 @@ export default function FilterCategories ({ projects, search, setSearch, classNa
     setCategoriesWidth(categoriesDiv.offsetWidth)
 
     const handleResize = () => {
-      const filterContainerWidth = constraintsRef.current.offsetWidth
-      setWindowWidth(window.innerWidth)
-      setKey(window.innerWidth)
-      setDraggable(window.innerWidth >= filterContainerWidth)
-      if (window.innerWidth >= filterContainerWidth) {
-        handleX.set(0)
+      const filterContainerWidth = constraintsRef.current.offsetWidth;
+      const newWindowWidth = window.innerWidth;
+      setWindowWidth(newWindowWidth);
+      setDraggable(newWindowWidth >= filterContainerWidth);
+
+      if (newWindowWidth >= filterContainerWidth) {
+        handleX.set(0);
       }
-    }
+    };
 
     window.addEventListener('resize', handleResize)
     if (windowWidth >= categoriesWidth) {
@@ -42,8 +50,8 @@ export default function FilterCategories ({ projects, search, setSearch, classNa
   }, [categoriesWidth])
 
   const handleClick = (event) => {
-    const { name } = event.currentTarget
-    setSearch(name)
+    const { id } = event.currentTarget
+    setSearch(id)
     setCurrentPage(1)
   }
 
@@ -84,8 +92,7 @@ export default function FilterCategories ({ projects, search, setSearch, classNa
                 ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase'
                 : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'
             }`}
-            value="All"
-            name="All"
+            id='All'
             onClick={handleClick}
           >
             All
@@ -99,7 +106,7 @@ export default function FilterCategories ({ projects, search, setSearch, classNa
                   className={`mx-2 flex items-center ${search === category.name
                     ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase '
                     : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'}`}
-                  name={category.name}
+                  id={category.name}
                   onClick={handleClick}
                 >
                   {category.name.split('')
