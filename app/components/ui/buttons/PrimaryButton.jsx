@@ -1,6 +1,6 @@
 function PrimaryButton ({ text }) {
   return (
-    <div className="group cursor-pointer justify-end items-center flex min-w-[172px] w-[13vw] rounded-md border border-primary text-primary hover:text-zinc-950 hover:bg-primary transition-all duration-500 h-12 gap-2 pl-4 pr-2.5">
+    <button className="group cursor-pointer justify-end items-center flex min-w-[172px] w-[13vw] rounded-md border border-primary text-primary hover:text-zinc-950 hover:bg-primary transition-all duration-500 h-12 gap-2 pl-4 pr-2.5">
       <svg
         width="15"
         height="20"
@@ -37,7 +37,7 @@ function PrimaryButton ({ text }) {
       <p className=" text-center  -zinc-950 text-[1vw] font-bold uppercase mx-auto">
         DESCARGAR CV
       </p>
-    </div>
+    </button>
   )
 }
 

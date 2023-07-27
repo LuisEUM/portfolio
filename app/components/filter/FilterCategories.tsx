@@ -2,7 +2,7 @@
 import { LanguageContext } from '../../context/languageContext'
 import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
-import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 
 interface FilterCategories_Props {
   search: string;
@@ -21,6 +21,7 @@ export default function FilterCategories ({ search, setSearch, className, setCur
   const [draggable, setDraggable] = useState(windowWidth >= categoriesWidth)
   const [key, setKey] = useState('keyName')
   const categoriesRef = useRef(null)
+  const router = useRouter();
 
   useEffect(() => {
     const categoriesDiv = document.getElementById('categories')
@@ -52,8 +53,14 @@ export default function FilterCategories ({ search, setSearch, className, setCur
   const handleClick = (event) => {
     const { id } = event.currentTarget
     setSearch(id)
-    setCurrentPage(1)
+    setCurrentPage(1) 
   }
+
+  const handleClickAndNavigate = (categoryName) => {
+    setSearch(categoryName);
+    setCurrentPage(1);
+    router.push(`/projects?category=${categoryName}&page=1`);
+  };
 
   function startDrag (event) {
     controls.start(event)
@@ -85,30 +92,28 @@ export default function FilterCategories ({ search, setSearch, className, setCur
           // }}
           whileTap={{ cursor: (draggable ? 'default' : 'grabbing') }}
         >
-          <Link
-            href={'projects' + '?' + 'category=' + 'All' + '&' + 'page=' + 1 }
+          <button
             className={`w-20 ml-5 mr-2 ${
               search === 'All'
                 ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase'
                 : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'
             }`}
             id='All'
-            onClick={handleClick}
+            onClick={() => handleClickAndNavigate('All')}
           >
             All
-          </Link>
+          </button>
 
           {text && text.portfolio.categories.map((category, i) => {
             return (
-                <Link
-                  href={'projects' + '?' + 'category=' + category.name + '&' + 'page=' + 1 }
+                <button
                   key={category.name}
                   className={`mx-2 flex items-center ${search === category.name
                     ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase '
                     : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'}`}
                   id={category.name}
-                  onClick={handleClick}
-                >
+                  onClick={() => handleClickAndNavigate(category.name)}
+                  >
                   {category.name.split('')
                     .map((word, index) => {
                       if (word === '_') {
@@ -121,7 +126,7 @@ export default function FilterCategories ({ search, setSearch, className, setCur
                       )
                     })
                   }
-                </Link>
+                </button>
             )
           })}
         </motion.div>
