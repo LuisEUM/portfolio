@@ -53,7 +53,6 @@ export const LanguageProvider = ({ children }) => {
     if (languageCookie === undefined) {
       setCookie('language', 'en')
     }
-
     const finalText = getText(languageCookie, textData)
     setText(finalText)
   }, [languageCookie])
@@ -61,21 +60,24 @@ export const LanguageProvider = ({ children }) => {
   return (
     <LayoutGroup>
       <AnimatePresence>
-        {(loading || (text === null))
+        {loading || text === null
           ? (
-            <motion.div
-              key='loader'
-              className='h-screen grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full'
-              variants={container}
-              initial='hidden'
-              animate={isInView ? 'show' : 'hidden'}
-              ref={ref}
-            >
-              <DotsLoader setLoading={setLoading}/>
-            </motion.div>
+          <motion.div
+            key="loader"
+            className="h-screen grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full"
+            variants={container}
+            initial="hidden"
+            animate={isInView ? 'show' : 'hidden'}
+            ref={ref}
+            onAnimationEnd={() => setLoading(false)}
+          >
+            <DotsLoader setLoading={setLoading} />
+          </motion.div>
             )
           : (
-            <LanguageContext.Provider value={{ text, setLanguageCookie }}>{children}</LanguageContext.Provider>
+          <LanguageContext.Provider value={{ text, setLanguageCookie }}>
+            {children}
+          </LanguageContext.Provider>
             )}
       </AnimatePresence>
     </LayoutGroup>

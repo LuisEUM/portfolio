@@ -1,7 +1,7 @@
 "use client";
 import { useContext } from "react";
 import Category from "./components/sections/category/Category";
-import ProjectsPreview from "./components/sections/category/ProjectsPreview";
+import ProjectsPreview from "./components/sections/projects/ProjectsPreview";
 import Hero from "./components/sections/hero/Hero";
 import { LanguageContext } from "./context/languageContext";
 import "./style.css";
@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="px-9 grid grid-cols-12 gap-6 fixed max-w-full w-100 w-screen -z-50  hidden">
+      <section className="px-9 grid grid-cols-12 gap-6 fixed max-w-full w-100 w-screen -z-50 hidden">
         <div className="col-span-1 bg-blue-200 bg-opacity-20 h-screen text-center">
           1
         </div>
