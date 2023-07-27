@@ -59,7 +59,7 @@ export default function FilterCategories ({ search, setSearch, className, setCur
   const handleClickAndNavigate = (categoryName) => {
     setSearch(categoryName);
     setCurrentPage(1);
-    router.push(`/projects?category=${categoryName}&page=1`);
+    router.replace(`/projects?category=${categoryName}&page=1`);
   };
 
   function startDrag (event) {
