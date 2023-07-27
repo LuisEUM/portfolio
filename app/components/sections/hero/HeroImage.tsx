@@ -95,7 +95,7 @@ function HeroImage() {
             ease: "easeInOut",
             repeatType: "reverse",
           }}
-          className="clipped w-full h-full  bg-gradient-to-b from-green-600 to-green-800  group-hover:-rotate-90 flex items-center align-middle justify-center"
+          className="clipped w-full h-full  bg-gradient-to-b from-primary to-green-800  group-hover:-rotate-90 flex items-center align-middle justify-center"
         >
           <motion.img
             initial={{ rotate: 0 }}
@@ -119,6 +119,7 @@ function HeroImage() {
           src="/images/luis-eduardo-urdaneta-martucci-cabeza.png"
           alt="Luis "
           className="w-full h-full object-contain absolute top-0 cursor-none pointer-events-none"
+          priority
         />
         <svg className="svg absolute w-0 h-0 ">
           <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">

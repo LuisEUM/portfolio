@@ -1,6 +1,6 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
-import Filter from "../components/filter/Filter";
+import Filter from "../components/filter/FilterCategories";
 import { LanguageContext } from "../context/languageContext";
 import ProjectCard from "../components/card/ProjectCard";
 import ResponsiveList from "../components/list/ResponsiveList";

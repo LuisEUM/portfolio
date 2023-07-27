@@ -4,7 +4,7 @@ import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-export default function Filter ({ projects, search, setSearch, className, setCurrentPage }) {
+export default function FilterCategories ({ projects, search, setSearch, className, setCurrentPage }) {
   const { text } = useContext(LanguageContext)
   const controls = useDragControls()
   const handleX = useMotionValue(0)

@@ -1,6 +1,6 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
-import Filter from "../components/filter/Filter";
+import FilterCategories from "../components/filter/FilterCategories";
 import { LanguageContext } from "../context/languageContext";
 import ProjectCard from "../components/card/ProjectCard";
 import ResponsiveList from "../components/list/ResponsiveList";
@@ -50,7 +50,7 @@ const Portfolio = () => {
         </p>
       </section>
       <section className="w-full flex justify-center items-center content-center pb-10 border-b border-white">
-        <Filter
+        <FilterCategories
           projects={projects}
           search={search}
           setSearch={setSearch}
@@ -59,48 +59,44 @@ const Portfolio = () => {
         />
       </section>
       <section className=" w-full">
-          <ResponsiveList id="begin">
-            {projects && totalPages > 6
-              ? projects
-                  .filter((projects) => {
-                    if (search === "All") {
-                      return true;
-                    }
-                    return projects.categories.reduce((category, next) => {
-                      if (category === true) return category;
-                      if (category === search || next === search) return true;
-                      return false;
-                    }, false);
-                  })
-                  .slice(contentStart, contentEnd)
-                  .map((project) => (
-                    <ProjectCard
-                      key={project.id}
-                      project={project}
-                    />
-                  ))
-              : ""}
-          </ResponsiveList>
+        <ResponsiveList id="begin">
+          {projects && totalPages > 6
+            ? projects
+                .filter((projects) => {
+                  if (search === "All") {
+                    return true;
+                  }
+                  return projects.categories.reduce((category, next) => {
+                    if (category === true) return category;
+                    if (category === search || next === search) return true;
+                    return false;
+                  }, false);
+                })
+                .slice(contentStart, contentEnd)
+                .map((project) => (
+                  <ProjectCard key={project.id} project={project} />
+                ))
+            : ""}
+        </ResponsiveList>
 
-          {projects.filter((projects) => {
-            if (search === "All") {
-              return true;
-            }
-            return projects.categories.reduce((category, next) => {
-              if (category === true) return category;
-              if (category === search || next === search) return true;
-              return false;
-            }, false);
-          }).length > 6 && (
-            <Pagination
-              key={currentPage}
-              search={search}
-              totalPagination={totalPagination}
-              currentPage={currentPage}
-              setCurrentPage={setCurrentPage}
-            />
-          )
+        {projects.filter((projects) => {
+          if (search === "All") {
+            return true;
           }
+          return projects.categories.reduce((category, next) => {
+            if (category === true) return category;
+            if (category === search || next === search) return true;
+            return false;
+          }, false);
+        }).length > 6 && (
+          <Pagination
+            key={currentPage}
+            search={search}
+            totalPagination={totalPagination}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+          />
+        )}
       </section>
     </>
   );
