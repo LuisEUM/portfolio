@@ -13,7 +13,7 @@ export default function ContactButton ({ className, setModalOpenNavbar }) {
   return (
     <>
       <motion.button
-        className={className || 'self-center bg-gradient-to-r from-tertiary  to-secondary text-zinc-900 font-bold rounded-md px-4 h-8 uppercase'}
+        className={className || 'self-center b text-primary  border border-primary font-bold rounded-md  hover:text-zinc-950 hover:bg-primary px-4 h-8 uppercase'}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.93 }}
         onClick={() => (modalOpen ? close() : open())}

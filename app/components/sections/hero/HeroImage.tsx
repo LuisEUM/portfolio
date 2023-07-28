@@ -108,7 +108,7 @@ function HeroImage() {
             }}
             width={200}
             height={200}
-            src="/images/luis-eduardo-urdaneta-martucci-completo.png"
+            src="/images/luis-eduardo-urdaneta-martucci-completo.webp"
             alt="Luis "
             className="w-full h-full object-contain  group-hover:rotate-90 absolute cursor-none pointer-events-none"
           />
@@ -116,7 +116,7 @@ function HeroImage() {
         <Image
           width={200}
           height={200}
-          src="/images/luis-eduardo-urdaneta-martucci-cabeza.png"
+          src="/images/luis-eduardo-urdaneta-martucci-cabeza.webp"
           alt="Luis "
           className="w-full h-full object-contain absolute top-0 cursor-none pointer-events-none"
           priority

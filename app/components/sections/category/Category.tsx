@@ -4,6 +4,7 @@ import ResponsiveList from "../../list/ResponsiveList";
 import CategoryCard from "../../card/CategoryCard";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Simple } from "../../rive/Simple";
 
 const spring = {
   type: "spring",
@@ -135,6 +136,10 @@ function Category({ text }) {
             </div>
           </div>
         </motion.section>
+        <div className="h-40 w-40 bg-white">
+          <Simple />
+
+        </div>
       </section>
     </section>
   );

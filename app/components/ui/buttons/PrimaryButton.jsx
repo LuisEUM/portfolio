@@ -1,13 +1,20 @@
+import { motion } from 'framer-motion'
+
 function PrimaryButton ({ text }) {
   return (
-    <button className="group cursor-pointer justify-end items-center flex min-w-[172px] w-[13vw] rounded-md border border-primary text-primary hover:text-zinc-950 hover:bg-primary transition-all duration-500 h-12 gap-2 pl-4 pr-2.5">
+    <motion.button
+      whileHover={{ scale: 1.03 }}
+      whileTap={{ scale: 0.93 }}
+      transition={{ duration: 0.2 }}
+      className="group cursor-pointer justify-end items-center flex min-w-[172px] w-[13vw] rounded-md border border-primary text-primary hover:text-zinc-950 hover:bg-primary  h-12 gap-2 pl-4 pr-2.5"
+    >
       <svg
         width="15"
         height="20"
         viewBox="0 0 15 20"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className=" fill-primary group-hover:fill-zinc-950 transition-all duration-500"
+        className=" fill-primary group-hover:fill-zinc-950 "
       >
         <g id="Group">
           <path
@@ -37,7 +44,7 @@ function PrimaryButton ({ text }) {
       <p className=" text-center  -zinc-950 text-[1vw] font-bold uppercase mx-auto">
         DESCARGAR CV
       </p>
-    </button>
+    </motion.button>
   )
 }
 

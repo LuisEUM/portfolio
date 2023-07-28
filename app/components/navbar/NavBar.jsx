@@ -1,55 +1,55 @@
-"use client";
-import { useRef, React, useContext, useState } from "react";
-import { AnimatePresence, motion, useCycle } from "framer-motion";
-import { useDimensions } from "./hook/use-dimensions.jsx";
-import { ToggleMenu } from "./toggle-menu/ToggleMenu";
-import MainMenu from "./main-menu/MainMenu";
-import { LanguageContext } from "../../context/languageContext";
-import Link from "next/link.js";
-import SelectLanguage from "./select-language/selectLanguage.jsx";
-import Backdrop from "../ui/backdrop/backdrop.jsx";
-import ContactButton from "../ui/buttons/contactButton.jsx";
-import ModalContact from "../ui/modals/modalContact.jsx";
+'use client'
+import { useRef, React, useContext, useState } from 'react'
+import { AnimatePresence, motion, useCycle } from 'framer-motion'
+import { useDimensions } from './hook/use-dimensions.jsx'
+import { ToggleMenu } from './toggle-menu/ToggleMenu'
+import MainMenu from './main-menu/MainMenu'
+import { LanguageContext } from '../../context/languageContext'
+import Link from 'next/link.js'
+import SelectLanguage from './select-language/selectLanguage.jsx'
+import Backdrop from '../ui/backdrop/backdrop.jsx'
+import ContactButton from '../ui/buttons/contactButton.jsx'
+import ModalContact from '../ui/modals/modalContact.jsx'
 
 const sidebar = {
   open: {
-    clipPath: "inset(0 0 0 0%)",
+    clipPath: 'inset(0 0 0 0%)',
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 40,
       restDelta: 1,
       duration: 5,
-      when: "beforeChildren",
-    },
+      when: 'beforeChildren'
+    }
   },
   closed: {
-    clipPath: "inset(0 0 0 100%)",
+    clipPath: 'inset(0 0 0 100%)',
     transition: {
-      type: "spring",
+      type: 'spring',
       stiffness: 40,
       restDelta: 1,
       duration: 5,
-      when: "afterChildren",
-    },
-  },
-};
+      when: 'afterChildren'
+    }
+  }
+}
 
-export default function NavBar() {
-  const { text } = useContext(LanguageContext);
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const containerRef = useRef(null);
-  const { height } = useDimensions(containerRef);
-  const [modalOpenNavbar, setModalOpenNavbar] = useState(false);
-  const close = () => setModalOpenNavbar(false);
-  const open = () => setModalOpenNavbar(true);
+export default function NavBar () {
+  const { text } = useContext(LanguageContext)
+  const [isOpen, toggleOpen] = useCycle(false, true)
+  const containerRef = useRef(null)
+  const { height } = useDimensions(containerRef)
+  const [modalOpenNavbar, setModalOpenNavbar] = useState(false)
+  const close = () => setModalOpenNavbar(false)
+  const open = () => setModalOpenNavbar(true)
 
   return (
     <div className="top-0 z-30 w-full">
       <div
         style={{
-          transitionDuration: "600ms",
-          transitionProperty: "all",
-          transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+          transitionDuration: '600ms',
+          transitionProperty: 'all',
+          transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
         }}
         className="flex h-20 absolute justify-between lg:fixed top-0 w-full  bg-zinc-900 bg-opacity-80"
       >
@@ -60,7 +60,6 @@ export default function NavBar() {
           >
             {/* <motion.img layoutId='navbarLogo' src={imageData.logos[0]} alt='Luis Urdaneta Logo' width='50px' height='50px' className='max-h-[50px] max-w-full' /> */}
             <motion.p className="font-main_regular  text-3xl font-bold ">
-              {" "}
               <span className="text-primary">&lt;</span>LuisUrdaneta
               <span className="text-primary">/&gt;</span>
             </motion.p>
@@ -101,7 +100,7 @@ export default function NavBar() {
         </div>
         <motion.nav
           initial={false}
-          animate={isOpen ? "open" : "closed"}
+          animate={isOpen ? 'open' : 'closed'}
           custom={height}
           ref={containerRef}
           // if you prefer to make the elements behind touchable change to flex instead w-full
@@ -116,7 +115,7 @@ export default function NavBar() {
               <Backdrop onClick={() => toggleOpen()}>
                 <motion.div
                   className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden  ${
-                    isOpen ? "bg-[#121212] w-9/12" : "bg-[#121212]"
+                    isOpen ? 'bg-[#121212] w-9/12' : 'bg-[#121212]'
                   } `}
                   initial="closed"
                   animate="open"
@@ -141,5 +140,5 @@ export default function NavBar() {
         </motion.nav>
       </div>
     </div>
-  );
+  )
 }

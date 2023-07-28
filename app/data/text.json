@@ -2,7 +2,7 @@
   "en": {
     "menu": {
       "id": "en",
-      "currentLanguage": "English",
+      "currentLanguage": "EN",
       "home": "Home",
       "homePathname": "/",
       "contact": "Contact",
@@ -266,7 +266,7 @@
   "es": {
     "menu": {
       "id": "es",
-      "currentLanguage": "Español",
+      "currentLanguage": "ES",
       "home": "Inicio",
       "homePathname": "/",
       "contact": "Contacto",
