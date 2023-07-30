@@ -2,6 +2,8 @@ import Head from './head'
 import '../styles/globals.css'
 import { LanguageProvider } from './context/languageContext'
 import NavBar from './components/navbar/NavBar'
+import Footer from './components/footer/Footer'
+
 import CookiesButton from './components/ui/buttons/cookiesButton'
 
 export default function RootLayout ({ children }) {
@@ -13,12 +15,12 @@ export default function RootLayout ({ children }) {
           <section className='max-w-full z-50'>
             <NavBar />
           </section>
-          <section className='max-w-full mt-20 py-8'>
+          <section className='max-w-full mt-20 py-8 w-[100vw] flex flex-col items-center justify-center relative'>
             {children}
           </section>
-          <section className='max-w-full '>
-            {/* <Footer /> */}
-          </section>
+          <footer className='max-w-full '>
+            <Footer />
+          </footer>
           <CookiesButton/>
         </LanguageProvider>
       </body>

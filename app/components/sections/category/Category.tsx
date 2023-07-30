@@ -44,8 +44,8 @@ function Category({ text }) {
   }, [index]);
 
   return (
-    <section className="px-9 grid grid-cols-12 gap-x-6 max-w-full w-100 w-screen z-40 overflow-hidden">
-      <section className="col-start-2 col-end-13 pt-10">
+    <>
+      <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 pt-10">
         <motion.section
           className="flex-col space-y-5 relative"
           initial={{ opacity: 0 }}
@@ -103,15 +103,15 @@ function Category({ text }) {
             desktop={11}
             className={"  mb-5 mx-auto pt-10 relative "}
           >
-              {dataCategoriesSection &&
-                dataCategoriesSection.categories.map((category, i) => (
-                  <CategoryCard
-                    category={category}
-                    index={i}
-                    className=""
-                    wordIndex={index}
-                  />
-                ))}
+            {dataCategoriesSection &&
+              dataCategoriesSection.categories.map((category, i) => (
+                <CategoryCard
+                  category={category}
+                  index={i}
+                  className=""
+                  wordIndex={index}
+                />
+              ))}
           </ResponsiveList>
 
           <div className="flex flex-col justify-center relative overflow-hidden sm:py-12 ">
@@ -138,10 +138,9 @@ function Category({ text }) {
         </motion.section>
         <div className="h-40 w-40 bg-white">
           <Simple />
-
         </div>
       </section>
-    </section>
+    </>
   );
 }
 

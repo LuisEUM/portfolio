@@ -21,11 +21,11 @@ function ResponsiveList({
         className={
           className
             ? className
-            : `mx-auto max-w-2xl px-4 sm:px-6 pt-12 lg:max-w-7xl lg:px-8 lg:min-h-[568px]`
+            : `   pt-12 w-full max-w-full lg:min-h-[568px]`
         }
       >
         <div
-          className={`grid gap-x-6 gap-y-10  content-center justify-center
+          className={`gap-4  md:gap-6  lg:gap-6 grid gap-y-10 content-center justify-center
           ${mobile === 1 && `grid-cols-1`} 
           ${mobile === 2 && `grid-cols-2`} 
           ${mobile === 3 && `grid-cols-3`} 

@@ -32,7 +32,7 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
    * have to replace for wrapping that works for you or dynamically
    * calculate
    */
-  const x = useTransform(baseX, (v) => `${wrap(-0, -10, v)}%`);
+  const x = useTransform(baseX, (v) => `${wrap(-0, -25, v)}%`);
 
   const directionFactor = useRef<number>(1);
   useAnimationFrame((t, delta) => {
@@ -61,21 +61,15 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
    * dynamically generated number of children.
    */
   return (
-    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap opacity-20 pointer-events-none">
+    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap opacity-20 pointer-events-none ">
       <motion.div
-        className="flex flex-nowrap whitespace-nowrap text-[12.5rem] font-black uppercase stroke-red-500 text-stone-950 "
+        className="flex flex-nowrap whitespace-nowrap text-[30vw] md:text-[18vw] lg:text-[13vw] font-black uppercase stroke-red-500 text-stone-950 "
         style={{
           x,
           textShadow:
             "-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white",
         }}
       >
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
         <span className="block px-6">{children} </span>
         <span className="block px-6">{children} </span>
         <span className="block px-6">{children} </span>

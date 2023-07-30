@@ -4,7 +4,7 @@ import Symbol from "../../svg/Symbol";
 
 function HeroImage() {
   return (
-    <section className="col-start-8  col-end-13 items-center  -purple-500/10 flex ">
+    <section className="col-start-8  col-end-5 md:col-end-9 lg:col-end-13 items-center  -purple-500/10 flex ">
       <div className="w-[40vw] h-[40vw] -ml-[10vw] group -slate-700/30 relative ">
         <div className="absolute -top-20 right-24 z-50">
           <div className="relative w-50 h-50">
@@ -48,12 +48,7 @@ function HeroImage() {
         </div>
         <div className=" absolute bottom-20 -left-20">
           <div className="relative w-full h-full flex flex-col items-center justify-center ">
-            <Symbol 
-              className="stroke-primary" 
-              delay={0} 
-              type="x" 
-              size={1.25} 
-            />
+            <Symbol className="stroke-primary" delay={0} type="x" size={1.25} />
           </div>
         </div>
         <div className="  absolute bottom-0 left-36  z-50">
@@ -106,16 +101,16 @@ function HeroImage() {
               ease: "easeInOut",
               repeatType: "reverse",
             }}
-            width={200}
-            height={200}
+            width={2000}
+            height={2000}
             src="/images/luis-eduardo-urdaneta-martucci-completo.webp"
             alt="Luis "
             className="w-full h-full object-contain  group-hover:rotate-90 absolute cursor-none pointer-events-none"
           />
         </motion.div>
         <Image
-          width={200}
-          height={200}
+          width={2000}
+          height={2000}
           src="/images/luis-eduardo-urdaneta-martucci-cabeza.webp"
           alt="Luis "
           className="w-full h-full object-contain absolute top-0 cursor-none pointer-events-none"

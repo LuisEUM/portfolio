@@ -1,9 +1,13 @@
 'use client'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import ModalCookies from '../modals/modalCookies'
 import Script from 'next/script'
+import dynamic from 'next/dynamic'
 
+const DynamicModalCookies = dynamic(() => import('../modals/modalCookies'), {
+  ssr: false,
+  loading: () => <p>Loading...</p>
+})
 export default function CookiesButton () {
   const [show, setShow] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
@@ -37,7 +41,7 @@ export default function CookiesButton () {
         initial={false}
         onExitComplete={() => close}
       >
-        {modalOpen && <ModalCookies modalOpen={modalOpen} handleClose={close} /> }
+        {modalOpen && <DynamicModalCookies modalOpen={modalOpen} handleClose={close} /> }
       </AnimatePresence>
     </>
   )

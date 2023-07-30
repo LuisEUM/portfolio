@@ -1,15 +1,15 @@
 'use client'
 import { useRef, React, useContext, useState } from 'react'
 import { AnimatePresence, motion, useCycle } from 'framer-motion'
-import { useDimensions } from './hook/use-dimensions.jsx'
+import { useDimensions } from './hook/use-dimensions'
 import { ToggleMenu } from './toggle-menu/ToggleMenu'
 import MainMenu from './main-menu/MainMenu'
 import { LanguageContext } from '../../context/languageContext'
 import Link from 'next/link.js'
-import SelectLanguage from './select-language/selectLanguage.jsx'
-import Backdrop from '../ui/backdrop/backdrop.jsx'
-import ContactButton from '../ui/buttons/contactButton.jsx'
-import ModalContact from '../ui/modals/modalContact.jsx'
+import SelectLanguage from './select-language/selectLanguage'
+import BackdropLeftToRigth from '../ui/backdrop/BackdropLeftToRigth'
+import ContactModalButton from '../ui/buttons/ContactModalButton'
+import ModalContact from '../ui/modals/modalContact'
 
 const sidebar = {
   open: {
@@ -51,7 +51,7 @@ export default function NavBar () {
           transitionProperty: 'all',
           transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)'
         }}
-        className="flex h-20 absolute justify-between lg:fixed top-0 w-full  bg-zinc-900 bg-opacity-80"
+        className="flex h-20  justify-between fixed top-0 w-full bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter rounded-lg shadow-lg"
       >
         <div className=" ml-8 col-span-2 flex justify-center items-center">
           <Link
@@ -92,7 +92,7 @@ export default function NavBar () {
                 {text.menu.contact}
               </motion.button>
             </Link> */}
-            <ContactButton />
+            <ContactModalButton />
           </div>
           <div className="flex justify-center pr-8 pl-4">
             <SelectLanguage />
@@ -112,9 +112,9 @@ export default function NavBar () {
             onExitComplete={() => modalOpenNavbar && open()}
           >
             {isOpen && (
-              <Backdrop onClick={() => toggleOpen()}>
+              <BackdropLeftToRigth onClick={() => toggleOpen()}>
                 <motion.div
-                  className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden  ${
+                  className={`fixed h-screen top-0 right-0 bottom-0 max-w-full overflow-hidden -z-30  ${
                     isOpen ? 'bg-[#121212] w-9/12' : 'bg-[#121212]'
                   } `}
                   initial="closed"
@@ -131,7 +131,7 @@ export default function NavBar () {
                     toggleOpen={toggleOpen}
                   />
                 </motion.div>
-              </Backdrop>
+              </BackdropLeftToRigth>
             )}
           </AnimatePresence>
           {modalOpenNavbar && <ModalContact handleClose={close} />}
