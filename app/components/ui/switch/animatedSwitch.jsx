@@ -13,7 +13,7 @@ export default function AnimatedSwitch ({ isOn, setIsOn, className }) {
   }, [])
 
   return (
-    <motion.div
+    <div
       className={`h-7 w-16 rounded-full flex items-center box-border py-0 px-1 cursor-pointer transition-all ${className} ${
         isOn ? 'bg-primary justify-end' : 'bg-[#6E0D25] justify-start  '
       } ${!ended && 'scale-0'}`}
@@ -71,6 +71,6 @@ export default function AnimatedSwitch ({ isOn, setIsOn, className }) {
           </motion.p>
         </AnimatePresence>
       </motion.div>
-    </motion.div>
+    </div>
   )
 }

@@ -45,7 +45,7 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
       initial="closed"
       animate={isOpen ? 'open' : 'closed'}
       exit="closed"
-      className="flex-row group-first:border-b-2 top-[75px] right-0 fixed w-9/12 h-full "
+      className="flex-row group-first:border-b-2 top-[75px] right-0 fixed w-7/12 h-full  items-center px-[5%] "
       ref={ref}
     >
       <AnimatePresence>
@@ -53,7 +53,7 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
           <>
             <div>
               <Link
-                href={text.menu.homePathname}
+                href={text.menu.routes[0].pathname}
                 onClick={toggleOpen}
                 className="grid grid-cols-12  hover:bg-zinc-800 py-5 px-5 "
               >
@@ -68,12 +68,16 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
                 </svg>
                 <p className="text-zinc-100 text-xl tracking-wider col-span-9 col-start-3 h-full">
                   {' '}
-                  {text.menu.home}{' '}
+                  {text.menu.routes[0].name}{' '}
                 </p>
               </Link>
 
               <Link
-                href={text.menu.projectsPathname}
+                href={
+                  text.menu.routes[1].pathname === '/projects'
+                    ? '/projects?category=All&page=1'
+                    : text.menu.routes[1].pathname
+                }
                 onClick={toggleOpen}
                 className="grid grid-cols-12  hover:bg-zinc-800 py-5 px-5 "
               >
@@ -89,7 +93,7 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
 
                 <p className="text-zinc-100 text-xl tracking-wider col-span-9 col-start-3 h-full">
                   {' '}
-                  {text.menu.projects}{' '}
+                  {text.menu.routes[1].name}{' '}
                 </p>
               </Link>
 
@@ -148,7 +152,7 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
             >
               <ContactModalButton
                 setModalOpenNavbar={setModalOpenNavbar}
-                className="w-full col-start-1 lg:col-start-2 bg-primary col-span-10 uppercase text-zinc-900 tracking-wider font-extrabold text-lg rounded-lg py-3"
+                className="text-center px-7   border border-primary justify-center items-center gap-2.5 inline-flex hover:shadow-primary/50 hover:shadow-md w-full  rounded-3xl bg-primary col-span-10 uppercase text-zinc-900 tracking-wider font-extrabold text-lg  py-3"
               />
             </div>
           </>

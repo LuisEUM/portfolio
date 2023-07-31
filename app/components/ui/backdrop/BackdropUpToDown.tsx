@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
 
 // always remember to make stop the propagation inside the childrens, add the next code to the main container onClick={(e) => e.stopPropagation()}
 
@@ -7,6 +6,7 @@ const BackdropUpToDown = ({ children, onClick }) => {
   const dropIn = {
     open: {
       y: "0vh",
+      opacity: 1,
       transition: {
         type: "spring",
         damping: 25,
@@ -16,6 +16,7 @@ const BackdropUpToDown = ({ children, onClick }) => {
     },
     closed: {
       y: "-100vh",
+      opacity: 0,
       transition: {
         type: "spring",
         damping: 25,
@@ -37,17 +38,16 @@ const BackdropUpToDown = ({ children, onClick }) => {
     },
     exit: {
       opacity: 0,
+            y: "-100vh",
+
     },
   };
 
-  const handleModalClose = () => {
-    onClick();
-  };
 
   return (
     <>
       <motion.div
-        onClick={handleModalClose}
+        onClick={onClick}
         className="z-30 fixed top-0 left-0 h-screen w-full bg-zinc-950/80 "
         variants={fadeIn}
         initial="closed"
@@ -55,7 +55,7 @@ const BackdropUpToDown = ({ children, onClick }) => {
         exit="closed"
       ></motion.div>
       <motion.div
-        onClick={handleModalClose}
+        onClick={onClick}
         className="z-50 fixed top-0 left-0 h-screen w-full  flex items-center justify-center"
         variants={dropIn}
         initial="closed"
@@ -64,8 +64,8 @@ const BackdropUpToDown = ({ children, onClick }) => {
       >
         <AnimatePresence
           initial={false}
-          mode="sync"
-          onExitComplete={handleModalClose}
+          mode="wait"
+          onExitComplete={onClick}
         >
           {children}
         </AnimatePresence>

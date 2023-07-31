@@ -3,14 +3,12 @@
     "menu": {
       "id": "en",
       "currentLanguage": "EN",
-      "home": "Home",
-      "homePathname": "/",
+      "routes": [
+        { "name": "Home", "pathname": "/" },
+        { "name": "Projects", "pathname": "/projects" },
+        { "name": "About", "pathname": "/about" }
+      ],
       "contact": "Contact me",
-      "contactPathname": "/contact",
-      "projects": "Projects",
-      "projectsPathname": "/projects?category=All&page=1",
-      "blog": "Blog",
-      "blogPathname": "/blog",
       "languages": "Languages",
       "languagesOptions": [
         {
@@ -26,9 +24,11 @@
     "footer": {
       "website": "© 2023 Luis Urdaneta",
       "rights": "All rights reserved",
-      "policy": "Policy",
-      "policyPathname": "/privacy-policy",
-      "email": "luiseum95@gmail.com"
+      "routes": [
+        { "name": "Home", "pathname": "/" },
+        { "name": "Projects", "pathname": "/projects" },
+        { "name": "About", "pathname": "/about" }
+      ]
     },
     "home": {
       "categoriesSection": {
@@ -52,6 +52,13 @@
             "icon": "/icons/marketing.svg"
           }
         ]
+      },
+      "bigQuoteSection": {
+        "parallax": "The Power Of Passion",
+        "quote": {
+          "lineOne": "Web dev is my love",
+          "lineTwo": "video games are my passion"
+        }
       }
     },
     "portfolio": {
@@ -267,14 +274,12 @@
     "menu": {
       "id": "es",
       "currentLanguage": "ES",
-      "home": "Inicio",
-      "homePathname": "/",
+      "routes": [
+        { "name": "Inicio", "pathname": "/" },
+        { "name": "Proyectos", "pathname": "/projects" },
+        { "name": "+Sobre mí", "pathname": "/about" }
+      ],
       "contact": "Contáctame",
-      "contactPathname": "/contact",
-      "projects": "Proyectos",
-      "projectsPathname": "/projects",
-      "blog": "Blog",
-      "blogPathname": "/blog",
       "languages": "Lenguajes",
       "languagesOptions": [
         {
@@ -290,9 +295,11 @@
     "footer": {
       "website": "© 2023 Luis Urdaneta",
       "rights": "Todos los derechos reservados",
-      "policy": "Políticas",
-      "policyPathname": "/privacy-policy",
-      "email": "luiseum95@gmail.com"
+      "routes": [
+        { "name": "Home", "pathname": "/" },
+        { "name": "Projects", "pathname": "/projects" },
+        { "name": "About", "pathname": "/about" }
+      ] 
     },
     "home": {
       "categoriesSection": {
@@ -316,6 +323,13 @@
             "icon": "/icons/marketing.svg"
           }
         ]
+      },
+      "bigQuoteSection": {
+        "parallax": "El Poder de la Pasión",
+        "quote": {
+          "lineOne": "Desarrollar es mi amor",
+          "lineTwo": "los videojuegos son mi pasión"
+        }
       }
     },
     "portfolio": {

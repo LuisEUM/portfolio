@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <TailwindGrid >
+      <TailwindGrid  >
         <Hero text={text} />
       </TailwindGrid>
 
@@ -23,7 +23,7 @@ export default function Home() {
 
       <ProjectsPreview text={text} />
 
-      <BigQuote />
+      <BigQuote text={text} />
     </>
   );
 }

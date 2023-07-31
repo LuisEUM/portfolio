@@ -1,7 +1,13 @@
-import React from "react";
+'use client'
+import { LanguageContext } from "@/app/context/languageContext";
+import Link from "next/link";
+import React, { useContext } from "react";
 import ContactModalButton from "../ui/buttons/ContactModalButton";
+import { motion } from "framer-motion";
 
 function Footer() {
+  const { text } = useContext(LanguageContext);
+
   return (
     <div className="w-full h-[269px] flex-col justify-center items-center gap-y-10 inline-flex">
       <div className="justify-start items-start gap-4 inline-flex">
@@ -28,13 +34,28 @@ function Footer() {
           <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
         </div>
       </div>
-      <div className="justify-start items-start gap-10 inline-flex text-white text-base font-normal">
-        <p>Portfolio</p>
-        <p>Blog</p>
-        <p>Testimonials</p>
+      <div className="justify-start items-start gap-10 inline-flex ">
+        {text.footer.routes.map((route) => (
+          <motion.div
+            className="flex justify-center px-4"
+            key={route.pathname}
+            whileTap={{ scale: 0.9 }}
+          >
+            <Link
+              href={
+                route.pathname === "/projects"
+                  ? "/projects?category=All&page=1"
+                  : route.pathname
+              }
+              className="self-center flex items-center hover:scale-105 hover:text-primary transition-all text-white text-base font-normal"
+            >
+              {route.name}
+            </Link>
+          </motion.div>
+        ))}
       </div>
       <ContactModalButton
-        className="text-center text-black text-base font-bold px-7 py-2 bg-primary rounded-[30px] border border-primary justify-center items-center gap-2.5 inline-flex hover:shadow-primary/50 hover:shadow-md"
+        className="text-center text-black text-base font-bold px-7 py-2 bg-primary rounded-3xl border border-primary justify-center items-center gap-2.5 inline-flex hover:shadow-primary/50 hover:shadow-md"
         setModalOpenNavbar={undefined}
       />
 

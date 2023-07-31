@@ -68,10 +68,10 @@ export default function SelectLanguage () {
       className=" flex flex-col self-center "
     >
       <motion.button
-        whileHover={{ scale: 1.03 }}
+        whileHover={{ scale: 1.03, fill: '#00BB31' }}
         whileTap={{ scale: 0.97 }}
         onClick={() => setIsOpen((isOpen) => !isOpen)}
-        className="relative cursor-pointer w-full flex justify-between items-center text-left "
+        className="relative cursor-pointer w-full flex justify-between items-center text-left fill-white"
       >
         <div className="self-center">
           {/* <svg
@@ -113,7 +113,6 @@ export default function SelectLanguage () {
           >
             <g>
               <path
-                fill="#fff"
                 fillRule="evenodd"
                 d="M7 2a1 1 0 0 1 1 1v1h3a1 1 0 1 1 0 2H9.578a18.87 18.87 0 0 1-1.724 4.78c.29.354.596.696.914 1.026a1 1 0 0 1-1.44 1.389 21.034 21.034 0 0 1-.554-.6 19.095 19.095 0 0 1-3.107 3.567 1 1 0 0 1-1.334-1.49 17.09 17.09 0 0 0 3.13-3.733 18.995 18.995 0 0 1-1.487-2.494 1 1 0 1 1 1.79-.89c.234.47.489.928.764 1.372.417-.934.752-1.913.997-2.927H3a1 1 0 0 1 0-2h3V3a1 1 0 0 1 1-1zm6 6a1 1 0 0 1 .894.553l2.991 5.982a.88.88 0 0 1 .02.037l.99 1.98a1 1 0 1 1-1.79.895L15.383 16h-4.764l-.724 1.447a1 1 0 1 1-1.788-.894l.99-1.98.019-.038 2.99-5.982A1 1 0 0 1 13 8zm-1.382 6h2.764L13 11.236z"
                 clipRule="evenodd"

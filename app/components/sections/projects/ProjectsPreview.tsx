@@ -36,7 +36,7 @@ function ProjectsPreview({ text }) {
         </section>
       </TailwindGrid>
       <section className=" max-w-full py-36    w-screen flex flex-col justify-center content-center items-center">
-        <TailwindGrid show>
+        <TailwindGrid >
           <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
             <h3 className="text-start text-5xl font-black">
               Do you want to

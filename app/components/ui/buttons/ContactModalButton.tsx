@@ -18,7 +18,7 @@ function ContactModalButton({ className, setModalOpenNavbar }) {
       <motion.button
         className={
           className ||
-          "self-center b text-primary  border border-primary font-bold rounded-md  hover:text-zinc-950 hover:bg-primary px-4 h-8 uppercase"
+          "self-center b text-primary  border  border-primary font-bold rounded-md bg-zinc-950/30 hover:text-zinc-950 hover:bg-primary px-4 h-8 uppercase"
         }
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.93 }}
