@@ -28,6 +28,104 @@
         { "name": "Home", "pathname": "/" },
         { "name": "Projects", "pathname": "/projects" },
         { "name": "About", "pathname": "/about" }
+      ],
+      "socials": [
+        {
+          "name": "Gmail",
+          "icon": "/icons/footer/gmail.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "WhatsApp",
+          "icon": "/icons/footer/whatsapp.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Telegram",
+          "icon": "/icons/footer/telegram.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "LinkedIn",
+          "icon": "/icons/footer/linkedin.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Instagram",
+          "icon": "/icons/footer/instagram.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "YouTube",
+          "icon": "/icons/footer/youtube.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Facebook",
+          "icon": "/icons/footer/facebook.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "GitHub",
+          "icon": "/icons/footer/github.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "GitLab",
+          "icon": "/icons/footer/gitlab.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "CodeSandbox",
+          "icon": "/icons/footer/codesandbox.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Figma",
+          "icon": "/icons/footer/figma.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Alkitu",
+          "icon": "/icons/footer/alkitu.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Médium",
+          "icon": "/icons/footer/medium.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Dribble",
+          "icon": "/icons/footer/dribble.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Behance",
+          "icon": "/icons/footer/behance.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Spatial",
+          "icon": "/icons/footer/spatial.svg",
+          "url": "#",
+          "hidden": true
+        }
       ]
     },
     "home": {
@@ -299,7 +397,105 @@
         { "name": "Home", "pathname": "/" },
         { "name": "Projects", "pathname": "/projects" },
         { "name": "About", "pathname": "/about" }
-      ] 
+      ],
+      "socials": [
+        {
+          "name": "Gmail",
+          "icon": "/icons/footer/gmail.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "WhatsApp",
+          "icon": "/icons/footer/whatsapp.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Telegram",
+          "icon": "/icons/footer/telegram.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "LinkedIn",
+          "icon": "/icons/footer/linkedin.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Instagram",
+          "icon": "/icons/footer/instagram.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "YouTube",
+          "icon": "/icons/footer/youtube.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Facebook",
+          "icon": "/icons/footer/facebook.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "GitHub",
+          "icon": "/icons/footer/github.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "GitLab",
+          "icon": "/icons/footer/gitlab.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "CodeSandbox",
+          "icon": "/icons/footer/codesandbox.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Figma",
+          "icon": "/icons/footer/figma.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Alkitu",
+          "icon": "/icons/footer/alkitu.svg",
+          "url": "#",
+          "hidden": false
+        },
+        {
+          "name": "Médium",
+          "icon": "/icons/footer/medium.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Dribble",
+          "icon": "/icons/footer/dribble.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Behance",
+          "icon": "/icons/footer/behance.svg",
+          "url": "#",
+          "hidden": true
+        },
+        {
+          "name": "Spatial",
+          "icon": "/icons/footer/spatial.svg",
+          "url": "#",
+          "hidden": true
+        }
+      ]
     },
     "home": {
       "categoriesSection": {

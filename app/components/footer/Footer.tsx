@@ -1,38 +1,38 @@
-'use client'
+"use client";
 import { LanguageContext } from "@/app/context/languageContext";
 import Link from "next/link";
 import React, { useContext } from "react";
 import ContactModalButton from "../ui/buttons/ContactModalButton";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function Footer() {
   const { text } = useContext(LanguageContext);
 
   return (
     <div className="w-full h-[269px] flex-col justify-center items-center gap-y-10 inline-flex">
-      <div className="justify-start items-start gap-4 inline-flex">
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-        </div>
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-        </div>
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-        </div>
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-        </div>
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-          <img
-            className="w-[16.07px] h-[16.07px] left-[4px] top-[4px] absolute"
-            src="https://via.placeholder.com/16x16"
-          />
-        </div>
-        <div className="w-6 h-6 relative shadow">
-          <div className="w-6 h-6 left-0 top-0 absolute bg-white rounded-full" />
-        </div>
+      <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
+        {text.footer.socials.map((social, index) => (
+          <div
+            className={`flex justify-center min-h-9 min-w-9 items-center h-8 shadow  rounded-full w-1/6 ${
+              social.hidden && "hidden"
+            }`}
+          >
+            <motion.button
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.1 }}
+              className="group bg-white cursor-pointer hover:bg-zinc-700 rounded-full transition-all"
+            >
+              <Image
+                width={40}
+                height={40}
+                alt={social.name}
+                src={social.icon}
+                className="w-8 h-8 group-hover:invert cursor-pointer"
+              />
+            </motion.button>
+          </div>
+        ))}
       </div>
       <div className="justify-start items-start gap-10 inline-flex ">
         {text.footer.routes.map((route) => (
@@ -60,8 +60,8 @@ function Footer() {
       />
 
       <div className="w-full h-[0px] border border-white"></div>
-      <p className="text-xs font-light pb-10">
-        © 2023 Luis Urdaneta All Rights Reserved
+      <p className="text-xs font-light pb-10 capitalize">
+        {text.footer.website} {text.footer.rights}
       </p>
     </div>
   );
