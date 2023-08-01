@@ -7,6 +7,7 @@ import Hero from "./components/sections/hero/Hero";
 import { LanguageContext } from "./context/languageContext";
 import "./style.css";
 import BigQuote from "./components/sections/quote/BigQuote";
+import Testimonials from "./components/sections/testimonials/Testimonials";
 
 export default function Home() {
   const { text } = useContext(LanguageContext);
@@ -24,6 +25,7 @@ export default function Home() {
       <ProjectsPreview text={text} />
       
       <BigQuote text={text} />
+      <Testimonials text={text}/>
     </>
   );
 }

@@ -3,9 +3,7 @@ import ProjectCard from "../../card/ProjectCard";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
-import PrimaryButton from "../../ui/buttons/PrimaryButton";
 import SecondaryButton from "../../ui/buttons/SecondaryButton";
-import BasicCarousel from "../../ui/carousel/BasicCarousel";
 import CarouselSlider from "../../ui/carousel/CarouselSlider";
 
 function ProjectsPreview({ text }) {
