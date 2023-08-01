@@ -21,7 +21,7 @@ function ResponsiveList({
         className={
           className
             ? className
-            : `   pt-12 w-full max-w-full lg:min-h-[568px]`
+            : `   pt-12 w-full max-w-full lg:min-h-[35vw]`
         }
       >
         <div

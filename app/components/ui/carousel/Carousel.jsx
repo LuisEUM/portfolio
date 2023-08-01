@@ -29,7 +29,7 @@ const variants = {
 
 const initialIndex = 0
 
-export default function Carrousel ({ numbers, bullets, thumbnails, arrows, className, immagesArray, longCard }) {
+export default function Carousel ({ numbers, bullets, thumbnails, arrows, className, immagesArray, longCard }) {
   const [page, setPage] = useState(initialIndex)
   const images = immagesArray
   const paginationBullets = bullets || false
@@ -55,7 +55,6 @@ export default function Carrousel ({ numbers, bullets, thumbnails, arrows, class
     }
   }, [images.length, page])
 
-  
   useEffect(() => {
     const interval = setInterval(() => {
       handleClickAfter()
@@ -198,6 +197,6 @@ export default function Carrousel ({ numbers, bullets, thumbnails, arrows, class
   )
 }
 
-Carrousel.propTypes = {
+Carousel.propTypes = {
   heigth: PropTypes.string
 }

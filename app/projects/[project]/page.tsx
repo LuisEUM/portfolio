@@ -1,7 +1,7 @@
 "use client";
 import TextSlider from "@/app/components/slider/TextSlider";
 import SocialButtons from "@/app/components/ui/contact/SocialButtons";
-import Carrousel from "@/app/components/ui/carrousel/Carrousel";
+import Carousel from "@/app/components/ui/carousel/Carousel";
 import { LanguageContext } from "@/app/context/languageContext";
 import { useContext } from "react";
 import Link from "next/link";
@@ -18,7 +18,7 @@ function Project() {
     <div className="lg:flex -mt-8">
       <section className="w-full lg:w-[60%] lg:min-h-[50vh]  relative overflow-hidden flex  justify-center items-center">
         <div className=" lg:w-4/5 z-10 ">
-          <Carrousel
+          <Carousel
             numbers={false}
             bullets={false}
             thumbnails

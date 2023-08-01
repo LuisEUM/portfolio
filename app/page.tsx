@@ -22,7 +22,7 @@ export default function Home() {
       </TailwindGrid>
 
       <ProjectsPreview text={text} />
-
+      
       <BigQuote text={text} />
     </>
   );

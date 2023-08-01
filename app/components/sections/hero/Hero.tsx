@@ -40,7 +40,7 @@ function Hero({ text }) {
         </div>
         <div className=" col-start-1 lg:col-start-2 justify-start items-center gap-10 inline-flex mt-12">
           <PrimaryButton text={text} />
-          <SecondaryButton text={text} />
+          <SecondaryButton>Portafolio</SecondaryButton>
         </div>
       </section>
 
