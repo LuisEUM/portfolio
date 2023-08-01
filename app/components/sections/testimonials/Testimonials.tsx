@@ -37,19 +37,18 @@ function Testimonials({ text }) {
               <ResponsiveList tablet={3} desktop={3} mobile={1}>
                 {text.portfolio.projects &&
                   dataTestimonials.map((project) => (
-                    <div className="w-[316px] h-[248px] relative">
-                      <div className="w-[316px] h-[248px] left-0 top-0 absolute bg-zinc-900 rounded-[13.87px] shadow" />
+                    <div className="w-full h-64 relative bg-zinc-900 rounded-[13.87px] shadow flex flex-col gap-y-2 items-center justify-center text-center px-6">
                       <img
-                        className="w-[60px] h-[60px] left-[128px] top-[16px] absolute rounded-full"
+                        className=" rounded-full"
                         src="https://via.placeholder.com/60x60"
                       />
-                      <div className="left-[99px] top-[82px] absolute text-center text-white text-base font-bold">
+                      <div className=" text-center text-white text-base font-bold">
                         Mark Johnson
                       </div>
-                      <div className="left-[100px] top-[107.66px] absolute text-center text-zinc-400 text-[11.10px] font-medium">
+                      <div className=" text-zinc-400 text-xs  font-medium">
                         CEO of XYZ Company.
                       </div>
-                      <div className="w-[276px] left-[20px] top-[131px] absolute text-justify text-slate-50 text-sm font-normal tracking-tight">
+                      <div className="max-w-full   text-slate-50 text-sm font-normal tracking-tight">
                         I had the pleasure of collaborating with Luis on a
                         design project, and the results exceeded my
                         expectations. Their attention to detail, creativity, and
