@@ -10,7 +10,7 @@ function Footer() {
   const { text } = useContext(LanguageContext);
 
   return (
-    <div className="w-full h-[269px] flex-col justify-center items-center gap-y-10 inline-flex">
+    <div className="w-full min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex bg-zinc-900/50 pt-10">
       <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
         {text.footer.socials.map((social, index) => (
           <div
@@ -55,7 +55,7 @@ function Footer() {
         ))}
       </div>
       <ContactModalButton
-        className="text-center text-black text-base font-bold px-7 py-2 bg-primary rounded-3xl border border-primary justify-center items-center gap-2.5 inline-flex hover:shadow-primary/50 hover:shadow-md"
+        className="text-center text-black text-base font-bold px-7 py-2 bg-primary rounded-3xl border border-primary justify-center items-center gap-2.5 inline-flex hover:shadow-primary/50 hover:shadow-md "
         setModalOpenNavbar={undefined}
       />
 

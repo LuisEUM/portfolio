@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React, { useState } from "react";
 import ProjectCard from "../../card/ProjectCard";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
-import CarouselSlider from "../../ui/carousel/CarouselSlider";
+import CardsCarouselSlider from "../../ui/carousel/CardsCarouselSlider";
 
 const dataTestimonials = ["1", "2", "3"];
 
@@ -34,27 +35,35 @@ function Testimonials({ text }) {
               <span className="text-primary"> Client Testimonials</span>
             </h3>
             <div className="hidden md:block">
-              <ResponsiveList tablet={3} desktop={3} mobile={1}>
+              <ResponsiveList
+                tablet={3}
+                desktop={3}
+                mobile={1}
+                className="pt-12 w-full max-w-full "
+              >
                 {text.portfolio.projects &&
                   dataTestimonials.map((project) => (
-                    <div className="w-full h-64 relative bg-zinc-900 rounded-[13.87px] shadow flex flex-col gap-y-2 items-center justify-center text-center px-6">
-                      <img
-                        className=" rounded-full"
-                        src="https://via.placeholder.com/60x60"
+                    <section className="w-full relative bg-zinc-900 rounded-[13.87px]  shadow flex flex-col gap-y-2 items-center justify-center text-center px-6 py-5">
+                      <Image
+                        className=" rounded-full pointer-events-none w-3/12 aspect-square"
+                        width={700}
+                        height={700}
+                        alt={project}
+                        src="https://picsum.photos/id/199/900/1600"
                       />
-                      <div className=" text-center text-white text-base font-bold">
+                      <h4 className=" text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  font-bold">
                         Mark Johnson
-                      </div>
-                      <div className=" text-zinc-400 text-xs  font-medium">
+                      </h4>
+                      <h5 className=" text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw]  font-medium">
                         CEO of XYZ Company.
-                      </div>
-                      <div className="max-w-full   text-slate-50 text-sm font-normal tracking-tight">
+                      </h5>
+                      <p className="max-w-full   text-slate-50   md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight ">
                         I had the pleasure of collaborating with Luis on a
                         design project, and the results exceeded my
                         expectations. Their attention to detail, creativity, and
                         ability to bring my vision to life was outstanding.
-                      </div>
-                    </div>
+                      </p>
+                    </section>
                   ))}
               </ResponsiveList>
             </div>
@@ -62,7 +71,7 @@ function Testimonials({ text }) {
         </TailwindGrid>
       </section>
       <TailwindGrid fullSize>
-        <CarouselSlider />
+        <CardsCarouselSlider height={300} />
       </TailwindGrid>
     </>
   );

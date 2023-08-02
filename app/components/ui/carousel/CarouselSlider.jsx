@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 
-const images = [
+const cards = [
   'https://picsum.photos/id/200/900/1600',
   'https://picsum.photos/id/202/900/1600',
   'https://picsum.photos/id/203/900/1600',
@@ -23,7 +23,7 @@ function CarouselSlider () {
   const paginate = (newDirection) => {
     const newPosition = position + newDirection
     console.log()
-    if (newPosition >= -1 && newPosition < images.length - 1) {
+    if (newPosition >= -1 && newPosition < cards.length - 1) {
       setPosition(newPosition)
     }
   }
@@ -32,14 +32,14 @@ function CarouselSlider () {
     <>
       <section
         style={{ height: `${size / 1.78}vw` }}
-        className=" w-full md:hidden"
+        className=" w-full md:hidden mb-6"
       />
       <section className="absolute max-h-min  z-10 overflow-hidden max-w-full flex items-center justify-center md:hidden ">
         <div
           style={{ height: `${size / 1.78}vw` }}
           className=" w-screen  overflow-hidden  self-center "
         >
-          {images.map((image, index) => (
+          {cards.map((image, index) => (
             <motion.div
               style={{ width: `${size}vw` }}
               className="   aspect-video bg-zinc-900  max-h-full rounded-xl overflow-hidden absolute  "
@@ -73,8 +73,11 @@ function CarouselSlider () {
         </div>
       </section>
 
-      <div className="flex self-center justify-self-center place-self-center content-center justify-center my-2 absolute -bottom-10 z-40 md:hidden">
-        {images.map((image, index) => {
+      <div
+        style={{ top: `${size / 1.78}vw` }}
+        className="flex self-center justify-self-center place-self-center content-center justify-center mt-6 absolute z-40 md:hidden"
+      >
+        {cards.map((image, index) => {
           const isCurrent = index === position + 1
           return (
             <div
