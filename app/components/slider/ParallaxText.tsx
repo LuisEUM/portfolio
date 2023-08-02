@@ -10,8 +10,8 @@ import {
 } from "framer-motion";
 import React, { useRef } from "react";
 
-interface ParallaxProps {
-  children: string;
+type ParallaxProps = {
+  children: React.ReactNode;
   baseVelocity: number;
 }
 

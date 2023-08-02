@@ -1,6 +1,11 @@
 import { motion } from 'framer-motion'
 
-function SecondaryButton ({ children, className }) {
+type SecondaryButton_Props = {
+  children?: React.ReactNode;
+  className?: string;
+}
+
+function SecondaryButton ({ children, className }: SecondaryButton_Props) {
   return (
     <motion.button
       whileHover={{ scale: 1.03 }}

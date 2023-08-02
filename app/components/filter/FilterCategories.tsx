@@ -4,7 +4,7 @@ import { useDragControls, useMotionValue, motion } from 'framer-motion'
 import { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 
-interface FilterCategories_Props {
+type FilterCategories_Props = {
   search: string;
   className: string;
   setCurrentPage: (search: number) => void;

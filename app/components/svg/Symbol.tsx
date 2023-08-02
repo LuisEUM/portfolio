@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-interface Symbol_Props {
+type Symbol_Props = {
   delay: number;
   type: "x" | "circle" | "triangle" | "square";
   className: string;
