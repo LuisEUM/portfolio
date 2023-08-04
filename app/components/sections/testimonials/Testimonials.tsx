@@ -5,6 +5,7 @@ import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
 import CardsCarouselSlider from "../../ui/carousel/CardsCarouselSlider";
+import LuisCarousel from "../../ui/carousel/LuisCarousel";
 
 const dataTestimonials = ["1", "2", "3"];
 
@@ -73,7 +74,8 @@ function Testimonials({ text }) {
       <TailwindGrid fullSize>
         <CardsCarouselSlider height={300} />
       </TailwindGrid>
-    </>
+        <LuisCarousel/>
+        </>
   );
 }
 

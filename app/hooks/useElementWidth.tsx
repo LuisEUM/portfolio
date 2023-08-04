@@ -1,0 +1,29 @@
+'use client'
+import { useEffect, useState } from "react";
+
+function useElementWidth(ref) {
+  const [elementWidth, setElementWidth] = useState(0);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      setElementWidth(rect.width);
+    }
+
+    const handleResize = () => {
+      const rect = element.getBoundingClientRect();
+      setElementWidth(rect.width);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [ref]);
+
+  return elementWidth;
+}
+
+export default useElementWidth;
