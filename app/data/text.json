@@ -156,25 +156,32 @@
         "quote": {
           "lineOne": "Web dev is my love",
           "lineTwo": "video games are my passion"
-        },
-        "testimonials":[
-          {
-          "name":"Farooq Khader",
-          "position":"Co-Founder and CTO at Tangle",
-          "testimonial":"Luis is a great web developer with amazing attention to details. His urge for the most innovative technology triggered us to move our website to a better technology - Next js. He was also very committed to see the results to match with our designer's imagination and satisfaction. His structured programming techniques made it easier for our internal team to take over his work in a smooth way. His patience to collaborate with other team members/freelancers also paid off to save time and effort for the team. I recommend Luis as a great web developer."
+        }
+      },
+      "testimonialsSection": [
+        {
+          "order": 1,
+          "src": "https://picsum.photos/id/202/900/1600",
+          "name": "Farooq Khader",
+          "position": "Co-Founder and CTO at Tangle",
+          "description": "Luis is a great web developer with amazing attention to details. His urge for the most innovative technology triggered us to move our website to a better technology - Next js. He was also very committed to see the results to match with our designer's imagination and satisfaction. His structured programming techniques made it easier for our internal team to take over his work in a smooth way. His patience to collaborate with other team members/freelancers also paid off to save time and effort for the team. I recommend Luis as a great web developer."
         },
         {
-          "name":"Nacho Escudero",
-          "position":"Co-Founder and CTO at Tangle",
-          "testimonial":"Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional displinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo. "
+          "order": 2,
+          "src": "https://picsum.photos/id/203/900/1600",
+          "name": "Nacho Escudero",
+          "position": "Co-Founder and CTO at Tangle",
+          "description": "Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional displinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo. "
         },
         {
-          "name":"Nacho Escudero",
-          "position":"Co-Founder and CTO at Tangle",
-          "testimonial":"Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional displinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo. "
+          "order": 3,
+          "src": "https://picsum.photos/id/204/900/1600",
+          "name": "Leonel Perez",
+          "position": "Co-Founder and CTO at Tangle",
+          "description": "Lo que realmente distingue a Luis es su capacidad para centrarse en los detalles, maneja con soltura múltiples áreas de conocimiento como: diseño, desarrollo y marketing. Lo recomiendo como profesional, con el se hace posible la creación de productos digitales, webs llamativas e ideas para destacar tus servicios y productos por internet."
         }
       ]
-      }
+      
     },
     "portfolio": {
       "title": "Projects",

@@ -1,17 +1,36 @@
-import useScreenWidth from "@/app/hooks/useScreenWitdh";
+import useScreenWidth from "@/app/components/ui/carousel/flex-carousel/hooks/useScreenWitdh";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import ProjectCard from "../../card/ProjectCard";
+import React, { useState } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
 import CardsCarouselSlider from "../../ui/carousel/CardsCarouselSlider";
-import LuisCarousel from "../../ui/carousel/LuisCarousel";
+import LuisCarousel from "../../ui/carousel/flex-carousel/LuisCarousel";
 
-const dataTestimonials = ["1", "2", "3"];
-
+const dataTestimonials = [
+  {
+    order: 1,
+    src: "https://picsum.photos/id/202/900/1600",
+  },
+  {
+    order: 2,
+    src: "https://picsum.photos/id/203/900/1600",
+  },
+  {
+    order: 3,
+    src: "https://picsum.photos/id/204/900/1600",
+  },
+  {
+    order: 4,
+    src: "https://picsum.photos/id/201/900/1600",
+  },
+  {
+    order: 5,
+    src: "https://picsum.photos/id/199/900/1600",
+  },
+];
 function Testimonials({ text }) {
-  const projects = useState(text.portfolio.projects);
+  const dataTestimonials = text.home.testimonialsSection;
   const [contentStart, setContentStart] = useState(
     Math.floor(Math.random() * (text.portfolio.projects.length - 6))
   );
@@ -19,8 +38,6 @@ function Testimonials({ text }) {
     Math.min(contentStart + 6, text.portfolio.projects.length)
   );
   const screenCenter = useScreenWidth();
-
-
 
   return (
     <>
@@ -47,26 +64,23 @@ function Testimonials({ text }) {
                 className="pt-12 w-full max-w-full "
               >
                 {text.portfolio.projects &&
-                  dataTestimonials.map((project) => (
+                  dataTestimonials.map((testimonial) => (
                     <section className="w-full relative bg-zinc-900 rounded-[13.87px]  shadow flex flex-col gap-y-2 items-center justify-center text-center px-6 py-5">
                       <Image
-                        className=" rounded-full pointer-events-none w-3/12 aspect-square"
+                        className=" rounded-full pointer-events-none w-3/12 aspect-square object-cover"
                         width={700}
                         height={700}
-                        alt={project}
-                        src="https://picsum.photos/id/199/900/1600"
+                        alt={`${testimonial.order}`}
+                        src={testimonial.src}
                       />
                       <h4 className=" text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  font-bold">
-                        Mark Johnson
+                        {testimonial.name}
                       </h4>
                       <h5 className=" text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw]  font-medium">
-                        CEO of XYZ Company.
+                      {testimonial.position}
                       </h5>
                       <p className="max-w-full   text-slate-50   md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight ">
-                        I had the pleasure of collaborating with Luis on a
-                        design project, and the results exceeded my
-                        expectations. Their attention to detail, creativity, and
-                        ability to bring my vision to life was outstanding.
+                       {testimonial.description}
                       </p>
                     </section>
                   ))}
@@ -78,8 +92,16 @@ function Testimonials({ text }) {
       <TailwindGrid fullSize>
         <CardsCarouselSlider height={300} />
       </TailwindGrid>
-        {screenCenter && <LuisCarousel width={60} gap={1.5} key={screenCenter}/>}
-        </>
+      {screenCenter && (
+        <LuisCarousel
+          dataCards={dataTestimonials}
+          width={50}
+          reduceGap={20}
+          key={screenCenter}
+          type="testimonial"
+        />
+      )}
+    </>
   );
 }
 
