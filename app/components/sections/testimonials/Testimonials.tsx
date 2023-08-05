@@ -1,5 +1,6 @@
+import useScreenWidth from "@/app/hooks/useScreenWitdh";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProjectCard from "../../card/ProjectCard";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
@@ -17,6 +18,9 @@ function Testimonials({ text }) {
   const [contentEnd, setContentEnd] = useState(
     Math.min(contentStart + 6, text.portfolio.projects.length)
   );
+  const screenCenter = useScreenWidth();
+
+
 
   return (
     <>
@@ -74,7 +78,7 @@ function Testimonials({ text }) {
       <TailwindGrid fullSize>
         <CardsCarouselSlider height={300} />
       </TailwindGrid>
-        <LuisCarousel/>
+        {screenCenter && <LuisCarousel width={60} gap={1.5} key={screenCenter}/>}
         </>
   );
 }
