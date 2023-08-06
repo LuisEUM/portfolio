@@ -7,7 +7,16 @@ const swipePower = (offset, velocity) => {
   return Math.abs(offset) * velocity;
 };
 
-function DragContainer({containers, container, paginate, centerOrder, className, index, width, children }) {
+function DragContainer({
+  containers,
+  container,
+  paginate,
+  centerOrder,
+  className,
+  index,
+  width,
+  children,
+}) {
   const activeSides = Math.floor(containers.length / 2);
   const edgeLeft = activeSides - 1;
   const edgeRigth = activeSides + 1;
@@ -17,6 +26,7 @@ function DragContainer({containers, container, paginate, centerOrder, className,
     <motion.section
       layoutId={index + container.src}
       ref={parentRef}
+      transition={{ type: "spring", stiffness: 400, damping: 45, mass: 0.5 }}
       style={{
         order: container.order,
         scale: container.order === centerOrder ? 1 : 0.9,
@@ -29,15 +39,15 @@ function DragContainer({containers, container, paginate, centerOrder, className,
       } last:invisible  first:invisible  flex justify-center items-center `}
     >
       <motion.div
-        transition={{ type: "spring", duration: 0.5, bounce: 0.25 }}
         style={{ width: `${width}vw` }}
         drag="x"
         dragConstraints={parentRef}
         dragControls={control}
         dragElastic={0.25}
+        whileFocus={{ cursor: "grabbing" }}
         whileDrag={{ scale: 1.1, cursor: "grabbing" }}
         whileTap={{ scale: 0.95, cursor: "grabbing" }}
-        whileHover={{ scale: 1.05, cursor: "grab" }}
+        whileHover={{ scale: 1.05 }}
         onDragEnd={(e, { offset, velocity }) => {
           const swipe = swipePower(offset.x, velocity.x);
           if (swipe < -swipeConfidenceThreshold) {
@@ -48,7 +58,7 @@ function DragContainer({containers, container, paginate, centerOrder, className,
         }}
         className={
           className ||
-          "  items-center justify-center text-center   rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-10 "
+          "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 "
         }
       >
         {children}

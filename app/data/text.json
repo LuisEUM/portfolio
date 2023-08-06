@@ -161,27 +161,32 @@
       "testimonialsSection": [
         {
           "order": 1,
-          "src": "https://picsum.photos/id/202/900/1600",
+          "src": "/images/testimonials-luis/farooq-khader.jpeg",
           "name": "Farooq Khader",
           "position": "Co-Founder and CTO at Tangle",
-          "description": "Luis is a great web developer with amazing attention to details. His urge for the most innovative technology triggered us to move our website to a better technology - Next js. He was also very committed to see the results to match with our designer's imagination and satisfaction. His structured programming techniques made it easier for our internal team to take over his work in a smooth way. His patience to collaborate with other team members/freelancers also paid off to save time and effort for the team. I recommend Luis as a great web developer."
+          "description": "Luis is a great web developer with amazing attention to detail. His urge for the most innovative technology prompted us to move our website to a better technology - Next.js. He was also very committed to ensuring that the results matched our designer's imagination and satisfaction. His structured programming techniques made it easier for our internal team to take over his work smoothly. His patience in collaborating with other team members/freelancers also paid off, saving time and effort for the team. I highly recommend Luis as a great web developer.",
+          "url": "https://www.linkedin.com/in/farooqkhader/",
+          "icon": "/icons/footer/linkedin.svg"
         },
         {
           "order": 2,
-          "src": "https://picsum.photos/id/203/900/1600",
+          "src": "/images/testimonials-luis/nacho-escudero.jpeg",
           "name": "Nacho Escudero",
-          "position": "Co-Founder and CTO at Tangle",
-          "description": "Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional displinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo. "
+          "position": "Fundador/Jefe de Marketing: La Plataforma Publicitaria",
+          "description": "Luis has been a key player, who has achieved very good results adding value to the company. He is a disciplined, creative and very competitive professional. Although he is under pressure he does not lose his objective, being decisive and applying his knowledge in every situation. He has participated in very important planning and strategic decisions. He is still part of the team as an external collaborating partner",
+          "url": "https://www.linkedin.com/in/nacho-escudero-34858b73/",
+          "icon": "/icons/footer/linkedin.svg"
         },
         {
           "order": 3,
-          "src": "https://picsum.photos/id/204/900/1600",
-          "name": "Leonel Perez",
-          "position": "Co-Founder and CTO at Tangle",
-          "description": "Lo que realmente distingue a Luis es su capacidad para centrarse en los detalles, maneja con soltura múltiples áreas de conocimiento como: diseño, desarrollo y marketing. Lo recomiendo como profesional, con el se hace posible la creación de productos digitales, webs llamativas e ideas para destacar tus servicios y productos por internet."
+          "src": "/images/testimonials-luis/leonel-perez.jpeg",
+          "name": "Leonel (Krea) Pérez",
+          "position": "𝗨𝗜/𝗨𝗫 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗿 | 𝗕𝗿𝗮𝗻𝗱𝗶𝗻𝗴 | 𝗪𝗲𝗯/𝗫𝗥 𝗗𝗲𝘃",
+          "description": "What really distinguishes Luis is his ability to focus on the details; he is fluent in multiple areas of knowledge, such as design, development and marketing. I recommend him as a professional, with him it is possible to create digital products, eye-catching websites and ideas to highlight your services and products online.",
+          "url": "https://www.linkedin.com/in/leonelkrea/",
+          "icon": "/icons/footer/linkedin.svg"
         }
       ]
-      
     },
     "portfolio": {
       "title": "Projects",
@@ -550,7 +555,36 @@
           "lineOne": "Desarrollar es mi amor",
           "lineTwo": "los videojuegos son mi pasión"
         }
-      }
+      },
+      "testimonialsSection": [
+        {
+          "order": 1,
+          "src": "/images/testimonials-luis/farooq-khader.jpeg",
+          "name": "Farooq Khader",
+          "position": "Co-Founder and CTO at Tangle",
+          "description": "Luis es un gran desarrollador web con una increíble atención al detalle. Su afán por la tecnología más innovadora nos impulsó a trasladar nuestro sitio web a una tecnología mejor: NextJS. También se comprometió mucho para que los resultados estuvieran a la altura de la imaginación y satisfacción de nuestro diseñador. Sus técnicas de programación estructurada facilitaron que nuestro equipo interno se hiciera cargo de su trabajo sin problemas. Su paciencia en la colaboración con otros miembros del equipo / freelancers también valió la pena, ahorrando tiempo y esfuerzo para el equipo. Recomiendo encarecidamente a Luis como un gran desarrollador web.",
+          "url": "https://www.linkedin.com/in/farooqkhader/",
+          "icon": "/icons/footer/linkedin.svg"
+        },
+        {
+          "order": 2,
+          "src": "/images/testimonials-luis/nacho-escudero.jpeg",
+          "name": "Nacho Escudero",
+          "position": "Fundador/Jefe de Marketing: La Plataforma Publicitaria",
+          "description": "Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional disciplinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo.",
+          "url": "https://www.linkedin.com/in/nacho-escudero-34858b73/",
+          "icon": "/icons/footer/linkedin.svg"
+        },
+        {
+          "order": 3,
+          "src": "/images/testimonials-luis/leonel-perez.jpeg",
+          "name": "Leonel (Krea) Pérez",
+          "position": "𝗨𝗜/𝗨𝗫 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗿 | 𝗕𝗿𝗮𝗻𝗱𝗶𝗻𝗴 | 𝗪𝗲𝗯/𝗫𝗥 𝗗𝗲𝘃",
+          "description": "Lo que realmente distingue a Luis es su capacidad para centrarse en los detalles; maneja con soltura múltiples áreas de conocimiento, como diseño, desarrollo y marketing. Lo recomiendo como profesional, con él se hace posible la creación de productos digitales, webs llamativas e ideas para destacar tus servicios y productos por internet.",
+          "url": "https://www.linkedin.com/in/leonelkrea/",
+          "icon": "/icons/footer/linkedin.svg"
+        }
+      ]
     },
     "portfolio": {
       "title": "Proyectos",

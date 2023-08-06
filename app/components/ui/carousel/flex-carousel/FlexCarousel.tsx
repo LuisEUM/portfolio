@@ -27,7 +27,7 @@ const dataConteiners = [
   },
 ];
 
-type LuisCarouselProps = {
+type FlexCarouselProps = {
   width?: number;
   reduceGap?: number;
   dataCards?: any[];
@@ -38,14 +38,14 @@ type LuisCarouselProps = {
 };
 
 // Main Function
-function LuisCarousel({
+function FlexCarousel({
   dataCards,
   width = 60,
   reduceGap = 2,
   children,
   className,
   type = "classic"
-}: LuisCarouselProps) {
+}: FlexCarouselProps) {
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
     useCarousel(dataCards || dataConteiners, reduceGap);
 
@@ -77,7 +77,7 @@ function LuisCarousel({
               >
 
                 {CardsIndex.filter((Card) => Card.id === type).map((Card, index) => (
-                  <Card.content key={index} container={container} containers={data} index={index}/>
+                  <Card.content key={index} centerOrder={centerOrder} container={container} containers={data} index={index}/>
                 ))}
               </DragContainer>
             );
@@ -103,4 +103,4 @@ function LuisCarousel({
   );
 }
 
-export default LuisCarousel;
+export default FlexCarousel;

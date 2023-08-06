@@ -65,7 +65,7 @@ function CardsCarouselSlider({ height }: CardsCarouselSliderProps) {
                   }
                 }}
               >
-                {" "}
+
                 <Image
                   className=" rounded-full pointer-events-none w-3/12 aspect-square"
                   width={700}

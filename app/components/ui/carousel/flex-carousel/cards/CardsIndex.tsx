@@ -1,3 +1,4 @@
+import TestimonialsDesktopCard from "./ClassicCard";
 import ClasicCard from "./ClassicCard";
 import ImagesCard from "./ImageCard";
 import TestimonialsCard from "./TestimonialsCard";
@@ -16,6 +17,10 @@ const CardsIndex = [
   {
     id: "testimonial",
     content: TestimonialsCard
+  },
+  {
+    id: "testimonialDesktop",
+    content: TestimonialsDesktopCard
   },
 ]
 

@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-type TestimonialsCardProps = {
+type TestimonialsDesktopCardProps = {
   container: {
     order?: number;
     src?: string;
@@ -23,74 +23,55 @@ type TestimonialsCardProps = {
   centerOrder?: number;
 };
 
-function TestimonialsCard({
+function TestimonialsDesktopCard({
   container,
   centerOrder,
   children,
   index,
   className,
-}: TestimonialsCardProps) {
+}: TestimonialsDesktopCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
-
-  useEffect(() => {
-    if (container.order !== centerOrder) {
-      setShowFullDescription(false);
-    }
-  }, [centerOrder, container.order]);
 
   const toggleDescription = () => {
     setShowFullDescription((prev) => !prev);
   };
 
   const renderDescription = () => {
-    const wordsLimit = 40; // Set the number of words you want to show initially
-    const wordsArray = container.description?.split(" ");
-    const truncatedDescription = wordsArray?.slice(0, wordsLimit).join(" ");
-
-    if (container.order === centerOrder || !truncatedDescription) {
+    if (showFullDescription || !container.description) {
       return (
         <>
-          {!showFullDescription ? (
-            <>
-              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
-                {truncatedDescription}...
-              </p>
-              <motion.button
-                className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
-                onClick={toggleDescription}
-                dragListener={false}
-              >
-                Read More
-              </motion.button>
-            </>
-          ) : (
-            <>
-              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
-                {container.description}
-              </p>
-              <motion.button
-                className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
-                onClick={toggleDescription}
-                dragListener={false}
-              >
-                Read Less
-              </motion.button>
-            </>
-          )}
+          <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+            {container.description}
+          </p>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
+            onClick={toggleDescription}
+            dragListener={false}
+          >
+            Read More
+          </motion.button>
         </>
       );
     } else {
+      const wordsLimit = 40; // Set the number of words you want to show initially
+      const wordsArray = container.description.split(" ");
+      const truncatedDescription = wordsArray.slice(0, wordsLimit).join(" ");
+
       return (
         <>
           <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {truncatedDescription}...
           </p>
           <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
             onClick={toggleDescription}
             dragListener={false}
           >
-            Read More
+            Read Less
           </motion.button>
         </>
       );
@@ -126,7 +107,6 @@ function TestimonialsCard({
           </motion.button>
         </Link>
       )}
-
       <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
         width={700}
@@ -145,4 +125,4 @@ function TestimonialsCard({
   );
 }
 
-export default TestimonialsCard;
+export default TestimonialsDesktopCard;

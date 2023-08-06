@@ -1,11 +1,9 @@
 import useScreenWidth from "@/app/components/ui/carousel/flex-carousel/hooks/useScreenWitdh";
-import Image from "next/image";
-import React, { useState } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
-import CardsCarouselSlider from "../../ui/carousel/CardsCarouselSlider";
-import LuisCarousel from "../../ui/carousel/flex-carousel/LuisCarousel";
+import TestimonialsDesktopCard from "../../ui/carousel/flex-carousel/cards/TestimonialsDesktopCard";
+import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
 const dataTestimonials = [
   {
@@ -31,12 +29,6 @@ const dataTestimonials = [
 ];
 function Testimonials({ text }) {
   const dataTestimonials = text.home.testimonialsSection;
-  const [contentStart, setContentStart] = useState(
-    Math.floor(Math.random() * (text.portfolio.projects.length - 6))
-  );
-  const [contentEnd, setContentEnd] = useState(
-    Math.min(contentStart + 6, text.portfolio.projects.length)
-  );
   const screenCenter = useScreenWidth();
 
   return (
@@ -64,24 +56,14 @@ function Testimonials({ text }) {
                 className="pt-12 w-full max-w-full "
               >
                 {text.portfolio.projects &&
-                  dataTestimonials.map((testimonial) => (
+                  dataTestimonials.map((testimonial, index) => (
                     <section className="w-full relative bg-zinc-900 rounded-[13.87px]  shadow flex flex-col gap-y-2 items-center justify-center text-center px-6 py-5">
-                      <Image
-                        className=" rounded-full pointer-events-none w-3/12 aspect-square object-cover"
-                        width={700}
-                        height={700}
-                        alt={`${testimonial.order}`}
-                        src={testimonial.src}
+
+                      <TestimonialsDesktopCard
+                        className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
+                        container={testimonial}
+                        index={index}
                       />
-                      <h4 className=" text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  font-bold">
-                        {testimonial.name}
-                      </h4>
-                      <h5 className=" text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw]  font-medium">
-                      {testimonial.position}
-                      </h5>
-                      <p className="max-w-full   text-slate-50   md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight ">
-                       {testimonial.description}
-                      </p>
                     </section>
                   ))}
               </ResponsiveList>
@@ -89,18 +71,18 @@ function Testimonials({ text }) {
           </div>
         </TailwindGrid>
       </section>
-      <TailwindGrid fullSize>
-        <CardsCarouselSlider height={300} />
-      </TailwindGrid>
-      {screenCenter && (
-        <LuisCarousel
-          dataCards={dataTestimonials}
-          width={50}
-          reduceGap={20}
-          key={screenCenter}
-          type="testimonial"
-        />
-      )}
+
+      <div className="block md:hidden">
+        {screenCenter && (
+          <FlexCarousel
+            dataCards={dataTestimonials}
+            width={50}
+            reduceGap={20}
+            key={screenCenter}
+            type="testimonial"
+          />
+        )}
+      </div>
     </>
   );
 }
