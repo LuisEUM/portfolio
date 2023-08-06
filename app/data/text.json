@@ -158,6 +158,157 @@
           "lineTwo": "video games are my passion"
         }
       },
+      "skillsSection": {
+        "firstLine": [
+          {
+            "name": "Illustrator",
+            "src": "/icons/skills/Illustrator.svg",
+            "order": 1
+          },
+          {
+            "name": "After Effects",
+            "src": "/icons/skills/AfterEffects.svg",
+            "order": 2
+          },
+          {
+            "name": "Premiere",
+            "src": "/icons/skills/Premiere.svg",
+            "order": 3
+          },
+          {
+            "name": "Search Console",
+            "src": "/icons/skills/SearchConsole.svg",
+            "order": 4
+          },
+          {
+            "name": "Analytics",
+            "src": "/icons/skills/Analytics.svg",
+            "order": 5
+          },
+          {
+            "name": "Tag Manager",
+            "src": "/icons/skills/TagManager.svg",
+            "order": 6
+          },
+          {
+            "name": "Microsoft 365",
+            "src": "/icons/skills/Microsoft365.svg",
+            "order": 7
+          },
+          {
+            "name": "Figma",
+            "src": "/icons/skills/Figma.svg",
+            "order": 8
+          },
+          {
+            "name": "HTML",
+            "src": "/icons/skills/HTML.svg",
+            "order": 9
+          },
+          {
+            "name": "CSS",
+            "src": "/icons/skills/CSS.svg",
+            "order": 10
+          },
+          {
+            "name": "GitHub",
+            "src": "/icons/skills/GitHub.svg",
+            "order": 11
+          },
+          {
+            "name": "Express JS",
+            "src": "/icons/skills/ExpressJS.svg",
+            "order": 12
+          },
+          {
+            "name": "React JS",
+            "src": "/icons/skills/ReactJS.svg",
+            "order": 13
+          },
+          {
+            "name": "Node JS",
+            "src": "/icons/skills/NodeJS.svg",
+            "order": 14
+          }
+        ],
+        "secondLine": [
+          {
+            "name": "Tailwind",
+            "src": "/icons/skills/Tailwind.svg",
+            "order": 1
+          },
+          {
+            "name": "Framer Motion",
+            "src": "/icons/skills/FramerMotion.svg",
+            "order": 2
+          },
+          {
+            "name": "Google Ads",
+            "src": "/icons/skills/GoogleAds.svg",
+            "order": 3
+          },
+          {
+            "name": "ESlint",
+            "src": "/icons/skills/ESlint.svg",
+            "order": 4
+          },
+          {
+            "name": "Puppeteer",
+            "src": "/icons/skills/Puppeteer.svg",
+            "order": 5
+          },
+          {
+            "name": "Postman",
+            "src": "/icons/skills/Postman.svg",
+            "order": 6
+          },
+          {
+            "name": "JavaScript",
+            "src": "/icons/skills/JavaScript.svg",
+            "order": 7
+          },
+          {
+            "name": "WordPress",
+            "src": "/icons/skills/WordPress.svg",
+            "order": 8
+          },
+          {
+            "name": "Handlebars",
+            "src": "/icons/skills/Handlebars.svg",
+            "order": 9
+          },
+          {
+            "name": "Bootstrap",
+            "src": "/icons/skills/Bootstrap.svg",
+            "order": 10
+          },
+          {
+            "name": "InDesign",
+            "src": "/icons/skills/InDesign.svg",
+            "order": 11
+          },
+          {
+            "name": "JSX",
+            "src": "/icons/skills/JSX.svg",
+            "order": 12
+          },
+          {
+            "name": "Typescript",
+            "src": "/icons/skills/Typescript.svg",
+            "order": 13
+          },
+          {
+            "name": "MongoDB",
+            "src": "/icons/skills/MongoDB.svg",
+            "order": 14
+          },
+          {
+            "name": "Photoshop",
+            "src": "/icons/skills/Photoshop.svg",
+            "order": 15
+          }
+        ]
+      },
       "testimonialsSection": [
         {
           "order": 1,
@@ -555,6 +706,157 @@
           "lineOne": "Desarrollar es mi amor",
           "lineTwo": "los videojuegos son mi pasión"
         }
+      },
+      "skillsSection": {
+        "firstLine": [
+          {
+            "name": "Illustrator",
+            "src": "/icons/skills/Illustrator.svg",
+            "order": 1
+          },
+          {
+            "name": "After Effects",
+            "src": "/icons/skills/AfterEffects.svg",
+            "order": 2
+          },
+          {
+            "name": "Premiere",
+            "src": "/icons/skills/Premiere.svg",
+            "order": 3
+          },
+          {
+            "name": "Search Console",
+            "src": "/icons/skills/SearchConsole.svg",
+            "order": 4
+          },
+          {
+            "name": "Analytics",
+            "src": "/icons/skills/Analytics.svg",
+            "order": 5
+          },
+          {
+            "name": "Tag Manager",
+            "src": "/icons/skills/TagManager.svg",
+            "order": 6
+          },
+          {
+            "name": "Microsoft 365",
+            "src": "/icons/skills/Microsoft365.svg",
+            "order": 7
+          },
+          {
+            "name": "Figma",
+            "src": "/icons/skills/Figma.svg",
+            "order": 8
+          },
+          {
+            "name": "HTML",
+            "src": "/icons/skills/HTML.svg",
+            "order": 9
+          },
+          {
+            "name": "CSS",
+            "src": "/icons/skills/CSS.svg",
+            "order": 10
+          },
+          {
+            "name": "GitHub",
+            "src": "/icons/skills/GitHub.svg",
+            "order": 11
+          },
+          {
+            "name": "Express JS",
+            "src": "/icons/skills/ExpressJS.svg",
+            "order": 12
+          },
+          {
+            "name": "React JS",
+            "src": "/icons/skills/ReactJS.svg",
+            "order": 13
+          },
+          {
+            "name": "Node JS",
+            "src": "/icons/skills/NodeJS.svg",
+            "order": 14
+          }
+        ],
+        "secondLine": [
+          {
+            "name": "Tailwind",
+            "src": "/icons/skills/Tailwind.svg",
+            "order": 1
+          },
+          {
+            "name": "Framer Motion",
+            "src": "/icons/skills/FramerMotion.svg",
+            "order": 2
+          },
+          {
+            "name": "Google Ads",
+            "src": "/icons/skills/GoogleAds.svg",
+            "order": 3
+          },
+          {
+            "name": "ESlint",
+            "src": "/icons/skills/ESlint.svg",
+            "order": 4
+          },
+          {
+            "name": "Puppeteer",
+            "src": "/icons/skills/Puppeteer.svg",
+            "order": 5
+          },
+          {
+            "name": "Postman",
+            "src": "/icons/skills/Postman.svg",
+            "order": 6
+          },
+          {
+            "name": "JavaScript",
+            "src": "/icons/skills/JavaScript.svg",
+            "order": 7
+          },
+          {
+            "name": "WordPress",
+            "src": "/icons/skills/WordPress.svg",
+            "order": 8
+          },
+          {
+            "name": "Handlebars",
+            "src": "/icons/skills/Handlebars.svg",
+            "order": 9
+          },
+          {
+            "name": "Bootstrap",
+            "src": "/icons/skills/Bootstrap.svg",
+            "order": 10
+          },
+          {
+            "name": "InDesign",
+            "src": "/icons/skills/InDesign.svg",
+            "order": 11
+          },
+          {
+            "name": "JSX",
+            "src": "/icons/skills/JSX.svg",
+            "order": 12
+          },
+          {
+            "name": "Typescript",
+            "src": "/icons/skills/Typescript.svg",
+            "order": 13
+          },
+          {
+            "name": "MongoDB",
+            "src": "/icons/skills/MongoDB.svg",
+            "order": 14
+          },
+          {
+            "name": "Photoshop",
+            "src": "/icons/skills/Photoshop.svg",
+            "order": 15
+          }
+        ]
       },
       "testimonialsSection": [
         {
