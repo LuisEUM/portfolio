@@ -1,51 +1,82 @@
 import Image from "next/image";
 import React from "react";
+import TailwindGrid from "../../grid/TailwindGrid";
+import DotFollower from "../../mouse/DotFollower";
+import ParallaxIcon from "../../slider/ParallaxIcons";
+import ParallaxText from "../../slider/ParallaxText";
 
 function Skills({ text }) {
   const dataTestimonials = text.home.skillsSection;
 
   return (
-    <>
-      <div className=" h-[108.87px] justify-start items-center gap-[34px] inline-flex">
-        {dataTestimonials.firstLine &&
-          dataTestimonials.firstLine.map((skill) => (
-            <div className="flex-col justify-center items-center gap-2 inline-flex">
-              <div className="w-24 h-24 relative bg-stone-950 rounded-xl s hadow-inner flex-col justify-center items-center flex">
-                <Image
-                  src={skill.src}
-                  width={50}
-                  height={50}
-                  alt="skill"
-                  className="max-w-10/12  object-cover"
-                />
-              </div>
-              <div className="w-[79.12px] h-[12.23px] text-center text-zinc-500 text-[9.17px] font-bold uppercase tracking-wide">
-                {skill.name}
-              </div>
+    <div className="w-full h-full flex py-[min(15vw,11rem)] overflow-hidden z-40">
+      <div className="relative  w-full  ">
+      {/* <DotFollower></DotFollower> */}
+
+        <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
+          <TailwindGrid fullSize>
+            <section className="absolute self-center overflow-hidden max-w-full -z-50">
+              <ParallaxText baseVelocity={0.3}>The Big Toolbox</ParallaxText>
+            </section>
+          </TailwindGrid>
+          <TailwindGrid>
+            <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
+              <h3 className="text-start text-[7vw] leading-[7vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
+                      style={{
+          textShadow:
+            "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
+        }}>
+                Take a look at
+                <span className="md:hidden"></span>
+                <span className="text-primary"> my tools...</span>
+              </h3>
             </div>
-          ))}
-      </div>
-      <div className=" h-[108.87px] justify-start items-center gap-[34px] inline-flex mt-5">
-        {dataTestimonials.secondLine &&
-          dataTestimonials.secondLine.map((skill) => (
-            <div className="flex-col justify-center items-center gap-2 inline-flex">
-              <div className="w-24 h-24 relative bg-stone-950 rounded-xl s hadow-inner flex-col justify-center items-center flex">
-                <Image
-                  src={skill.src}
-                  width={50}
-                  height={50}
-                  alt="skill"
-                  className="max-w-10/12  object-cover"
-                />
+          </TailwindGrid>
+        </section>
+        <TailwindGrid fullSize>
+          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-[3vw] md:mt-[5vw] lg:mt-[2.5vw]">
+            <ParallaxIcon baseVelocity={-0.2}>
+              <div className=" h-[108.87px] justify-start items-center gap-8  inline-flex my-[3vw] md:my-[5vw] lg:my-[2.5vw]">
+                {dataTestimonials.firstLine &&
+                  dataTestimonials.firstLine.map((skill) => (
+                    <SkillsItems skill={skill} />
+                  ))}
               </div>
-              <div className="w-[79.12px] h-[12.23px] text-center text-zinc-500 text-[9.17px] font-bold uppercase tracking-wide">
-                {skill.name}
+            </ParallaxIcon>
+          </section>
+          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] lg:mb-[2.5vw]">
+            <ParallaxIcon baseVelocity={0.2}>
+              <div className=" h-[108.87px] justify-start items-center gap-8 inline-flex my-[3vw] md:my-[5vw] lg:my-[2.5vw] ">
+                {dataTestimonials.secondLine &&
+                  dataTestimonials.secondLine.map((skill) => (
+                    <SkillsItems skill={skill} />
+                  ))}
               </div>
-            </div>
-          ))}
+            </ParallaxIcon>
+          </section>
+        </TailwindGrid>
       </div>
-    </>
+    </div>
   );
 }
 
 export default Skills;
+
+function SkillsItems({ skill }) {
+  return (
+    <div className=" group flex-col justify-center items-center gap-2 inline-flex  ">
+      <div className="w-[20vw] h-[20vw] md:w-[16vw] md:h-[16vw] lg:w-[8vw] lg:h-[8vw] relative bg-stone-950  rounded-xl s hadow-inner flex-col justify-center items-center flex">
+        <Image
+          src={skill.src}
+          width={50}
+          height={50}
+          alt="skill"
+          className="max-w-10/12  object-cover group-hover:scale-125 transition-all duration-200 z-30"
+        />
+      </div>
+      <p className=" text-center text-xs lg:text-[#0F0F0F] text-[0.60vw] font-bold uppercase tracking-wide group-hover:scale-125 transition-all duration-200">
+        {skill.name}
+      </p>
+    </div>
+  );
+}

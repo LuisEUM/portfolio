@@ -8,7 +8,7 @@ type IconsSliderProps = {
   reverse?: boolean;
 };
 
-function TextSlider({ children, velocity, reverse }: IconsSliderProps) {
+function IconsSlider({ children, velocity, reverse }: IconsSliderProps) {
   const sliderContentRef = useRef(null);
   const [sliderWidth, setSliderWidth] = useState(0);
   const [sliderContentWidth, setSliderContentWidth] = useState(0);
@@ -47,28 +47,25 @@ function TextSlider({ children, velocity, reverse }: IconsSliderProps) {
   let content = children ? children : "UX/UI - ";
 
   return (
-    <>
-      <div className="w-full -rotate-90 origin-top-right absolute -left-48 top-0 pointer-events-none">
-        <motion.div
-          className="whitespace-nowrap z-100 w-[100vh] text flex "
-          ref={sliderContentRef}
-          animate={{
-            translateX: [reverse ? -sliderContentWidth : 0, reverse ? 0 : -sliderContentWidth * 2],
-          }}
-          transition={{
-            type: "linear",
-            duration: velocity ? velocity : 15,
-            repeat: Infinity,
-            repeatType: "reverse",
-          }}
-        >
-          <p className="text-zinc-800 text-opacity-40 text-[135px] font-black">
-            {new Array(50).fill(0).map((_, i) => content)}
-          </p>
-        </motion.div>
-      </div>
-    </>
+    <motion.div
+      className="whitespace-nowrap  w-full text flex justify-start items-center "
+      ref={sliderContentRef}
+      animate={{
+        translateX: [
+          reverse ? -sliderContentWidth : 0,
+          reverse ? 0 : -sliderContentWidth,
+        ],
+      }}
+      transition={{
+        ease: "easeInOut",
+        duration: velocity ? velocity : 10,
+        repeat: Infinity,
+        repeatType: "reverse",
+      }}
+    >
+      {new Array(2).fill(0).map((_, i) => content)}
+    </motion.div>
   );
 }
 
-export default TextSlider;
+export default IconsSlider;

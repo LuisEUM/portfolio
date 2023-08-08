@@ -10,12 +10,17 @@ import {
 } from "framer-motion";
 import React, { useRef } from "react";
 
-type ParallaxProps = {
+type ParallaxIconProps = {
   children: React.ReactNode;
   baseVelocity: number;
-}
+  enableDirectionChange?: boolean; // Nueva prop para activar/desactivar el cambio de dirección
+};
 
-function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
+function ParallaxIcon({
+  children,
+  baseVelocity = 100,
+  enableDirectionChange = true,
+}: ParallaxIconProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
@@ -38,17 +43,22 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
   useAnimationFrame((t, delta) => {
     let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
-    /**
-     * This is what changes the direction of the scroll once we
-     * switch scrolling directions.
-     */
-    if (velocityFactor.get() < 0) {
-      directionFactor.current = -1;
-    } else if (velocityFactor.get() > 0) {
-      directionFactor.current = 1;
+    if (enableDirectionChange) {
+      /**
+       * This is what changes the direction of the scroll once we
+       * switch scrolling directions.
+       */
+      if (velocityFactor.get() < 0) {
+        directionFactor.current = -1;
+      } else if (velocityFactor.get() > 0) {
+        directionFactor.current = 1;
+      }
     }
 
-    moveBy += directionFactor.current * moveBy * velocityFactor.get();
+    moveBy +=
+      directionFactor.current *
+      moveBy *
+      (enableDirectionChange ? velocityFactor.get() : 1);
 
     baseX.set(baseX.get() + moveBy);
   });
@@ -61,22 +71,20 @@ function ParallaxText({ children, baseVelocity = 100 }: ParallaxProps) {
    * dynamically generated number of children.
    */
   return (
-    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap opacity-20 pointer-events-none ">
+    <div className="overflow-hidden whitespace-nowrap flex flex-nowrap  ">
       <motion.div
-        className="flex flex-nowrap whitespace-nowrap text-[30vw] md:text-[18vw] lg:text-[13vw] font-black uppercase  text-stone-950 "
+        className="flex flex-nowrap whitespace-nowrap "
         style={{
           x,
-          textShadow:
-            "-1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white",
         }}
       >
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
-        <span className="block px-6">{children} </span>
+        <span className="block px-4">{children} </span>
+        <span className="block px-4">{children} </span>
+        <span className="block px-4">{children} </span>
+        <span className="block px-4">{children} </span>
       </motion.div>
     </div>
   );
 }
 
-export default ParallaxText;
+export default ParallaxIcon;

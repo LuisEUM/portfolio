@@ -15,20 +15,19 @@ export default function Home() {
 
   return (
     <>
-      <TailwindGrid  >
+      <TailwindGrid>
         <Hero text={text} />
       </TailwindGrid>
 
-      <TailwindGrid >
+      <TailwindGrid>
         <Category text={text} />
       </TailwindGrid>
 
-      <Skills text={text}/>
-
       <ProjectsPreview text={text} />
-      
+      <Skills text={text} />
+
       <BigQuote text={text} />
-      <Testimonials text={text}/>
+      <Testimonials text={text} />
     </>
   );
 }
