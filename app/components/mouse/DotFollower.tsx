@@ -1,11 +1,14 @@
 "use client";
 import { useState, useRef } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 function DotFollower() {
   return (
-    <div className="hidden flex-col justify-center items-center w-full  absolute top-0 h-full z-40  mix-blend-overlay overflow-hidden-x lg:flex">
+    <div className=" ">
+      <motion.div className="h-[3vw] absolute top-0 w-full bg-gradient-to-b from-[#0F0F0F] to-transparent  pointer-events-none mix-blend-luminosity" />
+
       <Box />
+      <motion.div className="h-[3vw] absolute bottom-0 w-full bg-gradient-to-b from-transparent to-[#0F0F0F]  pointer-events-none mix-blend-luminosity" />
     </div>
   );
 }
@@ -44,6 +47,8 @@ function getRelativeCoordinates(event, referenceElement) {
   };
 }
 const Box = () => {
+  // const ref = useRef(null);
+  // const { x, y } = useFollowPointer(ref);
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0,
@@ -63,22 +68,35 @@ const Box = () => {
 
   return (
     <motion.div
-      className="w-full h-full relative mix-blend-overlay"
+      className="w-full h-full   mix-blend-overlay hidden items-center  lg:flex justify-center absolute top-0 left-0 bottom-0 -right-0 m-0 p-0 z-40"
       ref={boxRef}
       onMouseMove={(e) => handleMouseMove(e)}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <motion.div
-        className={`absolute w-[15vw] h-[15vw] bg-white  -m-[7.5vw] rounded-full z-40 ${
-          isHovered ? "opacity-100" : "opacity-0"
-        } hover:mix-blend-overlay`}
-        animate={{
-          x: mousePosition.x,
-          y: mousePosition.y,
-        }}
-        transition={{ type: "spring" }}
-      />
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div
+            className="h-[15vw] w-[15vw] rounded-full z-40   bg-primary  absolute -top-[7.5vw] -left-[7.5vw] mix-blend-overlay  "
+            initial={{
+              x: mousePosition.x,
+              y: mousePosition.y,
+              height: 0,
+              width: 0,
+              opacity: 0,
+            }}
+            animate={{
+              x: mousePosition.x,
+              y: mousePosition.y,
+              height: '15vw',
+              width: '15vw',
+              opacity: 1,
+            }}
+            exit={{ opacity: 0 }}
+            transition={{ type: "spring" }}
+          />
+        )}
+      </AnimatePresence>
     </motion.div>
   );
 };

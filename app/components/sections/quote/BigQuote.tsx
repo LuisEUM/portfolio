@@ -7,7 +7,7 @@ function BigQuote({text}) {
   const quote = text.home.bigQuoteSection.quote;
 
   return (
-    <section className="relative max-w-full  py-72 w-screen flex flex-col justify-center content-center items-center">
+    <section className="relative max-w-full  py-72 w-screen flex flex-col justify-center content-center items-center -z-10">
       <TailwindGrid fullSize>
         <section className="absolute self-center overflow-hidden max-w-full -z-50">
           <ParallaxText baseVelocity={-2}>{parallax}</ParallaxText>

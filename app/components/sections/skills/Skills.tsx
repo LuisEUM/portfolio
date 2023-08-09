@@ -4,59 +4,66 @@ import TailwindGrid from "../../grid/TailwindGrid";
 import DotFollower from "../../mouse/DotFollower";
 import ParallaxIcon from "../../slider/ParallaxIcons";
 import ParallaxText from "../../slider/ParallaxText";
+import { motion } from "framer-motion";
 
 function Skills({ text }) {
   const dataTestimonials = text.home.skillsSection;
 
   return (
-    <div className="w-full h-full flex py-[min(15vw,11rem)] overflow-hidden z-40">
-      <div className="relative  w-full  ">
-      {/* <DotFollower></DotFollower> */}
+    <>
+      <div className="w-full h-full flex py-[min(7.5vw,11rem)]  z-40 relative  ">
 
-        <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
+        <div className="relative  w-full  overflow-hidden ">
+          <DotFollower></DotFollower>
+          <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
+            <TailwindGrid fullSize>
+              <section className="absolute self-center overflow-hidden max-w-full -z-50">
+                <ParallaxText baseVelocity={0.3}>The Big Toolbox</ParallaxText>
+              </section>
+            </TailwindGrid>
+            <TailwindGrid>
+              <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
+                <h3
+                  className="text-start text-[7vw] leading-[7vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
+                  style={{
+                    textShadow:
+                      "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
+                  }}
+                >
+                  Take a look at
+                  <span className="md:hidden"></span>
+                  <span className="text-primary"> my tools...</span>
+                </h3>
+              </div>
+            </TailwindGrid>
+          </section>
           <TailwindGrid fullSize>
-            <section className="absolute self-center overflow-hidden max-w-full -z-50">
-              <ParallaxText baseVelocity={0.3}>The Big Toolbox</ParallaxText>
+            <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-[6vw] md:mt-[5vw] lg:mt-[2.5vw]">
+              <ParallaxIcon baseVelocity={-0.2}>
+                <div className=" justify-start items-center gap-8  inline-flex ">
+                  {dataTestimonials.firstLine &&
+                    dataTestimonials.firstLine.map((skill) => (
+                      <SkillsItems skill={skill} />
+                    ))}
+                </div>
+              </ParallaxIcon>
+            </section>
+            <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] mt-[6vw] md:mt-[1vw]">
+              <ParallaxIcon baseVelocity={0.2}>
+                <div className=" justify-start items-center gap-8 inline-flex  ">
+                  {dataTestimonials.secondLine &&
+                    dataTestimonials.secondLine.map((skill) => (
+                      <SkillsItems skill={skill} />
+                    ))}
+                </div>
+              </ParallaxIcon>
             </section>
           </TailwindGrid>
-          <TailwindGrid>
-            <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
-              <h3 className="text-start text-[7vw] leading-[7vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
-                      style={{
-          textShadow:
-            "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
-        }}>
-                Take a look at
-                <span className="md:hidden"></span>
-                <span className="text-primary"> my tools...</span>
-              </h3>
-            </div>
-          </TailwindGrid>
-        </section>
-        <TailwindGrid fullSize>
-          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-[3vw] md:mt-[5vw] lg:mt-[2.5vw]">
-            <ParallaxIcon baseVelocity={-0.2}>
-              <div className=" h-[108.87px] justify-start items-center gap-8  inline-flex my-[3vw] md:my-[5vw] lg:my-[2.5vw]">
-                {dataTestimonials.firstLine &&
-                  dataTestimonials.firstLine.map((skill) => (
-                    <SkillsItems skill={skill} />
-                  ))}
-              </div>
-            </ParallaxIcon>
-          </section>
-          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] lg:mb-[2.5vw]">
-            <ParallaxIcon baseVelocity={0.2}>
-              <div className=" h-[108.87px] justify-start items-center gap-8 inline-flex my-[3vw] md:my-[5vw] lg:my-[2.5vw] ">
-                {dataTestimonials.secondLine &&
-                  dataTestimonials.secondLine.map((skill) => (
-                    <SkillsItems skill={skill} />
-                  ))}
-              </div>
-            </ParallaxIcon>
-          </section>
-        </TailwindGrid>
+        </div>
+
       </div>
-    </div>
+
+    </>
   );
 }
 
@@ -74,7 +81,7 @@ function SkillsItems({ skill }) {
           className="max-w-10/12  object-cover group-hover:scale-125 transition-all duration-200 z-30"
         />
       </div>
-      <p className=" text-center text-xs lg:text-[#0F0F0F] text-[0.60vw] font-bold uppercase tracking-wide group-hover:scale-125 transition-all duration-200">
+      <p className=" text-center text-xs lg:text-[#0F0F0F] text-[0.60vw] font-bold uppercase tracking-wide group-hover:scale-125 transition-all duration-200 ">
         {skill.name}
       </p>
     </div>
