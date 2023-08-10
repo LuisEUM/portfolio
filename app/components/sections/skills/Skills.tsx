@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DotFollower from "../../mouse/DotFollower";
 import ParallaxIcon from "../../slider/ParallaxIcons";
@@ -8,13 +8,16 @@ import { motion } from "framer-motion";
 
 function Skills({ text }) {
   const dataTestimonials = text.home.skillsSection;
+  const initialPosition = useRef(null);
 
   return (
     <>
       <div className="w-full h-full flex py-[min(7.5vw,11rem)]  z-40 relative  ">
-
         <div className="relative  w-full  overflow-hidden ">
-          <DotFollower></DotFollower>
+          <DotFollower
+            initialX={initialPosition.current?.offsetLeft}
+            initialY={initialPosition.current?.offsetTop}
+          ></DotFollower>
           <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
             <TailwindGrid fullSize>
               <section className="absolute self-center overflow-hidden max-w-full -z-50">
@@ -33,6 +36,14 @@ function Skills({ text }) {
                   Take a look at
                   <span className="md:hidden"></span>
                   <span className="text-primary"> my tools...</span>
+                  {/* <div
+                    ref={initialPosition}
+                    className="w-[0.55vw] h-[0.55vw] bg-primary rounded-full inline-block self-baseline -mb-[0.5px] ml-[1.5px]"
+                    style={{
+                      boxShadow:
+                        "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
+                    }}
+                  /> */}
                 </h3>
               </div>
             </TailwindGrid>
@@ -60,9 +71,7 @@ function Skills({ text }) {
             </section>
           </TailwindGrid>
         </div>
-
       </div>
-
     </>
   );
 }
