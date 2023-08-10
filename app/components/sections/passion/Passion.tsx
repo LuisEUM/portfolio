@@ -12,7 +12,7 @@ function Passion({ text }) {
             </span>
             <span className="text-primary "> Video Games?</span>
           </h3>
-          <p className="max-w-full text-center md:text-leftg text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+          <p className="max-w-full text-center md:text-left text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             Once upon a time, there was a passionate developer named Luis
             Urdaneta. With a heart full of creativity and a mind brimming with
             ideas, Luis embarked on a journey into the world of game
