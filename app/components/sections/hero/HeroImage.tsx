@@ -1,86 +1,12 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Symbol from "../../svg/Symbol";
+import HeroFloatingElements from "./HeroFloatingElements";
 
 function HeroImage() {
   return (
-    <section className="col-start-8  col-end-5 md:col-end-9 lg:col-end-13 items-center  -purple-500/10 flex ">
-      <div className="w-[40vw] h-[40vw] -ml-[10vw] group -slate-700/30 relative ">
-        <div className="absolute -top-20 right-24 z-50">
-          <div className="relative w-50 h-50">
-            <Symbol
-              className="stroke-primary"
-              delay={0}
-              type="triangle"
-              size={1}
-            />
-          </div>
-        </div>
-        <div className="absolute top-0 right-0 z-50">
-          <div className="relative w-full h-full  flex flex-col items-center justify-center">
-            <Symbol
-              className="stroke-zinc-700"
-              delay={0}
-              type="square"
-              size={0.8}
-            />
-          </div>
-        </div>
-        <div className="absolute bottom-64 right-0">
-          <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <Symbol
-              className="stroke-zinc-700"
-              delay={0}
-              type="square"
-              size={1.2}
-            />
-          </div>
-        </div>
-        <div className="absolute bottom-44 -right-20  z-50">
-          <div className="relative flex flex-col items-center justify-center">
-            <Symbol
-              className="stroke-primary"
-              delay={0}
-              type="circle"
-              size={1.25}
-            />
-          </div>
-        </div>
-        <div className=" absolute bottom-20 -left-20">
-          <div className="relative w-full h-full flex flex-col items-center justify-center ">
-            <Symbol className="stroke-primary" delay={0} type="x" size={1.25} />
-          </div>
-        </div>
-        <div className="  absolute bottom-0 left-36  z-50">
-          <div className="relative   flex flex-col items-center justify-center">
-            <Symbol
-              className="stroke-zinc-900"
-              delay={0}
-              type="circle"
-              size={1.5}
-            />
-          </div>
-        </div>
-        <div className="absolute -top-10 left-0  z-50">
-          <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <Symbol
-              className="stroke-primary"
-              delay={0}
-              type="square"
-              size={1}
-            />
-          </div>
-        </div>
-        <div className="absolute top-0 left-28  z-50">
-          <div className="relative w-50 h-50">
-            <Symbol
-              className="stroke-zinc-900"
-              delay={0}
-              type="triangle"
-              size={1}
-            />
-          </div>
-        </div>
+    <section className="order-1 overflow-x-hidden md:overflow-visible overflow-y-clip -mb-[5vw] md:mb-[0] pl-[8vw] md:pl-[0] md:order-2 col-start-1 col-end-5 md:col-start-6 md:col-end-9  lg:col-start-8  lg:col-end-13 items-center  -purple-500/10 flex pt-[4vw]  ">
+      <div className="    aspect-square w-10/12 max-w-screen  md:absolute md:w-[40vw] md:h-[40vw] lg:relative lg:left-[0] md:left-[50vw] z-10 lg:z-30 lg:h-[40vw] lg:-ml-[10vw] group -slate-700/30 relative ">
+        <HeroFloatingElements />
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: "-15deg" }}
@@ -90,7 +16,7 @@ function HeroImage() {
             ease: "easeInOut",
             repeatType: "reverse",
           }}
-          className="clipped w-full h-full  bg-gradient-to-b from-primary to-green-800  group-hover:-rotate-90 flex items-center align-middle justify-center"
+          className="clipped w-full h-full  bg-gradient-to-b from-primary to-green-800  group-hover:-rotate-90 flex items-center align-middle justify-center aspect-square z-40"
         >
           <motion.img
             initial={{ rotate: 0 }}

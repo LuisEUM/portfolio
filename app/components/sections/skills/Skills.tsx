@@ -1,23 +1,17 @@
 import Image from "next/image";
-import React, { useRef } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DotFollower from "../../mouse/DotFollower";
 import ParallaxIcon from "../../slider/ParallaxIcons";
 import ParallaxText from "../../slider/ParallaxText";
-import { motion } from "framer-motion";
 
 function Skills({ text }) {
   const dataTestimonials = text.home.skillsSection;
-  const initialPosition = useRef(null);
 
   return (
     <>
       <div className="w-full h-full flex py-[min(7.5vw,11rem)]  z-40 relative  ">
         <div className="relative  w-full  overflow-hidden ">
-          <DotFollower
-            initialX={initialPosition.current?.offsetLeft}
-            initialY={initialPosition.current?.offsetTop}
-          ></DotFollower>
+          <DotFollower></DotFollower>
           <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
             <TailwindGrid fullSize>
               <section className="absolute self-center overflow-hidden max-w-full -z-50">

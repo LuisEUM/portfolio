@@ -5,13 +5,21 @@ type Symbol_Props = {
   type: "x" | "circle" | "triangle" | "square";
   className: string;
   size: number;
-}
+  reverse?: boolean;
 
-function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
+};
+
+function Symbol({
+  delay = 0,
+  type = "x",
+  reverse = false,
+  className,
+  size = 1,
+}: Symbol_Props) {
   return (
     <>
       <motion.div
-        className=" min-w-10 min-h-10 w-full h-full flex items-center justify-center relative cursor-pointer "
+        className="bg-red- flex items-center justify-center relative cursor-pointer "
         initial={{ scale: size }} // Escala inicial del motion.div
         whileHover={{ scale: size * 1.2, opacity: 0.5 }} // Escala cuando el cursor está sobre el contenedor
         whileTap={{ scale: size * 0.8, opacity: 0.25 }} // Escala cuando se hace clic en el contenedor
@@ -19,7 +27,7 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
         {type === "x" && (
           <motion.svg
             initial={{ rotate: 0 }}
-            animate={{ rotate: [0, 90, 90, 0] }}
+            animate={{ rotate: reverse ? [0, -90, -90, 0] : [0, 90, 90, 0]   }}
             transition={{
               duration: 4,
               times: [0, 0.1, 0.76, 1],
@@ -31,9 +39,9 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
             width="57"
             height="57"
             viewBox="0 0 57 57"
-            className={` w-full h-full ${
-              className ? className : "stroke-primary"
-            } fill-none`}
+            className={`  ${
+              className ? className : "stroke-primary w-full h-full "
+            } fill-none `}
           >
             <path
               d="M10.9351 11.0649L45.9351 46.0649M45.9351 11.0649L10.9351 46.0649"
@@ -47,7 +55,7 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
           <>
             <motion.svg
               initial={{ scale: 0 }}
-              animate={{ scale: [0.9, 1.15] }}
+              animate={{ scale: reverse ? [1.15, 0.9] : [0.9, 1.15] }}
               transition={{
                 duration: 5,
                 type: "spring",
@@ -58,7 +66,7 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
                 repeat: Infinity,
               }}
               className={` w-full h-full ${
-                className ? className : "stroke-primary"
+                className ? className : "stroke-primary  w-full h-full"
               } fill-none`}
               xmlns="http://www.w3.org/2000/svg"
               width="61"
@@ -77,7 +85,7 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
               height="68"
               viewBox="0 0 68 68"
               initial={{ rotate: 0 }}
-              animate={{ rotate: [0, 360] }}
+              animate={{ rotate: reverse ? [0, -360] : [0, 360] }}
               transition={{
                 duration: 10,
                 times: [0, 1],
@@ -85,8 +93,8 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
                 repeat: Infinity,
                 delay: delay,
               }}
-              className={` w-full h-full ${
-                className ? className : "stroke-primary"
+              className={`  ${
+                className ? className : "stroke-primary w-full h-full "
               } fill-none`}
             >
               <rect
@@ -103,7 +111,7 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
         {type === "triangle" && (
           <motion.svg
             initial={{ rotate: 0 }}
-            animate={{ rotate: [0, 90], y: [20, 0] }}
+            animate={{ rotate: reverse ? [90, 0] : [0, 90], y: reverse ? [0, 20] : [20, 0] }}
             transition={{
               duration: 4,
               repeat: Infinity,
@@ -113,8 +121,8 @@ function Symbol({ delay = 0, type = "x", className, size = 1 }: Symbol_Props) {
             width="71"
             height="71"
             viewBox="0 0 71 71"
-            className={` w-full h-full ${
-              className ? className : "stroke-primary"
+            className={` ${
+              className ? className : "stroke-primary w-full h-full"
             } fill-none`}
           >
             <path
