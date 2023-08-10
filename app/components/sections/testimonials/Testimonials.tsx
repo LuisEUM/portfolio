@@ -32,7 +32,7 @@ function Testimonials({ text }) {
   const screenCenter = useScreenWidth();
 
   return (
-    <>
+    <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
           <ParallaxText baseVelocity={1.8}>Listen to my community</ParallaxText>
@@ -41,7 +41,7 @@ function Testimonials({ text }) {
       <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
         <TailwindGrid>
           <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
-            <h3 className="text-start text-[7vw] leading-[7vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black">
+            <h3 className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black">
               Voices of Success:
               <span className="md:hidden">
                 <br />
@@ -58,7 +58,6 @@ function Testimonials({ text }) {
                 {text.portfolio.projects &&
                   dataTestimonials.map((testimonial, index) => (
                     <section className="w-full relative bg-zinc-900 rounded-[13.87px]  shadow flex flex-col gap-y-2 items-center justify-center text-center px-6 py-5">
-
                       <TestimonialsDesktopCard
                         className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
                         container={testimonial}
@@ -83,7 +82,7 @@ function Testimonials({ text }) {
           />
         )}
       </div>
-    </>
+    </div>
   );
 }
 

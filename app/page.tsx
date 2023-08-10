@@ -9,6 +9,7 @@ import "./style.css";
 import BigQuote from "./components/sections/quote/BigQuote";
 import Testimonials from "./components/sections/testimonials/Testimonials";
 import Skills from "./components/sections/skills/Skills";
+import Passion from "./components/sections/passion/Passion";
 
 export default function Home() {
   const { text } = useContext(LanguageContext);
@@ -27,6 +28,10 @@ export default function Home() {
       <Skills text={text} />
 
       <BigQuote text={text} />
+      <TailwindGrid>
+        <Passion text={text} />
+      </TailwindGrid>
+
       <Testimonials text={text} />
     </>
   );
