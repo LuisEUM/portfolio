@@ -14,8 +14,8 @@ type TestimonialsDesktopCardProps = {
     icon?: string;
   };
   containers?: Array<{
-    order: number;
-    src: string;
+    order?: number;
+    src?: string;
   }>;
   index?: number;
   children?: React.ReactNode;

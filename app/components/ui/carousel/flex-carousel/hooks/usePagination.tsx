@@ -3,7 +3,7 @@ import { useState } from "react";
 
 type Item = {
   order: number;
-  src: string;
+  src?: string;
 };
 
 type PaginationResult = {
@@ -17,12 +17,10 @@ export function usePagination(initialData: Item[]): PaginationResult {
   const [data, setData] = useState<Item[]>([
     {
       order: 0,
-      src: "https://picsum.photos/id/199/900/1600",
     },
     ...initialData,
     {
       order: initialData.length + 1,
-      src: "https://picsum.photos/id/199/900/1600",
     },
   ]);
 
