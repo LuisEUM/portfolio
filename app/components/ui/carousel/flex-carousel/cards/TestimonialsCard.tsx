@@ -113,13 +113,13 @@ function TestimonialsCard({
         </Link>
       )}
 
-      <Image
+      {/* <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
         width={80}
         height={80}
         alt={`${container.order}`}
         src={container.src}
-      />
+      /> */}
       <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
         {container.name}
       </h4>
