@@ -51,9 +51,7 @@ function TestimonialsCard({
         <>
           {!showFullDescription ? (
             <>
-              <p
-                className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
-              >
+              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
                 {truncatedDescription}...
               </p>
               <motion.button
@@ -130,8 +128,8 @@ function TestimonialsCard({
 
       <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
-        width={700}
-        height={700}
+        width={125}
+        height={125}
         alt={`${container.order}`}
         src={container.src}
       />
