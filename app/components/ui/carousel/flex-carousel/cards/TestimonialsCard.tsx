@@ -51,14 +51,11 @@ function TestimonialsCard({
         <>
           {!showFullDescription ? (
             <>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+              <p
                 className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
               >
                 {truncatedDescription}...
-              </motion.p>
+              </p>
               <motion.button
                 className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
                 onClick={toggleDescription}
