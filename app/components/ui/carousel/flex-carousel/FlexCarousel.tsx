@@ -24,7 +24,6 @@ function FlexCarousel({
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
     useCarousel(dataCards, reduceGap);
 
-  // Apply the children render prop to modify the data array
 
   return (
     <>
@@ -35,7 +34,7 @@ function FlexCarousel({
             paddingRight: `${(100 - width) / 2}vw`,
             gap: `${10 / reduceGap}vw`,
           }}
-          className="flex w-full col-span-12 overflow-hidden"
+          className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30"
           ref={containerRef}
           layout
         >
@@ -65,14 +64,12 @@ function FlexCarousel({
             );
           })}
         </motion.div>
-      </TailwindGrid>
-      <TailwindGrid>
-        <div className="self-center justify-self-center place-self-center content-center justify-center h-10 flex w-full col-span-12 ">
+        <div className="self-center justify-self-center place-self-center content-center justify-center h-10 flex w-full col-span-12 -z-10">
           {data.map((page, index) => (
             <div
-              className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden ${
+              className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden -z-10 ${
                 page.order === centerOrder ? "bg-primary" : "bg-neutral-500"
-              } `}
+              }`}
               key={page.order}
               onClick={() => handlePagerClick(page.order)}
             />

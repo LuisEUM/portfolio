@@ -21,13 +21,12 @@ type TestimonialsCardProps = {
   children?: React.ReactNode;
   className?: string;
   centerOrder?: number;
+  readMoreActive?: boolean;
 };
 
 function TestimonialsCard({
   container,
   centerOrder,
-  children,
-  index,
   className,
 }: TestimonialsCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -52,9 +51,14 @@ function TestimonialsCard({
         <>
           {!showFullDescription ? (
             <>
-              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+              >
                 {truncatedDescription}...
-              </p>
+              </motion.p>
               <motion.button
                 className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
                 onClick={toggleDescription}
@@ -113,7 +117,7 @@ function TestimonialsCard({
         >
           <motion.button
             whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.2 }}
             className="group bg-white cursor-pointer hover:bg-zinc-700 rounded-full transition-all"
           >
             <Image

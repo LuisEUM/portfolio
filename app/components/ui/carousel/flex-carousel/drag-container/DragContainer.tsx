@@ -26,7 +26,10 @@ function DragContainer({
     <motion.section
       layoutId={index + container.src}
       ref={parentRef}
-      transition={{ duration: 0.75, ease: [0.68, -0.6, 0.32, 1.6] }}
+      transition={{
+        duration: 0.75,
+        ease: [0.83, 0, 0.17, 1],
+      }}
       style={{
         order: container.order,
         scale: container.order === centerOrder ? 1 : 0.9,
@@ -61,7 +64,7 @@ function DragContainer({
           "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 z-30 "
         }
       >
-        {children}
+          {children}
       </motion.div>
     </motion.section>
   );
