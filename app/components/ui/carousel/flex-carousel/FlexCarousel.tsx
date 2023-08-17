@@ -67,7 +67,7 @@ function FlexCarousel({
         </motion.div>
       </TailwindGrid>
       <TailwindGrid>
-        <div className="self-center justify-self-center place-self-center content-center justify-center h-10 flex w-full col-span-12 z-40">
+        <div className="self-center justify-self-center place-self-center content-center justify-center h-10 flex w-full col-span-12 ">
           {data.map((page, index) => (
             <div
               className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden ${

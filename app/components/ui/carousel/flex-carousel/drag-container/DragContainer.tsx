@@ -26,7 +26,7 @@ function DragContainer({
     <motion.section
       layoutId={index + container.src}
       ref={parentRef}
-      transition={{ duration: 0.75, ease: "anticipate" }}
+      transition={{ duration: 0.75, ease: [0.68, -0.6, 0.32, 1.6] }}
       style={{
         order: container.order,
         scale: container.order === centerOrder ? 1 : 0.9,
@@ -36,7 +36,7 @@ function DragContainer({
       key={index}
       className={` ${container.order > edgeRigth && "invisible"} ${
         container.order < edgeLeft && "invisible"
-      } last:invisible  first:invisible  flex justify-center items-center `}
+      } last:invisible  first:invisible  flex justify-center items-center z-30`}
     >
       <motion.div
         style={{ width: `${width}vw` }}
@@ -58,7 +58,7 @@ function DragContainer({
         }}
         className={
           className ||
-          "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 "
+          "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 z-30 "
         }
       >
         {children}
