@@ -109,8 +109,8 @@ function TestimonialsDesktopCard({
       )}
       <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
-        width={700}
-        height={700}
+        width={360}
+        height={360}
         alt={`${container.order}`}
         src={container.src}
       />

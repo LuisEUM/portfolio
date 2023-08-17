@@ -26,11 +26,11 @@ function DragContainer({
     <motion.section
       layoutId={index + container.src}
       ref={parentRef}
-      transition={{ type: "spring", stiffness: 400, damping: 45, mass: 0.5 }}
-      // transition={{
-      //   duration: 0.75,
-      //   ease: [0.16, 1, 0.3, 1],
-      // }}
+      // transition={{ type: "spring", stiffness: 400, damping: 45, mass: 0.5 }}
+      transition={{
+        duration: 0.75,
+        ease: [0.16, 1, 0.3, 1],
+      }}
       style={{
         order: container.order,
         scale: container.order === centerOrder ? 1 : 0.9,

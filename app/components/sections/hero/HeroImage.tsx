@@ -44,8 +44,8 @@ function HeroImage({ srcBody, srcHead }: HeroIMageProps) {
           />
         </motion.div>
         <Image
-          width={2000}
-          height={2000}
+          width={1080}
+          height={1080}
           src={
             srcHead
               ? srcHead
