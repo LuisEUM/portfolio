@@ -36,6 +36,7 @@ function DragContainer({
         scale: container.order === centerOrder ? 1 : 0.9,
         opacity: container.order === centerOrder ? 1 : 0.5,
         zIndex: container.order === centerOrder ? 2 : 1,
+        willChange: "contents"
       }}
       key={index}
       className={` ${container.order > edgeRigth && "invisible"} ${
@@ -43,7 +44,7 @@ function DragContainer({
       } last:invisible  first:invisible  flex justify-center items-center `}
     >
       <motion.div
-        style={{ width: `${width}vw` }}
+        style={{ width: `${width}vw`, willChange: "contents" }}
         drag="x"
         dragConstraints={parentRef}
         dragControls={control}

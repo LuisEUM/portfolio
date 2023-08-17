@@ -85,6 +85,7 @@ function TestimonialsCard({
 
   return (
     <div
+      style={{ willChange: "auto" }}
       className={
         className ||
         "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
@@ -113,13 +114,13 @@ function TestimonialsCard({
         </Link>
       )}
 
-      {/* <Image
+      <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
         width={80}
         height={80}
         alt={`${container.order}`}
         src={container.src}
-      /> */}
+      />
       <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
         {container.name}
       </h4>

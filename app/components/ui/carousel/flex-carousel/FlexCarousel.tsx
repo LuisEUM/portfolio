@@ -34,9 +34,10 @@ function FlexCarousel({
             paddingRight: `${(100 - width) / 2}vw`,
             gap: `${10 / reduceGap}vw`,
           }}
-          className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30"
+          className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30 sticky"
           ref={containerRef}
           layout
+          
         >
           {data.map((container, index) => {
             return (
