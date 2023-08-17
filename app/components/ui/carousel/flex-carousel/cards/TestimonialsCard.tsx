@@ -21,12 +21,13 @@ type TestimonialsCardProps = {
   children?: React.ReactNode;
   className?: string;
   centerOrder?: number;
-  readMoreActive?: boolean;
 };
 
 function TestimonialsCard({
   container,
   centerOrder,
+  children,
+  index,
   className,
 }: TestimonialsCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
@@ -51,18 +52,12 @@ function TestimonialsCard({
         <>
           {!showFullDescription ? (
             <>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
-                className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
-              >
+              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
                 {truncatedDescription}...
-              </motion.p>
+              </p>
               <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.1 }}
                 className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
                 onClick={toggleDescription}
                 dragListener={false}
@@ -72,18 +67,12 @@ function TestimonialsCard({
             </>
           ) : (
             <>
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
-                className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
-              >
+              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
                 {container.description}
-              </motion.p>
+              </p>
               <motion.button
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
+                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.1 }}
                 className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
                 onClick={toggleDescription}
                 dragListener={false}
@@ -97,18 +86,12 @@ function TestimonialsCard({
     } else {
       return (
         <>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
-            className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
-          >
+          <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {truncatedDescription}...
-          </motion.p>
+          </p>
           <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.3 }}
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.1 }}
             className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
             onClick={toggleDescription}
             dragListener={false}
@@ -136,12 +119,12 @@ function TestimonialsCard({
         >
           <motion.button
             whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.1 }}
             className="group bg-white cursor-pointer hover:bg-zinc-700 rounded-full transition-all"
           >
             <Image
-              width={40}
-              height={40}
+              width={32}
+              height={32}
               alt={container.name}
               src={container.icon}
               className="w-8 h-8 group-hover:invert cursor-pointer"
@@ -157,21 +140,12 @@ function TestimonialsCard({
         alt={`${container.order}`}
         src={container.src}
       />
-      <motion.h4
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold"
-      >
+      <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
         {container.name}
-      </motion.h4>
-      <motion.h5
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }}
-        className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium"
-      >
+      </h4>
+      <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
         {container.position}
-      </motion.h5>
+      </h5>
       {renderDescription()}
     </div>
   );
