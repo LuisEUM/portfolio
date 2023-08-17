@@ -133,8 +133,8 @@ function TestimonialsCard({
 
       <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
-        width={80}
-        height={80}
+        width={40}
+        height={40}
         alt={`${container.order}`}
         src={container.src}
       />
