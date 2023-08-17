@@ -24,7 +24,6 @@ function DragContainer({
   const control = useDragControls();
   return (
     <motion.section
-      layoutId={index + container.src}
       ref={parentRef}
       // transition={{ type: "spring", stiffness: 400, damping: 45, mass: 0.5 }}
       transition={{
@@ -42,10 +41,8 @@ function DragContainer({
       className={` ${container.order > edgeRigth && "invisible"} ${
         container.order < edgeLeft && "invisible"
       } last:invisible  first:invisible  flex justify-center items-center `}
-      layout
     >
       <motion.div
-        layout
         style={{ width: `${width}vw`, willChange: "contents" }}
         drag="x"
         dragConstraints={parentRef}

@@ -85,7 +85,7 @@ function TestimonialsCard({
 
   return (
     <motion.div
-      layoutId={`${index + container.name}`}
+      layoutId={`${container.order}`}
       style={{ willChange: "auto" }}
       className={
         className ||
