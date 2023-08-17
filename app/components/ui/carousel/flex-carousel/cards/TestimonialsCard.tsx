@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -55,30 +56,17 @@ function TestimonialsCard({
               <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
                 {truncatedDescription}...
               </p>
-              <motion.button
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.1 }}
-                className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
-                onClick={toggleDescription}
-                dragListener={false}
-              >
-                Read More
-              </motion.button>
+              <ButtonMoreOrLess toggleDescription={toggleDescription} more />
             </>
           ) : (
             <>
               <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
                 {container.description}
               </p>
-              <motion.button
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.1 }}
-                className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
-                onClick={toggleDescription}
-                dragListener={false}
-              >
-                Read Less
-              </motion.button>
+              <ButtonMoreOrLess
+                toggleDescription={toggleDescription}
+                more={false}
+              />
             </>
           )}
         </>
@@ -89,15 +77,7 @@ function TestimonialsCard({
           <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {truncatedDescription}...
           </p>
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
-            onClick={toggleDescription}
-            dragListener={false}
-          >
-            Read More
-          </motion.button>
+          <ButtonMoreOrLess toggleDescription={toggleDescription} more />
         </>
       );
     }
@@ -152,3 +132,17 @@ function TestimonialsCard({
 }
 
 export default TestimonialsCard;
+
+function ButtonMoreOrLess({ more, toggleDescription }) {
+  return (
+    <motion.button
+      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.1 }}
+      className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
+      onClick={toggleDescription}
+      dragListener={false}
+    >
+      {more ? "Read More" : "Read Less"}
+    </motion.button>
+  );
+}
