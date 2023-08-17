@@ -3,7 +3,6 @@ import DragContainer from "./drag-container/DragContainer";
 import TailwindGrid from "@/app/components/grid/TailwindGrid";
 import { useCarousel } from "./hooks/useCarousel";
 import CardsIndex from "./cards/CardsIndex";
-import { useMemo } from "react";
 
 type FlexCarouselProps = {
   width?: number;
@@ -11,6 +10,7 @@ type FlexCarouselProps = {
   dataCards?: any[];
   className?: string;
   type?: "classic" | "image" | "testimonial";
+  data?: any[]; // Instead of children prop, use data prop directly.
 };
 
 // Main Function
@@ -22,7 +22,9 @@ function FlexCarousel({
   type = "classic",
 }: FlexCarouselProps) {
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
-    useMemo(() => useCarousel(dataCards, reduceGap), [dataCards, reduceGap]);
+    useCarousel(dataCards, reduceGap);
+
+  // Apply the children render prop to modify the data array
 
   return (
     <>

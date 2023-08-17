@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, useTransition } from "react";
 import { usePagination } from "./usePagination";
 import useScreenWidth from "./useScreenWitdh";
 
@@ -8,6 +8,8 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
   const [itemWidth, setItemWidth] = useState(0);
   const screenCenter = useScreenWidth();
   const { data, centerOrder, paginate } = usePagination(dataConteiners);
+  const [isPending, startTransition] = useTransition();
+
 
   useLayoutEffect(() => {
     // Calcular el ancho del contenedor y de los elementos
@@ -38,7 +40,9 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
 
   const handlePagerClick = (clickedOrder) => {
     const direction = clickedOrder - centerOrder;
-    paginate(direction, data);
+    startTransition(() => {
+      paginate(direction, data);
+    });
   };
 
   return { data, containerRef, centerOrder, paginate, handlePagerClick };
