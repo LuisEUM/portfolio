@@ -87,6 +87,10 @@ function TestimonialsCard({
     <motion.div
       layoutId={`${container.order}`}
       style={{ willChange: "auto" }}
+      transition={{
+        duration: 0.01,
+        ease: [0.16, 1, 0.3, 1],
+      }}
       className={
         className ||
         "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
