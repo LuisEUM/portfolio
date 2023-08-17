@@ -51,9 +51,14 @@ function TestimonialsCard({
         <>
           {!showFullDescription ? (
             <>
-              <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeInOut" }}
+                className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+              >
                 {truncatedDescription}...
-              </p>
+              </motion.p>
               <motion.button
                 className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
                 onClick={toggleDescription}
@@ -128,8 +133,8 @@ function TestimonialsCard({
 
       <Image
         className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
-        width={125}
-        height={125}
+        width={80}
+        height={80}
         alt={`${container.order}`}
         src={container.src}
       />
