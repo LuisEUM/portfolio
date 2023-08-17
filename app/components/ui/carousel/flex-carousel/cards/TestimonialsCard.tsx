@@ -18,6 +18,9 @@ type TestimonialsCardProps = {
     order?: number;
     src?: string;
   }>;
+  index?: number;
+  children?: React.ReactNode;
+  className?: string;
   centerOrder?: number;
 };
 
@@ -31,32 +34,51 @@ function RenderDescription({
   const wordsArray = container.description?.split(" ");
   const truncatedDescription = wordsArray?.slice(0, wordsLimit).join(" ");
 
-  const showFullOrTruncatedDescription =
-    container.order === centerOrder || !truncatedDescription;
-
-  return (
-    <>
-      <AnimatePresence>
-        {showFullOrTruncatedDescription && (
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.01 }}
-            className="max-w-full text-slate-50 font-normal tracking-tight"
-          >
-            {showFullDescription
-              ? container.description
-              : truncatedDescription + "..."}
-          </motion.p>
+  if (container.order === centerOrder || !truncatedDescription) {
+    return (
+      <AnimatePresence mode="wait" initial={false}>
+        {!showFullDescription ? (
+          <>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.01 }}
+              className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+            >
+              {truncatedDescription}...
+            </motion.p>
+            <ButtonMoreOrLess toggleDescription={toggleDescription} more />
+          </>
+        ) : (
+          <>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.01 }}
+              className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+            >
+              {container.description}
+            </motion.p>
+            <ButtonMoreOrLess
+              toggleDescription={toggleDescription}
+              more={false}
+            />
+          </>
         )}
       </AnimatePresence>
-      <ButtonMoreOrLess
-        toggleDescription={toggleDescription}
-        more={!showFullDescription && showFullOrTruncatedDescription}
-      />
-    </>
-  );
+    );
+  } else {
+    return (
+      <>
+        <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+          {truncatedDescription}...
+        </p>
+        <ButtonMoreOrLess toggleDescription={toggleDescription} more />
+      </>
+    );
+  }
 }
 
 function ButtonMoreOrLess({ more, toggleDescription }) {
@@ -64,7 +86,7 @@ function ButtonMoreOrLess({ more, toggleDescription }) {
     <motion.button
       whileTap={{ scale: 0.9 }}
       whileHover={{ scale: 1.1 }}
-      className="text-primary font-normal underline cursor-pointer"
+      className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
       onClick={toggleDescription}
       dragListener={false}
     >
@@ -73,7 +95,12 @@ function ButtonMoreOrLess({ more, toggleDescription }) {
   );
 }
 
-function TestimonialsCard({ container, centerOrder }: TestimonialsCardProps) {
+function TestimonialsCard({
+  container,
+  centerOrder,
+  children,
+  className,
+}: TestimonialsCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   useEffect(() => {
@@ -88,12 +115,17 @@ function TestimonialsCard({ container, centerOrder }: TestimonialsCardProps) {
 
   return (
     <motion.div
+      layout="position"
       layoutId={`${container.order}`}
+      style={{ willChange: "auto" }}
       transition={{
         duration: 0.75,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5"
+      className={
+        className ||
+        "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
+      }
     >
       {container.url && (
         <Link
@@ -119,23 +151,27 @@ function TestimonialsCard({ container, centerOrder }: TestimonialsCardProps) {
       )}
 
       <Image
-        className="rounded-full pointer-events-none w-3/12 aspect-square object-cover"
+        className="rounded-full pointer-events-none w-3/12 aspect-square object-cover "
         width={80}
         height={80}
         alt={`${container.order}`}
         src={container.src}
       />
-      <h4 className="text-center text-white font-bold">{container.name}</h4>
-      <h5 className="text-zinc-400 text-xs font-medium">
+      <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
+        {container.name}
+      </h4>
+      <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
         {container.position}
       </h5>
 
-      <RenderDescription
-        container={container}
-        centerOrder={centerOrder}
-        showFullDescription={showFullDescription}
-        toggleDescription={toggleDescription}
-      />
+      {
+        <RenderDescription
+          container={container}
+          centerOrder={centerOrder}
+          showFullDescription={showFullDescription}
+          toggleDescription={toggleDescription}
+        />
+      }
     </motion.div>
   );
 }

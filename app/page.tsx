@@ -20,9 +20,9 @@ export default function Home() {
         <Hero text={text} />
       </TailwindGrid>
 
-      <TailwindGrid>
+      {/* <TailwindGrid>
         <Category text={text} />
-      </TailwindGrid>
+      </TailwindGrid> */}
 
       <ProjectsPreview text={text} />
       <Skills text={text} />

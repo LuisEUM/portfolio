@@ -41,6 +41,7 @@ function DragContainer({
       className={` ${container.order > edgeRigth && "invisible"} ${
         container.order < edgeLeft && "invisible"
       } last:invisible  first:invisible  flex justify-center items-center `}
+      layout="position"
     >
       <motion.div
         style={{ width: `${width}vw`, willChange: "contents" }}
@@ -64,6 +65,7 @@ function DragContainer({
           className ||
           "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 "
         }
+        layout="position"
       >
         {children}
       </motion.div>

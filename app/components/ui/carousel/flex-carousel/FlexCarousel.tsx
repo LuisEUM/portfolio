@@ -36,7 +36,7 @@ function FlexCarousel({
           }}
           className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30 sticky"
           ref={containerRef}
-          layout
+          layout="position"
         >
           {data.map((container, index) => {
             return (
