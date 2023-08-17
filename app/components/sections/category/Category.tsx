@@ -136,7 +136,7 @@ function Category({ text }) {
             </div>
           </div>
         </motion.section>
-        <div className="h-40 w-40 bg-white">
+        <div className="h-40 w-40">
           <Simple />
         </div>
       </section>

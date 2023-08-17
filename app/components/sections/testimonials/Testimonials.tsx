@@ -35,7 +35,7 @@ function Testimonials({ text }) {
     <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={1.8}>Listen to my community</ParallaxText>
+          <ParallaxText baseVelocity={0.18}>Listen to my community</ParallaxText>
         </section>
       </TailwindGrid>
       <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
@@ -75,7 +75,7 @@ function Testimonials({ text }) {
         {screenCenter && (
           <FlexCarousel
             dataCards={dataTestimonials}
-            width={50}
+            width={70}
             reduceGap={20}
             key={screenCenter}
             type="testimonial"

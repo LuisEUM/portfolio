@@ -34,7 +34,7 @@ function ProjectsPreview({ text }) {
     <>
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={-2}>Enjoy all my work</ParallaxText>
+          <ParallaxText baseVelocity={-0.2}>Enjoy all my work</ParallaxText>
         </section>
       </TailwindGrid>
       <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
