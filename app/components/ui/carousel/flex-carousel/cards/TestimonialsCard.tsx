@@ -84,7 +84,8 @@ function TestimonialsCard({
   };
 
   return (
-    <div
+    <motion.div
+      layoutId={`${index + container.name}`}
       style={{ willChange: "auto" }}
       className={
         className ||
@@ -128,7 +129,7 @@ function TestimonialsCard({
         {container.position}
       </h5>
       {renderDescription()}
-    </div>
+    </motion.div>
   );
 }
 

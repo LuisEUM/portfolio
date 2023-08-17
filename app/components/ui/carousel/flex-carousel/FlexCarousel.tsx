@@ -24,7 +24,6 @@ function FlexCarousel({
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
     useCarousel(dataCards, reduceGap);
 
-
   return (
     <>
       <TailwindGrid fullSize>
@@ -33,11 +32,11 @@ function FlexCarousel({
             paddingLeft: `${(100 - width) / 2}vw`,
             paddingRight: `${(100 - width) / 2}vw`,
             gap: `${10 / reduceGap}vw`,
+            willChange: "contents",
           }}
           className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30 sticky"
           ref={containerRef}
-          layout
-          
+          layout="preserve-aspect"
         >
           {data.map((container, index) => {
             return (
