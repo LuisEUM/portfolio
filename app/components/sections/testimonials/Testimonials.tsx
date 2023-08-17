@@ -55,7 +55,7 @@ function Testimonials({ text }) {
           <FlexCarousel
             dataCards={dataTestimonials}
             width={70}
-            reduceGap={20}
+            reduceGap={15}
             key={screenCenter}
             type="testimonial"
           />
