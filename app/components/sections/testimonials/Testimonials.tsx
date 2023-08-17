@@ -5,28 +5,7 @@ import ParallaxText from "../../slider/ParallaxText";
 import TestimonialsDesktopCard from "../../ui/carousel/flex-carousel/cards/TestimonialsDesktopCard";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
-const dataTestimonials = [
-  {
-    order: 1,
-    src: "https://picsum.photos/id/202/900/1600",
-  },
-  {
-    order: 2,
-    src: "https://picsum.photos/id/203/900/1600",
-  },
-  {
-    order: 3,
-    src: "https://picsum.photos/id/204/900/1600",
-  },
-  {
-    order: 4,
-    src: "https://picsum.photos/id/201/900/1600",
-  },
-  {
-    order: 5,
-    src: "https://picsum.photos/id/199/900/1600",
-  },
-];
+
 function Testimonials({ text }) {
   const dataTestimonials = text.home.testimonialsSection;
   const screenCenter = useScreenWidth();
