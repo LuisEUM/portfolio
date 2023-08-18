@@ -7,7 +7,7 @@ function CategoryCardAutoMove({ category, className, index, wordIndex }) {
   return (
     <motion.div
       layout
-      transition={{ type: "spring", damping: 100 , stiffness: 1000, mass: 0.1 }}
+      transition={{ type: "spring", damping: 100, stiffness: 1000, mass: 0.1 }}
       className={`relative w-[1/2] group items-end flex  ${className}
         ${isCenterCard && "col-span-5"} 
         ${isCenterCard && index === 0 && "order-4 col-span-3"} 

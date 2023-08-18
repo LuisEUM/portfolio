@@ -41,7 +41,7 @@ function TestimonialsDesktopCard({
     if (showFullDescription || !container.description) {
       return (
         <>
-          <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+          <p className="max-w-full md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {container.description}
           </p>
           <motion.button
@@ -62,7 +62,7 @@ function TestimonialsDesktopCard({
 
       return (
         <>
-          <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+          <p className="max-w-full md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {truncatedDescription}...
           </p>
           <motion.button

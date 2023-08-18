@@ -132,22 +132,27 @@
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
         "subtitle": "I could be your favorite ",
-        "paragraph": "I'm a web developer, graphic designer, and digital marketing strategist with more than 2 years of experience in each field.",
         "categories": [
           {
             "name": "Developer",
             "url": "/projects?category=Web_Developer&page=1",
-            "icon": "/icons/web_developer.svg"
+            "icon": "/icons/web_developer.svg",
+            "artboardName": "Web",
+            "summary": "More than a year ago, I joined IronHack's FullStack Web Development bootcamp, where I gained experience in the MERN environment, laying the foundations for my work in several projects as a developer."
           },
           {
             "name": "Designer",
             "url": "/projects?category=Graphic_Design&page=1",
-            "icon": "/icons/designer.svg"
+            "icon": "/icons/designer.svg",
+            "artboardName": "Design",
+            "summary": "With a solid experience of more than 3 years as a web designer, I have enhanced this skill thanks to my knowledge acquired since 2017 in graphic design."
           },
           {
             "name": "Marketer",
             "url": "/projects?category=Marketing&page=1",
-            "icon": "/icons/marketing.svg"
+            "icon": "/icons/marketing.svg",
+            "artboardName": "Marketing",
+            "summary": "I am a Google Partner and a graduate in Foreign Trade. My background includes different official certifications and international experiences as a Digital Marketing specialist."
           }
         ]
       },
@@ -680,23 +685,28 @@
     "home": {
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
-        "subtitle": "I could be your favorite ",
-        "paragraph": "I'm a web developer, graphic designer, and digital marketing strategist with more than 2 years of experience in each field.",
+        "subtitle": "Podría ser tu próximo especialisa en ",
         "categories": [
           {
-            "name": "Developer",
+            "name": "Programación",
             "url": "/projects?category=Web_Developer&page=1",
-            "icon": "/icons/web_developer.svg"
+            "icon": "/icons/web_developer.svg",
+            "artboardName": "Web",
+            "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
           },
           {
-            "name": "Designer",
+            "name": "Diseño",
             "url": "/projects?category=Graphic_Design&page=1",
-            "icon": "/icons/designer.svg"
+            "icon": "/icons/designer.svg",
+            "artboardName": "Design",
+            "summary": "Con una sólida experiencia de más de 3 años como diseñador web, he potenciado esta destreza gracias a mis conocimientos adquiridos desde el año 2017 en diseño gráfico."
           },
           {
-            "name": "Marketer",
+            "name": "Marketing",
             "url": "/projects?category=Marketing&page=1",
-            "icon": "/icons/marketing.svg"
+            "icon": "/icons/marketing.svg",
+            "artboardName": "Marketing",
+            "summary": "Soy Google Partner y egresado en Comercio Exterior. Mi trayectoria incluye diferentes certificaciones oficiales y experiencias internacionales como especialista en Marketing Digital."
           }
         ]
       },

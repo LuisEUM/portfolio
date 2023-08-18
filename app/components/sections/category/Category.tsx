@@ -1,10 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
-import secretIcon from "@/public/icons/secret_folder.svg";
-import ResponsiveList from "../../list/ResponsiveList";
-import CategoryCard from "../../card/CategoryCard";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { Simple } from "../../rive/Simple";
+import { useState } from "react";
+import DynamicList from "../../list/DynamicList";
 
 const spring = {
   type: "spring",
@@ -31,17 +27,8 @@ const variants = {
 
 function Category({ text }) {
   const dataCategoriesSection = text.home.categoriesSection;
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   const currentWord = text.home.categoriesSection.categories[index];
-
-  useEffect(() => {
-    const i = setInterval(() => {
-      setIndex((i) => (i + 1) % text.home.categoriesSection.categories.length);
-    }, 8000);
-    return () => {
-      clearInterval(i);
-    };
-  }, [index]);
 
   return (
     <>
@@ -53,7 +40,10 @@ function Category({ text }) {
           transition={spring}
           viewport={{ once: true }}
         >
-          <h2 className="font-bold  text-[4.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[3.vw] 2xl:text-[3vw] text-white">
+          <h2
+            className="font-bold  text-[4.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[3.vw] 2xl:text-[3vw] text-white"
+            key={currentWord.name}
+          >
             {dataCategoriesSection.subtitle}
             <motion.span
               variants={variants}
@@ -65,7 +55,6 @@ function Category({ text }) {
                 type: "spring",
                 stiffness: 300,
                 damping: 24,
-                delay: 3,
               }}
               className="text-center inline-block relative self-baseline"
             >
@@ -97,48 +86,13 @@ function Category({ text }) {
           <p className="text-left text-xl font-medium ">
             {dataCategoriesSection.paragraph}
           </p>
-          <ResponsiveList
-            mobile={1}
-            tablet={1}
-            desktop={11}
-            className={"  mb-5 mx-auto pt-10 relative "}
-          >
-            {dataCategoriesSection &&
-              dataCategoriesSection.categories.map((category, i) => (
-                <CategoryCard
-                  category={category}
-                  index={i}
-                  className=""
-                  wordIndex={index}
-                />
-              ))}
-          </ResponsiveList>
-
-          <div className="flex flex-col justify-center relative overflow-hidden sm:py-12 ">
-            <div className="max-w-7xl mx-auto">
-              <div className="relative group opacity-5 hover:opacity-100 cursor-pointer transition duration-1000">
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative px-7 py-6 bg-zinc-900  ring-1 ring-zinc-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
-                  <Image
-                    width={300}
-                    height={300}
-                    priority
-                    src={secretIcon}
-                    className="w-8 h-8 "
-                    alt="Follow us on Twitter"
-                  />
-
-                  <div className="flex ">
-                    <p className="font-bold m-auto ">TOP SECRET</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {dataCategoriesSection.categories && (
+            <DynamicList
+              setIndex={setIndex}
+              categories={dataCategoriesSection.categories}
+            />
+          )}
         </motion.section>
-        <div className="h-40 w-40">
-          <Simple />
-        </div>
       </section>
     </>
   );
