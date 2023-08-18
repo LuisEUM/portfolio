@@ -134,6 +134,7 @@
         "subtitle": "I could be your favorite ",
         "categories": [
           {
+            "order": 1,
             "name": "Developer",
             "url": "/projects?category=Web_Developer&page=1",
             "icon": "/icons/web_developer.svg",
@@ -141,6 +142,7 @@
             "summary": "More than a year ago, I joined IronHack's FullStack Web Development bootcamp, where I gained experience in the MERN environment, laying the foundations for my work in several projects as a developer."
           },
           {
+            "order": 2,
             "name": "Designer",
             "url": "/projects?category=Graphic_Design&page=1",
             "icon": "/icons/designer.svg",
@@ -148,6 +150,7 @@
             "summary": "With a solid experience of more than 3 years as a web designer, I have enhanced this skill thanks to my knowledge acquired since 2017 in graphic design."
           },
           {
+            "order": 3,
             "name": "Marketer",
             "url": "/projects?category=Marketing&page=1",
             "icon": "/icons/marketing.svg",
@@ -688,6 +691,7 @@
         "subtitle": "Podría ser tu próximo especialisa en ",
         "categories": [
           {
+            "order": 1,
             "name": "Programación",
             "url": "/projects?category=Web_Developer&page=1",
             "icon": "/icons/web_developer.svg",
@@ -695,6 +699,7 @@
             "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
           },
           {
+            "order": 2,
             "name": "Diseño",
             "url": "/projects?category=Graphic_Design&page=1",
             "icon": "/icons/designer.svg",
@@ -702,6 +707,7 @@
             "summary": "Con una sólida experiencia de más de 3 años como diseñador web, he potenciado esta destreza gracias a mis conocimientos adquiridos desde el año 2017 en diseño gráfico."
           },
           {
+            "order": 3,
             "name": "Marketing",
             "url": "/projects?category=Marketing&page=1",
             "icon": "/icons/marketing.svg",

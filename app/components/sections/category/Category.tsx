@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import DynamicList from "../../list/DynamicList";
+import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
 const spring = {
   type: "spring",
@@ -86,14 +87,12 @@ function Category({ text }) {
           <p className="text-left text-xl font-medium ">
             {dataCategoriesSection.paragraph}
           </p>
-          <div className="hidden md:block">
-            {dataCategoriesSection.categories && (
-              <DynamicList
-                setIndex={setIndex}
-                categories={dataCategoriesSection.categories}
-              />
-            )}
-          </div>
+          {dataCategoriesSection.categories && (
+            <DynamicList
+              setIndex={setIndex}
+              categories={dataCategoriesSection.categories}
+            />
+          )}
         </motion.section>
       </section>
     </>

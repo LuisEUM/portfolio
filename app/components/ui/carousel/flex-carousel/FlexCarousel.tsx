@@ -9,8 +9,10 @@ type FlexCarouselProps = {
   reduceGap?: number;
   dataCards?: any[];
   className?: string;
-  type?: "classic" | "image" | "testimonial";
+  type?: "classic" | "image" | "testimonial" | "category";
   data?: any[]; // Instead of children prop, use data prop directly.
+  boxPositions?: any[];
+  handleClick?: any
 };
 
 // Main Function
@@ -20,6 +22,8 @@ function FlexCarousel({
   reduceGap = 2,
   className,
   type = "classic",
+  boxPositions,
+  handleClick,
 }: FlexCarouselProps) {
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
     useCarousel(dataCards, reduceGap);
@@ -57,6 +61,8 @@ function FlexCarousel({
                       container={container}
                       containers={data}
                       index={index}
+                      boxPositions={boxPositions}
+                      handleClick={handleClick}
                     />
                   )
                 )}
