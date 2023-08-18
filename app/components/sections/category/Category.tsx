@@ -32,7 +32,7 @@ function Category({ text }) {
 
   return (
     <>
-      <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 pt-10">
+      <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 pt-10 ">
         <motion.section
           className="flex-col space-y-5 relative"
           initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ function Category({ text }) {
           viewport={{ once: true }}
         >
           <h2
-            className="font-bold  text-[4.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[3.vw] 2xl:text-[3vw] text-white"
+            className="xl:text-[3.vw] 2xl:text-[3vw] text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black"
             key={currentWord.name}
           >
             {dataCategoriesSection.subtitle}
@@ -86,12 +86,14 @@ function Category({ text }) {
           <p className="text-left text-xl font-medium ">
             {dataCategoriesSection.paragraph}
           </p>
-          {dataCategoriesSection.categories && (
-            <DynamicList
-              setIndex={setIndex}
-              categories={dataCategoriesSection.categories}
-            />
-          )}
+          <div className="hidden md:block">
+            {dataCategoriesSection.categories && (
+              <DynamicList
+                setIndex={setIndex}
+                categories={dataCategoriesSection.categories}
+              />
+            )}
+          </div>
         </motion.section>
       </section>
     </>
