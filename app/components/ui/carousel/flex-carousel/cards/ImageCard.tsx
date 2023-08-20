@@ -2,11 +2,11 @@ import Image from "next/image";
 
 type LuisItemCarouselProps = {
   container: {
-    order?: number;
+    order: number;
     src?: string;
   };
   containers: Array<{
-    order?: number;
+    order: number;
     src?: string;
   }>;
   index?: number;
@@ -14,10 +14,7 @@ type LuisItemCarouselProps = {
   className?: string;
 };
 
-function ImagesCard({
-  container,
-  index,
-}: LuisItemCarouselProps) {
+function ImagesCard({ container, index }: LuisItemCarouselProps) {
   return (
     <>
       <div

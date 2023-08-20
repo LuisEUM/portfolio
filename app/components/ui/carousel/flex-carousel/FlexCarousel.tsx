@@ -12,7 +12,7 @@ type FlexCarouselProps = {
   type?: "classic" | "image" | "testimonial" | "category";
   data?: any[]; // Instead of children prop, use data prop directly.
   boxPositions?: any[];
-  handleClick?: any
+  handleClick?: any;
 };
 
 // Main Function
@@ -22,8 +22,6 @@ function FlexCarousel({
   reduceGap = 2,
   className,
   type = "classic",
-  boxPositions,
-  handleClick,
 }: FlexCarouselProps) {
   const { data, containerRef, centerOrder, paginate, handlePagerClick } =
     useCarousel(dataCards, reduceGap);
@@ -61,8 +59,6 @@ function FlexCarousel({
                       container={container}
                       containers={data}
                       index={index}
-                      boxPositions={boxPositions}
-                      handleClick={handleClick}
                     />
                   )
                 )}
@@ -70,10 +66,10 @@ function FlexCarousel({
             );
           })}
         </motion.div>
-        <div className="self-center justify-self-center place-self-center content-center justify-center h-10 flex w-full col-span-12 -z-10">
+        <div className="self-center justify-self-center place-self-center content-center justify-center h-2 flex w-full col-span-12 z-10">
           {data.map((page, index) => (
             <div
-              className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden -z-10 ${
+              className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden z-10 ${
                 page.order === centerOrder ? "bg-primary" : "bg-neutral-500"
               }`}
               key={page.order}

@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 
 type TestimonialsDesktopCardProps = {
   container: {
-    order?: number;
+    order: number;
     src?: string;
     name?: string;
     position?: string;
     description?: string;
   };
   containers?: Array<{
-    order?: number;
+    order: number;
     src?: string;
   }>;
   index?: number;

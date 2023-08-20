@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 type TestimonialsCardProps = {
   container: {
-    order?: number;
+    order: number;
     src?: string;
     name?: string;
     position?: string;
@@ -15,7 +15,7 @@ type TestimonialsCardProps = {
     icon?: string;
   };
   containers?: Array<{
-    order?: number;
+    order: number;
     src?: string;
   }>;
   index?: number;
@@ -157,7 +157,7 @@ function TestimonialsCard({
         alt={`${container.order}`}
         src={container.src}
       />
-      <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
+      <h4 className="text-center md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
         {container.name}
       </h4>
       <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">

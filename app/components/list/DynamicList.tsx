@@ -23,17 +23,6 @@ function DynamicList({ setIndex, categories }) {
           />
         ))}
       </motion.div>
-      <div className="block lg:hidden w-full">
-        <FlexCarousel
-          dataCards={categories}
-          width={70}
-          reduceGap={15}
-          key="category"
-          type="category"
-          handleClick={handleClick}
-          boxPositions={boxPositions}
-        />
-      </div>
     </>
   );
 }

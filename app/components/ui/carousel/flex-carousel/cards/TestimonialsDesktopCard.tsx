@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import Link from "next/link";
 
 type TestimonialsDesktopCardProps = {
   container: {
-    order?: number;
+    order: number;
     src?: string;
     name?: string;
     position?: string;
@@ -15,7 +15,7 @@ type TestimonialsDesktopCardProps = {
     icon?: string;
   };
   containers?: Array<{
-    order?: number;
+    order: number;
     src?: string;
   }>;
   index?: number;
