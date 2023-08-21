@@ -89,15 +89,18 @@ function PostsDesktopCard({
     // <Link href={container.link} key={container.title}>
     <motion.div
       layout="position"
-      className="max-h-fit  justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
+      className="max-h-fit w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
     >
-      <Image
-        width={720}
-        height={1080}
-        className="w-full aspect-video  rounded-tl-md rounded-tr-md justify-center items-center inline-flex"
-        src={container.thumbnail}
-        alt={container.title}
-      />
+      <div className="w-full aspect-video bg-zinc-800 rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex">
+        <Image
+          width={1080}
+          height={1080}
+          className="w-full aspect-video  rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex object-cover"
+          src={container.thumbnail}
+          alt={container.title}
+        />
+      </div>
+
       <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto py-2">
         <h2 className="text-center  md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
           {container.title}

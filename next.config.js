@@ -4,7 +4,13 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ['localhost', 'images.unsplash.com', 'picsum.photos', 'cdn-images-1.medium.com']
+    domains: [
+      'localhost',
+      'images.unsplash.com',
+      'picsum.photos',
+      'cdn-images-1.medium.com',
+      'medium.com'
+    ]
   },
   reactStrictMode: true
 }

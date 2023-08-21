@@ -3,60 +3,13 @@ import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
-import Link from "next/link";
-import { apiMedium } from "../../api/apiMedium";
 import React from "react";
 import PostsDesktopCard from "../../ui/carousel/flex-carousel/cards/PostsDesktopCard";
+import { apiMedium } from "../../api/apiMedium";
 
 function PostPreviews({ text }) {
   const screenCenter = useScreenWidth();
   const { posts, isLoading } = apiMedium();
-
-  // const extractParagraphContent = (description) => {
-  //   const paragraphRegex = /<p>(.*?)<\/p>/;
-  //   const match = paragraphRegex.exec(description);
-  //   if (match && match[1]) {
-  //     return match[1];
-  //   }
-  //   return "";
-  // };
-
-  // const transformHTML = (htmlContent) => {
-  //   const transformedContent = htmlContent
-  //     .replace(/\<em\>/g, " <em> ")
-  //     .replace(/\<\/em\>/g, " </em> ")
-  //     .replace(/\<strong\>/g, " <strong> ")
-  //     .replace(/\<\/strong\>/g, " </strong> ");
-
-  //   return transformedContent;
-  // };
-
-  // const renderWord = (words, word, index) => {
-  //   if (word === "<strong>" || word === "<em>") {
-  //     const tag = word.slice(1, -1);
-  //     let content = "";
-  //     let currentIndex = index + 1;
-
-  //     while (
-  //       currentIndex < words.length &&
-  //       words[currentIndex] !== `</${tag}>`
-  //     ) {
-  //       content += `${words[currentIndex]} `;
-  //       currentIndex++;
-  //     }
-
-  //     return React.createElement(tag, { key: index }, transformHTML(content)); // Transform content here
-  //   } else if (!word.startsWith("</") && !word.startsWith("<")) {
-  //     return (
-  //       <span key={index} className={` inline-flex mr-1 last:mr-0`}>
-  //         {word}
-  //         {"\u00A0"}
-  //       </span>
-  //     );
-  //   }
-  //   return null; // Ignore other cases
-  // };
-
   return (
     <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
@@ -91,6 +44,7 @@ function PostPreviews({ text }) {
                         container={post}
                         index={index}
                       />
+                      
                     </section>
                   ))}
               </ResponsiveList>
@@ -115,45 +69,3 @@ function PostPreviews({ text }) {
 }
 
 export default PostPreviews;
-
-function ParagrapHTML({ paragraph, className, limit, unlimited }) {
-  const wordsLimit = limit || 40; // Set the number of words you want to show initially
-  const wordsArray = paragraph.split(" ");
-  const truncatedDescription = unlimited
-    ? paragraph
-    : wordsArray.slice(0, wordsLimit).join(" ");
-
-  const transformHTML = (htmlContent) => {
-    const elements = [];
-    const regex = /<(\w+)>(.*?)<\/\1>/g;
-    let match;
-    let currentIndex = 0;
-
-    while ((match = regex.exec(htmlContent)) !== null) {
-      const beforeText = htmlContent.slice(currentIndex, match.index);
-      if (beforeText) {
-        elements.push(beforeText);
-      }
-
-      const tag = match[1];
-      const content = match[2];
-      if (tag === "strong" || tag === "em") {
-        elements.push(React.createElement(tag, { key: currentIndex }, content));
-      } else {
-        elements.push(content);
-      }
-
-      currentIndex = match.index + match[0].length;
-    }
-
-    if (currentIndex < htmlContent.length) {
-      elements.push(htmlContent.slice(currentIndex));
-    }
-
-    return elements;
-  };
-
-  const transformedContent = transformHTML(truncatedDescription);
-
-  return <p className={className}>{transformedContent} ...</p>;
-}
