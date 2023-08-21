@@ -80,7 +80,8 @@ function TestimonialsDesktopCard({
   };
 
   return (
-    <div
+    <motion.div
+      layout="position"
       className={
         className ||
         "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5"
@@ -115,14 +116,20 @@ function TestimonialsDesktopCard({
         alt={`${container.order}`}
         src={container.src}
       />
-      <h4 className="text-center text-white md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
+      <h4 className="text-center md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold">
         {container.name}
       </h4>
       <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
         {container.position}
       </h5>
-      {renderDescription()}
-    </div>
+      <motion.div
+        layout="position"
+        layoutId={container.name}
+        transition={{ duration: 0.25 }}
+      >
+        {renderDescription()}
+      </motion.div>
+    </motion.div>
   );
 }
 

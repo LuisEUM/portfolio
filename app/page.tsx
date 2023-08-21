@@ -10,6 +10,7 @@ import BigQuote from "./components/sections/quote/BigQuote";
 import Testimonials from "./components/sections/testimonials/Testimonials";
 import Skills from "./components/sections/skills/Skills";
 import Passion from "./components/sections/passion/Passion";
+import PostPreviews from "./components/sections/blog/PostPreviews";
 
 export default function Home() {
   const { text } = useContext(LanguageContext);
@@ -24,6 +25,8 @@ export default function Home() {
 
       <ProjectsPreview text={text} />
       <Skills text={text} />
+
+      <PostPreviews text={text} />
 
       <BigQuote text={text} />
       <TailwindGrid>

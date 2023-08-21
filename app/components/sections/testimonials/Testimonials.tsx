@@ -5,7 +5,6 @@ import ParallaxText from "../../slider/ParallaxText";
 import TestimonialsDesktopCard from "../../ui/carousel/flex-carousel/cards/TestimonialsDesktopCard";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
-
 function Testimonials({ text }) {
   const dataTestimonials = text.home.testimonialsSection;
   const screenCenter = useScreenWidth();
@@ -14,7 +13,9 @@ function Testimonials({ text }) {
     <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={0.18}>Listen to my community</ParallaxText>
+          <ParallaxText baseVelocity={0.18}>
+            Listen to my community
+          </ParallaxText>
         </section>
       </TailwindGrid>
       <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
@@ -36,9 +37,9 @@ function Testimonials({ text }) {
               >
                 {text.portfolio.projects &&
                   dataTestimonials.map((testimonial, index) => (
-                    <section className="w-full relative bg-zinc-900 rounded-[13.87px]  shadow flex flex-col gap-y-2 items-center justify-center text-center px-6 py-5">
+                    <section className="w-full relative flex flex-col items-center justify-center">
                       <TestimonialsDesktopCard
-                        className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
+                        className="items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto"
                         container={testimonial}
                         index={index}
                       />

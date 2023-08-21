@@ -163,15 +163,12 @@ function TestimonialsCard({
       <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
         {container.position}
       </h5>
-
-      {
-        <RenderDescription
-          container={container}
-          centerOrder={centerOrder}
-          showFullDescription={showFullDescription}
-          toggleDescription={toggleDescription}
-        />
-      }
+      <RenderDescription
+        container={container}
+        centerOrder={centerOrder}
+        showFullDescription={showFullDescription}
+        toggleDescription={toggleDescription}
+      />
     </motion.div>
   );
 }
