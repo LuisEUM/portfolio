@@ -44,7 +44,7 @@ function Hero({ text }) {
           </p>
         </div>
         <div className="flex-col justify-center items-center gap-[23px] flex col-span-4  lg:col-start-2 justify- lg:gap-10 lg:inline-flex mt-12 md:flex-row w-full lg:justify-start">
-          <PrimaryButton text={text} />
+          <PrimaryButton text={"DESCARGAR CV"} />
           <SecondaryButton>Portafolio</SecondaryButton>
         </div>
       </section>

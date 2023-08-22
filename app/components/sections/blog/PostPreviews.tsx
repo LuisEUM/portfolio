@@ -10,6 +10,9 @@ import { apiMedium } from "../../api/apiMedium";
 function PostPreviews({ text }) {
   const screenCenter = useScreenWidth();
   const { posts, isLoading } = apiMedium();
+
+  const processedPostData = posts.slice(0, 3)
+
   return (
     <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
@@ -37,14 +40,13 @@ function PostPreviews({ text }) {
                 className="pt-12 w-full max-w-full "
               >
                 {posts &&
-                  posts.slice(0, 3).map((post, index) => (
+                  processedPostData.map((post, index) => (
                     <section className="w-full relative  flex flex-col  items-center justify-center">
                       <PostsDesktopCard
                         className=" items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto"
                         container={post}
                         index={index}
                       />
-                      
                     </section>
                   ))}
               </ResponsiveList>
@@ -53,17 +55,17 @@ function PostPreviews({ text }) {
         </TailwindGrid>
       </section>
 
-      <div className="block md:hidden">
-        {screenCenter && (
+      {!isLoading && (
+        <div className="block md:hidden ">
           <FlexCarousel
-            dataCards={posts.slice(0, 3)}
+            dataCards={processedPostData}
             width={70}
             reduceGap={15}
             key={screenCenter}
-            type="testimonial"
+            type="post"
           />
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

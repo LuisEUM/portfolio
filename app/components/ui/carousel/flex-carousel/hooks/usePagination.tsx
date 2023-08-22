@@ -14,13 +14,19 @@ type PaginationResult = {
 
 export function usePagination(initialData: Item[]): PaginationResult {
 
+
+  const processedData = initialData.map((item, index) => ({
+    ...item,
+    order: typeof item.order !== "undefined" ? item.order : index + 1,
+  }));
+
   const [data, setData] = useState<Item[]>([
     {
       order: 0,
     },
-    ...initialData,
+    ...processedData,
     {
-      order: initialData.length + 1,
+      order: processedData.length + 1,
     },
   ]);
 

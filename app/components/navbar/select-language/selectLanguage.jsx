@@ -176,7 +176,7 @@ export default function SelectLanguage () {
                   languageOptions.map((category, index) => (
                     <motion.li
                       key={index}
-                      className="text-center text-md last:border-b-0 border-b-2  font-medium  first:pb-2 last:pt-2  flex-row w-full content-center justify-center cursor-pointe "
+                      className="text-center text-md last:border-b-0 border-b-2  font-medium  first:pb-2 last:pt-2  flex-row w-full content-center justify-center cursor-pointer"
                       whileHover={{ color: '#C7D1DA', fontSize: '18px' }}
                       whileTap={{ color: '#C7D1DA', fontSize: '14px' }}
                       variants={itemVariants}

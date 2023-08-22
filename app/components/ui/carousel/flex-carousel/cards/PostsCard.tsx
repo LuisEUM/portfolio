@@ -1,11 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import PrimaryButton from "../../../buttons/PrimaryButton";
 import Link from "next/link";
 
-type PostsDesktopCardProps = {
+type PostsCardProps = {
   container: {
     link?: string;
     title?: string;
@@ -24,9 +24,9 @@ type PostsDesktopCardProps = {
   centerOrder?: number;
 };
 
-function PostsDesktopCard({
+function PostsCard({
   container,
-}: PostsDesktopCardProps) {
+}: PostsCardProps) {
 
   const extractParagraphContent = (description) => {
     const paragraphRegex = /<p>(.*?)<\/p>/;
@@ -72,18 +72,18 @@ function PostsDesktopCard({
             limit={25}
             showFullDescription
           />
-          <Link href={container.link} key={container.title} target="_blank">
+          {container.link && <Link href={container.link} key={container.title} target="_blank">
             <div className="mt-4 mb-2 inline-flex">
               <PrimaryButton text={"Go to Medium"} icon="medium" textLeft />
             </div>
-          </Link>
+          </Link>}
         </motion.div>
       </div>
     </motion.div>
   );
 }
 
-export default PostsDesktopCard;
+export default PostsCard;
 
 function ParagrapHTML({
   paragraph,

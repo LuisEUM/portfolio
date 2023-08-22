@@ -2,7 +2,7 @@ import { RiveAnimation } from "@/app/components/rive/RiveAnimation";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-function CategoryCard({ container, centerOrder }) {
+function CategoriesCard({ container, centerOrder }) {
   const [hover, setHover] = useState(false);
 
   return (
@@ -69,4 +69,4 @@ function CategoryCard({ container, centerOrder }) {
   );
 }
 
-export default CategoryCard;
+export default CategoriesCard;

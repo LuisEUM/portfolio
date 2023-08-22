@@ -1,7 +1,8 @@
-import CategoryCard from "./CategoryCard";
+import CategoriesCard from "./CategoriesCard";
 import TestimonialsDesktopCard from "./ClassicCard";
 import ClasicCard from "./ClassicCard";
 import ImagesCard from "./ImageCard";
+import PostsCard from "./PostsCard";
 import PostsDesktopCard from "./PostsDesktopCard";
 import TestimonialsCard from "./TestimonialsCard";
 
@@ -25,7 +26,11 @@ const CardsIndex = [
   },
   {
     id: "category",
-    content: CategoryCard,
+    content: CategoriesCard,
+  },
+  {
+    id: "post",
+    content: PostsCard,
   },
   {
     id: "postDesktop",
