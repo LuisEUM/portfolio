@@ -10,7 +10,7 @@ function TailwindGrid({ children, show, className, fullSize }: TailwindGridProps
 
   return (
     <>
-      <section className={`px-4 md:px-6 lg:px-8  w-full bg-red-500/10 max-w-full -z-50`}>
+      <section className={`px-4 min-w-[350px]  md:px-6 lg:px-8  w-full bg-red-500/10  -z-50`}>
         <section className=" gap-4 grid-cols-4  md:gap-6 md:grid-cols-8 lg:gap-6 lg:grid-cols-12 grid relative  w-full -z-50  justify-center">
           {show && (
             <div className="gap-4 grid-cols-4  md:gap-6 md:grid-cols-8 lg:gap-6  lg:grid-cols-12 grid absolute w-full -z-50  justify-center">
@@ -102,7 +102,7 @@ function TailwindGrid({ children, show, className, fullSize }: TailwindGridProps
           )}
         </section>
       </section>
-      <section className={` ${!fullSize && "px-4 md:px-6 lg:px-8"}  gap-4 grid-cols-4  md:gap-6 md:grid-cols-8 lg:gap-6  lg:grid-cols-12 grid relative w-full max-w-full  justify-center`}>
+      <section className={` ${!fullSize && "px-4 md:px-6 lg:px-8"} min-w-[350px] w-full   gap-4 grid-cols-4  md:gap-6 md:grid-cols-8 lg:gap-6  lg:grid-cols-12 grid relative  justify-center`}>
         {children}
       </section>
       

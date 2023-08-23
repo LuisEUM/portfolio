@@ -17,6 +17,8 @@ const cards = [
 
 function ProjectsPreview({ text }) {
   const projects = useState(text.portfolio.projects);
+  const previewProjects = text.home.projectsPreviewSection;
+
   const [contentStart, setContentStart] = useState(
     Math.floor(Math.random() * (text.portfolio.projects.length - 6))
   );
@@ -44,7 +46,7 @@ function ProjectsPreview({ text }) {
       <section className="relative max-w-full w-screen flex flex-col justify-center content-center items-center">
         <TailwindGrid fullSize>
           <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-            <ParallaxText baseVelocity={-0.2}>Enjoy all my work</ParallaxText>
+            <ParallaxText baseVelocity={previewProjects.velocityScroller}>{previewProjects.textScroller}</ParallaxText>
           </section>
         </TailwindGrid>
         <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
@@ -57,11 +59,11 @@ function ProjectsPreview({ text }) {
                     "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
                 }}
               >
-                Do you want to
+                {previewProjects.title}
                 <span className="md:hidden">
                   <br />
                 </span>
-                <span className="text-primary"> check my projects?</span>
+                <span className="text-primary">{previewProjects.titlePrimary}</span>
               </h3>
               <div className="hidden md:block">
                 <ResponsiveList tablet={3}>
@@ -78,7 +80,7 @@ function ProjectsPreview({ text }) {
                   "text-center hidden md:block hover:bg-white hover:text-zinc-950 text-[2.8vw] md:text-[min(2vw,22px)] mt-[3vw]   font-bold uppercase self-center px-[2vw] py-[0.5vw] border border-white  rounded-full"
                 }
               >
-                check more project
+                {previewProjects.button}
               </SecondaryButton>
             </div>
           </TailwindGrid>

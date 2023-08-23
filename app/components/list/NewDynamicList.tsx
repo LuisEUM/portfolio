@@ -41,7 +41,7 @@ function NewDynamicList({ className, index, category, wordIndex, setIndex }) {
           isCenterCard ? "  py-[3.77rem]" : "h-2/3 py-11"
         }`}
       >
-        <div className="h-56 max-h-full aspect-square mx-auto">
+        <div className="h-56 max-h-full max-w-full aspect-square mx-auto">
           <RiveAnimation hover={hover} artboardName={category.artboardName} />
         </div>
         <div>

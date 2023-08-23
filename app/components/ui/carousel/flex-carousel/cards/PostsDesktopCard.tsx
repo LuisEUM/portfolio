@@ -42,7 +42,7 @@ function PostsDesktopCard({
   return (
     <motion.div
       layout="position"
-      className="max-h-fit w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto"
+      className="max-h-fit w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto "
     >
       <div className="w-full aspect-video bg-zinc-800 rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex">
         <Image
@@ -54,8 +54,8 @@ function PostsDesktopCard({
         />
       </div>
 
-      <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto py-2 px-[5%]">
-        <h2 className="text-center  md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
+      <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto px-[8%] py-[5%]] ">
+        <h2 className="text-center  md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.15vw] font-bold ">
           {container.title}
         </h2>
         <p className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">

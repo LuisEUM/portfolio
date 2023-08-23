@@ -13,7 +13,7 @@ function Category({ text }) {
 
   return (
     <div className="mt-20   pt-10 lg:py-[min(7.5vw,11rem)] ">
-      <TailwindGrid>
+      <TailwindGrid >
         <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13  ">
           <section
             className="flex-col space-y-5 relative"

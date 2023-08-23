@@ -155,7 +155,6 @@
             "order": 1,
             "name": "Developer",
             "url": "/projects?category=Web_Developer&page=1",
-            "icon": "/icons/web_developer.svg",
             "artboardName": "Web",
             "summary": "More than a year ago, I joined IronHack's FullStack Web Development bootcamp, where I gained experience in the MERN environment, laying the foundations for my work in several projects as a developer."
           },
@@ -163,7 +162,6 @@
             "order": 2,
             "name": "Designer",
             "url": "/projects?category=Graphic_Design&page=1",
-            "icon": "/icons/designer.svg",
             "artboardName": "Design",
             "summary": "With a solid experience of more than 3 years as a web designer, I have enhanced this skill thanks to my knowledge acquired since 2017 in graphic design."
           },
@@ -171,11 +169,17 @@
             "order": 3,
             "name": "Marketer",
             "url": "/projects?category=Marketing&page=1",
-            "icon": "/icons/marketing.svg",
             "artboardName": "Marketing",
             "summary": "I am a Google Partner and a graduate in Foreign Trade. My background includes different official certifications and international experiences as a Digital Marketing specialist."
           }
         ]
+      },
+      "projectsPreviewSection": {
+        "title": "Do you want to check ",
+        "titlePrimary": "my projects?",
+        "button": "Check my Projects",
+        "textScroller": "Enjoy all my work",
+        "velocityScroller": -0.2
       },
       "bigQuoteSection": {
         "parallax": "The Power Of Passion",
@@ -725,13 +729,12 @@
       },
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
-        "subtitle": "Podría ser tu próximo especialisa en ",
+        "subtitle": "Podría ser tu próximo especialista en ",
         "categories": [
           {
             "order": 1,
             "name": "Programación",
             "url": "/projects?category=Web_Developer&page=1",
-            "icon": "/icons/web_developer.svg",
             "artboardName": "Web",
             "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
           },
@@ -739,7 +742,6 @@
             "order": 2,
             "name": "Diseño",
             "url": "/projects?category=Graphic_Design&page=1",
-            "icon": "/icons/designer.svg",
             "artboardName": "Design",
             "summary": "Con una sólida experiencia de más de 3 años como diseñador web, he potenciado esta destreza gracias a mis conocimientos adquiridos desde el año 2017 en diseño gráfico."
           },
@@ -747,12 +749,19 @@
             "order": 3,
             "name": "Marketing",
             "url": "/projects?category=Marketing&page=1",
-            "icon": "/icons/marketing.svg",
             "artboardName": "Marketing",
             "summary": "Soy Google Partner y egresado en Comercio Exterior. Mi trayectoria incluye diferentes certificaciones oficiales y experiencias internacionales como especialista en Marketing Digital."
           }
         ]
       },
+      "projectsPreviewSection": {
+        "title": "¿Quieres mirar ",
+        "titlePrimary": "Proyectos?",
+        "button": "Ver más proyectos",
+        "textScroller": "Disfruta de mis trabajos",
+        "velocityScroller": -0.2
+      },
+
       "bigQuoteSection": {
         "parallax": "El Poder de la Pasión",
         "quote": {
@@ -973,31 +982,45 @@
       "projects": [
         {
           "id": 1,
-          "title": "title",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "title": "MOUTHFEELS",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/1/600/300",
+          "gallery": [
+            "https://picsum.photos/id/1/600/300",
+            "https://picsum.photos/id/2/600/300",
+            "https://picsum.photos/id/3/600/300",
+            "https://picsum.photos/id/4/600/300",
+            "https://picsum.photos/id/5/600/300"
+          ],
+          "url": "proyect_1"
         },
         {
           "id": 2,
-          "title": "Diseño_Web",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "title": "MOUTHFEELS",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/6//600/300",
+          "gallery": [
+            "https://picsum.photos/id/6/600/300",
+            "https://picsum.photos/id/7/600/300",
+            "https://picsum.photos/id/8/600/300",
+            "https://picsum.photos/id/9/600/300",
+            "https://picsum.photos/id/10/600/300"
+          ],
+          "url": "proyect_2"
         },
         {
           "id": 3,
@@ -1010,8 +1033,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/11//600/300",
+          "gallery": [
+            "https://picsum.photos/id/11/600/300",
+            "https://picsum.photos/id/12/600/300",
+            "https://picsum.photos/id/13/600/300",
+            "https://picsum.photos/id/14/600/300",
+            "https://picsum.photos/id/15/600/300"
+          ],
+          "url": "proyect_3"
         },
         {
           "id": 4,
@@ -1024,8 +1054,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/16//600/300",
+          "gallery": [
+            "https://picsum.photos/id/16/600/300",
+            "https://picsum.photos/id/17/600/300",
+            "https://picsum.photos/id/18/600/300",
+            "https://picsum.photos/id/19/600/300",
+            "https://picsum.photos/id/20/600/300"
+          ],
+          "url": "proyect_4"
         },
         {
           "id": 5,
@@ -1038,8 +1075,15 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/21//600/300",
+          "gallery": [
+            "https://picsum.photos/id/21/600/300",
+            "https://picsum.photos/id/22/600/300",
+            "https://picsum.photos/id/23/600/300",
+            "https://picsum.photos/id/24/600/300",
+            "https://picsum.photos/id/25/600/300"
+          ],
+          "url": "proyect_5"
         },
         {
           "id": 6,
@@ -1052,8 +1096,36 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/600/300",
-          "url": "#"
+          "image": "https://picsum.photos/id/26//600/300",
+          "gallery": [
+            "https://picsum.photos/id/27/600/300",
+            "https://picsum.photos/id/28/600/300",
+            "https://picsum.photos/id/29/600/300",
+            "https://picsum.photos/id/30/600/300",
+            "https://picsum.photos/id/31/600/300"
+          ],
+          "url": "proyect_6"
+        },
+        {
+          "id": 7,
+          "title": "Gráficos_animados",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "https://picsum.photos/id/32//600/300",
+          "gallery": [
+            "https://picsum.photos/id/32/600/300",
+            "https://picsum.photos/id/33/600/300",
+            "https://picsum.photos/id/34/600/300",
+            "https://picsum.photos/id/35/600/300",
+            "https://picsum.photos/id/36/600/300"
+          ],
+          "url": "proyect_7"
         }
       ]
     },

@@ -22,7 +22,7 @@ export const RiveAnimation = ({
   const playingAnimationNames = rive?.playingAnimationNames;
 
   console.log("animationNames", animationNames); // nos devuelve la lista de las animaciones dentro del artboard
-  console.log("activeArtboard", activeArtboard); // nos devuelve la lista de los artboard
+  console.log("activeArtboard", activeArtboard); // nos devuelve el nombre del artboard
   console.log("playingAnimationNames", playingAnimationNames); // nos devuelve la lista de las animaciones dentro del stateMachine
   console.log("contents", rive?.contents); // nos devuelve la estructura del json completo
 

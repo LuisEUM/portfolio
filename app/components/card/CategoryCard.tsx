@@ -68,7 +68,7 @@ function CategoryCard({ category, className, index, wordIndex, setIndex }) {
         }}
         onClick={handleClick}
       >
-        <div className="h-56 max-h-full aspect-square mx-auto">
+        <div className="h-56 max-w-full max-h-full aspect-square mx-auto">
           <RiveAnimation hover={hover} artboardName={category.artboardName} />
         </div>
         <div>

@@ -24,10 +24,10 @@ function TestimonialsDesktopCard({ container }: TestimonialsDesktopCardProps) {
   };
 
   const renderDescription = () => {
-    if (showFullDescription || !container.description) {
+    if (showFullDescription) {
       return (
         <>
-          <p className="items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto">
+          <p className="items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
             {container.description}
           </p>
           <motion.button
@@ -37,7 +37,7 @@ function TestimonialsDesktopCard({ container }: TestimonialsDesktopCardProps) {
             onClick={toggleDescription}
             dragListener={false}
           >
-            Read More
+            Read Less
           </motion.button>
         </>
       );
@@ -58,7 +58,7 @@ function TestimonialsDesktopCard({ container }: TestimonialsDesktopCardProps) {
             onClick={toggleDescription}
             dragListener={false}
           >
-            Read Less
+            Read More
           </motion.button>
         </>
       );
@@ -68,7 +68,7 @@ function TestimonialsDesktopCard({ container }: TestimonialsDesktopCardProps) {
   return (
     <motion.div
       layout="position"
-      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5"
+      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto  px-[8%] py-[5%]"
     >
       {container.url && (
         <Link

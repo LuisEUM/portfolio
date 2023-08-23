@@ -10,7 +10,7 @@ function Skills({ text }) {
 
   return (
     <>
-      <div className="w-full h-full flex py-[min(7.5vw,11rem)]  z-40 relative  ">
+      <div className="w-full h-full flex pt-[min(7.5vw,11rem)]  z-40 relative  ">
         <div className="relative  w-full  overflow-hidden ">
           <DotFollower></DotFollower>
           <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">

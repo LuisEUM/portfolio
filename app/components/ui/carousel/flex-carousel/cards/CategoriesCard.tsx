@@ -19,20 +19,15 @@ function CategoriesCard({ container, centerOrder }) {
         className="w-full relative group items-end flex p-4 text-center rounded-3xl content-center justify-center"
       >
         <div
-          className={`h-[96%] bottom-[2%]  absolute w-full bg-gradient-to-b from-primary to-primary rounded-lg blur transition duration-200 ${
-            centerOrder === container.order ? "opacity-50" : "opacity-0"
-          }`}
-        />
-        <div
-          className="w-full mx-auto relative  bg-zinc-900  rounded-3xl flex-col content-center items-center justify-center  cursor-pointer py-11"
+          className="w-full max-w-full mx-auto relative  bg-zinc-900  rounded-3xl flex-col content-center items-center justify-center  cursor-pointer py-11"
           onMouseDown={() => setHover(true)}
           onMouseUp={() => setHover(false)}
         >
           <motion.div
             className={
               true
-                ? "h-56 aspect-square mx-auto"
-                : "h-32 aspect-square mx-auto "
+                ? "max-h-56 aspect-square mx-auto  max-w-full "
+                : "max-h-32 aspect-square mx-auto max-w-full flex-wrap"
             }
           >
             <RiveAnimation
@@ -59,7 +54,7 @@ function CategoriesCard({ container, centerOrder }) {
                 mass: 0.1,
                 delay: 0.25,
               }}
-              className="mx-auto text-center mt-5 px-10 max-w-full text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-normal tracking-tight"
+              className="mx-auto text-center mt-5 px-10 max-w-full text-md md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-normal tracking-tight"
             >
               {container?.summary}
             </motion.p>

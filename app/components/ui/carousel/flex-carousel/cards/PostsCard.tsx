@@ -55,7 +55,7 @@ function PostsCard({
       </div>
 
       <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto py-2 px-[5%]">
-        <h2 className="text-center  md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
+        <h2 className="text-center text-lg md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
           {container.title}
         </h2>
         <p className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
@@ -67,7 +67,7 @@ function PostsCard({
           transition={{ duration: 0.25 }}
         >
           <ParagrapHTML
-            className="max-w-full md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
+            className="max-w-full text-md  md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
             paragraph={extractParagraphContent(container.description)}
             limit={25}
             showFullDescription

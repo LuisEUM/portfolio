@@ -42,8 +42,8 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
           <motion.div
             className={
               boxPositions[index] === 1
-                ? "h-56 aspect-square mx-auto"
-                : "h-32 aspect-square mx-auto "
+                ? "h-56 max-h-full max-w-full aspect-square mx-auto "
+                : "h-32 max-h-full max-w-full aspect-square mx-auto "
             }
           >
             <RiveAnimation hover={hover} artboardName={category.artboardName} />

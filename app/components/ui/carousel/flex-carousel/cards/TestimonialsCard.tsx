@@ -42,7 +42,7 @@ function RenderDescription({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.01 }}
-              className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+              className="max-w-full text-slate-50 text-md md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
             >
               {truncatedDescription}...
             </motion.p>
@@ -55,7 +55,7 @@ function RenderDescription({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.01 }}
-              className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
+              className="max-w-full text-slate-50  text-md md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight"
             >
               {container.description}
             </motion.p>
@@ -70,7 +70,7 @@ function RenderDescription({
   } else {
     return (
       <>
-        <p className="max-w-full text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+        <p className="max-w-full text-slate-50  text-md md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
           {truncatedDescription}...
         </p>
         <ButtonMoreOrLess toggleDescription={toggleDescription} more />
@@ -84,7 +84,7 @@ function ButtonMoreOrLess({ more, toggleDescription }) {
     <motion.button
       whileTap={{ scale: 0.9 }}
       whileHover={{ scale: 1.1 }}
-      className="text-primary font-normal underline md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
+      className="text-primary font-normal underline  text-md md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw]  cursor-pointer z-30 p-2"
       onClick={toggleDescription}
       dragListener={false}
     >
@@ -118,7 +118,7 @@ function TestimonialsCard({
         duration: 0.75,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
+      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-[8%] py-[5%] "
     >
       {container.url && (
         <Link
@@ -150,10 +150,10 @@ function TestimonialsCard({
         alt={`${container.order}`}
         src={container.src}
       />
-      <h4 className="text-center md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
+      <h4 className="text-center text-lg md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-bold">
         {container.name}
       </h4>
-      <h5 className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
+      <h5 className="text-zinc-400 text-sm md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
         {container.position}
       </h5>
       <RenderDescription

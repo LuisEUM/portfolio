@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <TailwindGrid>
+      <TailwindGrid >
         <Hero text={text} />
       </TailwindGrid>
 
@@ -28,9 +28,9 @@ export default function Home() {
       <PostPreviews text={text} />
 
       <BigQuote text={text} />
-      <TailwindGrid>
+      <TailwindGrid >
         <Passion text={text} />
-      </TailwindGrid>
+      </TailwindGrid >
 
       <Testimonials text={text} />
     </>
