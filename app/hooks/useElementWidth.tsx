@@ -1,8 +1,8 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 function useElementWidth(ref) {
-  const [elementWidth, setElementWidth] = useState(0);
+  const [elementWidth, setElementWidth] = useState(null);
 
   useEffect(() => {
     const element = ref.current;
@@ -21,7 +21,7 @@ function useElementWidth(ref) {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [ref]);
+  }, [ref, elementWidth]);
 
   return elementWidth;
 }

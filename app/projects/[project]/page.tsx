@@ -55,7 +55,7 @@ function Project() {
             {dataDescription}
           </p>
 
-          <div className="flex flex-wrap gap-2 items-center align-middle justify-left my-5">
+          <div className="flex flex-wrap gap-2 items-center align-middle justify-left my-">
             <p className="text-sm font-bold ">Etiquetas:</p>
             {dataTags.map((tag, index) => (
               <span

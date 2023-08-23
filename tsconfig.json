@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/components/list/ResponsiveList.tsx", "app/components/slider/TextSlider.tsx"  ],
+, "app/components/list/ResponsiveList.tsx", "app/components/slider/TextSlider.tsx", "app/placeholders/ImageStaticPlaceholderBlur.jsx", "next.config.js"  ],
   "exclude": [
     "node_modules"
   ]

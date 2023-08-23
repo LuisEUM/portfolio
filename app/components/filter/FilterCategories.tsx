@@ -1,132 +1,136 @@
-'use client'
-import { LanguageContext } from '../../context/languageContext'
-import { useDragControls, useMotionValue, motion } from 'framer-motion'
-import { useContext, useEffect, useRef, useState } from 'react'
-import Link from 'next/link'
+"use client";
+import { LanguageContext } from "../../context/languageContext";
+import { useDragControls, useMotionValue, motion } from "framer-motion";
+import { useContext, useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import useScreenWidth from "../ui/carousel/flex-carousel/hooks/useScreenWitdh";
+import useElementWidth from "@/app/hooks/useElementWidth";
 
 type FilterCategories_Props = {
   search: string;
   className: string;
   setCurrentPage: (search: number) => void;
   setSearch: (search: string) => void;
-}
+};
 
-export default function FilterCategories ({ search, setSearch, className, setCurrentPage } : FilterCategories_Props) {
-  const { text } = useContext(LanguageContext)
-  const controls = useDragControls()
-  const handleX = useMotionValue(0)
-  const [categoriesWidth, setCategoriesWidth] = useState(0)
-  const constraintsRef = useRef(null)
-  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
-  const [draggable, setDraggable] = useState(windowWidth >= categoriesWidth)
-  const [key, setKey] = useState('keyName')
-  const categoriesRef = useRef(null)
+export default function FilterCategories({
+  search,
+  setSearch,
+  className,
+  setCurrentPage,
+}: FilterCategories_Props) {
+  const { text } = useContext(LanguageContext);
+  const categoriesRef = useRef(null);
+  const constraintsRef = useRef(null);
+  const controls = useDragControls();
+  const screenWidth = useScreenWidth();
+  const categoriesWidth = useElementWidth(categoriesRef);
+  const [draggable, setDraggable] = useState(false);
 
   useEffect(() => {
-    const categoriesDiv = document.getElementById('categories')
-    setCategoriesWidth(categoriesDiv.offsetWidth)
-
-    const handleResize = () => {
-      const filterContainerWidth = constraintsRef.current.offsetWidth;
-      const newWindowWidth = window.innerWidth;
-      setWindowWidth(newWindowWidth);
-      setDraggable(newWindowWidth >= filterContainerWidth);
-
-      if (newWindowWidth >= filterContainerWidth) {
-        handleX.set(0);
-      }
-    };
-
-    window.addEventListener('resize', handleResize)
-    if (windowWidth >= categoriesWidth) {
-      setDraggable(true)
+    if (screenWidth >= categoriesWidth) {
+      setDraggable(true);
+    } else {
+      setDraggable(false);
     }
-    if (windowWidth <= categoriesWidth) {
-      setDraggable(false)
-    }
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [categoriesWidth])
+
+    console.log(screenWidth, categoriesWidth, draggable);
+    return () => {};
+  }, [categoriesWidth, screenWidth]);
 
   const handleClick = (event) => {
-    const { id } = event.currentTarget
-    setSearch(id)
-    setCurrentPage(1)
-  }
+    const { id } = event.currentTarget;
+    setSearch(id);
+    setCurrentPage(1);
+  };
 
-  function startDrag (event) {
-    controls.start(event)
+  function startDrag(event) {
+    controls.start(event);
   }
 
   return (
     <>
-      <div
-        key={key}
+      <motion.div
         onPointerDown={startDrag}
         ref={constraintsRef}
-        className={`${draggable ? 'justify-center hover:cursor-default focus:cursor-grabbing target:cursor-grabbing' : 'justify-start hover:cursor-grab'} h-14 flex items-center  overflow-hidden  ${className}`}
+        className={`${
+          draggable
+            ? "justify-center hover:cursor-default focus:cursor-grabbing target:cursor-grabbing"
+            : "justify-start hover:cursor-grab"
+        } h-12 flex  overflow-hidden relative w-screen justify-center items-center content-center  ${className}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
       >
         <motion.div
           ref={categoriesRef}
           dragPropagation
-          drag={windowWidth >= categoriesWidth ? false : 'x'}
+          key={screenWidth + 1}
+          drag={draggable ? false : "x"}
           dragConstraints={constraintsRef}
           dragControls={controls}
           dragElastic={0}
-          style={{ x: handleX }}
+          style={{ x: 0 }}
           dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
           id="categories"
-          className="h-28 flex flex-row justify-start items-center text-center self-center"
-          // onDragEnd={(event, info) => {
-          //   if (info.offset.x > categoriesWidth) {
-          //     alert('yes')
-          //   }
-          // }}
-          whileTap={{ cursor: (draggable ? 'default' : 'grabbing') }}
+          className={`h-12 flex flex-row justify-start items-center text-center self-center   mx-auto ${draggable ? '' : 'absolute top-0 left-0'} `}
+          onDragEnd={(event, info) => {
+            if (info.offset.x >= categoriesWidth) {
+              alert('yes')
+            }
+          }}
+          whileTap={{ cursor: draggable ? "default" : "grabbing" }}
         >
           <Link
-            href={'projects' + '?' + 'category=' + 'All' + '&' + 'page=' + 1 }
-            className={`w-20 ml-5 mr-2 ${
-              search === 'All'
-                ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase'
-                : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'
+            href={"projects" + "?" + "category=" + "All" + "&" + "page=" + 1}
+            className={`w-20 ml-8 mr-2 ${
+              search === "All"
+                ? "transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase"
+                : "transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase"
             }`}
-            id='All'
+            id="All"
             onClick={handleClick}
           >
             All
           </Link>
 
-          {text && text.portfolio.categories.map((category, i) => {
-            return (
+          {text &&
+            text.portfolio.categories.map((category, i) => {
+              return (
                 <Link
-                  href={'projects' + '?' + 'category=' + category.name + '&' + 'page=' + 1 }
+                  href={
+                    "projects" +
+                    "?" +
+                    "category=" +
+                    category.name +
+                    "&" +
+                    "page=" +
+                    1
+                  }
                   key={category.name}
-                  className={`mx-2 flex items-center ${search === category.name
-                    ? 'transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase '
-                    : 'transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase'}`}
+                  className={`mx-2 last:mr-8 flex items-center ${
+                    search === category.name
+                      ? "transition-all text-primary border-primary border font-normal tracking-wider rounded-full py-2 px-4 uppercase "
+                      : "transition-all hover:text-primary hover:border-primary border-white border text-white font-normal tracking-wider rounded-full py-2 px-4  uppercase"
+                  }`}
                   id={category.name}
                   onClick={handleClick}
                 >
-                  {category.name.split('')
-                    .map((word, index) => {
-                      if (word === '_') {
-                        return <span key={word + index} className='text-transparent'>{word}</span>
-                      }
+                  {category.name.split("").map((word, index) => {
+                    if (word === "_") {
                       return (
-                        <span key={word + index}>
+                        <span key={word + index} className="text-transparent">
                           {word}
                         </span>
-                      )
-                    })
-                  }
+                      );
+                    }
+                    return <span key={word + index}>{word}</span>;
+                  })}
                 </Link>
-            )
-          })}
+              );
+            })}
         </motion.div>
-      </div>
-
+      </motion.div>
     </>
-  )
+  );
 }

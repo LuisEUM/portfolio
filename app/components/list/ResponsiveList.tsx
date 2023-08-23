@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 type ResponsiveListProps = {
   children: React.ReactNode;
   mobile?: number;
@@ -19,12 +21,18 @@ function ResponsiveList({
     <>
       <div
         className={
-          className
-            ? className
-            : `   pt-12 w-full max-w-full lg:min-h-[35vw]`
+          className ? className : `pt-12 w-full max-w-full lg:min-h-[35vw]`
         }
       >
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 0, scale:0 }}
+          animate={{ opacity: 1, y: 0, scale:1 }}
+          transition={{
+            duration: 0.5,
+            staggerChildren: 5,
+            delayChildren: 2.5,
+            when: "beforeChildren",
+          }}
           className={`gap-4  md:gap-6  lg:gap-6 grid gap-y-10 content-center justify-center
           ${mobile === 1 && `grid-cols-1`} 
           ${mobile === 2 && `grid-cols-2`} 
@@ -68,7 +76,7 @@ function ResponsiveList({
           id={id && id}
         >
           {children}
-        </div>
+        </motion.div>
       </div>
     </>
   );
