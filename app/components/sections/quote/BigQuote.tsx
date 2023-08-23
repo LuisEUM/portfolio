@@ -1,4 +1,3 @@
-import React from "react";
 import ParallaxText from "../../slider/ParallaxText";
 import TailwindGrid from "../../grid/TailwindGrid";
 
@@ -30,6 +29,3 @@ function BigQuote({ text }) {
 }
 
 export default BigQuote;
-{
-  /* <section className="px-9 grid grid-cols-12 gap-6 fixed max-w-full w-100 w-screen -z-50 "> */
-}

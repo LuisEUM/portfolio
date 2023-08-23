@@ -1,3 +1,4 @@
+'use client'
 import useScreenWidth from "@/app/components/ui/carousel/flex-carousel/hooks/useScreenWitdh";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
@@ -38,11 +39,7 @@ function Testimonials({ text }) {
                 {text.portfolio.projects &&
                   dataTestimonials.map((testimonial, index) => (
                     <section className="w-full relative flex flex-col items-center justify-center">
-                      <TestimonialsDesktopCard
-                        className="items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto"
-                        container={testimonial}
-                        index={index}
-                      />
+                      <TestimonialsDesktopCard container={testimonial} />
                     </section>
                   ))}
               </ResponsiveList>

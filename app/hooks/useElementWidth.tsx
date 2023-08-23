@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function useElementWidth(ref) {
   const [elementWidth, setElementWidth] = useState(null);

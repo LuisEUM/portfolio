@@ -14,23 +14,9 @@ type TestimonialsDesktopCardProps = {
     url?: string;
     icon?: string;
   };
-  containers?: Array<{
-    order: number;
-    src?: string;
-  }>;
-  index?: number;
-  children?: React.ReactNode;
-  className?: string;
-  centerOrder?: number;
 };
 
-function TestimonialsDesktopCard({
-  container,
-  centerOrder,
-  children,
-  index,
-  className,
-}: TestimonialsDesktopCardProps) {
+function TestimonialsDesktopCard({ container }: TestimonialsDesktopCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   const toggleDescription = () => {
@@ -41,7 +27,7 @@ function TestimonialsDesktopCard({
     if (showFullDescription || !container.description) {
       return (
         <>
-          <p className="max-w-full md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
+          <p className="items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto">
             {container.description}
           </p>
           <motion.button
@@ -82,10 +68,7 @@ function TestimonialsDesktopCard({
   return (
     <motion.div
       layout="position"
-      className={
-        className ||
-        "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5"
-      }
+      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5"
     >
       {container.url && (
         <Link

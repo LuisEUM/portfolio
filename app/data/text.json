@@ -129,6 +129,24 @@
       ]
     },
     "home": {
+      "heroSection": {
+        "subtitle": {
+          "before": "<",
+          "text": "HelloWorld",
+          "after": "/>"
+        },
+        "title": {
+          "before": "I’m",
+          "name": "Luis",
+          "lastname": "Urdaneta"
+        },
+        "quote": "FullStack Web Developer, Graphic Designer, Digital Marketing",
+        "description": "I help businesses to improve their communication, digitalization and connection with their brand.",
+        "buttons": {
+          "primary": "Download CV",
+          "secondary": "Projects"
+        }
+      },
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
         "subtitle": "I could be your favorite ",
@@ -686,6 +704,25 @@
       ]
     },
     "home": {
+      "heroSection": {
+        "subtitle": {
+          "before": "<",
+          "text": "HolaMundo",
+          "after": "/>"
+        },
+        "title": {
+          "before": "Soy",
+          "name": "Luis",
+          "lastname": "Urdaneta"
+        },
+        "quote": "Desarrollador Web FullStack, Diseñador Gráfico, Marketing Digital",
+        "description": "Ayudo a negocios a mejorar su comunicación, digitalización y conexión con su marca.",
+        "buttons": {
+          "primary": "Descargar CV",
+          "secondary": "Proyectos"
+        },
+        "image": "/images/testimonials-luis/farooq-khader.jpeg"
+      },
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
         "subtitle": "Podría ser tu próximo especialisa en ",

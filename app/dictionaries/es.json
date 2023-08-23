@@ -1,0 +1,565 @@
+{
+  "menu": {
+    "id": "es",
+    "currentLanguage": "ES",
+    "routes": [
+      { "name": "Inicio", "pathname": "/" },
+      { "name": "Proyectos", "pathname": "/projects" },
+      { "name": "+Sobre mí", "pathname": "/about" }
+    ],
+    "contact": "Contáctame",
+    "languages": "Lenguajes",
+    "languagesOptions": [
+      {
+        "name": "Inglés",
+        "pathname": "en"
+      },
+      {
+        "name": "Español",
+        "pathname": "es"
+      }
+    ]
+  },
+  "footer": {
+    "website": "© 2023 Luis Urdaneta",
+    "rights": "Todos los derechos reservados",
+    "routes": [
+      { "name": "Home", "pathname": "/" },
+      { "name": "Projects", "pathname": "/projects" },
+      { "name": "About", "pathname": "/about" }
+    ],
+    "socials": [
+      {
+        "name": "Gmail",
+        "icon": "/icons/footer/gmail.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "WhatsApp",
+        "icon": "/icons/footer/whatsapp.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Telegram",
+        "icon": "/icons/footer/telegram.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "/icons/footer/linkedin.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Instagram",
+        "icon": "/icons/footer/instagram.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "YouTube",
+        "icon": "/icons/footer/youtube.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Facebook",
+        "icon": "/icons/footer/facebook.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "GitHub",
+        "icon": "/icons/footer/github.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "GitLab",
+        "icon": "/icons/footer/gitlab.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "CodeSandbox",
+        "icon": "/icons/footer/codesandbox.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Figma",
+        "icon": "/icons/footer/figma.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Alkitu",
+        "icon": "/icons/footer/alkitu.svg",
+        "url": "#",
+        "hidden": false
+      },
+      {
+        "name": "Médium",
+        "icon": "/icons/footer/medium.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "Dribble",
+        "icon": "/icons/footer/dribble.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "Behance",
+        "icon": "/icons/footer/behance.svg",
+        "url": "#",
+        "hidden": true
+      },
+      {
+        "name": "Spatial",
+        "icon": "/icons/footer/spatial.svg",
+        "url": "#",
+        "hidden": true
+      }
+    ]
+  },
+  "home": {
+    "heroSection": {
+      "subtitle": {
+        "before": "<",
+        "text": "HolaMundo",
+        "after": "/>"
+      },
+      "title": {
+        "before": "Soy",
+        "name": "Luis",
+        "lastname": "Urdaneta"
+      },
+      "quote": "Desarrollador Web FullStack, Diseñador Gráfico, Marketing Digital",
+      "description": "Ayudo a negocios a mejorar su comunicación, digitalización y conexión con su marca.",
+      "buttons": {
+        "primary": "Descargar CV",
+        "secondary": "Proyectos"
+      },
+      "image": "https://picsum.photos/600/300"
+    },
+    "categoriesSection": {
+      "title": "I will be your Swiss Army knife in the digital world",
+      "subtitle": "Podría ser tu próximo especialisa en ",
+      "categories": [
+        {
+          "order": 1,
+          "name": "Programación",
+          "url": "/projects?category=Web_Developer&page=1",
+          "icon": "/icons/web_developer.svg",
+          "artboardName": "Web",
+          "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
+        },
+        {
+          "order": 2,
+          "name": "Diseño",
+          "url": "/projects?category=Graphic_Design&page=1",
+          "icon": "/icons/designer.svg",
+          "artboardName": "Design",
+          "summary": "Con una sólida experiencia de más de 3 años como diseñador web, he potenciado esta destreza gracias a mis conocimientos adquiridos desde el año 2017 en diseño gráfico."
+        },
+        {
+          "order": 3,
+          "name": "Marketing",
+          "url": "/projects?category=Marketing&page=1",
+          "icon": "/icons/marketing.svg",
+          "artboardName": "Marketing",
+          "summary": "Soy Google Partner y egresado en Comercio Exterior. Mi trayectoria incluye diferentes certificaciones oficiales y experiencias internacionales como especialista en Marketing Digital."
+        }
+      ]
+    },
+    "bigQuoteSection": {
+      "parallax": "El Poder de la Pasión",
+      "quote": {
+        "lineOne": "Desarrollar es mi amor",
+        "lineTwo": "los videojuegos son mi pasión"
+      }
+    },
+    "skillsSection": {
+      "firstLine": [
+        {
+          "name": "Illustrator",
+          "src": "/icons/skills/Illustrator.svg",
+          "order": 1
+        },
+        {
+          "name": "After Effects",
+          "src": "/icons/skills/AfterEffects.svg",
+          "order": 2
+        },
+        {
+          "name": "Premiere",
+          "src": "/icons/skills/Premiere.svg",
+          "order": 3
+        },
+        {
+          "name": "Search Console",
+          "src": "/icons/skills/SearchConsole.svg",
+          "order": 4
+        },
+        {
+          "name": "Analytics",
+          "src": "/icons/skills/Analytics.svg",
+          "order": 5
+        },
+        {
+          "name": "Tag Manager",
+          "src": "/icons/skills/TagManager.svg",
+          "order": 6
+        },
+        {
+          "name": "Microsoft 365",
+          "src": "/icons/skills/Microsoft365.svg",
+          "order": 7
+        },
+        {
+          "name": "Figma",
+          "src": "/icons/skills/Figma.svg",
+          "order": 8
+        },
+        {
+          "name": "HTML",
+          "src": "/icons/skills/HTML.svg",
+          "order": 9
+        },
+        {
+          "name": "CSS",
+          "src": "/icons/skills/CSS.svg",
+          "order": 10
+        },
+        {
+          "name": "GitHub",
+          "src": "/icons/skills/GitHub.svg",
+          "order": 11
+        },
+        {
+          "name": "Express JS",
+          "src": "/icons/skills/ExpressJS.svg",
+          "order": 12
+        },
+        {
+          "name": "React JS",
+          "src": "/icons/skills/ReactJS.svg",
+          "order": 13
+        },
+        {
+          "name": "Node JS",
+          "src": "/icons/skills/NodeJS.svg",
+          "order": 14
+        }
+      ],
+      "secondLine": [
+        {
+          "name": "Tailwind",
+          "src": "/icons/skills/Tailwind.svg",
+          "order": 1
+        },
+        {
+          "name": "Framer Motion",
+          "src": "/icons/skills/FramerMotion.svg",
+          "order": 2
+        },
+        {
+          "name": "Google Ads",
+          "src": "/icons/skills/GoogleAds.svg",
+          "order": 3
+        },
+        {
+          "name": "ESlint",
+          "src": "/icons/skills/ESlint.svg",
+          "order": 4
+        },
+        {
+          "name": "Puppeteer",
+          "src": "/icons/skills/Puppeteer.svg",
+          "order": 5
+        },
+        {
+          "name": "Postman",
+          "src": "/icons/skills/Postman.svg",
+          "order": 6
+        },
+        {
+          "name": "JavaScript",
+          "src": "/icons/skills/JavaScript.svg",
+          "order": 7
+        },
+        {
+          "name": "WordPress",
+          "src": "/icons/skills/WordPress.svg",
+          "order": 8
+        },
+        {
+          "name": "Handlebars",
+          "src": "/icons/skills/Handlebars.svg",
+          "order": 9
+        },
+        {
+          "name": "Bootstrap",
+          "src": "/icons/skills/Bootstrap.svg",
+          "order": 10
+        },
+        {
+          "name": "InDesign",
+          "src": "/icons/skills/InDesign.svg",
+          "order": 11
+        },
+        {
+          "name": "JSX",
+          "src": "/icons/skills/JSX.svg",
+          "order": 12
+        },
+        {
+          "name": "Typescript",
+          "src": "/icons/skills/Typescript.svg",
+          "order": 13
+        },
+        {
+          "name": "MongoDB",
+          "src": "/icons/skills/MongoDB.svg",
+          "order": 14
+        },
+        {
+          "name": "Photoshop",
+          "src": "/icons/skills/Photoshop.svg",
+          "order": 15
+        }
+      ]
+    },
+    "testimonialsSection": [
+      {
+        "order": 1,
+        "src": "/images/testimonials-luis/farooq-khader.jpeg",
+        "name": "Farooq Khader",
+        "position": "Co-Founder and CTO at Tangle",
+        "description": "Luis es un gran desarrollador web con una increíble atención al detalle. Su afán por la tecnología más innovadora nos impulsó a trasladar nuestro sitio web a una tecnología mejor: NextJS. También se comprometió mucho para que los resultados estuvieran a la altura de la imaginación y satisfacción de nuestro diseñador. Sus técnicas de programación estructurada facilitaron que nuestro equipo interno se hiciera cargo de su trabajo sin problemas. Su paciencia en la colaboración con otros miembros del equipo / freelancers también valió la pena, ahorrando tiempo y esfuerzo para el equipo. Recomiendo encarecidamente a Luis como un gran desarrollador web.",
+        "url": "https://www.linkedin.com/in/farooqkhader/",
+        "icon": "/icons/footer/linkedin.svg"
+      },
+      {
+        "order": 2,
+        "src": "/images/testimonials-luis/nacho-escudero.jpeg",
+        "name": "Nacho Escudero",
+        "position": "Fundador/Jefe de Marketing: La Plataforma Publicitaria",
+        "description": "Luis ha sido una pieza fundamental, que ha conseguido muy buenos resultados aportando valor a la empresa. Es un profesional disciplinado, creativo y muy competitivo. Aunque este bajo presión no pierde su objetivo, siendo resolutivo y aplicando sus conocimientos en cada situación. Ha participado en decisiones muy importantes de planificación y estrategia. Sigue formando parte del equipo como socio colaborador externo.",
+        "url": "https://www.linkedin.com/in/nacho-escudero-34858b73/",
+        "icon": "/icons/footer/linkedin.svg"
+      },
+      {
+        "order": 3,
+        "src": "/images/testimonials-luis/leonel-perez.jpeg",
+        "name": "Leonel (Krea) Pérez",
+        "position": "𝗨𝗜/𝗨𝗫 𝗗𝗲𝘀𝗶𝗴𝗻𝗲𝗿 | 𝗕𝗿𝗮𝗻𝗱𝗶𝗻𝗴 | 𝗪𝗲𝗯/𝗫𝗥 𝗗𝗲𝘃",
+        "description": "Lo que realmente distingue a Luis es su capacidad para centrarse en los detalles; maneja con soltura múltiples áreas de conocimiento, como diseño, desarrollo y marketing. Lo recomiendo como profesional, con él se hace posible la creación de productos digitales, webs llamativas e ideas para destacar tus servicios y productos por internet.",
+        "url": "https://www.linkedin.com/in/leonelkrea/",
+        "icon": "/icons/footer/linkedin.svg"
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Proyectos",
+    "description": "Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",
+    "categories": [
+      {
+        "id": "branding",
+        "name": "Creación_de_marca"
+      },
+      {
+        "id": "webDesign",
+        "name": "Diseño_Web"
+      },
+      {
+        "id": "uxUi",
+        "name": "UI/UX"
+      },
+      {
+        "id": "extendedReality",
+        "name": "Realidad_Extendida"
+      },
+      {
+        "id": "3dArt",
+        "name": "Arte_3D"
+      },
+      {
+        "id": "motionDesign",
+        "name": "Gráficos_animados"
+      }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "title": "MOUTHFEELS",
+        "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+        "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+        "tags": [
+          "Adobe Illustrator",
+          "Adobe InDesign",
+          "Figma",
+          "Food Business"
+        ],
+        "image": "https://picsum.photos/id/1/600/300",
+        "gallery": [
+          "https://picsum.photos/id/1/600/300",
+          "https://picsum.photos/id/2/600/300",
+          "https://picsum.photos/id/3/600/300",
+          "https://picsum.photos/id/4/600/300",
+          "https://picsum.photos/id/5/600/300"
+        ],
+        "url": "proyect_1"
+      },
+      {
+        "id": 2,
+        "title": "MOUTHFEELS",
+        "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+        "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+        "tags": [
+          "Adobe Illustrator",
+          "Adobe InDesign",
+          "Figma",
+          "Food Business"
+        ],
+        "image": "https://picsum.photos/id/6//600/300",
+        "gallery": [
+          "https://picsum.photos/id/6/600/300",
+          "https://picsum.photos/id/7/600/300",
+          "https://picsum.photos/id/8/600/300",
+          "https://picsum.photos/id/9/600/300",
+          "https://picsum.photos/id/10/600/300"
+        ],
+        "url": "proyect_2"
+      },
+      {
+        "id": 3,
+        "title": "UI/UX",
+        "categories": ["category_1", "category_2", "category_3", "category_4"],
+        "description": "description",
+        "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+        "image": "https://picsum.photos/id/11//600/300",
+        "gallery": [
+          "https://picsum.photos/id/11/600/300",
+          "https://picsum.photos/id/12/600/300",
+          "https://picsum.photos/id/13/600/300",
+          "https://picsum.photos/id/14/600/300",
+          "https://picsum.photos/id/15/600/300"
+        ],
+        "url": "proyect_3"
+      },
+      {
+        "id": 4,
+        "title": "Realidad_Extendida",
+        "categories": ["category_1", "category_2", "category_3", "category_4"],
+        "description": "description",
+        "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+        "image": "https://picsum.photos/id/16//600/300",
+        "gallery": [
+          "https://picsum.photos/id/16/600/300",
+          "https://picsum.photos/id/17/600/300",
+          "https://picsum.photos/id/18/600/300",
+          "https://picsum.photos/id/19/600/300",
+          "https://picsum.photos/id/20/600/300"
+        ],
+        "url": "proyect_4"
+      },
+      {
+        "id": 5,
+        "title": "Arte_3D",
+        "categories": ["category_1", "category_2", "category_3", "category_4"],
+        "description": "description",
+        "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+        "image": "https://picsum.photos/id/21//600/300",
+        "gallery": [
+          "https://picsum.photos/id/21/600/300",
+          "https://picsum.photos/id/22/600/300",
+          "https://picsum.photos/id/23/600/300",
+          "https://picsum.photos/id/24/600/300",
+          "https://picsum.photos/id/25/600/300"
+        ],
+        "url": "proyect_5"
+      },
+      {
+        "id": 6,
+        "title": "Gráficos_animados",
+        "categories": ["category_1", "category_2", "category_3", "category_4"],
+        "description": "description",
+        "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+        "image": "https://picsum.photos/id/26//600/300",
+        "gallery": [
+          "https://picsum.photos/id/27/600/300",
+          "https://picsum.photos/id/28/600/300",
+          "https://picsum.photos/id/29/600/300",
+          "https://picsum.photos/id/30/600/300",
+          "https://picsum.photos/id/31/600/300"
+        ],
+        "url": "proyect_6"
+      },
+      {
+        "id": 7,
+        "title": "Gráficos_animados",
+        "categories": ["category_1", "category_2", "category_3", "category_4"],
+        "description": "description",
+        "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+        "image": "https://picsum.photos/id/32//600/300",
+        "gallery": [
+          "https://picsum.photos/id/32/600/300",
+          "https://picsum.photos/id/33/600/300",
+          "https://picsum.photos/id/34/600/300",
+          "https://picsum.photos/id/35/600/300",
+          "https://picsum.photos/id/36/600/300"
+        ],
+        "url": "proyect_7"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "socialNetworksParagraph": "Puedes escribirme en mis redes sociales:",
+    "socialNetwoks": {
+      "whatsApp": {
+        "url": "https://wa.link/xrg8go",
+        "hidden": false
+      },
+      "linkedIn": {
+        "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+        "hidden": false
+      },
+      "instagram": {
+        "url": "https://www.instagram.com/luise.urdanetam/",
+        "hidden": false
+      },
+      "twitter": {
+        "url": "",
+        "hidden": true
+      },
+      "telegram": {
+        "url": "",
+        "hidden": true
+      }
+    },
+    "emailAddressParagraph": "O escríbeme al correo:",
+    "email": "luiseum95@gmail.com",
+    "copied": "Copiado 😎!"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "about": "Über"
+  },
+  "page": {
+    "home": {
+      "title": "Willkommen bei NextJs i18n",
+      "description": "Internationalisierung im NextJs 13 App-Router"
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Dies ist die About-Seite"
+    }
+  }
+}

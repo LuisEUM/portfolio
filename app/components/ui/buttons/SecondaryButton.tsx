@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion";
 
 type SecondaryButton_Props = {

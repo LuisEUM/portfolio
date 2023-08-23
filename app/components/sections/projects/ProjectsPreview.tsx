@@ -1,10 +1,10 @@
+'use client'
 import { useState } from "react";
 import ProjectCard from "../../card/ProjectCard";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
 import ParallaxText from "../../slider/ParallaxText";
 import SecondaryButton from "../../ui/buttons/SecondaryButton";
-import CarouselSlider from "../../ui/carousel/CarouselSlider";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
 const cards = [

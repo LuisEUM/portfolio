@@ -1,3 +1,4 @@
+'use client'
 import { motion } from "framer-motion";
 import DragContainer from "./drag-container/DragContainer";
 import TailwindGrid from "@/app/components/grid/TailwindGrid";

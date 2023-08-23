@@ -1,3 +1,4 @@
+'use client'
 import { useEffect, useLayoutEffect, useRef, useState, useTransition } from "react";
 import { usePagination } from "./usePagination";
 import useScreenWidth from "./useScreenWitdh";

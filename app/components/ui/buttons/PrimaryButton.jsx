@@ -1,3 +1,4 @@
+'use client'
 import { motion } from 'framer-motion'
 
 function PrimaryButton ({ text, icon = 'download', textLeft = false }) {

@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 type Symbol_Props = {
@@ -6,7 +7,6 @@ type Symbol_Props = {
   className: string;
   size: number;
   reverse?: boolean;
-
 };
 
 function Symbol({
@@ -27,7 +27,7 @@ function Symbol({
         {type === "x" && (
           <motion.svg
             initial={{ rotate: 0 }}
-            animate={{ rotate: reverse ? [0, -90, -90, 0] : [0, 90, 90, 0]   }}
+            animate={{ rotate: reverse ? [0, -90, -90, 0] : [0, 90, 90, 0] }}
             transition={{
               duration: 4,
               times: [0, 0.1, 0.76, 1],
@@ -111,7 +111,10 @@ function Symbol({
         {type === "triangle" && (
           <motion.svg
             initial={{ rotate: 0 }}
-            animate={{ rotate: reverse ? [90, 0] : [0, 90], y: reverse ? [0, 20] : [20, 0] }}
+            animate={{
+              rotate: reverse ? [90, 0] : [0, 90],
+              y: reverse ? [0, 20] : [20, 0],
+            }}
             transition={{
               duration: 4,
               repeat: Infinity,

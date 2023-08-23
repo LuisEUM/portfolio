@@ -12,9 +12,9 @@ export const RiveAnimation = ({
   hover = false,
 }: RiveAnimationProps) => {
   const { rive, RiveComponent } = useRive({
-    src: "/rive/web_portfolio.riv",
+    src: "/web_portfolio.riv",
     autoplay: true,
-    artboard: artboardName
+    artboard: artboardName,
   });
 
   if (hover && rive) rive.play(hoverAnimationName);

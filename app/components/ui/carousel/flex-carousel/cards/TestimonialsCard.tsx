@@ -18,9 +18,7 @@ type TestimonialsCardProps = {
     order: number;
     src?: string;
   }>;
-  index?: number;
   children?: React.ReactNode;
-  className?: string;
   centerOrder?: number;
 };
 
@@ -98,8 +96,6 @@ function ButtonMoreOrLess({ more, toggleDescription }) {
 function TestimonialsCard({
   container,
   centerOrder,
-  children,
-  className,
 }: TestimonialsCardProps) {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
@@ -122,10 +118,7 @@ function TestimonialsCard({
         duration: 0.75,
         ease: [0.16, 1, 0.3, 1],
       }}
-      className={
-        className ||
-        "items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
-      }
+      className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-5 lg:px-10 py-5 mt-1 mb-5 z-30"
     >
       {container.url && (
         <Link

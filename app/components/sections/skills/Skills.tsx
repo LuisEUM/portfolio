@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DotFollower from "../../mouse/DotFollower";
