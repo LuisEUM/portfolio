@@ -15,7 +15,7 @@ function PostPreviews({ text }) {
   const processedPostData = posts.slice(0, 3)
 
   return (
-    <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
+    <div className="col-span-full max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
           <ParallaxText baseVelocity={0.18}>
@@ -57,7 +57,7 @@ function PostPreviews({ text }) {
       </section>
 
       {!isLoading && (
-        <div className="block md:hidden ">
+        <div className="block md:hidden px-0 mx-0">
           <FlexCarousel
             dataCards={processedPostData}
             width={70}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { motion } from "framer-motion";
 import DragContainer from "./drag-container/DragContainer";
 import TailwindGrid from "@/app/components/grid/TailwindGrid";
@@ -24,21 +24,26 @@ function FlexCarousel({
   className,
   type = "classic",
 }: FlexCarouselProps) {
-  const { data, containerRef, centerOrder, paginate, handlePagerClick } =
-    useCarousel(dataCards, reduceGap);
-
+  const {
+    data,
+    containerRef,
+    centerOrder,
+    paginate,
+    handlePagerClick,
+    itemWidth,
+  } = useCarousel(dataCards, reduceGap);
 
   return (
     <>
       <TailwindGrid fullSize>
         <motion.div
           style={{
-            paddingLeft: `${(100 - width) / 2}vw`,
-            paddingRight: `${(100 - width) / 2}vw`,
-            gap: `${10 / reduceGap}vw`,
+            paddingLeft: itemWidth === 360 ? 0 : `${(100 - width) / 2}%`,
+            paddingRight: itemWidth === 360 ? 0 : `${(100 - width) / 2}%`,
+            gap: itemWidth === 360 ? 0 : `${10 / reduceGap}%`,
             willChange: "contents",
           }}
-          className="flex w-full col-span-12 overflow-x-hidden overflow-y-clip z-30 sticky"
+          className="flex w-full min-w-[360px] col-span-12 overflow-x-hidden overflow-y-clip z-30 sticky self-center "
           ref={containerRef}
           layout="position"
         >
@@ -52,6 +57,7 @@ function FlexCarousel({
                 className={className}
                 index={index}
                 width={width}
+                itemWidth={itemWidth}
               >
                 {CardsIndex.filter((Card) => Card.id === type).map(
                   (Card, index) => (
@@ -68,7 +74,7 @@ function FlexCarousel({
             );
           })}
         </motion.div>
-        <div className="self-center justify-self-center place-self-center content-center justify-center h-2 flex w-full col-span-12 z-10">
+        <div className="self-center justify-self-center place-self-center content-center justify-center h-2 flex w-full max-w-full col-span-12 z-10">
           {data.map((page, index) => (
             <div
               className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden z-10 ${

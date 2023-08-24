@@ -1,5 +1,11 @@
-'use client'
-import { useEffect, useLayoutEffect, useRef, useState, useTransition } from "react";
+"use client";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+  useTransition,
+} from "react";
 import { usePagination } from "./usePagination";
 import useScreenWidth from "./useScreenWitdh";
 
@@ -11,15 +17,23 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
   const { data, centerOrder, paginate } = usePagination(dataConteiners);
   const [isPending, startTransition] = useTransition();
 
-
   useLayoutEffect(() => {
     // Calcular el ancho del contenedor y de los elementos
     if (containerRef.current) {
       setContainerWidth(containerRef.current.clientWidth);
       const firstItem = containerRef.current.children[0];
+      if (containerWidth + ((100 - containerWidth) / 2) * 2 <= 360) {
+        setItemWidth(360);
+      }
       if (firstItem) {
         setItemWidth(firstItem.clientWidth);
       }
+      console.log(itemWidth, "el width del item que busco");
+      console.log(
+        containerWidth,
+        "el width del container que busco",
+        containerRef.current.client
+      );
     }
     centerScroll();
   }, [containerRef, screenCenter]);
@@ -33,8 +47,10 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     // Centrar el scroll
     containerRef.current.scrollTo({
       left:
-        itemWidth * Math.floor(data.length / 2) +
-        (itemWidth / (6 * reduceGap)) * Math.floor(data.length / 2),
+        containerWidth <= 360
+          ? itemWidth * 2
+          : itemWidth * Math.floor(data.length / 2) +
+            (itemWidth / (6 * reduceGap)) * Math.floor(data.length / 2),
       behavior: "smooth",
     });
   };
@@ -46,5 +62,12 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     });
   };
 
-  return { data, containerRef, centerOrder, paginate, handlePagerClick };
+  return {
+    data,
+    containerRef,
+    centerOrder,
+    paginate,
+    handlePagerClick,
+    itemWidth,
+  };
 }

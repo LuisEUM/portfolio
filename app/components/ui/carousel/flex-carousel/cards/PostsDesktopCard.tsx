@@ -54,7 +54,7 @@ function PostsDesktopCard({
         />
       </div>
 
-      <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto px-[8%] py-[5%]] ">
+      <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto px-[8%] py-[5%] ">
         <h2 className="text-center  md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.15vw] font-bold ">
           {container.title}
         </h2>

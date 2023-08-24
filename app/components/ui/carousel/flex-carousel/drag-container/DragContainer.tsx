@@ -16,6 +16,7 @@ function DragContainer({
   index,
   width,
   children,
+  itemWidth,
 }) {
   const activeSides = Math.floor(containers.length / 2);
   const edgeLeft = activeSides - 1;
@@ -36,15 +37,20 @@ function DragContainer({
         opacity: container.order === centerOrder ? 1 : 0.5,
         zIndex: container.order === centerOrder ? 2 : 1,
         willChange: "contents",
+        minWidth: "360px",
       }}
       key={index}
       className={` ${container.order > edgeRigth && "invisible"} ${
         container.order < edgeLeft && "invisible"
-      } last:invisible  first:invisible  flex justify-center items-center `}
+      } last:invisible  first:invisible  flex justify-center items-center  `}
       layout="position"
     >
       <motion.div
-        style={{ width: `${width}vw`, willChange: "contents" }}
+        style={{
+          willChange: "contents",
+          width: `${width}vw`,
+          minWidth: "360px",
+        }}
         drag="x"
         dragConstraints={parentRef}
         dragControls={control}
@@ -63,7 +69,7 @@ function DragContainer({
         }}
         className={
           className ||
-          "  items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2 mx-auto  my-2 "
+          `items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2  my-2`
         }
         layout="position"
       >

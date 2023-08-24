@@ -50,7 +50,7 @@ export default function NavBar () {
   console.log(currentPathname)
   return (
     <TailwindGrid fullSize>
-      <div className=" fixed top-0 w-full flex justify-end bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter rounded-lg shadow-l">
+      <div className=" fixed top-0 col-span-full w-full flex justify-end bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter rounded-lg shadow-l">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -73,7 +73,9 @@ export default function NavBar () {
                 whileTap={{ scale: 0.9 }}
                 className="font-main_regular  text-3xl font-bold "
               >
-                <span className="text-primary">&lt;</span>LuisUrdaneta
+                <span className="text-primary">&lt;</span>
+                <span className="hidden md:inline">LuisUrdaneta</span>
+                <span className="md:hidden">Luis</span>
                 <span className="text-primary">/&gt;</span>
               </motion.p>
             </Link>
