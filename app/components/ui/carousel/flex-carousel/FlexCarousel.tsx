@@ -14,7 +14,7 @@ type FlexCarouselProps = {
   data?: any[]; // Instead of children prop, use data prop directly.
   boxPositions?: any[];
   handleClick?: any;
-  setWordCategory?: (value: number) => void;
+  setWordCategory?: any;
 };
 
 // Main Function
