@@ -5,7 +5,7 @@ import ParallaxIcon from "../../slider/ParallaxIcons";
 import ParallaxText from "../../slider/ParallaxText";
 
 function Skills({ text }) {
-  const dataTestimonials = text.home.skillsSection;
+  const dataSkills = text.home.skillsSection;
 
   return (
     <>
@@ -15,7 +15,7 @@ function Skills({ text }) {
           <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
             <TailwindGrid fullSize>
               <section className="absolute self-center overflow-hidden max-w-full -z-50">
-                <ParallaxText baseVelocity={0.3}>The Big Toolbox</ParallaxText>
+                <ParallaxText baseVelocity={0.3}>{dataSkills.textScroller}</ParallaxText>
               </section>
             </TailwindGrid>
             <TailwindGrid>
@@ -27,9 +27,9 @@ function Skills({ text }) {
                       "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
                   }}
                 >
-                  Take a look at
+                  {dataSkills.title}
                   <span className="md:hidden"></span>
-                  <span className="text-primary"> my tools...</span>
+                  <span className="text-primary"> {dataSkills.titlePrimary}</span>
                   {/* <div
                     ref={initialPosition}
                     className="w-[0.55vw] h-[0.55vw] bg-primary rounded-full inline-block self-baseline -mb-[0.5px] ml-[1.5px]"
@@ -46,8 +46,8 @@ function Skills({ text }) {
             <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-[6vw] md:mt-[5vw] lg:mt-[2.5vw]">
               <ParallaxIcon baseVelocity={-0.2}>
                 <div className=" justify-start items-center gap-8  inline-flex ">
-                  {dataTestimonials.firstLine &&
-                    dataTestimonials.firstLine.map((skill, index) => (
+                  {dataSkills.firstLine &&
+                    dataSkills.firstLine.map((skill, index) => (
                       <SkillsItems skill={skill} key={index + skill.name} />
                     ))}
                 </div>
@@ -56,8 +56,8 @@ function Skills({ text }) {
             <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] mt-[6vw] md:mt-[1vw]">
               <ParallaxIcon baseVelocity={0.2}>
                 <div className=" justify-start items-center gap-8 inline-flex  ">
-                  {dataTestimonials.secondLine &&
-                    dataTestimonials.secondLine.map((skill, index) => (
+                  {dataSkills.secondLine &&
+                    dataSkills.secondLine.map((skill, index) => (
                       <SkillsItems skill={skill} key={index + skill.name} />
                     ))}
                 </div>

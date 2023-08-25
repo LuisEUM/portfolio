@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { RiveAnimation } from "@/app/components/rive/RiveAnimation";
 import { motion } from "framer-motion";
 import { useState } from "react";

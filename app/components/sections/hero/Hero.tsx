@@ -18,7 +18,7 @@ function Hero({ text }) {
               {hero.subtitle.text}
             </span>
 
-            <span className="text-primary font-black lg:text-[2.4vw] lg:leading-[1.2vw] ">
+            <span className="text-primary font-black lg:text-[2.4vw] lg:leading-[1.2vw]  ">
               {hero.subtitle.after}
             </span>
           </p>
@@ -38,7 +38,7 @@ function Hero({ text }) {
               {hero.title.lastname}
             </span>
           </h1>
-          <p className="font-bold w-full md:w-8/12 lg:w-full text-[min(1.25rem,6.33vw)] lg:text-[1.5vw]">
+          <p className="font-bold md:w-8/12 lg:w-full text-[min(1.25rem,6.33vw)] lg:text-[1.5vw] max-w-[80%]">
             {hero.quote}
           </p>
           <div className="bg-white w-5/12 lg:w-3/12 h-[0.1rem] " />

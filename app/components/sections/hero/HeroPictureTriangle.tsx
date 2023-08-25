@@ -37,13 +37,13 @@ function HeroPictureTriangle({ srcBody, srcHead }: HeroPictureTriangleProps) {
             ease: "easeInOut",
             repeatType: "reverse",
           }}
-          className="w-full h-full object-contain  group-hover:rotate-90 absolute cursor-none pointer-events-none"
+          className="w-full h-full   group-hover:rotate-90 absolute cursor-none pointer-events-none"
         >
           <Image
             fill
             src={srcBody ? srcBody : bodyPicture}
             alt="Luis"
-            sizes="fill"
+            sizes="contain"
             className="w-full h-full object-contain  cursor-none pointer-events-none"
             priority
           />
@@ -53,7 +53,7 @@ function HeroPictureTriangle({ srcBody, srcHead }: HeroPictureTriangleProps) {
         fill
         src={srcHead ? srcHead : headPicture}
         alt="Luis "
-        sizes="fill"
+        sizes="contain"
         className="w-full h-full object-contain absolute top-0 cursor-none pointer-events-none"
         priority
       />

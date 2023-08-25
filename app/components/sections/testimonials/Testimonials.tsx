@@ -23,11 +23,11 @@ function Testimonials({ text }) {
         <TailwindGrid>
           <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
             <h3 className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black">
-              Voices of Success:
+              {dataTestimonials.title}
               <span className="md:hidden">
                 <br />
               </span>
-              <span className="text-primary"> Client Testimonials</span>
+              <span className="text-primary"> {dataTestimonials.titlePrimary}</span>
             </h3>
             <div className="hidden md:block">
               <ResponsiveList
@@ -36,8 +36,8 @@ function Testimonials({ text }) {
                 mobile={1}
                 className="pt-12 w-full max-w-full "
               >
-                {dataTestimonials &&
-                  dataTestimonials.map((testimonial, index) => (
+                {dataTestimonials.testimonials &&
+                  dataTestimonials.testimonials.map((testimonial, index) => (
                     <section
                       key={testimonial + index}
                       className="w-full relative flex flex-col items-center justify-center"
@@ -54,7 +54,7 @@ function Testimonials({ text }) {
       <div className="block md:hidden">
         {screenCenter && (
           <FlexCarousel
-            dataCards={dataTestimonials}
+            dataCards={dataTestimonials.testimonials}
             width={70}
             reduceGap={15}
             key="testimonial"

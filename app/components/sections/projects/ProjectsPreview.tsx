@@ -103,7 +103,7 @@ function ProjectsPreview({ text }) {
               "text-center mt-8 hover:bg-white hover:text-zinc-950  text-[min(3vw,22px)]  font-bold uppercase self-center px-[4vw] py-[1.5vw] border border-white  rounded-full"
             }
           >
-            check more project
+            {previewProjects.button}
           </SecondaryButton>
         </div>
       </div>

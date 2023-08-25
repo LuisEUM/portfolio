@@ -13,7 +13,7 @@ function Category({ text }) {
   const screenWidth = useScreenWidth();
 
   useEffect(() => {
-    if ((screenWidth) >= 768) {
+    if (screenWidth >= 768) {
       setWordCategory(1);
     }
 
@@ -47,7 +47,7 @@ function Category({ text }) {
           dataCards={dataCategoriesSection.categories}
           width={70}
           reduceGap={15}
-          key="category"
+          key={screenWidth + dataCategoriesSection.carrouselKey}
           type="category"
           setWordCategory={setWordCategory}
         />

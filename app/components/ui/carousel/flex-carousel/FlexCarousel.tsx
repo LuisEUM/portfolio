@@ -44,13 +44,14 @@ function FlexCarousel({
     setWordCategory(index - 1);
   };
 
-  
   const handleCategoryWord = (direction) => {
-    setWordCategory((prev) => {
-      if (prev >= 2 && direction === 1) return prev;
-      if (prev <= 0 && direction === -1) return prev;
-      return prev + direction;
-    });
+    if (type === "category") {
+      setWordCategory((prev) => {
+        if (prev >= 2 && direction === 1) return prev;
+        if (prev <= 0 && direction === -1) return prev;
+        return prev + direction;
+      });
+    }
   };
 
   return (
