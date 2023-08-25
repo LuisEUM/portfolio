@@ -2,7 +2,7 @@ import ParallaxText from "../../slider/ParallaxText";
 import TailwindGrid from "../../grid/TailwindGrid";
 
 function BigQuote({ text }) {
-  const parallax = text.home.bigQuoteSection.parallax;
+  const parallax = text.home.bigQuoteSection.textScroller;
   const quote = text.home.bigQuoteSection.quote;
 
   return (

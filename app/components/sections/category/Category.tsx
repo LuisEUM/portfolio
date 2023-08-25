@@ -3,12 +3,22 @@ import { useEffect, useState } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DynamicList from "../../list/DynamicList";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
+import useScreenWidth from "../../ui/carousel/flex-carousel/hooks/useScreenWitdh";
 import CategoryTitleChanger from "./CategoryTitleChanger";
 
 function Category({ text }) {
   const dataCategoriesSection = text.home.categoriesSection;
   const [wordCategory, setWordCategory] = useState(1);
   const currentWord = text.home.categoriesSection.categories[wordCategory];
+  const screenWidth = useScreenWidth();
+
+  useEffect(() => {
+    if ((screenWidth) >= 768) {
+      setWordCategory(1);
+    }
+
+    return () => {};
+  }, [screenWidth]);
 
   return (
     <div className="mt-20   pt-10 lg:py-[min(7.5vw,11rem)] ">
@@ -23,6 +33,7 @@ function Category({ text }) {
 
             {dataCategoriesSection.categories && (
               <DynamicList
+                key={screenWidth}
                 setWordCategory={setWordCategory}
                 categories={dataCategoriesSection.categories}
               />

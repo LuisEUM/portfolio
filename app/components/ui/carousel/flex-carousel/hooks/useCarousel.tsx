@@ -12,7 +12,7 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
   const containerRef = useRef(null); // Ref para el div contenedor
   const [containerWidth, setContainerWidth] = useState(null);
   const [itemWidth, setItemWidth] = useState(null);
-  const screenCenter = useScreenWidth();
+  const screenWidth = useScreenWidth();
   const { data, centerOrder, paginate } = usePagination(dataConteiners);
   const [isPending, startTransition] = useTransition();
 
@@ -27,7 +27,7 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     }
     centerScroll();
     return () => {};
-  }, [containerWidth, itemWidth, containerRef, screenCenter]);
+  }, [containerWidth, itemWidth, containerRef, screenWidth]);
 
   const centerScroll = () => {
     // Centrar el scroll

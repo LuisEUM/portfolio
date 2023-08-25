@@ -178,7 +178,7 @@
       ]
     },
     "bigQuoteSection": {
-      "parallax": "El Poder de la Pasión",
+      "textScroller": "El Poder de la Pasión",
       "quote": {
         "lineOne": "Desarrollar es mi amor",
         "lineTwo": "los videojuegos son mi pasión"

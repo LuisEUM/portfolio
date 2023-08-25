@@ -67,6 +67,7 @@ function DragContainer({
               if (swipe < -swipeConfidenceThreshold) {
                 console.log("left");
                 paginate(1, containers);
+                handleCategoryWord(1, 1);
               } else if (swipe > swipeConfidenceThreshold) {
                 paginate(-1, containers);
                 handleCategoryWord(-1, 1);
@@ -119,8 +120,10 @@ function DragContainer({
               const swipe = swipePower(offset.x, velocity.x);
               if (swipe < -swipeConfidenceThreshold) {
                 paginate(1, containers);
+                handleCategoryWord(1, 1);
               } else if (swipe > swipeConfidenceThreshold) {
                 paginate(-1, containers);
+                handleCategoryWord(-1, 1);
               }
             }}
             className={

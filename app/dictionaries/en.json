@@ -177,7 +177,7 @@
       ]
     },
     "bigQuoteSection": {
-      "parallax": "The Power Of Passion",
+      "textScroller": "The Power Of Passion",
       "quote": {
         "lineOne": "Web dev is my love",
         "lineTwo": "video games are my passion"

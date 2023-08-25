@@ -181,14 +181,11 @@
         "textScroller": "Enjoy all my work",
         "velocityScroller": -0.2
       },
-      "bigQuoteSection": {
-        "parallax": "The Power Of Passion",
-        "quote": {
-          "lineOne": "Web dev is my love",
-          "lineTwo": "video games are my passion"
-        }
-      },
       "skillsSection": {
+        "title": "Do you want to check ",
+        "titlePrimary": "my projects?",
+        "textScroller": "The Big Toolbox",
+        "velocityScroller": -0.2,
         "firstLine": [
           {
             "name": "Illustrator",
@@ -339,6 +336,15 @@
           }
         ]
       },
+      "bigQuoteSection": {
+        "textScroller": "The Power Of Passion",
+        "velocityScroller": -0.2,
+        "quote": {
+          "lineOne": "Web dev is my love",
+          "lineTwo": "video games are my passion"
+        }
+      },
+
       "testimonialsSection": [
         {
           "order": 1,
@@ -763,13 +769,18 @@
       },
 
       "bigQuoteSection": {
-        "parallax": "El Poder de la Pasión",
+        "textScroller": "El Poder de la Pasión",
+        "velocityScroller": -0.2,
         "quote": {
           "lineOne": "Desarrollar es mi amor",
           "lineTwo": "los videojuegos son mi pasión"
         }
       },
       "skillsSection": {
+        "title": "Do you want to check ",
+        "titlePrimary": "my projects?",
+        "textScroller": "Las mejores herramientas",
+        "velocityScroller": -0.2,
         "firstLine": [
           {
             "name": "Illustrator",

@@ -24,14 +24,18 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
       >
         <div
           className={`${
-            boxPositions[index] === 1 ? "h-full top-[0.5%]" : "h-64 bottom-2"
+            boxPositions[index] === 1
+              ? "h-full top-[0.5%]"
+              : "md:h-60 lg:h-64 bottom-2"
           } ${
             hover ? "opacity-50" : "opacity-0"
           } absolute w-full  bg-gradient-to-b from-primary to-primary rounded-lg blur transition duration-200 `}
         />
         <div
           className={`  w-full mx-auto relative  bg-zinc-900  rounded-3xl flex-col content-center items-center justify-center  cursor-pointer  ${
-            boxPositions[index] === 1 ? "h-68  py-[3.77rem]" : "h-60 py-11"
+            boxPositions[index] === 1
+              ? "lg:h-68  py-[3.77rem]"
+              : "lg:h-60 py-11"
           }`}
           onMouseEnter={() => {
             setHover(true);
@@ -48,10 +52,18 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
                 : "h-32 max-h-full max-w-full aspect-square mx-auto "
             }
           >
-            <RiveAnimation hover={hover} artboardName={category.artboardName} />
+            <RiveAnimation
+              hover={hover}
+              artboardName={category.artboardName}
+              key={boxPositions[index]}
+            />
           </motion.div>
           <motion.div>
-            <h3 className="text-center  text-xl font-black uppercase m-auto w-full ">
+            <h3
+              className={`${
+                boxPositions[index] === 1 ? "lg:text-[2vw]" : "lg:text-[1.7vw] md:hidden lg:inline"
+              } text-center  text-[6vw] md:text-[3.8vw] font-black uppercase m-auto w-full`}
+            >
               {category.name.split("").map((word, wordIndex) => {
                 if (word === "_") return <span key={wordIndex}> </span>;
                 return <span key={wordIndex}>{word}</span>;
