@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import useScreenWidth from "@/app/components/ui/carousel/flex-carousel/hooks/useScreenWitdh";
 import TailwindGrid from "../../grid/TailwindGrid";
 import ResponsiveList from "../../list/ResponsiveList";
@@ -12,7 +12,7 @@ function PostPreviews({ text }) {
   const screenCenter = useScreenWidth();
   const { posts, isLoading } = apiMedium();
 
-  const processedPostData = posts.slice(0, 3)
+  const processedPostData = posts.slice(0, 3);
 
   return (
     <div className="col-span-full max-w-full py-[min(7.5vw,11rem)]">
@@ -57,12 +57,12 @@ function PostPreviews({ text }) {
       </section>
 
       {!isLoading && (
-        <div className="block md:hidden px-0 mx-0">
+        <div className="inline md:hidden">
           <FlexCarousel
             dataCards={processedPostData}
             width={70}
             reduceGap={15}
-            key={screenCenter}
+            key="post"
             type="post"
           />
         </div>

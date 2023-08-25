@@ -11,8 +11,8 @@ import useScreenWidth from "./useScreenWitdh";
 
 export function useCarousel(dataConteiners, reduceGap = 2) {
   const containerRef = useRef(null); // Ref para el div contenedor
-  const [containerWidth, setContainerWidth] = useState(0);
-  const [itemWidth, setItemWidth] = useState(0);
+  const [containerWidth, setContainerWidth] = useState(null);
+  const [itemWidth, setItemWidth] = useState(null);
   const screenCenter = useScreenWidth();
   const { data, centerOrder, paginate } = usePagination(dataConteiners);
   const [isPending, startTransition] = useTransition();
@@ -22,12 +22,10 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     if (containerRef.current) {
       setContainerWidth(containerRef.current.clientWidth);
       const firstItem = containerRef.current.children[0];
-      if (containerWidth + ((100 - containerWidth) / 2) * 2 <= 360) {
-        setItemWidth(360);
-      }
       if (firstItem) {
         setItemWidth(firstItem.clientWidth);
       }
+
       console.log(itemWidth, "el width del item que busco");
       console.log(
         containerWidth,
@@ -48,7 +46,7 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     containerRef.current.scrollTo({
       left:
         containerWidth <= 360
-          ? itemWidth * 2
+          ? itemWidth * Math.floor(data.length / 2) 
           : itemWidth * Math.floor(data.length / 2) +
             (itemWidth / (6 * reduceGap)) * Math.floor(data.length / 2),
       behavior: "smooth",
@@ -69,5 +67,6 @@ export function useCarousel(dataConteiners, reduceGap = 2) {
     paginate,
     handlePagerClick,
     itemWidth,
+    containerWidth,
   };
 }

@@ -42,7 +42,7 @@ function PostsCard({
   return (
     <motion.div
       layout="position"
-      className="max-h-fit w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 my-[10%] min-w-[360px]"
+      className=" w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 my-[10%] "
     >
       <div className="w-full aspect-video bg-zinc-800 rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex">
         <Image

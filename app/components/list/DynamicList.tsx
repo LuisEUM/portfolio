@@ -3,8 +3,8 @@ import { useBoxClick } from "./useBoxClick";
 import { motion } from "framer-motion";
 import DynamicListItem from "./DynamicListItem";
 
-function DynamicList({ setIndex, categories }) {
-  const { boxPositions, handleClick } = useBoxClick([0, 1, 2], setIndex);
+function DynamicList({ setWordCategory, categories }) {
+  const { boxPositions, handleClick } = useBoxClick([0, 1, 2], setWordCategory);
 
   return (
     <>

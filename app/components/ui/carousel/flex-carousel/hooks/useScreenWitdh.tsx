@@ -1,5 +1,4 @@
-'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 function useScreenWidth() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);

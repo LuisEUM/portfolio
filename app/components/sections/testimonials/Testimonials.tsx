@@ -54,7 +54,7 @@ function Testimonials({ text }) {
             dataCards={dataTestimonials}
             width={70}
             reduceGap={15}
-            key={screenCenter}
+            key="testimonial"
             type="testimonial"
           />
         )}
