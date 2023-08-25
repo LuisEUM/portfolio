@@ -54,7 +54,7 @@ function FlexCarousel({
 
   return (
     <>
-      <TailwindGrid fullSize >
+      <TailwindGrid fullSize>
         <motion.div
           style={{
             paddingLeft: containerWidth <= 360 ? 0 : `${(100 - width) / 2}%`,
@@ -82,17 +82,18 @@ function FlexCarousel({
                 itemWidth={itemWidth}
                 containerWidth={containerWidth}
               >
-                {CardsIndex.filter((Card) => Card.id === type).map(
-                  (Card, index) => (
-                    <Card.content
-                      key={index}
-                      centerOrder={centerOrder}
-                      container={container}
-                      containers={data}
-                      index={index}
-                    />
-                  )
-                )}
+                {CardsIndex &&
+                  CardsIndex.filter((Card) => Card.id === type).map(
+                    (Card, index) => (
+                      <Card.content
+                        key={index + type}
+                        centerOrder={centerOrder}
+                        container={container}
+                        containers={data}
+                        index={index}
+                      />
+                    )
+                  )}
               </DragContainer>
             );
           })}

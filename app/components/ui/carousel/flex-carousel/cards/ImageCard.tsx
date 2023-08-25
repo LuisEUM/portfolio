@@ -17,16 +17,13 @@ type LuisItemCarouselProps = {
 function ImagesCard({ container, index }: LuisItemCarouselProps) {
   return (
     <>
-      {container && index && (
-        <div
-          className=" w-full aspect-video   max-h-full rounded-xl overflow-hidden   "
-          key={index}
-        >
+      {container.src && (
+        <div className=" w-full aspect-video  max-h-full rounded-xl overflow-hidden   ">
           <Image
             src={container.src}
-            alt="d"
-            width={1920}
-            height={1080}
+            alt={container.src}
+            width={768}
+            height={768}
             className="mx-auto  max-h-full aspect-video object-cover pointer-events-none rounded-xl"
           />
         </div>
