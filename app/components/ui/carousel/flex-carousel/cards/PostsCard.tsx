@@ -24,10 +24,7 @@ type PostsCardProps = {
   centerOrder?: number;
 };
 
-function PostsCard({
-  container,
-}: PostsCardProps) {
-
+function PostsCard({ container }: PostsCardProps) {
   const extractParagraphContent = (description) => {
     const paragraphRegex = /<p>(.*?)<\/p>/;
     const match = paragraphRegex.exec(description);
@@ -37,48 +34,60 @@ function PostsCard({
     return "";
   };
 
-
-
   return (
     <motion.div
       layout="position"
       className=" w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 my-[10%] "
     >
-      <div className="w-full aspect-video bg-zinc-800 rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex">
-        <Image
-          width={1080}
-          height={1080}
-          className="w-full aspect-video  rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex object-cover"
-          src={container.thumbnail}
-          alt={container.title}
-        />
-      </div>
+      {container.thumbnail && container.title && (
+        <>
+          <div className="w-full aspect-video bg-zinc-800 rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex">
+            <Image
+              width={1080}
+              height={1080}
+              className="w-full aspect-video  rounded-tl-xl rounded-tr-xl justify-center items-center inline-flex object-cover"
+              src={container.thumbnail}
+              alt={container.title}
+            />
+          </div>
 
-      <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto py-2 px-[5%]">
-        <h2 className="text-center text-lg md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
-          {container.title}
-        </h2>
-        <p className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
-          {container.pubDate}
-        </p>
-        <motion.div
-          layout="position"
-          layoutId={container.title}
-          transition={{ duration: 0.25 }}
-        >
-          <ParagrapHTML
-            className="max-w-full text-md  md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
-            paragraph={extractParagraphContent(container.description)}
-            limit={25}
-            showFullDescription
-          />
-          {container.link && <Link href={container.link} key={container.title} target="_blank">
-            <div className="mt-4 mb-2 inline-flex">
-              <PrimaryButton text={"Go to Medium"} icon="medium" textLeft />
-            </div>
-          </Link>}
-        </motion.div>
-      </div>
+          <div className="h-full items-center flex flex-col justify-center gap-y-2 mx-auto py-2 px-[5%]">
+            <h2 className="text-center text-lg md:text-[1.8vw] lg:text-[1.6vw] 2xl:text-[1.2vw] font-bold ">
+              {container.title}
+            </h2>
+            <p className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
+              {container.pubDate}
+            </p>
+            <motion.div
+              layout="position"
+              layoutId={container.title}
+              transition={{ duration: 0.25 }}
+            >
+              <ParagrapHTML
+                className="max-w-full text-md  md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
+                paragraph={extractParagraphContent(container.description)}
+                limit={25}
+                showFullDescription
+              />
+              {container.link && (
+                <Link
+                  href={container.link}
+                  key={container.title}
+                  target="_blank"
+                >
+                  <div className="mt-4 mb-2 inline-flex">
+                    <PrimaryButton
+                      text={"Go to Medium"}
+                      icon="medium"
+                      textLeft
+                    />
+                  </div>
+                </Link>
+              )}
+            </motion.div>
+          </div>
+        </>
+      )}
     </motion.div>
   );
 }

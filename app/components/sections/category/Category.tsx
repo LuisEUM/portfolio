@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DynamicList from "../../list/DynamicList";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
@@ -23,7 +23,7 @@ function Category({ text }) {
 
             {dataCategoriesSection.categories && (
               <DynamicList
-              setWordCategory={setWordCategory}
+                setWordCategory={setWordCategory}
                 categories={dataCategoriesSection.categories}
               />
             )}
@@ -31,7 +31,7 @@ function Category({ text }) {
         </section>
       </TailwindGrid>
 
-      <div className="col-span-12 max-w-full block lg:hidden w-full">
+      <div className="col-span-12 max-w-full inline md:hidden w-full">
         <FlexCarousel
           dataCards={dataCategoriesSection.categories}
           width={70}

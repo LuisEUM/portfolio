@@ -19,6 +19,7 @@ function Footer() {
               className={`flex justify-center min-h-9 min-w-9 items-center h-8 shadow  rounded-full w-1/6 ${
                 social.hidden && "hidden"
               }`}
+              key={index + social.name}
             >
               <motion.button
                 whileTap={{ scale: 0.9 }}

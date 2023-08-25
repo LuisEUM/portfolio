@@ -40,9 +40,12 @@ function PostPreviews({ text }) {
                 mobile={1}
                 className="pt-12 w-full max-w-full "
               >
-                {posts &&
+                {processedPostData &&
                   processedPostData.map((post, index) => (
-                    <section className="w-full relative  flex flex-col  items-center justify-center">
+                    <section
+                      className="w-full relative  flex flex-col  items-center justify-center"
+                      key={post.title}
+                    >
                       <PostsDesktopCard
                         className=" items-center justify-center text-center px-6 py-5 bg-zinc-900 rounded-2xl shadow flex flex-col gap-y-2 mx-auto"
                         container={post}

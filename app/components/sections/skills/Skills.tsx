@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DotFollower from "../../mouse/DotFollower";
@@ -48,8 +47,8 @@ function Skills({ text }) {
               <ParallaxIcon baseVelocity={-0.2}>
                 <div className=" justify-start items-center gap-8  inline-flex ">
                   {dataTestimonials.firstLine &&
-                    dataTestimonials.firstLine.map((skill) => (
-                      <SkillsItems skill={skill} />
+                    dataTestimonials.firstLine.map((skill, index) => (
+                      <SkillsItems skill={skill} key={index + skill.name} />
                     ))}
                 </div>
               </ParallaxIcon>
@@ -58,8 +57,8 @@ function Skills({ text }) {
               <ParallaxIcon baseVelocity={0.2}>
                 <div className=" justify-start items-center gap-8 inline-flex  ">
                   {dataTestimonials.secondLine &&
-                    dataTestimonials.secondLine.map((skill) => (
-                      <SkillsItems skill={skill} />
+                    dataTestimonials.secondLine.map((skill, index) => (
+                      <SkillsItems skill={skill} key={index + skill.name} />
                     ))}
                 </div>
               </ParallaxIcon>

@@ -43,6 +43,7 @@ function HeroPictureTriangle({ srcBody, srcHead }: HeroPictureTriangleProps) {
             fill
             src={srcBody ? srcBody : bodyPicture}
             alt="Luis"
+            sizes="fill"
             className="w-full h-full object-contain  cursor-none pointer-events-none"
             priority
           />
@@ -52,6 +53,7 @@ function HeroPictureTriangle({ srcBody, srcHead }: HeroPictureTriangleProps) {
         fill
         src={srcHead ? srcHead : headPicture}
         alt="Luis "
+        sizes="fill"
         className="w-full h-full object-contain absolute top-0 cursor-none pointer-events-none"
         priority
       />

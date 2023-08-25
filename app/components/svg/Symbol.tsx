@@ -45,9 +45,9 @@ function Symbol({
           >
             <path
               d="M10.9351 11.0649L45.9351 46.0649M45.9351 11.0649L10.9351 46.0649"
-              stroke-width="4"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="4"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </motion.svg>
         )}
@@ -73,7 +73,7 @@ function Symbol({
               height="61"
               viewBox="0 0 61 61"
             >
-              <circle cx="30.5" cy="30.5" r="21" stroke-width="5" />
+              <circle cx="30.5" cy="30.5" r="21" strokeWidth="5" />
             </motion.svg>
           </>
         )}
@@ -103,7 +103,7 @@ function Symbol({
                 width="38"
                 height="38"
                 transform="rotate(-24.1633 8.59117 24.2557)"
-                stroke-width="5"
+                strokeWidth="5"
               />
             </motion.svg>
           </>
@@ -130,7 +130,7 @@ function Symbol({
           >
             <path
               d="M9.28529 50.75L35.5002 5.0263L61.7151 50.75L9.28529 50.75Z"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </motion.svg>
         )}

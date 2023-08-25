@@ -46,7 +46,7 @@ function FlexCarousel({
 
   const handleCategoryWord = (direction) => {
     setWordCategory((prev) => {
-      if (prev >= 2&& direction === -1) return prev;
+      if (prev >= 2 && direction === -1) return prev;
       if (prev <= 0 && direction === -1) return prev;
       return prev + direction;
     });
@@ -54,7 +54,7 @@ function FlexCarousel({
 
   return (
     <>
-      <TailwindGrid fullSize>
+      <TailwindGrid fullSize >
         <motion.div
           style={{
             paddingLeft: containerWidth <= 360 ? 0 : `${(100 - width) / 2}%`,

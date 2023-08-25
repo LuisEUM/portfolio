@@ -17,7 +17,9 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
         }}
         style={{ order: boxPositions[index] }}
         className={`${
-          boxPositions[index] === 1 ? "col-span-5 " : "col-span-3"
+          boxPositions[index] === 1
+            ? "col-span-full md:col-span-4 lg:col-span-5"
+            : "col-span-full md:col-span-2 lg:col-span-3"
         } relative  group items-end flex p-4 text-center  rounded-3xl content-center  justify-center   `}
       >
         <div

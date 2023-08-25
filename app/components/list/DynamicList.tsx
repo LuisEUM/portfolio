@@ -9,7 +9,7 @@ function DynamicList({ setWordCategory, categories }) {
   return (
     <>
       <motion.div
-        className="lg:grid hidden col-span-4 grid-cols-4 md:col-span-8 md:grid-cols-8 lg:col-span-11 lg:grid-cols-11 w-full gap-4 "
+        className="md:grid hidden col-span-4 grid-cols-4 md:col-span-8 md:grid-cols-8 lg:col-span-11 lg:grid-cols-11 w-full gap-4 "
         layout
         key="DinamycList"
       >
