@@ -349,6 +349,8 @@
       "testimonialsSection": {
         "title": "Voices of Success: ",
         "titlePrimary": "Client Testimonials",
+        "carrouselKey": "testimonials",
+        "textScroller": "Listen to my community",
         "testimonials": [
           {
             "order": 1,
@@ -939,6 +941,8 @@
       "testimonialsSection": {
         "title": "Voces del éxito: ",
         "titlePrimary": "Testimonios de Clientes",
+        "carrouselKey": "Testimonios",
+        "textScroller": "Escucha a mi comunidad",
         "testimonials": [
           {
             "order": 1,

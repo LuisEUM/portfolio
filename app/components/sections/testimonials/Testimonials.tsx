@@ -9,14 +9,13 @@ import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 function Testimonials({ text }) {
   const dataTestimonials = text.home.testimonialsSection;
   const screenCenter = useScreenWidth();
+  const screenWidth = useScreenWidth();
 
   return (
     <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={0.18}>
-            Listen to my community
-          </ParallaxText>
+          <ParallaxText baseVelocity={0.18}>{dataTestimonials.textScroller}</ParallaxText>
         </section>
       </TailwindGrid>
       <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
@@ -27,7 +26,10 @@ function Testimonials({ text }) {
               <span className="md:hidden">
                 <br />
               </span>
-              <span className="text-primary"> {dataTestimonials.titlePrimary}</span>
+              <span className="text-primary">
+                {" "}
+                {dataTestimonials.titlePrimary}
+              </span>
             </h3>
             <div className="hidden md:block">
               <ResponsiveList
@@ -57,7 +59,7 @@ function Testimonials({ text }) {
             dataCards={dataTestimonials.testimonials}
             width={70}
             reduceGap={15}
-            key="testimonial"
+            key={screenWidth + dataTestimonials.carrouselKey}
             type="testimonial"
           />
         )}

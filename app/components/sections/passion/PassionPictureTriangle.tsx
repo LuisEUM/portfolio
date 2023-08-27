@@ -11,6 +11,9 @@ function PassionPictureTriangle({
   srcBody,
   srcHead,
 }: PassionPictureTriangleProps) {
+
+
+  
   return (
     <>
       <motion.div
