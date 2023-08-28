@@ -41,7 +41,9 @@ function FlexCarousel({
     index: number
   ) => {
     handlePagerClick(page.order);
-    setWordCategory(index - 1);
+    if (type === "category") {
+      setWordCategory(index - 1);
+    }
   };
 
   const handleCategoryWord = (direction) => {
@@ -100,7 +102,7 @@ function FlexCarousel({
             );
           })}
         </motion.div>
-        <div className="self-center justify-self-center place-self-center content-center justify-center h-2 flex w-full max-w-full col-span-12 z-10">
+        <div className="self-center justify-self-center place-self-center content-center justify-center h-2  -mt-2 md:-mt-4 flex w-full max-w-full col-span-12 z-10">
           {data.map((page, index) => (
             <div
               className={`w-2 h-2 rounded-full mx-2 my-0 cursor-pointer bg-neutral-500 last:hidden first:hidden z-10 ${

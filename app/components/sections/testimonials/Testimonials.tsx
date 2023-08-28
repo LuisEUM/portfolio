@@ -12,13 +12,15 @@ function Testimonials({ text }) {
   const screenWidth = useScreenWidth();
 
   return (
-    <div className="col-span-12 max-w-full py-[min(7.5vw,11rem)]">
+    <div className="relative col-span-full max-w-full  bg-orange-500/0 pb-[14vw] md:pb-[7vw] lg:pb-[9vw]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={0.18}>{dataTestimonials.textScroller}</ParallaxText>
+          <ParallaxText baseVelocity={0.18}>
+            {dataTestimonials.textScroller}
+          </ParallaxText>
         </section>
       </TailwindGrid>
-      <section className=" max-w-full pt-24 pb-10  md:pt-36   w-screen flex flex-col justify-center content-center items-center">
+      <div className="col-span-full max-w-full   flex flex-col justify-center content-center items-center ">
         <TailwindGrid>
           <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
             <h3 className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black">
@@ -31,12 +33,12 @@ function Testimonials({ text }) {
                 {dataTestimonials.titlePrimary}
               </span>
             </h3>
-            <div className="hidden md:block">
+            <div className="hidden md:block pt-9">
               <ResponsiveList
                 tablet={3}
                 desktop={3}
                 mobile={1}
-                className="pt-12 w-full max-w-full "
+                className=" w-full max-w-full "
               >
                 {dataTestimonials.testimonials &&
                   dataTestimonials.testimonials.map((testimonial, index) => (
@@ -51,9 +53,9 @@ function Testimonials({ text }) {
             </div>
           </div>
         </TailwindGrid>
-      </section>
+      </div>
 
-      <div className="block md:hidden">
+      <div className="inline md:hidden">
         {screenCenter && (
           <FlexCarousel
             dataCards={dataTestimonials.testimonials}

@@ -117,7 +117,7 @@ function TestimonialsCard({ container, centerOrder }: TestimonialsCardProps) {
             duration: 0.75,
             ease: [0.16, 1, 0.3, 1],
           }}
-          className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-[8%] py-[5%] "
+          className="items-center justify-center text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mx-auto px-[8%] py-[5%] mt-7"
         >
           {container.url && (
             <Link

@@ -68,25 +68,28 @@ const Portfolio = () => {
 
       <TailwindGrid>
         <div className=" self-center  col-span-full w-full justify-center items-center flex flex-col">
-          <ResponsiveList tablet={3}>
+          <ResponsiveList
+            tablet={3}
+            className="pt-12 w-full max-w-full lg:min-h-[35vw]"
+          >
             <AnimatePresence mode="wait">
-              {projects && totalPages > 6
-                && projects
-                    .filter((projects) => {
-                      if (search === "All") {
-                        return true;
-                      }
-                      return projects.categories.reduce((category, next) => {
-                        if (category === true) return category;
-                        if (category === search || next === search) return true;
-                        return false;
-                      }, false);
-                    })
-                    .slice(contentStart, contentEnd)
-                    .map((project) => (
-                      <ProjectCard key={project.id} project={project} />
-                    ))
-                }
+              {projects &&
+                totalPages > 6 &&
+                projects
+                  .filter((projects) => {
+                    if (search === "All") {
+                      return true;
+                    }
+                    return projects.categories.reduce((category, next) => {
+                      if (category === true) return category;
+                      if (category === search || next === search) return true;
+                      return false;
+                    }, false);
+                  })
+                  .slice(contentStart, contentEnd)
+                  .map((project) => (
+                    <ProjectCard key={project.id} project={project} />
+                  ))}
             </AnimatePresence>
           </ResponsiveList>
         </div>

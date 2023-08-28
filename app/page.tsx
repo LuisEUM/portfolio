@@ -16,23 +16,23 @@ export default function Home() {
 
   return (
     <>
-      <TailwindGrid >
+      <TailwindGrid>
         <Hero text={text} />
       </TailwindGrid>
+      <TailwindGrid fullSize>
+        <div className="gap-y-[19vw] md:gap-y-[13vw] lg:gap-y-[14vw] flex-col flex col-span-full mt-[13vw] md:mt-[9vw] lg:mt-[5vw]">
+          <Category text={text} />
 
-      <Category text={text} />
+          <ProjectsPreview text={text} />
+          <Skills text={text} />
 
-      <ProjectsPreview text={text} />
-      <Skills text={text} />
+          <PostPreviews text={text} />
 
-      <PostPreviews text={text} />
+          <Passion text={text} />
 
-      <BigQuote text={text} />
-      <TailwindGrid >
-        <Passion text={text} />
-      </TailwindGrid >
-
-      <Testimonials text={text} />
+          <Testimonials text={text} />
+        </div>
+      </TailwindGrid>
     </>
   );
 }

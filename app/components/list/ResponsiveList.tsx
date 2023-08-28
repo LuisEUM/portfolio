@@ -19,14 +19,10 @@ function ResponsiveList({
 }: ResponsiveListProps) {
   return (
     <>
-      <div
-        className={
-          className ? className : `pt-12 w-full max-w-full lg:min-h-[35vw]`
-        }
-      >
+      <div className={className}>
         <motion.div
-          initial={{ opacity: 0, y: 0, scale:0 }}
-          animate={{ opacity: 1, y: 0, scale:1 }}
+          initial={{ opacity: 0, y: 0, scale: 0 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{
             duration: 0.5,
             staggerChildren: 5,

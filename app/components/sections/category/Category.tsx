@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import TailwindGrid from "../../grid/TailwindGrid";
 import DynamicList from "../../list/DynamicList";
+import ParallaxText from "../../slider/ParallaxText";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 import useScreenWidth from "../../ui/carousel/flex-carousel/hooks/useScreenWitdh";
 import CategoryTitleChanger from "./CategoryTitleChanger";
@@ -21,16 +22,23 @@ function Category({ text }) {
   }, [screenWidth]);
 
   return (
-    <div className="mt-20   pt-10 lg:py-[min(7.5vw,11rem)] ">
+    <section className="pt-10 lg:pt-[min(7.5vw,11rem)] bg-green-500/0">
+      <TailwindGrid fullSize>
+        <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[17vw] md:-top-[11vw] lg:-top-[8.5vw] left-0 ">
+          <ParallaxText baseVelocity={-0.2}>texto de prueba</ParallaxText>
+        </section>
+      </TailwindGrid>
       <TailwindGrid>
-        <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13  ">
-          <section className="flex-col space-y-5 relative">
-            <CategoryTitleChanger
-              key={currentWord.name}
-              name={currentWord.name}
-              subtitle={dataCategoriesSection.subtitle}
-            />
-
+        <div className="self-center lg:col-start-2  col-span-full lg:col-span-11  w-full  flex flex-col">
+          <CategoryTitleChanger
+            key={currentWord.name}
+            name={currentWord.name}
+            subtitle={dataCategoriesSection.subtitle}
+          />
+        </div>
+      </TailwindGrid>
+      <TailwindGrid>
+        <section className="col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13  hidden md:grid">
             {dataCategoriesSection.categories && (
               <DynamicList
                 key={screenWidth}
@@ -38,7 +46,6 @@ function Category({ text }) {
                 categories={dataCategoriesSection.categories}
               />
             )}
-          </section>
         </section>
       </TailwindGrid>
 
@@ -52,7 +59,7 @@ function Category({ text }) {
           setWordCategory={setWordCategory}
         />
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -8,29 +8,33 @@ function Skills({ text }) {
   const dataSkills = text.home.skillsSection;
 
   return (
-    <>
-      <div className="w-full h-full flex pt-[min(7.5vw,11rem)]  z-40 relative  ">
-        <div className="relative  w-full  overflow-hidden ">
-          <DotFollower></DotFollower>
-          <section className="relative max-w-full mt-20  pt-10 w-screen flex flex-col justify-center content-center items-center">
-            <TailwindGrid fullSize>
-              <section className="absolute self-center overflow-hidden max-w-full -z-50">
-                <ParallaxText baseVelocity={0.3}>{dataSkills.textScroller}</ParallaxText>
-              </section>
-            </TailwindGrid>
-            <TailwindGrid>
-              <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
-                <h3
-                  className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
-                  style={{
-                    textShadow:
-                      "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
-                  }}
-                >
-                  {dataSkills.title}
-                  <span className="md:hidden"></span>
-                  <span className="text-primary"> {dataSkills.titlePrimary}</span>
-                  {/* <div
+    <div className=" relativew-full h-full flex   z-20 relative  bg-pink-500/0 -mt-[7vw] md:-mt-[3.5vw] lg:-mt-[4.5vw]">
+      <div className="relative  w-full  overflow-hidden ">
+        <DotFollower></DotFollower>
+
+        <TailwindGrid fullSize>
+          <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[9.75vw] md:-top-[2.5vw] lg:top-0 left-0 ">
+            <ParallaxText baseVelocity={-0.2}>
+              {dataSkills.textScroller}
+            </ParallaxText>
+          </section>
+        </TailwindGrid>
+        <section className="relative max-w-full  pt-[8.25vw] w-full flex flex-col justify-center content-center items-center">
+          <TailwindGrid>
+            <div className=" self-center lg:col-start-2  col-span-full lg:col-span-11  w-full  flex flex-col">
+              <h3
+                className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
+                style={{
+                  textShadow:
+                    "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
+                }}
+              >
+                {dataSkills.title}
+                <span className="md:hidden">
+                  <br />
+                </span>
+                <span className="text-primary"> {dataSkills.titlePrimary}</span>
+                {/* <div
                     ref={initialPosition}
                     className="w-[0.55vw] h-[0.55vw] bg-primary rounded-full inline-block self-baseline -mb-[0.5px] ml-[1.5px]"
                     style={{
@@ -38,35 +42,34 @@ function Skills({ text }) {
                         "-1px -1px 0 #0F0F0F, 1px -1px 0 #0F0F0F, -1px 1px 0 #0F0F0F, 1px 1px 0 #0F0F0F",
                     }}
                   /> */}
-                </h3>
-              </div>
-            </TailwindGrid>
-          </section>
-          <TailwindGrid fullSize>
-            <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-[6vw] md:mt-[5vw] lg:mt-[2.5vw]">
-              <ParallaxIcon baseVelocity={-0.2}>
-                <div className=" justify-start items-center gap-8  inline-flex ">
-                  {dataSkills.firstLine &&
-                    dataSkills.firstLine.map((skill, index) => (
-                      <SkillsItems skill={skill} key={index + skill.name} />
-                    ))}
-                </div>
-              </ParallaxIcon>
-            </section>
-            <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] mt-[6vw] md:mt-[1vw]">
-              <ParallaxIcon baseVelocity={0.2}>
-                <div className=" justify-start items-center gap-8 inline-flex  ">
-                  {dataSkills.secondLine &&
-                    dataSkills.secondLine.map((skill, index) => (
-                      <SkillsItems skill={skill} key={index + skill.name} />
-                    ))}
-                </div>
-              </ParallaxIcon>
-            </section>
+              </h3>
+            </div>
           </TailwindGrid>
-        </div>
+        </section>
+        <TailwindGrid fullSize>
+          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mt-9">
+            <ParallaxIcon baseVelocity={-0.2}>
+              <div className=" justify-start items-center gap-8  inline-flex ">
+                {dataSkills.firstLine &&
+                  dataSkills.firstLine.map((skill, index) => (
+                    <SkillsItems skill={skill} key={index + skill.name} />
+                  ))}
+              </div>
+            </ParallaxIcon>
+          </section>
+          <section className="col-span-12 self-center overflow-hidden max-w-full z-20 mb-[3vw] md:mb-[5vw] mt-[6vw] md:mt-[1vw]">
+            <ParallaxIcon baseVelocity={0.2}>
+              <div className=" justify-start items-center gap-8 inline-flex  ">
+                {dataSkills.secondLine &&
+                  dataSkills.secondLine.map((skill, index) => (
+                    <SkillsItems skill={skill} key={index + skill.name} />
+                  ))}
+              </div>
+            </ParallaxIcon>
+          </section>
+        </TailwindGrid>
       </div>
-    </>
+    </div>
   );
 }
 

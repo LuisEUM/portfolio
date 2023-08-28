@@ -37,7 +37,7 @@ function PostsCard({ container }: PostsCardProps) {
   return (
     <motion.div
       layout="position"
-      className=" w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 my-[10%] "
+      className=" w-full justify-between items-center  text-center bg-zinc-900 rounded-xl shadow flex flex-col gap-y-2 mt-7 "
     >
       {container.thumbnail && container.title && (
         <>
@@ -58,33 +58,19 @@ function PostsCard({ container }: PostsCardProps) {
             <p className="text-zinc-400 text-xs md:text-[1.4vw] lg:text-[1.2vw] 2xl:text-[0.8vw] font-medium">
               {container.pubDate}
             </p>
-            <motion.div
-              layout="position"
-              layoutId={container.title}
-              transition={{ duration: 0.25 }}
-            >
-              <ParagrapHTML
-                className="max-w-full text-md  md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
-                paragraph={extractParagraphContent(container.description)}
-                limit={25}
-                showFullDescription
-              />
-              {container.link && (
-                <Link
-                  href={container.link}
-                  key={container.title}
-                  target="_blank"
-                >
-                  <div className="mt-4 mb-2 inline-flex">
-                    <PrimaryButton
-                      text={"Go to Medium"}
-                      icon="medium"
-                      textLeft
-                    />
-                  </div>
-                </Link>
-              )}
-            </motion.div>
+            <ParagrapHTML
+              className="max-w-full text-md  md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal text-center tracking-tight "
+              paragraph={extractParagraphContent(container.description)}
+              limit={25}
+              showFullDescription
+            />
+            {container.link && (
+              <Link href={container.link} key={container.title} target="_blank">
+                <div className="mt-4 mb-2 inline-flex">
+                  <PrimaryButton text={"Go to Medium"} icon="medium" textLeft />
+                </div>
+              </Link>
+            )}
           </div>
         </>
       )}
@@ -140,7 +126,8 @@ function ParagrapHTML({
 
   return (
     <p className={className}>
-      {transformedContent} {showFullDescription && "..."}
+      {transformedContent}
+      {showFullDescription && "..."}
     </p>
   );
 }

@@ -58,10 +58,10 @@ function DragContainer({
             dragConstraints={parentRef}
             dragControls={control}
             dragElastic={0.25}
-            whileFocus={{ cursor: "grabbing" }}
+            whileFocus={{ cursor: "grabbing", paddingTop: "8px", paddingBottom: "8px" }}
             whileDrag={{ scale: 1.1, cursor: "grabbing" }}
-            whileTap={{ scale: 0.95, cursor: "grabbing" }}
-            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95, cursor: "grabbing", paddingTop: "8px", paddingBottom: "8px" }}
+            whileHover={{ scale: 1.05, paddingTop: "8px", paddingBottom: "8px" }}
             onDragEnd={(e, { offset, velocity }) => {
               const swipe = swipePower(offset.x, velocity.x);
               if (swipe < -swipeConfidenceThreshold) {
@@ -75,7 +75,7 @@ function DragContainer({
             }}
             className={
               className ||
-              `items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2  my-2`
+              `items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col my-2 gap-y-2  `
             }
             layout="position"
           >
@@ -112,10 +112,10 @@ function DragContainer({
             dragConstraints={parentRef}
             dragControls={control}
             dragElastic={0.25}
-            whileFocus={{ cursor: "grabbing" }}
+            whileFocus={{ cursor: "grabbing", paddingTop: "8px", paddingBottom: "8px" }}
             whileDrag={{ scale: 1.1, cursor: "grabbing" }}
-            whileTap={{ scale: 0.95, cursor: "grabbing" }}
-            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95, cursor: "grabbing", paddingTop: "8px", paddingBottom: "8px" }}
+            whileHover={{ scale: 1.05, paddingTop: "8px", paddingBottom: "8px" }}
             onDragEnd={(e, { offset, velocity }) => {
               const swipe = swipePower(offset.x, velocity.x);
               if (swipe < -swipeConfidenceThreshold) {
@@ -128,7 +128,7 @@ function DragContainer({
             }}
             className={
               className ||
-              `items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl shadow flex flex-col gap-y-2  my-2 box-content`
+              `items-center justify-center text-center cursor-grab hover:cursor-grab  rounded-xl  flex flex-col gap-y-2  my-2 box-content`
             }
             layout="position"
           >

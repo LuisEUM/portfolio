@@ -20,13 +20,13 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
           boxPositions[index] === 1
             ? "col-span-full md:col-span-4 lg:col-span-5"
             : "col-span-full md:col-span-2 lg:col-span-3"
-        } relative  group items-end flex p-4 text-center  rounded-3xl content-center  justify-center   `}
+        } relative  group items-end flex px-4 text-center  rounded-3xl content-center  justify-center   `}
       >
         <div
           className={`${
             boxPositions[index] === 1
-              ? "h-full top-[0.5%]"
-              : "md:h-60 lg:h-64 bottom-2"
+              ? "h-[105%] -top-[2.5%]"
+              : "md:h-60 lg:h-64 -bottom-2"
           } ${
             hover ? "opacity-50" : "opacity-0"
           } absolute w-full  bg-gradient-to-b from-primary to-primary rounded-lg blur transition duration-200 `}

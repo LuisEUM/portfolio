@@ -7,7 +7,7 @@ function Hero({ text }) {
 
   return (
     <>
-      <section className="col-start-1  col-end-5 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] w-full order-2 md:order-1 z-30">
+      <section className="col-start-1  col-end-5 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] w-full order-2 md:order-1 z-30 -mt-[14vw] md:-mt-[7vw] lg:-mt-[9vw]">
         <div className="flex-col justify-start items-start gap-4  inline-flex lg:pt-[1.5vw]">
           <p className="hidden md:block pb-4">
             <span className="text-primary font-black lg:text-[2.4vw] lg:leading-[1.2vw] ">

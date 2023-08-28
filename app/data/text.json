@@ -345,7 +345,12 @@
           "lineTwo": "video games are my passion"
         }
       },
-
+      "blogSection": {
+        "title": "If you want more, ",
+        "titlePrimary": "read my blog:",
+        "textScroller": "Latest News",
+        "velocityScroller": -0.2
+      },
       "testimonialsSection": {
         "title": "Voices of Success: ",
         "titlePrimary": "Client Testimonials",
@@ -784,7 +789,7 @@
         }
       },
       "skillsSection": {
-        "title": "¿Necesitas alguna ",
+        "title": "¿Necesitas alguna de ",
         "titlePrimary": "mis herramientas?",
         "textScroller": "Las mejores herramientas",
         "velocityScroller": -0.2,
@@ -937,6 +942,12 @@
             "order": 15
           }
         ]
+      },
+      "blogSection": {
+        "title": "Si quieres más, ",
+        "titlePrimary": "lee mi blog:",
+        "textScroller": "Últimas noticias",
+        "velocityScroller": -0.2
       },
       "testimonialsSection": {
         "title": "Voces del éxito: ",
