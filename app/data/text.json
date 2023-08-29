@@ -350,7 +350,8 @@
         },
         "title": "But why ",
         "titlePrimary": "Video Games?",
-        "description": "Once upon a time, there was a passionate developer named Luis Urdaneta. With a heart full of creativity and a mind brimming with ideas, Luis embarked on a journey into the world of game development. Through dedication and skill, he crafted immersive digital experiences that captivated players and transported them to new realms of excitement."
+        "description": "Once upon a time, there was a passionate developer named Luis Urdaneta. With a heart full of creativity and a mind brimming with ideas, Luis embarked on a journey into the world of game development. Through dedication and skill, he crafted immersive digital experiences that captivated players and transported them to new realms of excitement.",
+        "artboardName": "Gousty"
       },
       "blogSection": {
         "title": "If you want more, ",
@@ -797,11 +798,12 @@
           "quote": {
             "lineOne": "Desarrollar es mi amor",
             "lineTwo": "los videojuegos son mi pasión"
-          },
-          "title": "¿Por qué  ",
-          "titlePrimary": "videojuegos?",
-          "description": "Érase una vez un apasionado desarrollador llamado Luis Urdaneta. Con el corazón lleno de creatividad y la mente rebosante de ideas, Luis se embarcó en un viaje por el mundo del desarrollo de juegos. Con dedicación y habilidad, creó experiencias digitales inmersivas que cautivaron a los jugadores y los transportaron a nuevos reinos de emoción."
-        }
+          }
+        },
+        "title": "¿Por qué  ",
+        "titlePrimary": "videojuegos?",
+        "description": "Érase una vez un apasionado desarrollador llamado Luis Urdaneta. Con el corazón lleno de creatividad y la mente rebosante de ideas, Luis se embarcó en un viaje por el mundo del desarrollo de juegos. Con dedicación y habilidad, creó experiencias digitales inmersivas que cautivaron a los jugadores y los transportaron a nuevos reinos de emoción.",
+        "artboardName": "Gousty"
       },
       "skillsSection": {
         "title": "¿Necesitas alguna de ",

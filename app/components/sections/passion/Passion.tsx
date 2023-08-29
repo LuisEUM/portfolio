@@ -1,4 +1,5 @@
 import TailwindGrid from "../../grid/TailwindGrid";
+import { RiveAnimation } from "../../rive/RiveAnimation";
 import BigQuote from "../quote/BigQuote";
 import PassionImage from "./PassionImage";
 
@@ -21,12 +22,11 @@ function Passion({ text }) {
                 </span>
               </h3>
               <p className="max-w-full text-center md:text-left text-slate-50 md:text-[1.6vw] lg:text-[1.4vw] 2xl:text-[1vw] font-normal tracking-tight">
-                  {passionData.description}
-
+                {passionData.description}
               </p>
             </div>
           </section>
-          <PassionImage />
+          <PassionImage artboardName={passionData.artboardName} />
         </TailwindGrid>
       </div>
     </div>
