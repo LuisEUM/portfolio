@@ -29,7 +29,7 @@ function DynamicListItem({ category, index, boxPositions, handleClick }) {
               : "md:h-60 lg:h-64 -bottom-2"
           } ${
             hover ? "opacity-50" : "opacity-0"
-          } absolute w-full  bg-gradient-to-b from-primary to-primary rounded-lg blur transition duration-200 `}
+          } absolute w-full  bg-gradient-to-b from-primary to-primary rounded-lg blur transition duration-200 hidden lg:block `}
         />
         <div
           className={`  w-full mx-auto relative  bg-zinc-900  rounded-3xl flex-col content-center items-center justify-center  cursor-pointer  ${

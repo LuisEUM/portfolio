@@ -11,8 +11,8 @@ function PassionFloatingElements() {
     visible: (i = 1) => ({
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
-        delayChildren: 0.5 * i,
+        staggerChildren: 0.15,
+        delayChildren: 0.1 * i,
         staggerDirection: -1,
       },
     }),

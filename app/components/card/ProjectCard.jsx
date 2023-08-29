@@ -11,25 +11,26 @@ const ProjectCard = ({ project }) => {
   return (
     <div>
       <motion.div
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
         variants={itemVariants}
         initial="hidden"
         animate="show"
         exit="hidden"
+        className="rounded-2xl overflow-hidden"
       >
         <Link
           href={'projects/' + project.url}
-          className="group aspect-video w-full overflow-hidden rounded-lg bg-gray-200"
+          className="group aspect-video w-full overflow-hidden rounded-2xl  bg-gray-200  "
           key={project.url}
         >
           <Image
             src={project.image}
-            width={500}
-            height={500}
+            width={1080}
+            height={720}
             alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-            className="h-full object-cover object-center group-hover:opacity-75"
+            className="h-full object-cover object-center group-hover:opacity-75 rounded-2xl "
             blurDataURL={project.image}
           />
         </Link>

@@ -15,25 +15,24 @@ function Testimonials({ text }) {
     <div className="relative col-span-full max-w-full  bg-orange-500/0 pb-[14vw] md:pb-[7vw] lg:pb-[9vw]">
       <TailwindGrid fullSize>
         <section className="absolute pt-5 -z-50 overflow-hidden max-w-full">
-          <ParallaxText baseVelocity={0.18}>
+          <ParallaxText baseVelocity={dataTestimonials.velocityScroller}>
             {dataTestimonials.textScroller}
           </ParallaxText>
         </section>
       </TailwindGrid>
-      <div className="col-span-full max-w-full   flex flex-col justify-center content-center items-center ">
+      <div className="col-span-full max-w-full flex flex-col justify-center content-center items-center">
         <TailwindGrid>
-          <div className=" self-center  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
-            <h3 className="text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black">
-              {dataTestimonials.title}
-              <span className="md:hidden">
-                <br />
-              </span>
-              <span className="text-primary">
-                {" "}
-                {dataTestimonials.titlePrimary}
-              </span>
-            </h3>
-            <div className="hidden md:block pt-9">
+          <h3 className="col-span-full lg:col-start-2 text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none">
+            {dataTestimonials.title}
+            <span className="md:hidden">
+              <br />
+            </span>
+            <span className="text-primary">
+              {" "}
+              {dataTestimonials.titlePrimary}
+            </span>
+          </h3>
+          <div className="self-center md:pb-9 md:pt-5 col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full flex flex-col hidden md:block">
               <ResponsiveList
                 tablet={3}
                 desktop={3}
@@ -50,7 +49,6 @@ function Testimonials({ text }) {
                     </section>
                   ))}
               </ResponsiveList>
-            </div>
           </div>
         </TailwindGrid>
       </div>

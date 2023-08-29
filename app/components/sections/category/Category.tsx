@@ -22,10 +22,10 @@ function Category({ text }) {
   }, [screenWidth]);
 
   return (
-    <section className="pt-10 lg:pt-[min(7.5vw,11rem)] bg-green-500/0">
+    <section className="pt-[14vw] md:pt-[6vw] lg:pt-[4vw] bg-green-500/0">
       <TailwindGrid fullSize>
         <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[17vw] md:-top-[11vw] lg:-top-[8.5vw] left-0 ">
-          <ParallaxText baseVelocity={-0.2}>texto de prueba</ParallaxText>
+          <ParallaxText baseVelocity={dataCategoriesSection.velocityScroller}>{dataCategoriesSection.textScroller}</ParallaxText>
         </section>
       </TailwindGrid>
       <TailwindGrid>
@@ -49,7 +49,7 @@ function Category({ text }) {
         </section>
       </TailwindGrid>
 
-      <div className="col-span-12 max-w-full inline md:hidden w-full">
+      <div className="col-span-full max-w-full inline md:hidden w-full">
         <FlexCarousel
           dataCards={dataCategoriesSection.categories}
           width={70}

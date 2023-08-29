@@ -11,9 +11,9 @@ function HeroFloatingElements() {
     visible: (i = 1) => ({
       opacity: 1,
       transition: {
-        staggerChildren: 0.30,
-        delayChildren: 0.5 * i,
-        staggerDirection: -1
+        staggerChildren: 0.15,
+        delayChildren: 0.1 * i,
+        staggerDirection: -1,
       },
     }),
   };

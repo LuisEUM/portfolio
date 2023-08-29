@@ -44,7 +44,7 @@ function CategoryTitleChanger({ name, subtitle }) {
         >
           <motion.em
             key={name}
-            className="inline-block relative w-[max-content] self-baseline mt-2 mr-2 font-black text-primary "
+            className="inline-block relative w-[max-content] self-baseline md:mt-2 mr-2 font-black text-primary "
             variants={variants}
             initial="initial"
             animate="enter"

@@ -17,7 +17,7 @@ function PostPreviews({ text }) {
     <div className="relative col-span-full max-w-full  bg-orange-500/0">
       <TailwindGrid fullSize>
         <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[17vw] md:-top-[11vw] lg:-top-[8.5vw] left-0 ">
-          <ParallaxText baseVelocity={-0.2}>
+          <ParallaxText baseVelocity={dataBlogSection.velocityScroller}>
             {dataBlogSection.textScroller}
           </ParallaxText>
         </section>

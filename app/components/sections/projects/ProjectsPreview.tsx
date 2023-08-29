@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import ProjectCard from "../../card/ProjectCard";
 import TailwindGrid from "../../grid/TailwindGrid";
@@ -50,7 +51,7 @@ function ProjectsPreview({ text }) {
           </ParallaxText>
         </section>
       </TailwindGrid>
-      <div className="col-span-full max-w-full   flex flex-col justify-center content-center items-center ">
+      <div className="col-span-full max-w-full flex flex-col justify-center content-center items-center">
         <TailwindGrid>
           <h3
             className="col-span-full lg:col-start-2 text-start text-[7vw] leading-[8vw] md:text-[4.8vw] md:leading-[4.8vw] lg:text-[3vw] lg:leading-[3vw] font-black z-40 pointer-events-none"
@@ -65,7 +66,7 @@ function ProjectsPreview({ text }) {
             </span>
             <span className="text-primary">{previewProjects.titlePrimary}</span>
           </h3>
-          <div className=" self-center md:pb-9 md:pt-5  col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full  flex flex-col">
+          <div className="self-center md:pb-9 md:pt-5 col-start-1 lg:col-start-2 col-end-5 md:col-end-9 lg:col-end-13 w-full flex flex-col">
             <div className="hidden md:block">
               <ResponsiveList tablet={3}>
                 {text.portfolio.projects &&
@@ -92,13 +93,15 @@ function ProjectsPreview({ text }) {
       </div>
       <TailwindGrid>
         <div className="flex justify-center items-center col-span-full lg:col-start-2 my-auto">
-          <SecondaryButton
-            className={
-              "text-center  hover:bg-white hover:text-zinc-950  text-md py-3 px-5 md:text-[min(2vw,22px)]    font-bold uppercase self-center md:px-[min(3vw,2.5rem)] md:py-[min(0.5vw,2rem)] border border-white  rounded-full"
-            }
-          >
-            {previewProjects.button}
-          </SecondaryButton>
+          <Link href="/projects?category=All&page=1">
+            <SecondaryButton
+              className={
+                "text-center  hover:bg-white hover:text-zinc-950  text-md py-3 px-5 md:text-[min(2vw,22px)]    font-bold uppercase self-center md:px-[min(3vw,2.5rem)] md:py-[min(0.5vw,2rem)] border border-white  rounded-full"
+              }
+            >
+              {previewProjects.button}
+            </SecondaryButton>
+          </Link>
         </div>
       </TailwindGrid>
     </div>

@@ -150,21 +150,23 @@
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
         "subtitle": "I could be your favorite ",
+        "textScroller": "Your best choise",
+        "velocityScroller": -0.2,
         "carrouselKey": "category",
         "categories": [
           {
             "order": 1,
-            "name": "Developer",
-            "url": "/projects?category=Web_Developer&page=1",
-            "artboardName": "Web",
-            "summary": "More than a year ago, I joined IronHack's FullStack Web Development bootcamp, where I gained experience in the MERN environment, laying the foundations for my work in several projects as a developer."
-          },
-          {
-            "order": 2,
             "name": "Designer",
             "url": "/projects?category=Graphic_Design&page=1",
             "artboardName": "Design",
             "summary": "With a solid experience of more than 3 years as a web designer, I have enhanced this skill thanks to my knowledge acquired since 2017 in graphic design."
+          },
+          {
+            "order": 2,
+            "name": "Developer",
+            "url": "/projects?category=Web_Developer&page=1",
+            "artboardName": "Web",
+            "summary": "More than a year ago, I joined IronHack's FullStack Web Development bootcamp, where I gained experience in the MERN environment, laying the foundations for my work in several projects as a developer."
           },
           {
             "order": 3,
@@ -180,13 +182,13 @@
         "titlePrimary": "my projects...",
         "button": "Check my Projects",
         "textScroller": "Enjoy all my work",
-        "velocityScroller": -0.2
+        "velocityScroller": 0.18
       },
       "skillsSection": {
         "title": "Do you need one of ",
         "titlePrimary": "my tools?",
         "textScroller": "The Big Toolbox",
-        "velocityScroller": -0.2,
+        "velocityScroller": 0.3,
         "firstLine": [
           {
             "name": "Illustrator",
@@ -337,25 +339,31 @@
           }
         ]
       },
-      "bigQuoteSection": {
-        "textScroller": "The Power Of Passion",
-        "velocityScroller": -0.2,
-        "quote": {
-          "lineOne": "Web dev is my love",
-          "lineTwo": "video games are my passion"
-        }
+      "passionSection": {
+        "bigQuote": {
+          "textScroller": "The Power Of Passion",
+          "velocityScroller": -0.2,
+          "quote": {
+            "lineOne": "Web dev is my love",
+            "lineTwo": "videogames my passion"
+          }
+        },
+        "title": "But why ",
+        "titlePrimary": "Video Games?",
+        "description": "Once upon a time, there was a passionate developer named Luis Urdaneta. With a heart full of creativity and a mind brimming with ideas, Luis embarked on a journey into the world of game development. Through dedication and skill, he crafted immersive digital experiences that captivated players and transported them to new realms of excitement."
       },
       "blogSection": {
         "title": "If you want more, ",
         "titlePrimary": "read my blog:",
         "textScroller": "Latest News",
-        "velocityScroller": -0.2
+        "velocityScroller": 0.2
       },
       "testimonialsSection": {
         "title": "Voices of Success: ",
         "titlePrimary": "Client Testimonials",
         "carrouselKey": "testimonials",
         "textScroller": "Listen to my community",
+        "velocityScroller": -0.18,
         "testimonials": [
           {
             "order": 1,
@@ -748,21 +756,23 @@
       "categoriesSection": {
         "title": "I will be your Swiss Army knife in the digital world",
         "subtitle": "Podría ser tu próximo especialista en ",
+        "textScroller": "Tu mejor elección",
+        "velocityScroller": -0.2,
         "carrouselKey": "categoria",
         "categories": [
           {
             "order": 1,
-            "name": "Programación",
-            "url": "/projects?category=Web_Developer&page=1",
-            "artboardName": "Web",
-            "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
-          },
-          {
-            "order": 2,
             "name": "Diseño",
             "url": "/projects?category=Graphic_Design&page=1",
             "artboardName": "Design",
             "summary": "Con una sólida experiencia de más de 3 años como diseñador web, he potenciado esta destreza gracias a mis conocimientos adquiridos desde el año 2017 en diseño gráfico."
+          },
+          {
+            "order": 2,
+            "name": "Programación",
+            "url": "/projects?category=Web_Developer&page=1",
+            "artboardName": "Web",
+            "summary": "Hace más de un año, ingresé al bootcamp de Desarrollo Web FullStack de IronHack, donde adquirí experiencia en el entorno MERN, sentando las bases para mi trabajo en diversos proyectos como desarrollador."
           },
           {
             "order": 3,
@@ -778,21 +788,26 @@
         "titlePrimary": "mis Proyectos...",
         "button": "Ver más proyectos",
         "textScroller": "Disfruta de mis trabajos",
-        "velocityScroller": -0.2
+        "velocityScroller": 0.18
       },
-      "bigQuoteSection": {
-        "textScroller": "El Poder de la Pasión",
-        "velocityScroller": -0.2,
-        "quote": {
-          "lineOne": "Desarrollar es mi amor",
-          "lineTwo": "los videojuegos son mi pasión"
+      "passionSection": {
+        "bigQuote": {
+          "textScroller": "El Poder de la Pasión",
+          "velocityScroller": -0.2,
+          "quote": {
+            "lineOne": "Desarrollar es mi amor",
+            "lineTwo": "los videojuegos son mi pasión"
+          },
+          "title": "¿Por qué  ",
+          "titlePrimary": "videojuegos?",
+          "description": "Érase una vez un apasionado desarrollador llamado Luis Urdaneta. Con el corazón lleno de creatividad y la mente rebosante de ideas, Luis se embarcó en un viaje por el mundo del desarrollo de juegos. Con dedicación y habilidad, creó experiencias digitales inmersivas que cautivaron a los jugadores y los transportaron a nuevos reinos de emoción."
         }
       },
       "skillsSection": {
         "title": "¿Necesitas alguna de ",
         "titlePrimary": "mis herramientas?",
         "textScroller": "Las mejores herramientas",
-        "velocityScroller": -0.2,
+        "velocityScroller": 0.3,
         "firstLine": [
           {
             "name": "Illustrator",
@@ -947,13 +962,14 @@
         "title": "Si quieres más, ",
         "titlePrimary": "lee mi blog:",
         "textScroller": "Últimas noticias",
-        "velocityScroller": -0.2
+        "velocityScroller": 0.2
       },
       "testimonialsSection": {
         "title": "Voces del éxito: ",
         "titlePrimary": "Testimonios de Clientes",
         "carrouselKey": "Testimonios",
         "textScroller": "Escucha a mi comunidad",
+        "velocityScroller": -0.18,
         "testimonials": [
           {
             "order": 1,

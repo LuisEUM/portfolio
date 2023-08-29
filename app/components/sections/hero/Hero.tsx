@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PrimaryButton from "../../ui/buttons/PrimaryButton";
 import SecondaryButton from "../../ui/buttons/SecondaryButton";
 import HeroImage from "./HeroImage";
@@ -7,18 +8,18 @@ function Hero({ text }) {
 
   return (
     <>
-      <section className="col-start-1  col-end-5 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] w-full order-2 md:order-1 z-30 -mt-[14vw] md:-mt-[7vw] lg:-mt-[9vw]">
+      <section className="col-start-1  col-end-5 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] md:pt-[8vw] lg:pt-[5vw] w-full order-2 md:order-1 z-30 -mt-[7vw] md:-mt-[7vw] lg:-mt-[9vw]">
         <div className="flex-col justify-start items-start gap-4  inline-flex lg:pt-[1.5vw]">
-          <p className="hidden md:block pb-4">
-            <span className="text-primary font-black lg:text-[2.4vw] lg:leading-[1.2vw] ">
+          <p className="hidden md:block  lg:pb-4 lg:text-[2.4vw] lg:leading-[1.2vw] font-black md:text-[3vw] md:leading-[6.4vw]">
+            <span className="text-primary">
               {hero.subtitle.before}
             </span>
 
-            <span className="font-black lg:text-[2.4vw] lg:leading-[1.2vw]">
+            <span className="">
               {hero.subtitle.text}
             </span>
 
-            <span className="text-primary font-black lg:text-[2.4vw] lg:leading-[1.2vw]  ">
+            <span className="text-primary">
               {hero.subtitle.after}
             </span>
           </p>
@@ -31,7 +32,7 @@ function Hero({ text }) {
             <span className="font-black pr-[min(3rem,1.5vw)] md:pr-3 xl:pr-4 leading-[3.5vw]  text-[min(3rem,9.5vw)] md:leading-[2.5vw] md:text-[5vw] lg:text-[5.3vw]  xl:text-[5.4vw] 2xl:text-[5.5vw] ">
               {hero.title.before}
             </span>
-            <span className="text-primary font-black leading-[3.5vw]  text-[min(3rem,9.5vw)] md:leading-[2.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[5.4vw] 2xl:text-[5.5vw] md:pr-2 xl:pr-2 ">
+            <span className="text-primary font-black leading-[3.5vw]  text-[min(3rem,9.5vw)] md:leading-[2.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[5.4vw] 2xl:text-[5.5vw] pr-2 ">
               {hero.title.name}
             </span>
             <span className="text-primary font-black leading-[3.5vw]  text-[min(3rem,9.5vw)] md:leading-[2.5vw] md:text-[5vw] lg:text-[5.3vw] xl:text-[5.4vw] 2xl:text-[5.5vw] ">
@@ -46,9 +47,11 @@ function Hero({ text }) {
             {hero.description}
           </p>
         </div>
-        <div className="flex-col justify-center items-center gap-[23px] flex col-span-4  lg:col-start-2 justify- lg:gap-10 lg:inline-flex mt-12 md:flex-row w-full lg:justify-start">
+        <div className="flex-col justify-center items-center gap-[23px] flex col-span-4  lg:col-start-2 justify- lg:gap-10 lg:inline-flex mt-6 md:mt-12 md:flex-row w-full lg:justify-start">
           <PrimaryButton text={hero.buttons.primary} />
-          <SecondaryButton>{hero.buttons.secondary}</SecondaryButton>
+          <Link href="/projects?category=All&page=1" className="w-full">
+            <SecondaryButton>{hero.buttons.secondary}</SecondaryButton>
+          </Link>
         </div>
       </section>
 

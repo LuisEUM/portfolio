@@ -8,13 +8,13 @@ function Skills({ text }) {
   const dataSkills = text.home.skillsSection;
 
   return (
-    <div className=" relativew-full h-full flex   z-20 relative  bg-pink-500/0 -mt-[7vw] md:-mt-[3.5vw] lg:-mt-[4.5vw]">
+    <div className=" relativew-full h-full flex   z-20 relative  bg-pink-500/0 -mt-[6.75vw] md:-mt-[8.5vw] lg:-mt-[8.75vw] -mb-[1vw] md:-mb-[5.25vw] lg:-mb-[5.25vw]">
       <div className="relative  w-full  overflow-hidden ">
         <DotFollower></DotFollower>
 
         <TailwindGrid fullSize>
           <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[9.75vw] md:-top-[2.5vw] lg:top-0 left-0 ">
-            <ParallaxText baseVelocity={-0.2}>
+            <ParallaxText baseVelocity={dataSkills.velocityScroller}>
               {dataSkills.textScroller}
             </ParallaxText>
           </section>

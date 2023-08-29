@@ -19,7 +19,7 @@ function CategoriesCard({ container, centerOrder }) {
         className="w-full relative group items-end flex text-center rounded-3xl content-center justify-center mt-7"
       >
         <div
-          className="w-full max-w-full mx-auto relative  bg-zinc-900  rounded-3xl flex-col content-center items-center justify-center  cursor-pointer py-11 "
+          className="w-full max-w-full mx-auto relative  bg-zinc-900   rounded-3xl flex-col content-center items-center justify-center  cursor-pointer py-11 "
           onMouseDown={() => setHover(true)}
           onMouseUp={() => setHover(false)}
         >

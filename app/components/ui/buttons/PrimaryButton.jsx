@@ -7,7 +7,7 @@ function PrimaryButton ({ text, icon = 'download', textLeft = false }) {
       whileHover={{ scale: 1.03 }}
       whileTap={{ scale: 0.93 }}
       transition={{ duration: 0.2 }}
-      className={`${icon === 'medium' ? 'hover:text-zinc-900 bg-zinc-900' : 'hover:text-zinc-950 bg-zinc-950/40'} group  self-stretch cursor-pointer justify-center items-center inline-flex lg:min-w-[172px] w-full lg:w-[13vw]  rounded-md border border-primary text-primary  backdrop-blur-lg bg-clip-padding backdrop-filter hover:bg-primary  h-12 gap-2`}
+      className={`${icon === 'medium' ? 'hover:text-zinc-900 bg-zinc-900' : 'hover:text-zinc-950 bg-zinc-950/40'} group  self-stretch cursor-pointer justify-center items-center inline-flex lg:min-w-[172px] w-full lg:w-[20vw]   rounded-md border border-primary text-primary  backdrop-blur-lg bg-clip-padding backdrop-filter hover:bg-primary  h-12 gap-2`}
     >
       <div className="justify-center items-center gap-4 px-4 flex ">
         {textLeft && (

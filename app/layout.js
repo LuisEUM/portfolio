@@ -15,7 +15,7 @@ export default function RootLayout ({ children }) {
           <section className='max-w-full z-50'>
             <NavBar />
           </section>
-          <section className='max-w-full mt-20 md:pt-8 min-w-[360px] w-[100vw] flex flex-col items-center justify-center relative'>
+          <section className='max-w-full mt-20 md:mt-24 lg:mt-20 md:pt-8 min-w-[360px] w-full flex flex-col items-center justify-center relative overflow-x-hidden '>
             {children}
           </section>
           <footer className='max-w-full '>

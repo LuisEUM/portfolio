@@ -20,16 +20,12 @@ export default function Home() {
         <Hero text={text} />
       </TailwindGrid>
       <TailwindGrid fullSize>
-        <div className="gap-y-[19vw] md:gap-y-[13vw] lg:gap-y-[14vw] flex-col flex col-span-full mt-[13vw] md:mt-[9vw] lg:mt-[5vw]">
+        <div className="gap-y-[19vw] md:gap-y-[20vw] lg:gap-y-[14vw] flex-col flex col-span-full mt-[5vw] md:mt-[15vw] lg:mt-[5vw]">
           <Category text={text} />
-
           <ProjectsPreview text={text} />
           <Skills text={text} />
-
           <PostPreviews text={text} />
-
           <Passion text={text} />
-
           <Testimonials text={text} />
         </div>
       </TailwindGrid>

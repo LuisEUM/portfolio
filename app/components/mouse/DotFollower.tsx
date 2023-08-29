@@ -96,6 +96,15 @@ const Box = () => {
               top: "-7.5vw",
               left: "-7.5vw",
             }}
+            whileTap={{
+              padding: "7vw",
+              height: "7vw",
+              width: "7vw",
+              opacity: 1,
+              top: "-7vw",
+              left: "-7vw",
+              filter: "brightness(1.5)",
+            }}
             animate={{
               x: mousePosition.x,
               y: mousePosition.y,
