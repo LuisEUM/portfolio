@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <TailwindGrid fullSize>
-      <div className="col-span-full min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex bg-zinc-900/50 pt-10">
+      <div className="col-span-full min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex bg-[rgb(19,19,21)] pt-20 ">
         <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
           {text.footer.socials.map((social, index) => (
             <div
@@ -62,7 +62,7 @@ function Footer() {
           setModalOpenNavbar={undefined}
         />
 
-        <div className="w-full h-[0px] border border-white"></div>
+        <div className="w-full h-[0px]  border-zinc-500 border-t"></div>
         <p className="text-xs font-light pb-10 capitalize">
           {text.footer.website} {text.footer.rights}
         </p>

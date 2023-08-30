@@ -16,6 +16,7 @@ export default function Home() {
 
   return (
     <>
+
       <TailwindGrid>
         <Hero text={text} />
       </TailwindGrid>
