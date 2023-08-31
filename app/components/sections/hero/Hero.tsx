@@ -1,4 +1,5 @@
 import Link from "next/link";
+import TailwindGrid from "../../grid/TailwindGrid";
 import PrimaryButton from "../../ui/buttons/PrimaryButton";
 import SecondaryButton from "../../ui/buttons/SecondaryButton";
 import HeroImage from "./HeroImage";
@@ -7,21 +8,15 @@ function Hero({ text }) {
   const hero = text.home.heroSection;
 
   return (
-    <>
-      <section className="col-start-1  col-end-5 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] md:pt-[8vw] lg:pt-[5vw] w-full order-2 md:order-1 z-30 -mt-[7vw] md:-mt-[7vw] lg:-mt-[9vw]">
+    <TailwindGrid>
+      <section className="col-start-1 max-w-full w-full col-end-full md:col-start-1 md:col-end-6 lg:col-start-2 lg:col-end-8 pt-[5vw] md:pt-[8vw] lg:pt-[5vw] order-2 md:order-1 z-30 -mt-[7vw] md:-mt-[7vw] lg:-mt-[9vw] col-span-full">
         <div className="flex-col justify-start items-start gap-4  inline-flex lg:pt-[1.5vw]">
           <p className="hidden md:block  lg:pb-4 lg:text-[2.4vw] lg:leading-[1.2vw] font-black md:text-[3vw] md:leading-[6.4vw]">
-            <span className="text-primary">
-              {hero.subtitle.before}
-            </span>
+            <span className="text-primary">{hero.subtitle.before}</span>
 
-            <span className="">
-              {hero.subtitle.text}
-            </span>
+            <span className="">{hero.subtitle.text}</span>
 
-            <span className="text-primary">
-              {hero.subtitle.after}
-            </span>
+            <span className="text-primary">{hero.subtitle.after}</span>
           </p>
           <h1
             style={{
@@ -47,16 +42,15 @@ function Hero({ text }) {
             {hero.description}
           </p>
         </div>
-        <div className="flex-col justify-center items-center gap-[23px] flex col-span-4  lg:col-start-2 justify- lg:gap-10 lg:inline-flex mt-6 md:mt-12 md:flex-row w-full lg:justify-start">
+        <div className="flex-col justify-center items-center gap-[23px] flex col-span-full  lg:col-start-2  lg:gap-10 lg:inline-flex mt-6 md:mt-12 md:flex-row w-full lg:justify-start ">
           <PrimaryButton text={hero.buttons.primary} />
           <Link href="/projects?category=All&page=1" className="w-full">
             <SecondaryButton>{hero.buttons.secondary}</SecondaryButton>
           </Link>
         </div>
       </section>
-
       <HeroImage />
-    </>
+    </TailwindGrid>
   );
 }
 

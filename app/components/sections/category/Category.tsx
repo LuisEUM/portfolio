@@ -22,7 +22,7 @@ function Category({ text }) {
   }, [screenWidth]);
 
   return (
-    <section className="pt-[14vw] md:pt-[6vw] lg:pt-[4vw] bg-green-500/0">
+    <section className="pt-[14vw] md:pt-[6vw] lg:pt-[4vw] bg-green-500/0 -mt-[14vw] md:-mt-[6.5vw] lg:-mt-[8.5vw]">
       <TailwindGrid fullSize>
         <section className="absolute self-center overflow-hidden max-w-full -z-50 -top-[17vw] md:-top-[11vw] lg:-top-[8.5vw] left-0 ">
           <ParallaxText baseVelocity={dataCategoriesSection.velocityScroller}>{dataCategoriesSection.textScroller}</ParallaxText>
