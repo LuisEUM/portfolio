@@ -50,7 +50,7 @@ export default function NavBar () {
   console.log(currentPathname)
   return (
     <TailwindGrid fullSize>
-      <div className=" fixed top-0 col-span-full w-full flex justify-end bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter rounded-lg shadow-l">
+      <div className="w-full lg:w-11/12 absolute top-0 right-0 col-span-full flex justify-end ">
         <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

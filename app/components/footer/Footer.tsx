@@ -12,7 +12,7 @@ function Footer() {
 
   return (
     <TailwindGrid fullSize>
-      <div className="col-span-full min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex bg-[rgb(19,19,21)] pt-20 ">
+      <div className="col-span-full lg:col-start-2 min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex  pt-20 ">
         <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
           {text.footer.socials.map((social, index) => (
             <div
