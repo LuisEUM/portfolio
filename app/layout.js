@@ -12,9 +12,7 @@ export default function RootLayout ({ children }) {
       <Head />
       <body className=" text-zinc-100 font-body grid grid-cols-1">
         <LanguageProvider>
-          <header className="h-20 max-w-full z-50 fixed top-0 left-0 w-full bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter rounded-lg shadow-l ">
-            <NavBar />
-          </header>
+          <NavBar />
           <section className="max-w-full min-w-[360px] w-full flex flex-col items-center justify-center  overflow-x-hidden ">
             {children}
           </section>

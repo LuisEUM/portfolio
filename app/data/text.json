@@ -132,7 +132,7 @@
       "heroSection": {
         "subtitle": {
           "before": "<",
-          "text": "HelloWorld",
+          "text": "HellxoWorld",
           "after": "/>"
         },
         "title": {
@@ -1038,6 +1038,7 @@
           "title": "MOUTHFEELS",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "titleTags":"Tags",
           "tags": [
             "Adobe Illustrator",
             "Adobe InDesign",

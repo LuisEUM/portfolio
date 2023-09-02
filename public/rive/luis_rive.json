@@ -1,71 +1,59 @@
 {
   "artboards": [
-      {
-          "name": "Design",
-          "animations": [
-              "Loop",
-              "Hover"
-          ],
-          "stateMachines": [
-              {
-                  "name": "Animation",
-                  "inputs": [
-                      {
-                          "name": "Tarjeta",
-                          "type": 59
-                      }
-                  ]
-              }
+    {
+      "name": "Design",
+      "animations": ["Loop", "Hover"],
+      "stateMachines": [
+        {
+          "name": "Animation",
+          "inputs": [
+            {
+              "name": "Tarjeta",
+              "type": 59
+            }
           ]
-      },
-      {
-          "name": "Marketing",
-          "animations": [
-              "Loop",
-              "Hover"
-          ],
-          "stateMachines": [
-              {
-                  "name": "Animation",
-                  "inputs": [
-                      {
-                          "name": "tarjeta",
-                          "type": 59
-                      }
-                  ]
-              }
+        }
+      ]
+    },
+    {
+      "name": "Marketing",
+      "animations": ["Loop", "Hover"],
+      "stateMachines": [
+        {
+          "name": "Animation",
+          "inputs": [
+            {
+              "name": "tarjeta",
+              "type": 59
+            }
           ]
-      },
-      {
-          "name": "Web",
-          "animations": [
-              "Loop",
-              "Hover"
-          ],
-          "stateMachines": [
-              {
-                  "name": "Animation",
-                  "inputs": [
-                      {
-                          "name": "tarjeta",
-                          "type": 59
-                      }
-                  ]
-              }
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "animations": ["Loop", "Hover"],
+      "stateMachines": [
+        {
+          "name": "Animation",
+          "inputs": [
+            {
+              "name": "tarjeta",
+              "type": 59
+            }
           ]
-      },
-      {
-          "name": "Gousty",
-          "animations": [
-              "Hover",
-              "Loop"
-          ],
-          "stateMachines": [
-              {
-                  "name": "Movimiento",
-                  "inputs": []
-              }
-          ]
-      }
+        }
+      ]
+    },
+    {
+      "name": "Gousty",
+      "animations": ["Hover", "Loop"],
+      "stateMachines": [
+        {
+          "name": "Movimiento",
+          "inputs": []
+        }
+      ]
+    }
   ]
 }

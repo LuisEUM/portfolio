@@ -4,7 +4,7 @@ function SocialButtons ({ text }) {
   return (
     <>
       <p className="text-md font-bold">{text.contact.socialNetworksParagraph}</p>
-      <div className="flex flex-wrap justify-start gap-7 my-4">
+      <div className="flex flex-wrap justify-start gap-7 mt-4">
         {/* <!--WHATSAPP ICON--> */}
         <a
           href={text.contact.socialNetwoks.whatsApp.url}

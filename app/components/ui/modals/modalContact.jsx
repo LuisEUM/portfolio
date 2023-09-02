@@ -118,7 +118,7 @@ function ModalContent ({ text, handleClose }) {
       {/* <!--MODAL BODY--> */}
       <div className="my-4">
         <SocialButtons text={text} />
-        <div className="flex justify-between">
+        <div className="flex justify-between mt-4">
           <p className="text-md">{text.contact.emailAddressParagraph}</p>
           <div className="flex items-center justify-center">
             <AnimatePresence initial={false} mode="wait">

@@ -46,7 +46,7 @@ const Portfolio = () => {
   return (
     <>
       <TailwindGrid>
-        <section className="mt- flex items-center flex-col gap-6 w-full mb-6  col-span-full">
+        <section className="mt-20 md:mt-24 lg:mt-20 md:pt-8 flex items-center flex-col gap-6 w-full mb-6  col-span-full">
           <h1 className="font-black pr-[min(3rem,1.5vw)] md:pr-3 xl:pr-4 leading-[min(3rem,9.5vw)] text-[min(3rem,9.5vw)] md:leading-[2.5vw] md:text-[5vw] lg:text-[5.3vw] lg:leading-[5.3vw] xl:text-[5.4vw] xl:leading-[5.4vw] 2xl:text-[5.5vw] 2xl:leading-[5.5vw]  uppercase">
             {text.portfolio.title}
           </h1>
