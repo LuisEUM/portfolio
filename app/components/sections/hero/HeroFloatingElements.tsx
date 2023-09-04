@@ -1,3 +1,4 @@
+"use client"
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import Symbol from "../../svg/Symbol";

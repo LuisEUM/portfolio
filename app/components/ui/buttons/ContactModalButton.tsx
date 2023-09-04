@@ -24,7 +24,7 @@ function ContactModalButton({ className, setModalOpenNavbar }) {
         whileTap={{ scale: 0.93 }}
         onClick={open}
       >
-        {text.menu.contact}
+        {text?.menu.contact}
       </motion.button>
       <AnimatePresence mode="wait" initial={false} onExitComplete={close}>
         {modalOpen && (

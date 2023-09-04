@@ -14,7 +14,7 @@ function Footer() {
     <TailwindGrid fullSize>
       <div className="col-span-full lg:col-start-2 min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex  pt-20 ">
         <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
-          {text.footer.socials.map((social, index) => (
+          {text && text.footer.socials.map((social, index) => (
             <div
               className={`flex justify-center min-h-9 min-w-9 items-center h-8 shadow  rounded-full w-1/6 ${
                 social.hidden && "hidden"
@@ -38,7 +38,7 @@ function Footer() {
           ))}
         </div>
         <div className="justify-start items-start gap-10 inline-flex ">
-          {text.footer.routes.map((route) => (
+          {text?.footer.routes.map((route) => (
             <motion.div
               className="flex justify-center px-4"
               key={route.pathname}
@@ -64,7 +64,7 @@ function Footer() {
 
         <div className="w-full h-[0px]  border-zinc-500 border-t"></div>
         <p className="text-xs font-light pb-10 capitalize">
-          {text.footer.website} {text.footer.rights}
+          {text?.footer.website} {text?.footer.rights}
         </p>
       </div>
     </TailwindGrid>

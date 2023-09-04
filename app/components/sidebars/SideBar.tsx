@@ -1,32 +1,28 @@
-import { AnimatePresence, motion, useInView } from "framer-motion";
+"use client"
+import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-function SideBar({
-  heroRef,
-  categoryRef,
-  projectsRef,
-  skillsRef,
-  postsRef,
-  passionRef,
-  testimonialsRef,
-}) {
+const sections = [
+  { name: "Hero", id: "hero-section" },
+  { name: "Category", id: "category-section" },
+  { name: "Projects", id: "projects-section" },
+  { name: "Skills", id: "skills-section" },
+  { name: "Blog", id: "blog-section" },
+  { name: "Passion", id: "passion-section" },
+  { name: "Testimonials", id: "testimonials-section" },
+];
+
+function SideBar() {
   const [hoveredSection, setHoveredSection] = useState(null);
-  const [activeSection, setActiveSection] = useState(heroRef);
+  const [activeSection, setActiveSection] = useState(sections[0]);
 
-  const sections = [
-    { name: "Hero", ref: heroRef },
-    { name: "Category", ref: categoryRef },
-    { name: "Projects", ref: projectsRef },
-    { name: "Skills", ref: skillsRef },
-    { name: "Blog", ref: postsRef },
-    { name: "Passion", ref: passionRef },
-    { name: "Testimonials", ref: testimonialsRef },
-  ];
 
-  const scrollToSection = (ref) => {
-    if (ref.current) {
+
+  const scrollToSection = (id) => {
+    const target = document.getElementById(id);
+    if (target) {
       const yOffset = window.innerHeight / 2;
-      const targetTop = ref.current.offsetTop + ref.current.clientHeight / 2;
+      const targetTop = target.offsetTop + target.clientHeight / 2;
       window.scrollTo({
         top: targetTop - yOffset,
         behavior: "smooth",
@@ -40,14 +36,16 @@ function SideBar({
       let closestSection = null;
 
       sections.forEach((section) => {
-        if (section.ref.current) {
-          const rect = section.ref.current.getBoundingClientRect();
+        const target = document.getElementById(section.id); // Cambio aquí para obtener el elemento por su ID
+
+        if (target) {
+          const rect = target.getBoundingClientRect();
           const sectionCenter = rect.top + rect.height / 2;
           const distance = Math.abs(window.innerHeight / 2 - sectionCenter);
 
           if (distance < closestDistance) {
             closestDistance = distance;
-            closestSection = section.ref;
+            closestSection = target;
           }
         }
       });
@@ -68,23 +66,23 @@ function SideBar({
           <motion.li
             key={index}
             whileHover={{ scale: 1.1 }}
-            onClick={() => scrollToSection(section.ref)}
+            onClick={() => scrollToSection(section.id)}
             className="relative cursor-pointer mt-2 first:mt-0 flex items-center justify-start mx-auto"
           >
             <svg
               className={`${
-                activeSection === section.ref ? "fill-primary" : "fill-white"
+                activeSection && activeSection.id === section.id  ? "fill-primary" : "fill-white"
               } w-2 h-2 hover:fill-primary transition-colors duration-500`}
-              onMouseEnter={() => setHoveredSection(section.ref)}
+              onMouseEnter={() => setHoveredSection(section.id)}
               onMouseLeave={() => setHoveredSection(null)}
             >
               <circle cx="50%" cy="50%" r="50%" />
             </svg>
             <AnimatePresence>
-              {hoveredSection === section.ref && (
+              {hoveredSection === section.id && (
                 <motion.div
                   className="text-white text-sm text-left flex absolute left-4 bg-zinc-700 px-2 py-1 rounded-md z-30 opacity-100"
-                  initial={{ x: 20, opacity: 0, }}
+                  initial={{ x: 20, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: 20, opacity: 0 }}
                   transition={{ duration: 0.2 }}

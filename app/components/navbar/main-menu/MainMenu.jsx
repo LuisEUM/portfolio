@@ -1,7 +1,7 @@
 'use client'
 import { useContext, useRef } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { LanguageContext } from '../../../context/languageContext.jsx'
+import { LanguageContext } from '../../../context/languageContext'
 import Link from 'next/link.js'
 import ContactModalButton from '../../ui/buttons/ContactModalButton.tsx'
 import LanguaguesSwitch from '../../ui/switch/languaguesSwitch.jsx'
