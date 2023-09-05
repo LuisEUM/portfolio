@@ -13,11 +13,11 @@ function Project() {
 
   const project = text.portfolio.projects.find((project) => project.url === currentPathname)
   
-  const dataImages = text.portfolio.projects[project?.id].gallery;
-  const dataTitle = text.portfolio.projects[project?.id].title;
-  const dataCategories = text.portfolio.projects[project?.id].categories;
-  const dataDescription = text.portfolio.projects[project?.id].description;
-  const dataTags = text.portfolio.projects[project?.id].tags;
+  const dataImages = text.portfolio.projects[project?.id]?.gallery;
+  const dataTitle = text.portfolio.projects[project?.id]?.title;
+  const dataCategories = text.portfolio.projects[project?.id]?.categories;
+  const dataDescription = text.portfolio.projects[project?.id]?.description;
+  const dataTags = text.portfolio.projects[project?.id]?.tags;
 
   return (
     <div className="lg:flex  w-screen">
