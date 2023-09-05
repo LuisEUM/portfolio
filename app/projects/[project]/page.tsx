@@ -11,7 +11,8 @@ function Project() {
   const { text } = useContext(LanguageContext);
   const currentPathname = usePathname().replace(/^\/projects\//, '');
   const project = text.portfolio.projects.find((project) => project.url === currentPathname)
-  const dataProject = text.portfolio.projects[project?.id]
+  const projectId = project.id ?  project.id  : 0 
+  const dataProject = text.portfolio.projects[projectId]
 
   const dataImages = dataProject?.gallery;
   const dataTitle = dataProject?.title;
