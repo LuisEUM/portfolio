@@ -14,12 +14,6 @@ function Project() {
   const projectId = project.id ?  project.id  : 0 
   const dataProject = text.portfolio.projects[projectId]
 
-  const dataImages = dataProject?.gallery;
-  const dataTitle = dataProject?.title;
-  const dataCategories = dataProject?.categories;
-  const dataDescription = dataProject?.description;
-  const dataTags = dataProject?.tags;
-
   return (
     <div className="lg:flex  w-screen">
       <section className="w-full lg:w-[60%] lg:min-h-[50vh]  relative overflow-hidden flex  justify-center items-center pt-20 pb-[2vw] lg:pt-0 lg:pb-0">
@@ -31,7 +25,7 @@ function Project() {
             arrows={false}
             longCard={false}
             className="mx-5 px-5 py-10"
-            immagesArray={dataImages}
+            immagesArray={dataProject.gallery}
           />
         </div>
 
@@ -41,11 +35,11 @@ function Project() {
         <div className="my-auto">
           <div className="border-l px-5 border-zinc-800 flex flex-col ">
             <h1 className="text-stone-900 text-3xl font-black uppercase ">
-              {dataTitle}
+              {dataProject.title}
             </h1>
             <div className="mt-1 flex flex-wrap gap-2 items-center align-middle justify-left ">
               <h2 className="text-zinc-800 text-xs font-bold uppercase  ">
-                {dataCategories && dataCategories.map((category, index) => (
+                {dataProject.categories && dataProject.categories.map((category, index) => (
                   <Link
                     href={"/projects?category=" + category + "&page=1"}
                     className="bg-zinc-800/10 hover:bg-zinc-800/30 text-zinc-600 text-xs font-semibold mr-2 px-2.5 py-0.5 first:mt-0 mt-2 rounded border border-zinc-600 inline-flex items-center justify-center"
@@ -58,12 +52,12 @@ function Project() {
           </div>
           <div className="px-5">
             <p className="my-3 text-justify text-base font-medium mt-5">
-              {dataDescription}
+              {dataProject.description}
             </p>
 
             <div className="flex flex-wrap gap-2 items-center align-middle justify-left my-">
               <p className="text-sm font-bold ">Etiquetas:</p>
-              {dataTags && dataTags.map((tag, index) => (
+              {dataProject.tags && dataProject.tags.map((tag, index) => (
                 <span
                   key={tag}
                   className=" inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
