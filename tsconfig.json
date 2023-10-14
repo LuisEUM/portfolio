@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/components/list/ResponsiveList.tsx", "app/components/slider/TextSlider.tsx", "app/placeholders/ImageStaticPlaceholderBlur.jsx", "next.config.js", "app/[lang]/components/Header.tsx", "app/components/rive/RiveAnimation.tsx"  ],
+, "app/components/list/ResponsiveList.tsx", "app/components/slider/TextSlider.tsx", "app/placeholders/ImageStaticPlaceholderBlur.jsx", "next.config.js", "app/[lang]/components/Header.tsx", "app/components/rive/RiveAnimation.tsx", "app/components/svg/menu-icons/HomeIcons.jsx"  ],
   "exclude": [
     "node_modules"
   ]

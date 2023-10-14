@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 type Item = {
@@ -12,15 +11,15 @@ type PaginationResult = {
   paginate: (newDirection: number, data: Item[]) => void;
 };
 
+
+
 export function usePagination(initialData: Item[]): PaginationResult {
-
-
   const processedData = initialData.map((item, index) => ({
     ...item,
     order: typeof item.order !== "undefined" ? item.order : index + 1,
   }));
 
-  const [data, setData] = useState<Item[]>([
+  const originalData = [
     {
       order: 0,
     },
@@ -28,7 +27,10 @@ export function usePagination(initialData: Item[]): PaginationResult {
     {
       order: processedData.length + 1,
     },
-  ]);
+  ];
+
+
+  const [data, setData] = useState<Item[]>(originalData);
 
   const [centerOrder, setCenterOrder] = useState<number>(
     Math.floor(data.length / 2)
@@ -74,4 +76,3 @@ export function usePagination(initialData: Item[]): PaginationResult {
     paginate,
   };
 }
-

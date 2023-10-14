@@ -4,9 +4,12 @@
       "id": "en",
       "currentLanguage": "EN",
       "routes": [
-        { "name": "Home", "pathname": "/" },
-        { "name": "Projects", "pathname": "/projects" },
-        { "name": "About", "pathname": "/about" }
+        { "name": "Home", "pathname": "/", "icon": "/icons/navbar/Home.svg" },
+        {
+          "name": "Projects",
+          "pathname": "/projects",
+          "icon": "/icons/navbar/Folder.svg"
+        }
       ],
       "contact": "Contact me",
       "languages": "Languages",
@@ -610,9 +613,16 @@
       "id": "es",
       "currentLanguage": "ES",
       "routes": [
-        { "name": "Inicio", "pathname": "/" },
-        { "name": "Proyectos", "pathname": "/projects" },
-        { "name": "+Sobre mí", "pathname": "/about" }
+        {
+          "name": "Inicio",
+          "pathname": "/",
+          "icon": "/icons/navbar/Home.svg"
+        },
+        {
+          "name": "Proyectos",
+          "pathname": "/projects",
+          "icon": "/icons/navbar/Folder.svg"
+        }
       ],
       "contact": "Contáctame",
       "languages": "Lenguajes",
@@ -1038,7 +1048,7 @@
           "title": "MOUTHFEELS",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
-          "titleTags":"Tags",
+          "titleTags": "Tags",
           "tags": [
             "Adobe Illustrator",
             "Adobe InDesign",

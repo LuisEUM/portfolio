@@ -17,7 +17,7 @@ export default function RootLayout ({ children }) {
             {children}
           </section>
 
-          <footer className="max-w-full bg-[rgb(19,19,21)]">
+          <footer className="max-w-full min-w-[360px] bg-[rgb(19,19,21)]">
             <Footer />
           </footer>
           <CookiesButton />
