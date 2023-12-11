@@ -145,6 +145,10 @@
         },
         "quote": "FullStack Web Developer, Graphic Designer, Digital Marketing",
         "description": "I help businesses to improve their communication, digitalization and connection with their brand.",
+        "files": {
+          "src": "/files/CV_EN_Luis_Eduardo_Urdaneta_Martucci.pdf",
+          "name": "CV Luis Eduardo Urdaneta Martucci - English 2023.pdf"
+        },
         "buttons": {
           "primary": "Download CV",
           "secondary": "Projects"
@@ -758,6 +762,10 @@
         },
         "quote": "Desarrollador Web FullStack, Diseñador Gráfico, Marketing Digital",
         "description": "Ayudo a negocios a mejorar su comunicación, digitalización y conexión con su marca.",
+        "files": {
+          "src": "/files/CV_ES_Luis_Eduardo_Urdaneta_Martucci.pdf",
+          "name": "CV Luis Eduardo Urdaneta Martucci - Español 2023.pdf"
+        },
         "buttons": {
           "primary": "Descargar CV",
           "secondary": "Proyectos"

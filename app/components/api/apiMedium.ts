@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 
 export const apiMedium = () => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

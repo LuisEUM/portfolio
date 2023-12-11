@@ -11,8 +11,10 @@ function PostPreviews({ text }) {
   const dataBlogSection = text.home.blogSection;
   const { posts, isLoading } = apiMedium();
 
-  const processedPostData = posts.slice(0, 3);
-
+  let processedPostData = [];
+  if (posts && posts.length > 0) {
+    processedPostData = posts.slice(0, 3);
+  }
   return (
     <div className="relative col-span-full max-w-full  bg-orange-500/0">
       <TailwindGrid fullSize>
