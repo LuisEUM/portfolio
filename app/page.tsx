@@ -31,9 +31,9 @@ export default function Home() {
           <div id="skills-section">
             <Skills text={text} />
           </div>
-          <div id="blog-section">
+          {/* <div id="blog-section">
             <PostPreviews text={text} />
-          </div>
+          </div> */}
           <div id="passion-section">
             <Passion text={text} />
           </div>
