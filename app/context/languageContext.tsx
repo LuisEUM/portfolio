@@ -10,7 +10,7 @@ export const LanguageContext = createContext(null);
 export const LanguageProvider = ({ children }) => {
   const [languageCookie, setLanguageCookie] = useState(getCookie("language"));
   const [text, setText] = useState(textData.es);
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState(true);
   const ref = useRef(null)
   const isInView = useInView(ref, { once: false })
 
