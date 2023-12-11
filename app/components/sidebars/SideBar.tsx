@@ -7,7 +7,7 @@ const sections = [
   { name: "Category", id: "category-section" },
   { name: "Projects", id: "projects-section" },
   { name: "Skills", id: "skills-section" },
-  { name: "Blog", id: "blog-section" },
+  // { name: "Blog", id: "blog-section" },
   { name: "Passion", id: "passion-section" },
   { name: "Testimonials", id: "testimonials-section" },
 ];
