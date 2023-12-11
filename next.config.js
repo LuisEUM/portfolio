@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
-  swcMinify: true,
+  experimental: {
+    appDir: true
+  },
   images: {
     domains: [
       'localhost',
@@ -10,7 +11,8 @@ const nextConfig = {
       'cdn-images-1.medium.com',
       'medium.com'
     ]
-  }
+  },
+  reactStrictMode: true
 }
 
 module.exports = nextConfig
