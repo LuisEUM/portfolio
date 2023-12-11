@@ -9,10 +9,12 @@ import { usePathname } from "next/navigation";
 
 function Project() {
   const { text } = useContext(LanguageContext);
-  const currentPathname = usePathname().replace(/^\/projects\//, '');
-  const project = text.portfolio.projects.find((project) => project.url === currentPathname)
-  const projectId = project.id ?  project.id  : 0 
-  const dataProject = text.portfolio.projects[projectId]
+  const currentPathname = usePathname().replace(/^\/projects\//, "");
+  const project = text.portfolio.projects.find(
+    (project) => project.url === currentPathname
+  );
+  const projectId = project.id ? project.id : 0;
+  const dataProject = text.portfolio.projects[projectId];
 
   return (
     <div className="lg:flex  w-screen">
@@ -39,14 +41,15 @@ function Project() {
             </h1>
             <div className="mt-1 flex flex-wrap gap-2 items-center align-middle justify-left ">
               <h2 className="text-zinc-800 text-xs font-bold uppercase  ">
-                {dataProject.categories && dataProject.categories.map((category, index) => (
-                  <Link
-                    href={"/projects?category=" + category + "&page=1"}
-                    className="bg-zinc-800/10 hover:bg-zinc-800/30 text-zinc-600 text-xs font-semibold mr-2 px-2.5 py-0.5 first:mt-0 mt-2 rounded border border-zinc-600 inline-flex items-center justify-center"
-                  >
-                    {category}
-                  </Link>
-                ))}
+                {dataProject.categories &&
+                  dataProject.categories.map((category, index) => (
+                    <Link
+                      href={"/projects?category=" + category + "&page=1"}
+                      className="bg-zinc-800/10 hover:bg-zinc-800/30 text-zinc-600 text-xs font-semibold mr-2 px-2.5 py-0.5 first:mt-0 mt-2 rounded border border-zinc-600 inline-flex items-center justify-center"
+                    >
+                      {category}
+                    </Link>
+                  ))}
               </h2>
             </div>
           </div>
@@ -57,14 +60,15 @@ function Project() {
 
             <div className="flex flex-wrap gap-2 items-center align-middle justify-left my-">
               <p className="text-sm font-bold ">Etiquetas:</p>
-              {dataProject.tags && dataProject.tags.map((tag, index) => (
-                <span
-                  key={tag}
-                  className=" inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
-                >
-                  #{tag}
-                </span>
-              ))}
+              {dataProject.tags &&
+                dataProject.tags.map((tag, index) => (
+                  <span
+                    key={tag}
+                    className=" inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+                  >
+                    #{tag}
+                  </span>
+                ))}
             </div>
             <div className="mt-5">
               <SocialButtons text={text} />
