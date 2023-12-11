@@ -5,9 +5,8 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended", 
-        "next",
-        "plugin:@typescript-eslint/recommended"
+        "plugin:react/recommended",
+        "standard"
     ],
     "overrides": [
     ],
@@ -15,15 +14,11 @@
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    
     "plugins": [
-        "react",
-        "@typescript-eslint"
+        "react"
     ],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "react/prop-types": "off"
     }
 }
-
-
