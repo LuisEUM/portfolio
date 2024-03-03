@@ -1,33 +1,33 @@
-import { motion } from 'framer-motion'
-import { useContext, useState } from 'react'
-import BackdropUpToDown from '../backdrop/BackdropUpToDown'
-import AnimatedSwitch from '../switch/animatedSwitch'
-import { LanguageContext } from '../../../context/languageContext'
-import Image from 'next/image'
+import { motion } from "framer-motion";
+import { useContext, useState } from "react";
+import BackdropUpToDown from "../backdrop/BackdropUpToDown";
+import AnimatedSwitch from "../switch/animatedSwitch";
+import { LanguageContext } from "../../../context/languageContext";
+import Image from "next/image";
 
 const dropIn = {
   open: {
-    y: '0vh',
+    y: "0vh",
     transition: {
-      type: 'spring',
+      type: "spring",
       damping: 25,
       stiffness: 500,
-      when: 'beforeChildren'
-    }
+      when: "beforeChildren",
+    },
   },
   closed: {
-    y: '100vh',
+    y: "100vh",
     transition: {
-      type: 'spring',
+      type: "spring",
       damping: 25,
       stiffness: 500,
-      when: 'afterChildren'
-    }
-  }
-}
+      when: "afterChildren",
+    },
+  },
+};
 
 const ModalCookies = ({ modalOpen, handleClose }) => {
-  const { text } = useContext(LanguageContext)
+  const { text } = useContext(LanguageContext);
 
   return (
     <BackdropUpToDown onClick={handleClose}>
@@ -47,13 +47,13 @@ const ModalCookies = ({ modalOpen, handleClose }) => {
         />
       </motion.div>
     </BackdropUpToDown>
-  )
-}
+  );
+};
 
-export default ModalCookies
+export default ModalCookies;
 
-function ModalContent ({ text, handleClose, modalOpen }) {
-  const [isOn, setIsOn] = useState(true)
+function ModalContent({ text, handleClose, modalOpen }) {
+  const [isOn, setIsOn] = useState(true);
 
   return (
     <div className="'w-full rounded-xl flex flex-col ">
@@ -61,13 +61,13 @@ function ModalContent ({ text, handleClose, modalOpen }) {
       <div className="flex justify-between items center border-b border-gray-200 py-3">
         <div className="flex flex-col items-center justify-center">
           <p className=" text-xl text-zinc-100 font-medium uppercase ">
-            Cookie policy
+            {text.settings.header}
           </p>
         </div>
         <motion.div
           className="bg-gray-300 cursor-pointer hover:text-gray-300 font-sans text-gray-500 w-9 h-9 flex items-center justify-center rounded-full"
           onClick={handleClose}
-          whileHover={{ backgroundColor: 'rgb(107 114 128)', scale: 1.1 }}
+          whileHover={{ backgroundColor: "rgb(107 114 128)", scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <svg
@@ -95,13 +95,12 @@ function ModalContent ({ text, handleClose, modalOpen }) {
         </div>
 
         <p className="text-lg font-medium text-center">
-          I use cookies to give you a better experience, like remembering your
-          favorite language
+          {text.settings.description}
         </p>
         {modalOpen && (
           <AnimatedSwitch className=" md:mb-0 " isOn={isOn} setIsOn={setIsOn} />
         )}
       </section>
     </div>
-  )
+  );
 }

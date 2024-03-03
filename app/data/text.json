@@ -610,6 +610,13 @@
       "emailAddressParagraph": "Or send me an email:",
       "email": "luiseum95@gmail.com",
       "copied": "Copyed 😎!"
+    },
+    "settings": {
+      "language": "en",
+      "theme": "Dark",
+      "header": "Cookies settings",
+      "description": "I use cookies to give you a better experience, like remembering your favorite language.",
+      "cookiesButton": "Settings"
     }
   },
   "es": {
@@ -1063,13 +1070,12 @@
             "Figma",
             "Food Business"
           ],
-          "image": "https://picsum.photos/id/1/600/300",
+          "image": "/projects/aircrew-aviation/aircrew-aviation-1.png",
           "gallery": [
-            "https://picsum.photos/id/1/600/300",
-            "https://picsum.photos/id/2/600/300",
-            "https://picsum.photos/id/3/600/300",
-            "https://picsum.photos/id/4/600/300",
-            "https://picsum.photos/id/5/600/300"
+            "/projects/aircrew-aviation/aircrew-aviation-1.png",
+            "/projects/aircrew-aviation/aircrew-aviation-2.png",
+            "/projects/aircrew-aviation/aircrew-aviation-3.png",
+            "/projects/aircrew-aviation/aircrew-aviation-4.png"
           ],
           "url": "proyect_1"
         },
@@ -1229,6 +1235,13 @@
       "emailAddressParagraph": "O escríbeme al correo:",
       "email": "luiseum95@gmail.com",
       "copied": "Copiado 😎!"
+    },
+    "settings": {
+      "language": "es",
+      "theme": "Oscuro",
+      "header": "Ajustes de Cookies",
+      "description": "Utilizo cookies para ofrecerte una mejor experiencia, como recordar tu idioma favorito.",
+      "cookiesButton": "Ajustes"
     }
   }
 }

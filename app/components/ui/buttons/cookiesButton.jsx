@@ -1,8 +1,9 @@
 'use client'
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'
+import { LanguageContext } from '@/app/context/languageContext'
 
 const DynamicModalCookies = dynamic(() => import('../modals/modalCookies'), {
   ssr: false,
@@ -13,12 +14,13 @@ export default function CookiesButton () {
   const [modalOpen, setModalOpen] = useState(false)
   const close = () => setModalOpen(false)
   const open = () => setModalOpen(true)
+  const { text } = useContext(LanguageContext);
 
   return (
     <>
-      <div className="fixed bottom-4 right-4 z-30 bg-zinc-900">
+      <div className="fixed bottom-4 right-4 z-30 rounded-full ">
         <motion.button
-          className="bg-zinc-100 hover:border-zinc-900 border-white border rounded-full min-w-10 min-h-10 flex items-center justify-center"
+          className="bg-zinc-100 hover:border-zinc-900 border-white border rounded-full min-w-10 min-h-10 flex items-center justify-center "
           onMouseLeave={() => setShow(false)}
           onMouseOver={() => setShow(true)}
           onClick={() => (modalOpen ? close() : open())}
@@ -56,7 +58,7 @@ export default function CookiesButton () {
                 }}
                 transition={{ duration: 1 }}
               >
-                Settings
+                {text.settings.cookiesButton}
               </motion.p>
             )}
           </AnimatePresence>
