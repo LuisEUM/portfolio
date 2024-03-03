@@ -435,28 +435,46 @@
       "projects": [
         {
           "id": 1,
-          "title": "MOUTHFEELS",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
-          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
-          "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
+          "title": "Tangle",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
           ],
-          "image": "https://picsum.photos/id/1/600/300",
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/tangle/tangle-1.png",
           "gallery": [
-            "https://picsum.photos/id/1/600/300",
-            "https://picsum.photos/id/2/600/300",
-            "https://picsum.photos/id/3/600/300",
-            "https://picsum.photos/id/4/600/300",
-            "https://picsum.photos/id/5/600/300"
+            "/images/projects/tangle/tangle-1.png",
+            "/images/projects/tangle/tangle-2.png",
+            "/images/projects/tangle/tangle-3.png",
+            "/images/projects/tangle/tangle-4.png"
           ],
           "url": "proyect_1"
         },
         {
           "id": 2,
-          "title": "MOUTHFEELS",
+          "title": "Top Top",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/top-top/top-top-1.png",
+          "gallery": [
+            "/images/projects/top-top/top-top-1.png",
+            "/images/projects/top-top/top-top-2.png",
+            "/images/projects/top-top/top-top-3.png"
+          ],
+          "url": "proyect_2"
+        },
+        {
+          "id": 3,
+          "title": "Big Menu",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "tags": [
@@ -465,40 +483,18 @@
             "Figma",
             "Food Business"
           ],
-          "image": "https://picsum.photos/id/6//600/300",
+          "image": "/images/projects/big-menu/big-menu-1.png",
           "gallery": [
-            "https://picsum.photos/id/6/600/300",
-            "https://picsum.photos/id/7/600/300",
-            "https://picsum.photos/id/8/600/300",
-            "https://picsum.photos/id/9/600/300",
-            "https://picsum.photos/id/10/600/300"
-          ],
-          "url": "proyect_2"
-        },
-        {
-          "id": 3,
-          "title": "UI/UX",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/11//600/300",
-          "gallery": [
-            "https://picsum.photos/id/11/600/300",
-            "https://picsum.photos/id/12/600/300",
-            "https://picsum.photos/id/13/600/300",
-            "https://picsum.photos/id/14/600/300",
-            "https://picsum.photos/id/15/600/300"
+            "/images/projects/big-menu/big-menu-1.png",
+            "/images/projects/big-menu/big-menu-2.png",
+            "/images/projects/big-menu/big-menu-3.png",
+            "/images/projects/big-menu/big-menu-4.png"
           ],
           "url": "proyect_3"
         },
         {
           "id": 4,
-          "title": "Realidad_Extendida",
+          "title": "Gousty",
           "categories": [
             "category_1",
             "category_2",
@@ -507,19 +503,18 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/16//600/300",
+          "image": "/images/projects/gousty/gousty-1.png",
           "gallery": [
-            "https://picsum.photos/id/16/600/300",
-            "https://picsum.photos/id/17/600/300",
-            "https://picsum.photos/id/18/600/300",
-            "https://picsum.photos/id/19/600/300",
-            "https://picsum.photos/id/20/600/300"
+            "/images/projects/gousty/gousty-1.png",
+            "/images/projects/gousty/gousty-2.png",
+            "/images/projects/gousty/gousty-3.png",
+            "/images/projects/gousty/gousty-4.png"
           ],
           "url": "proyect_4"
         },
         {
           "id": 5,
-          "title": "Arte_3D",
+          "title": "Desierto Sahara Trips",
           "categories": [
             "category_1",
             "category_2",
@@ -528,19 +523,18 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/21//600/300",
+          "image": "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
           "gallery": [
-            "https://picsum.photos/id/21/600/300",
-            "https://picsum.photos/id/22/600/300",
-            "https://picsum.photos/id/23/600/300",
-            "https://picsum.photos/id/24/600/300",
-            "https://picsum.photos/id/25/600/300"
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-2.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-3.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-4.png"
           ],
           "url": "proyect_5"
         },
         {
           "id": 6,
-          "title": "Gráficos_animados",
+          "title": "Canastilla",
           "categories": [
             "category_1",
             "category_2",
@@ -549,19 +543,18 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/26//600/300",
+          "image": "/images/projects/canastilla/canastilla-1.png",
           "gallery": [
-            "https://picsum.photos/id/27/600/300",
-            "https://picsum.photos/id/28/600/300",
-            "https://picsum.photos/id/29/600/300",
-            "https://picsum.photos/id/30/600/300",
-            "https://picsum.photos/id/31/600/300"
+            "/images/projects/canastilla/canastilla-1.png",
+            "/images/projects/canastilla/canastilla-2.png",
+            "/images/projects/canastilla/canastilla-3.png",
+            "/images/projects/canastilla/canastilla-4.png"
           ],
           "url": "proyect_6"
         },
         {
           "id": 7,
-          "title": "Gráficos_animados",
+          "title": "Eleale",
           "categories": [
             "category_1",
             "category_2",
@@ -570,15 +563,155 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/32//600/300",
+          "image": "/images/projects/eleale/eleale-1.png",
           "gallery": [
-            "https://picsum.photos/id/32/600/300",
-            "https://picsum.photos/id/33/600/300",
-            "https://picsum.photos/id/34/600/300",
-            "https://picsum.photos/id/35/600/300",
-            "https://picsum.photos/id/36/600/300"
+            "/images/projects/eleale/eleale-1.png",
+            "/images/projects/eleale/eleale-2.png",
+            "/images/projects/eleale/eleale-3.png",
+            "/images/projects/eleale/eleale-4.png"
           ],
           "url": "proyect_7"
+        },
+        {
+          "id": 8,
+          "title": "Funda Manía",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/funda-mania/funda-mania-1.png",
+          "gallery": [
+            "/images/projects/funda-mania/funda-mania-1.png",
+            "/images/projects/funda-mania/funda-mania-2.png",
+            "/images/projects/funda-mania/funda-mania-3.png",
+            "/images/projects/funda-mania/funda-mania-4.png"
+          ],
+          "url": "proyect_8"
+        },
+        {
+          "id": 9,
+          "title": "El Mejor Vidente",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+          "gallery": [
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-2.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-3.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-4.png"
+          ],
+          "url": "proyect_9"
+        },
+        {
+          "id": 10,
+          "title": "Clínica Diseño y Sonrisas",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/clinica-dys/clinica-dys-1.png",
+          "gallery": [
+            "/images/projects/clinica-dys/clinica-dys-1.png",
+            "/images/projects/clinica-dys/clinica-dys-2.png",
+            "/images/projects/clinica-dys/clinica-dys-3.png",
+            "/images/projects/clinica-dys/clinica-dys-4.png"
+          ],
+          "url": "proyect_10"
+        },
+        {
+          "id": 11,
+          "title": "Tránsito",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/transito/transito-1.png",
+          "gallery": [
+            "/images/projects/transito/transito-1.png",
+            "/images/projects/transito/transito-2.png",
+            "/images/projects/transito/transito-3.png",
+            "/images/projects/transito/transito-4.png"
+          ],
+          "url": "proyect_11"
+        },
+        {
+          "id": 12,
+          "title": "Aircrew Aviation",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "titleTags": "Tags",
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
+          ],
+          "image": "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
+          "gallery": [
+            "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-2.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-3.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-4.png"
+          ],
+          "url": "proyect_12"
+        },
+        {
+          "id": 13,
+          "title": "Detailcar",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/detailcar/detailcar-1.png",
+          "gallery": [
+            "/images/projects/detailcar/detailcar-1.png",
+            "/images/projects/detailcar/detailcar-2.png",
+            "/images/projects/detailcar/detailcar-3.png",
+            "/images/projects/detailcar/detailcar-4.png"
+          ],
+          "url": "proyect_13"
+        },
+        {
+          "id": 14,
+          "title": "Helayor",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/helayor/helayor-1.png",
+          "gallery": [
+            "/images/projects/helayor/helayor-1.png",
+            "/images/projects/helayor/helayor-2.png",
+            "/images/projects/helayor/helayor-3.png",
+            "/images/projects/helayor/helayor-4.png"
+          ],
+          "url": "proyect_14"
         }
       ]
     },
@@ -1060,7 +1193,226 @@
       "projects": [
         {
           "id": 1,
-          "title": "MOUTHFEELS",
+          "title": "Tangle",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/tangle/tangle-1.png",
+          "gallery": [
+            "/images/projects/tangle/tangle-1.png",
+            "/images/projects/tangle/tangle-2.png",
+            "/images/projects/tangle/tangle-3.png",
+            "/images/projects/tangle/tangle-4.png"
+          ],
+          "url": "proyect_1"
+        },
+        {
+          "id": 2,
+          "title": "Top Top",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/top-top/top-top-1.png",
+          "gallery": [
+            "/images/projects/top-top/top-top-1.png",
+            "/images/projects/top-top/top-top-2.png",
+            "/images/projects/top-top/top-top-3.png"
+          ],
+          "url": "proyect_2"
+        },
+        {
+          "id": 3,
+          "title": "Big Menu",
+          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "tags": [
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "Food Business"
+          ],
+          "image": "/images/projects/big-menu/big-menu-1.png",
+          "gallery": [
+            "/images/projects/big-menu/big-menu-1.png",
+            "/images/projects/big-menu/big-menu-2.png",
+            "/images/projects/big-menu/big-menu-3.png",
+            "/images/projects/big-menu/big-menu-4.png"
+          ],
+          "url": "proyect_3"
+        },
+        {
+          "id": 4,
+          "title": "Gousty",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/gousty/gousty-1.png",
+          "gallery": [
+            "/images/projects/gousty/gousty-1.png",
+            "/images/projects/gousty/gousty-2.png",
+            "/images/projects/gousty/gousty-3.png",
+            "/images/projects/gousty/gousty-4.png"
+          ],
+          "url": "proyect_4"
+        },
+        {
+          "id": 5,
+          "title": "Desierto Sahara Trips",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
+          "gallery": [
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-2.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-3.png",
+            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-4.png"
+          ],
+          "url": "proyect_5"
+        },
+        {
+          "id": 6,
+          "title": "Canastilla",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/canastilla/canastilla-1.png",
+          "gallery": [
+            "/images/projects/canastilla/canastilla-1.png",
+            "/images/projects/canastilla/canastilla-2.png",
+            "/images/projects/canastilla/canastilla-3.png",
+            "/images/projects/canastilla/canastilla-4.png"
+          ],
+          "url": "proyect_6"
+        },
+        {
+          "id": 7,
+          "title": "Eleale",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/eleale/eleale-1.png",
+          "gallery": [
+            "/images/projects/eleale/eleale-1.png",
+            "/images/projects/eleale/eleale-2.png",
+            "/images/projects/eleale/eleale-3.png",
+            "/images/projects/eleale/eleale-4.png"
+          ],
+          "url": "proyect_7"
+        },
+        {
+          "id": 8,
+          "title": "Funda Manía",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/funda-mania/funda-mania-1.png",
+          "gallery": [
+            "/images/projects/funda-mania/funda-mania-1.png",
+            "/images/projects/funda-mania/funda-mania-2.png",
+            "/images/projects/funda-mania/funda-mania-3.png",
+            "/images/projects/funda-mania/funda-mania-4.png"
+          ],
+          "url": "proyect_8"
+        },
+        {
+          "id": 9,
+          "title": "El Mejor Vidente",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+          "gallery": [
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-2.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-3.png",
+            "/images/projects/el-mejor-vidente/el-mejor-vidente-4.png"
+          ],
+          "url": "proyect_9"
+        },
+        {
+          "id": 10,
+          "title": "Clínica Diseño y Sonrisas",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/clinica-dys/clinica-dys-1.png",
+          "gallery": [
+            "/images/projects/clinica-dys/clinica-dys-1.png",
+            "/images/projects/clinica-dys/clinica-dys-2.png",
+            "/images/projects/clinica-dys/clinica-dys-3.png",
+            "/images/projects/clinica-dys/clinica-dys-4.png"
+          ],
+          "url": "proyect_10"
+        },
+        {
+          "id": 11,
+          "title": "Tránsito",
+          "categories": [
+            "category_1",
+            "category_2",
+            "category_3",
+            "category_4"
+          ],
+          "description": "description",
+          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "image": "/images/projects/transito/transito-1.png",
+          "gallery": [
+            "/images/projects/transito/transito-1.png",
+            "/images/projects/transito/transito-2.png",
+            "/images/projects/transito/transito-3.png",
+            "/images/projects/transito/transito-4.png"
+          ],
+          "url": "proyect_11"
+        },
+        {
+          "id": 12,
+          "title": "Aircrew Aviation",
           "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "titleTags": "Tags",
@@ -1070,39 +1422,18 @@
             "Figma",
             "Food Business"
           ],
-          "image": "/projects/aircrew-aviation/aircrew-aviation-1.png",
+          "image": "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
           "gallery": [
-            "/projects/aircrew-aviation/aircrew-aviation-1.png",
-            "/projects/aircrew-aviation/aircrew-aviation-2.png",
-            "/projects/aircrew-aviation/aircrew-aviation-3.png",
-            "/projects/aircrew-aviation/aircrew-aviation-4.png"
+            "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-2.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-3.png",
+            "/images/projects/aircrew-aviation/aircrew-aviation-4.png"
           ],
-          "url": "proyect_1"
+          "url": "proyect_12"
         },
         {
-          "id": 2,
-          "title": "MOUTHFEELS",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
-          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
-          "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
-          ],
-          "image": "https://picsum.photos/id/6//600/300",
-          "gallery": [
-            "https://picsum.photos/id/6/600/300",
-            "https://picsum.photos/id/7/600/300",
-            "https://picsum.photos/id/8/600/300",
-            "https://picsum.photos/id/9/600/300",
-            "https://picsum.photos/id/10/600/300"
-          ],
-          "url": "proyect_2"
-        },
-        {
-          "id": 3,
-          "title": "UI/UX",
+          "id": 13,
+          "title": "Detailcar",
           "categories": [
             "category_1",
             "category_2",
@@ -1111,19 +1442,18 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/11//600/300",
+          "image": "/images/projects/detailcar/detailcar-1.png",
           "gallery": [
-            "https://picsum.photos/id/11/600/300",
-            "https://picsum.photos/id/12/600/300",
-            "https://picsum.photos/id/13/600/300",
-            "https://picsum.photos/id/14/600/300",
-            "https://picsum.photos/id/15/600/300"
+            "/images/projects/detailcar/detailcar-1.png",
+            "/images/projects/detailcar/detailcar-2.png",
+            "/images/projects/detailcar/detailcar-3.png",
+            "/images/projects/detailcar/detailcar-4.png"
           ],
-          "url": "proyect_3"
+          "url": "proyect_13"
         },
         {
-          "id": 4,
-          "title": "Realidad_Extendida",
+          "id": 14,
+          "title": "Helayor",
           "categories": [
             "category_1",
             "category_2",
@@ -1132,78 +1462,14 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/16//600/300",
+          "image": "/images/projects/helayor/helayor-1.png",
           "gallery": [
-            "https://picsum.photos/id/16/600/300",
-            "https://picsum.photos/id/17/600/300",
-            "https://picsum.photos/id/18/600/300",
-            "https://picsum.photos/id/19/600/300",
-            "https://picsum.photos/id/20/600/300"
+            "/images/projects/helayor/helayor-1.png",
+            "/images/projects/helayor/helayor-2.png",
+            "/images/projects/helayor/helayor-3.png",
+            "/images/projects/helayor/helayor-4.png"
           ],
-          "url": "proyect_4"
-        },
-        {
-          "id": 5,
-          "title": "Arte_3D",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/21//600/300",
-          "gallery": [
-            "https://picsum.photos/id/21/600/300",
-            "https://picsum.photos/id/22/600/300",
-            "https://picsum.photos/id/23/600/300",
-            "https://picsum.photos/id/24/600/300",
-            "https://picsum.photos/id/25/600/300"
-          ],
-          "url": "proyect_5"
-        },
-        {
-          "id": 6,
-          "title": "Gráficos_animados",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/26//600/300",
-          "gallery": [
-            "https://picsum.photos/id/27/600/300",
-            "https://picsum.photos/id/28/600/300",
-            "https://picsum.photos/id/29/600/300",
-            "https://picsum.photos/id/30/600/300",
-            "https://picsum.photos/id/31/600/300"
-          ],
-          "url": "proyect_6"
-        },
-        {
-          "id": 7,
-          "title": "Gráficos_animados",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "https://picsum.photos/id/32//600/300",
-          "gallery": [
-            "https://picsum.photos/id/32/600/300",
-            "https://picsum.photos/id/33/600/300",
-            "https://picsum.photos/id/34/600/300",
-            "https://picsum.photos/id/35/600/300",
-            "https://picsum.photos/id/36/600/300"
-          ],
-          "url": "proyect_7"
+          "url": "proyect_14"
         }
       ]
     },

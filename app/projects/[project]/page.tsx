@@ -14,7 +14,7 @@ function Project() {
     (project) => project.url === currentPathname
   );
   const projectId = project.id ? project.id : 0;
-  const dataProject = text.portfolio.projects[projectId];
+  const dataProject = text.portfolio.projects[projectId-1];
 
   return (
     <div className="lg:flex  w-screen">
