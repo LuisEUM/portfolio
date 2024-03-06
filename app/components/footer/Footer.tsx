@@ -14,28 +14,30 @@ function Footer() {
     <TailwindGrid fullSize>
       <div className="col-span-full lg:col-start-2 min-h-[400px] flex-col justify-center items-center gap-y-10 inline-flex  pt-20 ">
         <div className="flex flex-wrap gap-x-2 gap-y-4   2xl:w-2/12   justify-center items-center">
-          {text && text.footer.socials.map((social, index) => (
-            <div
-              className={`flex justify-center min-h-9 min-w-9 items-center h-8 shadow  rounded-full w-1/6 ${
-                social.hidden && "hidden"
-              }`}
-              key={index + social.name}
-            >
-              <motion.button
-                whileTap={{ scale: 0.9 }}
-                whileHover={{ scale: 1.1 }}
-                className="group bg-white cursor-pointer hover:bg-zinc-700 rounded-full transition-all"
+          {text &&
+            text.footer.socials.map((social, index) => (
+              <div
+                className={`flex justify-center min-h-9 min-w-9 items-center h-8 shadow  rounded-full w-1/6 ${
+                  social.hidden && "hidden"
+                }`}
+                key={index + social.name}
               >
-                <Image
-                  width={40}
-                  height={40}
-                  alt={social.name}
-                  src={social.icon}
-                  className="w-8 h-8 group-hover:invert cursor-pointer"
-                />
-              </motion.button>
-            </div>
-          ))}
+                <motion.button
+                  whileTap={{ scale: 0.9 }}
+                  whileHover={{ scale: 1.1 }}
+                  className="group bg-white cursor-pointer hover:bg-zinc-700 rounded-full transition-all"
+                  onClick={() => window.open(social.url, "_blank")}
+                >
+                  <Image
+                    width={40}
+                    height={40}
+                    alt={social.name}
+                    src={social.icon}
+                    className="w-8 h-8 group-hover:invert cursor-pointer"
+                  />
+                </motion.button>
+              </div>
+            ))}
         </div>
         <div className="justify-start items-start gap-10 inline-flex ">
           {text?.footer.routes.map((route) => (

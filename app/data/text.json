@@ -29,20 +29,19 @@
       "rights": "All rights reserved",
       "routes": [
         { "name": "Home", "pathname": "/" },
-        { "name": "Projects", "pathname": "/projects" },
-        { "name": "About", "pathname": "/about" }
+        { "name": "Projects", "pathname": "/projects" }
       ],
       "socials": [
         {
           "name": "Gmail",
           "icon": "/icons/footer/gmail.svg",
-          "url": "#",
+          "url": "mailto:luiseum95@gmail.com",
           "hidden": false
         },
         {
           "name": "WhatsApp",
           "icon": "/icons/footer/whatsapp.svg",
-          "url": "#",
+          "url": "https://wa.link/xrg8go",
           "hidden": false
         },
         {
@@ -54,19 +53,19 @@
         {
           "name": "LinkedIn",
           "icon": "/icons/footer/linkedin.svg",
-          "url": "#",
+          "url": "https://linkedin.com/in/luiseum",
           "hidden": false
         },
         {
           "name": "Instagram",
           "icon": "/icons/footer/instagram.svg",
-          "url": "#",
+          "url": "https://www.instagram.com/luise.urdanetam/",
           "hidden": false
         },
         {
           "name": "YouTube",
           "icon": "/icons/footer/youtube.svg",
-          "url": "#",
+          "url": "https://www.youtube.com/@luise.urdanetam",
           "hidden": false
         },
         {
@@ -78,7 +77,7 @@
         {
           "name": "GitHub",
           "icon": "/icons/footer/github.svg",
-          "url": "#",
+          "url": "https://github.com/luiseum",
           "hidden": false
         },
         {
@@ -91,18 +90,18 @@
           "name": "CodeSandbox",
           "icon": "/icons/footer/codesandbox.svg",
           "url": "#",
-          "hidden": false
+          "hidden": true
         },
         {
           "name": "Figma",
           "icon": "/icons/footer/figma.svg",
           "url": "#",
-          "hidden": false
+          "hidden": true
         },
         {
           "name": "Alkitu",
           "icon": "/icons/footer/alkitu.svg",
-          "url": "#",
+          "url": "https://alkitu.com/nosotros-alkitu/",
           "hidden": false
         },
         {
@@ -727,7 +726,7 @@
           "hidden": false
         },
         "linkedIn": {
-          "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+          "url": "https://linkedin.com/in/luiseum",
           "hidden": false
         },
         "instagram": {
@@ -736,11 +735,11 @@
         },
         "twitter": {
           "url": "",
-          "hidden": true
+          "hidden": false
         },
         "telegram": {
           "url": "",
-          "hidden": true
+          "hidden": false
         }
       },
       "emailAddressParagraph": "Or send me an email:",
@@ -789,20 +788,19 @@
       "rights": "Todos los derechos reservados",
       "routes": [
         { "name": "Home", "pathname": "/" },
-        { "name": "Projects", "pathname": "/projects" },
-        { "name": "About", "pathname": "/about" }
+        { "name": "Projects", "pathname": "/projects" }
       ],
       "socials": [
         {
           "name": "Gmail",
           "icon": "/icons/footer/gmail.svg",
-          "url": "#",
+          "url": "mailto:luiseum95@gmail.com",
           "hidden": false
         },
         {
           "name": "WhatsApp",
           "icon": "/icons/footer/whatsapp.svg",
-          "url": "#",
+          "url": "https://wa.link/xrg8go",
           "hidden": false
         },
         {
@@ -814,19 +812,19 @@
         {
           "name": "LinkedIn",
           "icon": "/icons/footer/linkedin.svg",
-          "url": "#",
+          "url": "https://linkedin.com/in/luiseum",
           "hidden": false
         },
         {
           "name": "Instagram",
           "icon": "/icons/footer/instagram.svg",
-          "url": "#",
+          "url": "https://www.instagram.com/luise.urdanetam/",
           "hidden": false
         },
         {
           "name": "YouTube",
           "icon": "/icons/footer/youtube.svg",
-          "url": "#",
+          "url": "https://www.youtube.com/@luise.urdanetam",
           "hidden": false
         },
         {
@@ -838,7 +836,7 @@
         {
           "name": "GitHub",
           "icon": "/icons/footer/github.svg",
-          "url": "#",
+          "url": "https://github.com/luiseum",
           "hidden": false
         },
         {
@@ -851,18 +849,18 @@
           "name": "CodeSandbox",
           "icon": "/icons/footer/codesandbox.svg",
           "url": "#",
-          "hidden": false
+          "hidden": true
         },
         {
           "name": "Figma",
           "icon": "/icons/footer/figma.svg",
           "url": "#",
-          "hidden": false
+          "hidden": true
         },
         {
           "name": "Alkitu",
           "icon": "/icons/footer/alkitu.svg",
-          "url": "#",
+          "url": "https://alkitu.com/nosotros-alkitu/",
           "hidden": false
         },
         {
@@ -1488,7 +1486,7 @@
           "hidden": false
         },
         "linkedIn": {
-          "url": "https://www.linkedin.com/in/luis-eduardo-urdaneta-martucci",
+          "url": "https://linkedin.com/in/luiseum",
           "hidden": false
         },
         "instagram": {
