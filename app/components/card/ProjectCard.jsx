@@ -42,8 +42,8 @@ const ProjectCard = ({ project }) => {
         >
           <Image
             src={project.image}
-            width={360}
-            height={206}
+            width={1080}
+            height={720}
             alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
             className="w-full aspect-video object-cover object-center group-hover:opacity-75 rounded-2xl "
             blurDataURL={project.image}
