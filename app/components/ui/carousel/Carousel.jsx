@@ -111,8 +111,8 @@ export default function Carousel ({ numbers, bullets, thumbnails, arrows, classN
                 whileDrag={{ cursor: 'grabbing' }}
               >
                 <Image
-                  width={300}
-                  height={300}
+                  width={1080}
+                  height={720}
                   alt={image}
                   ref={imageRef}
                   src={image}
