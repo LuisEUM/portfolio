@@ -8,7 +8,8 @@ const nextConfig = {
       'images.unsplash.com',
       'picsum.photos',
       'cdn-images-1.medium.com',
-      'medium.com'
+      'medium.com',
+      'lh3.googleusercontent.com'
     ]
   }
 }

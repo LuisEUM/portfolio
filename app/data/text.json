@@ -444,12 +444,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/tangle/tangle-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
           "gallery": [
-            "/images/projects/tangle/tangle-1.png",
-            "/images/projects/tangle/tangle-2.png",
-            "/images/projects/tangle/tangle-3.png",
-            "/images/projects/tangle/tangle-4.png"
+            "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
+            "https://lh3.googleusercontent.com/d/19Ng3G4Za14TpnTTe5XwnHGwuxNyfkDjE",
+            "https://lh3.googleusercontent.com/d/1ciFTzstT9VjlXUhZxDfcId2DteYhhVqe",
+            "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
           "url": "proyect_1"
         },
@@ -464,11 +464,11 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/top-top/top-top-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
-            "/images/projects/top-top/top-top-1.png",
-            "/images/projects/top-top/top-top-2.png",
-            "/images/projects/top-top/top-top-3.png"
+            "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
+            "https://lh3.googleusercontent.com/d/1S1RowUGmlYH1acdEEP17Xl_zhyXubt-C",
+            "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
           ],
           "url": "proyect_2"
         },
@@ -483,12 +483,14 @@
             "Figma",
             "Food Business"
           ],
-          "image": "/images/projects/big-menu/big-menu-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
           "gallery": [
-            "/images/projects/big-menu/big-menu-1.png",
-            "/images/projects/big-menu/big-menu-2.png",
-            "/images/projects/big-menu/big-menu-3.png",
-            "/images/projects/big-menu/big-menu-4.png"
+            "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
+            "https://lh3.googleusercontent.com/d/17YCzGhjqYyqm7I71UEhk6KyugGdIwLIt",
+            "https://lh3.googleusercontent.com/d/1Ygw70YJKxNi7cJGLXYsO3l5vwU-NKcQW",
+            "https://lh3.googleusercontent.com/d/1l5WbgKgbjUvTeQwPmcvtAzB3TYXtk0MG",
+            "https://lh3.googleusercontent.com/d/1JFbuVDf9_xEwDwvFn081oAxpSJ25mAvg",
+            "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
           ],
           "url": "proyect_3"
         },
@@ -503,13 +505,13 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/gousty/gousty-1.png",
+          "image": "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
           "gallery": [
-            "/images/projects/gousty/gousty-1.png",
-            "/images/projects/gousty/gousty-2.png",
-            "/images/projects/gousty/gousty-3.png",
-            "/images/projects/gousty/gousty-4.png",
-            "/images/projects/gousty/gousty-5.png"
+            "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
+            "https://lh3.googleusercontent.com/d/10hjDtQrfg7f1QjykAwNS4cLOBsEBN5bs",
+            "https://lh3.googleusercontent.com/d/17ynA1GtyIRvx0gPRiSv_PweAsLREdOFp",
+            "https://lh3.googleusercontent.com/d/1fhL0TcgnlqUfAS8hye36jbfR6X9D_Oto",
+            "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
           ],
           "url": "proyect_4"
         },
@@ -524,12 +526,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
           "gallery": [
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-2.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-3.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-4.png"
+            "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
+            "https://lh3.googleusercontent.com/d/1MuW7QxrzissTy7Ow7YgEdChlqMEAANxJ",
+            "https://lh3.googleusercontent.com/d/14URj68lMDloQnnDwTplw57Ks3beNssLC",
+            "https://lh3.googleusercontent.com/d/13XEwUmQ0pUyi0s1FwaJ3Z370PifPj7Qg"
           ],
           "url": "proyect_5"
         },
@@ -544,12 +546,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/canastilla/canastilla-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
           "gallery": [
-            "/images/projects/canastilla/canastilla-1.png",
-            "/images/projects/canastilla/canastilla-2.png",
-            "/images/projects/canastilla/canastilla-3.png",
-            "/images/projects/canastilla/canastilla-4.png"
+            "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
+            "https://lh3.googleusercontent.com/d/1Ktf170Y6Og3no71Fbds1b2O_vmKoQlDq",
+            "https://lh3.googleusercontent.com/d/1nyD8i0ssApLxf0EgyTUcH310v6EXjyQi",
+            "https://lh3.googleusercontent.com/d/1yzHAslHc-AnVey0kyN5aI8ouqAwK8NCU"
           ],
           "url": "proyect_6"
         },
@@ -564,12 +566,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/eleale/eleale-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
           "gallery": [
-            "/images/projects/eleale/eleale-1.png",
-            "/images/projects/eleale/eleale-2.png",
-            "/images/projects/eleale/eleale-3.png",
-            "/images/projects/eleale/eleale-4.png"
+            "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
+            "https://lh3.googleusercontent.com/d/1Ce7MfpsrWQHT-mnD99volqg8Fxtfklsj",
+            "https://lh3.googleusercontent.com/d/1rYNPXHbB8RkUhnUREtNIuTdmL9a823iU",
+            "https://lh3.googleusercontent.com/d/1uCF1HC5CAJmTuL4YSzCr-EcBF067E9f3"
           ],
           "url": "proyect_7"
         },
@@ -584,12 +586,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/funda-mania/funda-mania-1.png",
+          "image": "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
           "gallery": [
-            "/images/projects/funda-mania/funda-mania-1.png",
-            "/images/projects/funda-mania/funda-mania-2.png",
-            "/images/projects/funda-mania/funda-mania-3.png",
-            "/images/projects/funda-mania/funda-mania-4.png"
+            "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
+            "https://lh3.googleusercontent.com/d/1yaq3OfUOXvc1GRyXA2Q2t5-EgTzpHV0d",
+            "https://lh3.googleusercontent.com/d/1048ldkUAJ8o9o_FsCj23LtJdg7Yt3iiH",
+            "https://lh3.googleusercontent.com/d/1Jkxa67fJkGd7kDyQpaTIlnDwUrAXGJqT"
           ],
           "url": "proyect_8"
         },
@@ -604,12 +606,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
           "gallery": [
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-2.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-3.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-4.png"
+            "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
+            "https://lh3.googleusercontent.com/d/1x9EudmANa3sq0zj1_NPRLz7-0iXm9Icy",
+            "https://lh3.googleusercontent.com/d/1IiI54okRN2goYieaONEuoNlE__H2rEZN",
+            "https://lh3.googleusercontent.com/d/1_cQNzk4iP3vcwYfERdb0wZ0iWouo9RX6"
           ],
           "url": "proyect_9"
         },
@@ -624,12 +626,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/clinica-dys/clinica-dys-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
-            "/images/projects/clinica-dys/clinica-dys-1.png",
-            "/images/projects/clinica-dys/clinica-dys-2.png",
-            "/images/projects/clinica-dys/clinica-dys-3.png",
-            "/images/projects/clinica-dys/clinica-dys-4.png"
+            "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
+            "https://lh3.googleusercontent.com/d/1w3IQVq91jLeYDR16dfzzl8b0124Y-114",
+            "https://lh3.googleusercontent.com/d/1cGLd8iEGbz-UI0eeiRgg-hvhgONDN1Un",
+            "https://lh3.googleusercontent.com/d/1pvjKOvId8o1alSu6QZKfbkcCkqdJPwyE"
           ],
           "url": "proyect_10"
         },
@@ -644,12 +646,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/transito/transito-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
           "gallery": [
-            "/images/projects/transito/transito-1.png",
-            "/images/projects/transito/transito-2.png",
-            "/images/projects/transito/transito-3.png",
-            "/images/projects/transito/transito-4.png"
+            "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
+            "https://lh3.googleusercontent.com/d/15_u_j6y2RRwDCEJyu07pX8g8gXbS53T9",
+            "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
+            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
           ],
           "url": "proyect_11"
         },
@@ -665,12 +667,12 @@
             "Figma",
             "Food Business"
           ],
-          "image": "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
           "gallery": [
-            "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-2.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-3.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-4.png"
+            "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
+            "https://lh3.googleusercontent.com/d/1rSCAqks6m9y2pk4ypWgpUrnJHZjXuFmK",
+            "https://lh3.googleusercontent.com/d/1_odeMm6yPY4OPdT725ykpCs4Rc7SICzz",
+            "https://lh3.googleusercontent.com/d/1xl0vWLf6X7cv2R88FOrzBIjJ9w64AvTr"
           ],
           "url": "proyect_12"
         },
@@ -685,12 +687,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/detailcar/detailcar-1.png",
+          "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
-            "/images/projects/detailcar/detailcar-1.png",
-            "/images/projects/detailcar/detailcar-2.png",
-            "/images/projects/detailcar/detailcar-3.png",
-            "/images/projects/detailcar/detailcar-4.png"
+            "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
+            "https://lh3.googleusercontent.com/d/1-RoT8byn8YOwSPgm-eKsZ8muLYl4ljVq",
+            "https://lh3.googleusercontent.com/d/1OAPma210Hw_a40PWoqXZxKjhZ1mK-OyE",
+            "https://lh3.googleusercontent.com/d/1dniq83waQ2qPnN6uCWS8t7n8lcVriHJo"
           ],
           "url": "proyect_13"
         },
@@ -705,12 +707,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/helayor/helayor-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
           "gallery": [
-            "/images/projects/helayor/helayor-1.png",
-            "/images/projects/helayor/helayor-2.png",
-            "/images/projects/helayor/helayor-3.png",
-            "/images/projects/helayor/helayor-4.png"
+            "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
+            "https://lh3.googleusercontent.com/d/1NxyHQAvqNlglZ-i_Dk_zShYnuChDTBDH",
+            "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
+            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
           ],
           "url": "proyect_14"
         }
@@ -1203,12 +1205,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/tangle/tangle-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
           "gallery": [
-            "/images/projects/tangle/tangle-1.png",
-            "/images/projects/tangle/tangle-2.png",
-            "/images/projects/tangle/tangle-3.png",
-            "/images/projects/tangle/tangle-4.png"
+            "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
+            "https://lh3.googleusercontent.com/d/19Ng3G4Za14TpnTTe5XwnHGwuxNyfkDjE",
+            "https://lh3.googleusercontent.com/d/1ciFTzstT9VjlXUhZxDfcId2DteYhhVqe",
+            "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
           "url": "proyect_1"
         },
@@ -1223,11 +1225,11 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/top-top/top-top-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
-            "/images/projects/top-top/top-top-1.png",
-            "/images/projects/top-top/top-top-2.png",
-            "/images/projects/top-top/top-top-3.png"
+            "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
+            "https://lh3.googleusercontent.com/d/1S1RowUGmlYH1acdEEP17Xl_zhyXubt-C",
+            "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
           ],
           "url": "proyect_2"
         },
@@ -1242,12 +1244,14 @@
             "Figma",
             "Food Business"
           ],
-          "image": "/images/projects/big-menu/big-menu-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
           "gallery": [
-            "/images/projects/big-menu/big-menu-1.png",
-            "/images/projects/big-menu/big-menu-2.png",
-            "/images/projects/big-menu/big-menu-3.png",
-            "/images/projects/big-menu/big-menu-4.png"
+            "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
+            "https://lh3.googleusercontent.com/d/17YCzGhjqYyqm7I71UEhk6KyugGdIwLIt",
+            "https://lh3.googleusercontent.com/d/1Ygw70YJKxNi7cJGLXYsO3l5vwU-NKcQW",
+            "https://lh3.googleusercontent.com/d/1l5WbgKgbjUvTeQwPmcvtAzB3TYXtk0MG",
+            "https://lh3.googleusercontent.com/d/1JFbuVDf9_xEwDwvFn081oAxpSJ25mAvg",
+            "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
           ],
           "url": "proyect_3"
         },
@@ -1262,12 +1266,13 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/gousty/gousty-1.png",
+          "image": "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
           "gallery": [
-            "/images/projects/gousty/gousty-1.png",
-            "/images/projects/gousty/gousty-2.png",
-            "/images/projects/gousty/gousty-3.png",
-            "/images/projects/gousty/gousty-4.png"
+            "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
+            "https://lh3.googleusercontent.com/d/10hjDtQrfg7f1QjykAwNS4cLOBsEBN5bs",
+            "https://lh3.googleusercontent.com/d/17ynA1GtyIRvx0gPRiSv_PweAsLREdOFp",
+            "https://lh3.googleusercontent.com/d/1fhL0TcgnlqUfAS8hye36jbfR6X9D_Oto",
+            "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
           ],
           "url": "proyect_4"
         },
@@ -1282,12 +1287,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
           "gallery": [
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-1.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-2.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-3.png",
-            "/images/projects/desierto-sahara-trips/desierto-sahara-trips-4.png"
+            "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
+            "https://lh3.googleusercontent.com/d/1MuW7QxrzissTy7Ow7YgEdChlqMEAANxJ",
+            "https://lh3.googleusercontent.com/d/14URj68lMDloQnnDwTplw57Ks3beNssLC",
+            "https://lh3.googleusercontent.com/d/13XEwUmQ0pUyi0s1FwaJ3Z370PifPj7Qg"
           ],
           "url": "proyect_5"
         },
@@ -1302,12 +1307,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/canastilla/canastilla-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
           "gallery": [
-            "/images/projects/canastilla/canastilla-1.png",
-            "/images/projects/canastilla/canastilla-2.png",
-            "/images/projects/canastilla/canastilla-3.png",
-            "/images/projects/canastilla/canastilla-4.png"
+            "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
+            "https://lh3.googleusercontent.com/d/1Ktf170Y6Og3no71Fbds1b2O_vmKoQlDq",
+            "https://lh3.googleusercontent.com/d/1nyD8i0ssApLxf0EgyTUcH310v6EXjyQi",
+            "https://lh3.googleusercontent.com/d/1yzHAslHc-AnVey0kyN5aI8ouqAwK8NCU"
           ],
           "url": "proyect_6"
         },
@@ -1322,12 +1327,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/eleale/eleale-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
           "gallery": [
-            "/images/projects/eleale/eleale-1.png",
-            "/images/projects/eleale/eleale-2.png",
-            "/images/projects/eleale/eleale-3.png",
-            "/images/projects/eleale/eleale-4.png"
+            "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
+            "https://lh3.googleusercontent.com/d/1Ce7MfpsrWQHT-mnD99volqg8Fxtfklsj",
+            "https://lh3.googleusercontent.com/d/1rYNPXHbB8RkUhnUREtNIuTdmL9a823iU",
+            "https://lh3.googleusercontent.com/d/1uCF1HC5CAJmTuL4YSzCr-EcBF067E9f3"
           ],
           "url": "proyect_7"
         },
@@ -1342,12 +1347,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/funda-mania/funda-mania-1.png",
+          "image": "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
           "gallery": [
-            "/images/projects/funda-mania/funda-mania-1.png",
-            "/images/projects/funda-mania/funda-mania-2.png",
-            "/images/projects/funda-mania/funda-mania-3.png",
-            "/images/projects/funda-mania/funda-mania-4.png"
+            "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
+            "https://lh3.googleusercontent.com/d/1yaq3OfUOXvc1GRyXA2Q2t5-EgTzpHV0d",
+            "https://lh3.googleusercontent.com/d/1048ldkUAJ8o9o_FsCj23LtJdg7Yt3iiH",
+            "https://lh3.googleusercontent.com/d/1Jkxa67fJkGd7kDyQpaTIlnDwUrAXGJqT"
           ],
           "url": "proyect_8"
         },
@@ -1362,12 +1367,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
           "gallery": [
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-1.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-2.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-3.png",
-            "/images/projects/el-mejor-vidente/el-mejor-vidente-4.png"
+            "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
+            "https://lh3.googleusercontent.com/d/1x9EudmANa3sq0zj1_NPRLz7-0iXm9Icy",
+            "https://lh3.googleusercontent.com/d/1IiI54okRN2goYieaONEuoNlE__H2rEZN",
+            "https://lh3.googleusercontent.com/d/1_cQNzk4iP3vcwYfERdb0wZ0iWouo9RX6"
           ],
           "url": "proyect_9"
         },
@@ -1382,12 +1387,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/clinica-dys/clinica-dys-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
-            "/images/projects/clinica-dys/clinica-dys-1.png",
-            "/images/projects/clinica-dys/clinica-dys-2.png",
-            "/images/projects/clinica-dys/clinica-dys-3.png",
-            "/images/projects/clinica-dys/clinica-dys-4.png"
+            "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
+            "https://lh3.googleusercontent.com/d/1w3IQVq91jLeYDR16dfzzl8b0124Y-114",
+            "https://lh3.googleusercontent.com/d/1cGLd8iEGbz-UI0eeiRgg-hvhgONDN1Un",
+            "https://lh3.googleusercontent.com/d/1pvjKOvId8o1alSu6QZKfbkcCkqdJPwyE"
           ],
           "url": "proyect_10"
         },
@@ -1402,12 +1407,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/transito/transito-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
           "gallery": [
-            "/images/projects/transito/transito-1.png",
-            "/images/projects/transito/transito-2.png",
-            "/images/projects/transito/transito-3.png",
-            "/images/projects/transito/transito-4.png"
+            "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
+            "https://lh3.googleusercontent.com/d/15_u_j6y2RRwDCEJyu07pX8g8gXbS53T9",
+            "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
+            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
           ],
           "url": "proyect_11"
         },
@@ -1423,12 +1428,12 @@
             "Figma",
             "Food Business"
           ],
-          "image": "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
           "gallery": [
-            "/images/projects/aircrew-aviation/aircrew-aviation-1.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-2.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-3.png",
-            "/images/projects/aircrew-aviation/aircrew-aviation-4.png"
+            "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
+            "https://lh3.googleusercontent.com/d/1rSCAqks6m9y2pk4ypWgpUrnJHZjXuFmK",
+            "https://lh3.googleusercontent.com/d/1_odeMm6yPY4OPdT725ykpCs4Rc7SICzz",
+            "https://lh3.googleusercontent.com/d/1xl0vWLf6X7cv2R88FOrzBIjJ9w64AvTr"
           ],
           "url": "proyect_12"
         },
@@ -1443,12 +1448,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/detailcar/detailcar-1.png",
+          "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
-            "/images/projects/detailcar/detailcar-1.png",
-            "/images/projects/detailcar/detailcar-2.png",
-            "/images/projects/detailcar/detailcar-3.png",
-            "/images/projects/detailcar/detailcar-4.png"
+            "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
+            "https://lh3.googleusercontent.com/d/1-RoT8byn8YOwSPgm-eKsZ8muLYl4ljVq",
+            "https://lh3.googleusercontent.com/d/1OAPma210Hw_a40PWoqXZxKjhZ1mK-OyE",
+            "https://lh3.googleusercontent.com/d/1dniq83waQ2qPnN6uCWS8t7n8lcVriHJo"
           ],
           "url": "proyect_13"
         },
@@ -1463,12 +1468,12 @@
           ],
           "description": "description",
           "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
-          "image": "/images/projects/helayor/helayor-1.png",
+          "image": "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
           "gallery": [
-            "/images/projects/helayor/helayor-1.png",
-            "/images/projects/helayor/helayor-2.png",
-            "/images/projects/helayor/helayor-3.png",
-            "/images/projects/helayor/helayor-4.png"
+            "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
+            "https://lh3.googleusercontent.com/d/1NxyHQAvqNlglZ-i_Dk_zShYnuChDTBDH",
+            "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
+            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
           ],
           "url": "proyect_14"
         }
