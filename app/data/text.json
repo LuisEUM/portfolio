@@ -481,6 +481,9 @@
             "https://lh3.googleusercontent.com/d/1ciFTzstT9VjlXUhZxDfcId2DteYhhVqe",
             "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
+          ],
           "url": "proyect_1"
         },
         {
@@ -502,6 +505,9 @@
             "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
             "https://lh3.googleusercontent.com/d/1S1RowUGmlYH1acdEEP17Xl_zhyXubt-C",
             "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_2"
         },
@@ -526,6 +532,9 @@
             "https://lh3.googleusercontent.com/d/1l5WbgKgbjUvTeQwPmcvtAzB3TYXtk0MG",
             "https://lh3.googleusercontent.com/d/1JFbuVDf9_xEwDwvFn081oAxpSJ25mAvg",
             "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_3"
         },
@@ -553,6 +562,9 @@
             "https://lh3.googleusercontent.com/d/17ynA1GtyIRvx0gPRiSv_PweAsLREdOFp",
             "https://lh3.googleusercontent.com/d/1fhL0TcgnlqUfAS8hye36jbfR6X9D_Oto",
             "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_4"
         },
@@ -582,6 +594,14 @@
             "https://lh3.googleusercontent.com/d/14URj68lMDloQnnDwTplw57Ks3beNssLC",
             "https://lh3.googleusercontent.com/d/13XEwUmQ0pUyi0s1FwaJ3Z370PifPj7Qg"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://desiertosaharatrips.com"
+            }
+          ],
           "url": "proyect_5"
         },
         {
@@ -604,6 +624,14 @@
             "https://lh3.googleusercontent.com/d/1nyD8i0ssApLxf0EgyTUcH310v6EXjyQi",
             "https://lh3.googleusercontent.com/d/1yzHAslHc-AnVey0kyN5aI8ouqAwK8NCU"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://canastilla.com.es"
+            }
+          ],
           "url": "proyect_6"
         },
         {
@@ -616,7 +644,7 @@
             "Branding",
             "SEO"
           ],
-          "description": "description",
+          "description": "Cleaning company that likes to provide 100% satisfaction to  commercial, residential, business, and more.",
           "tags": [
             "HTML5",
             "CSS3",
@@ -632,6 +660,7 @@
             "https://lh3.googleusercontent.com/d/1rYNPXHbB8RkUhnUREtNIuTdmL9a823iU",
             "https://lh3.googleusercontent.com/d/1uCF1HC5CAJmTuL4YSzCr-EcBF067E9f3"
           ],
+          "urls": [{ "name": "Website:", "url": "https://elealecleaning.com" }],
           "url": "proyect_7"
         },
         {
@@ -653,6 +682,14 @@
             "https://lh3.googleusercontent.com/d/1yaq3OfUOXvc1GRyXA2Q2t5-EgTzpHV0d",
             "https://lh3.googleusercontent.com/d/1048ldkUAJ8o9o_FsCj23LtJdg7Yt3iiH",
             "https://lh3.googleusercontent.com/d/1Jkxa67fJkGd7kDyQpaTIlnDwUrAXGJqT"
+          ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://funda-mania.com"
+            }
           ],
           "url": "proyect_8"
         },
@@ -683,6 +720,14 @@
             "https://lh3.googleusercontent.com/d/1IiI54okRN2goYieaONEuoNlE__H2rEZN",
             "https://lh3.googleusercontent.com/d/1_cQNzk4iP3vcwYfERdb0wZ0iWouo9RX6"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://elmejorvidente.es"
+            }
+          ],
           "url": "proyect_9"
         },
         {
@@ -698,11 +743,19 @@
             "https://lh3.googleusercontent.com/d/1cGLd8iEGbz-UI0eeiRgg-hvhgONDN1Un",
             "https://lh3.googleusercontent.com/d/1pvjKOvId8o1alSu6QZKfbkcCkqdJPwyE"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "http://clinicadysdental.com"
+            }
+          ],
           "url": "proyect_10"
         },
         {
           "id": 11,
-          "title": "Tránsito",
+          "title": "Tránsito Bar",
           "categories": [
             "Web_Development",
             "SEO",
@@ -728,6 +781,14 @@
             "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
             "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://transitobar.es"
+            }
+          ],
           "url": "proyect_11"
         },
         {
@@ -751,6 +812,9 @@
             "https://lh3.googleusercontent.com/d/1_odeMm6yPY4OPdT725ykpCs4Rc7SICzz",
             "https://lh3.googleusercontent.com/d/1xl0vWLf6X7cv2R88FOrzBIjJ9w64AvTr"
           ],
+          "urls": [
+            { "name": "Website", "fallback": "Project transferred in january 2024.", "active": true, "url": "https://aircrewaviation.com" }
+          ],
           "url": "proyect_12"
         },
         {
@@ -765,6 +829,14 @@
             "https://lh3.googleusercontent.com/d/1-RoT8byn8YOwSPgm-eKsZ8muLYl4ljVq",
             "https://lh3.googleusercontent.com/d/1OAPma210Hw_a40PWoqXZxKjhZ1mK-OyE",
             "https://lh3.googleusercontent.com/d/1dniq83waQ2qPnN6uCWS8t7n8lcVriHJo"
+          ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://detailcar.es"
+            }
           ],
           "url": "proyect_13"
         },
@@ -797,6 +869,14 @@
             "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
             "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "Project halted due to the separation of partners from the company.",
+              "active": false,
+              "url": "https://www.helayorpersonalizacion.net"
+            }
+          ],
           "url": "proyect_14"
         }
       ]
@@ -819,11 +899,11 @@
         },
         "twitter": {
           "url": "",
-          "hidden": false
+          "hidden": true
         },
         "telegram": {
           "url": "",
-          "hidden": false
+          "hidden": true
         }
       },
       "emailAddressParagraph": "Or send me an email:",
@@ -1325,6 +1405,9 @@
             "https://lh3.googleusercontent.com/d/1ciFTzstT9VjlXUhZxDfcId2DteYhhVqe",
             "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
+          ],
           "url": "proyect_1"
         },
         {
@@ -1346,6 +1429,9 @@
             "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
             "https://lh3.googleusercontent.com/d/1S1RowUGmlYH1acdEEP17Xl_zhyXubt-C",
             "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_2"
         },
@@ -1370,6 +1456,9 @@
             "https://lh3.googleusercontent.com/d/1l5WbgKgbjUvTeQwPmcvtAzB3TYXtk0MG",
             "https://lh3.googleusercontent.com/d/1JFbuVDf9_xEwDwvFn081oAxpSJ25mAvg",
             "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_3"
         },
@@ -1397,6 +1486,9 @@
             "https://lh3.googleusercontent.com/d/17ynA1GtyIRvx0gPRiSv_PweAsLREdOFp",
             "https://lh3.googleusercontent.com/d/1fhL0TcgnlqUfAS8hye36jbfR6X9D_Oto",
             "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
+          ],
+          "urls": [
+            { "name": "Website", "fallback": "", "active": true, "url": "" }
           ],
           "url": "proyect_4"
         },
@@ -1426,6 +1518,14 @@
             "https://lh3.googleusercontent.com/d/14URj68lMDloQnnDwTplw57Ks3beNssLC",
             "https://lh3.googleusercontent.com/d/13XEwUmQ0pUyi0s1FwaJ3Z370PifPj7Qg"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://desiertosaharatrips.com"
+            }
+          ],
           "url": "proyect_5"
         },
         {
@@ -1448,6 +1548,14 @@
             "https://lh3.googleusercontent.com/d/1nyD8i0ssApLxf0EgyTUcH310v6EXjyQi",
             "https://lh3.googleusercontent.com/d/1yzHAslHc-AnVey0kyN5aI8ouqAwK8NCU"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://canastilla.com.es"
+            }
+          ],
           "url": "proyect_6"
         },
         {
@@ -1460,7 +1568,7 @@
             "Branding",
             "SEO"
           ],
-          "description": "description",
+          "description": "Empresa estadounidense de limpieza que le gusta proporcionar el 100% de satisfacción a comerciales, residenciales, empresas, y más.",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1476,6 +1584,7 @@
             "https://lh3.googleusercontent.com/d/1rYNPXHbB8RkUhnUREtNIuTdmL9a823iU",
             "https://lh3.googleusercontent.com/d/1uCF1HC5CAJmTuL4YSzCr-EcBF067E9f3"
           ],
+          "urls": [{ "name": "Website:", "url": "https://elealecleaning.com" }],
           "url": "proyect_7"
         },
         {
@@ -1497,6 +1606,14 @@
             "https://lh3.googleusercontent.com/d/1yaq3OfUOXvc1GRyXA2Q2t5-EgTzpHV0d",
             "https://lh3.googleusercontent.com/d/1048ldkUAJ8o9o_FsCj23LtJdg7Yt3iiH",
             "https://lh3.googleusercontent.com/d/1Jkxa67fJkGd7kDyQpaTIlnDwUrAXGJqT"
+          ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://funda-mania.com"
+            }
           ],
           "url": "proyect_8"
         },
@@ -1527,6 +1644,14 @@
             "https://lh3.googleusercontent.com/d/1IiI54okRN2goYieaONEuoNlE__H2rEZN",
             "https://lh3.googleusercontent.com/d/1_cQNzk4iP3vcwYfERdb0wZ0iWouo9RX6"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://elmejorvidente.es"
+            }
+          ],
           "url": "proyect_9"
         },
         {
@@ -1542,11 +1667,19 @@
             "https://lh3.googleusercontent.com/d/1cGLd8iEGbz-UI0eeiRgg-hvhgONDN1Un",
             "https://lh3.googleusercontent.com/d/1pvjKOvId8o1alSu6QZKfbkcCkqdJPwyE"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "http://clinicadysdental.com"
+            }
+          ],
           "url": "proyect_10"
         },
         {
           "id": 11,
-          "title": "Tránsito",
+          "title": "Tránsito Bar",
           "categories": [
             "Web_Development",
             "SEO",
@@ -1572,6 +1705,14 @@
             "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
             "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://transitobar.es"
+            }
+          ],
           "url": "proyect_11"
         },
         {
@@ -1595,6 +1736,14 @@
             "https://lh3.googleusercontent.com/d/1_odeMm6yPY4OPdT725ykpCs4Rc7SICzz",
             "https://lh3.googleusercontent.com/d/1xl0vWLf6X7cv2R88FOrzBIjJ9w64AvTr"
           ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "Proyecto traspasado en enero de 2024.",
+              "active": true,
+              "url": "https://aircrewaviation.com"
+            }
+          ],
           "url": "proyect_12"
         },
         {
@@ -1609,6 +1758,14 @@
             "https://lh3.googleusercontent.com/d/1-RoT8byn8YOwSPgm-eKsZ8muLYl4ljVq",
             "https://lh3.googleusercontent.com/d/1OAPma210Hw_a40PWoqXZxKjhZ1mK-OyE",
             "https://lh3.googleusercontent.com/d/1dniq83waQ2qPnN6uCWS8t7n8lcVriHJo"
+          ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://detailcar.es"
+            }
           ],
           "url": "proyect_13"
         },
@@ -1640,6 +1797,14 @@
             "https://lh3.googleusercontent.com/d/1NxyHQAvqNlglZ-i_Dk_zShYnuChDTBDH",
             "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
             "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
+          ],
+          "urls": [
+            {
+              "name": "Website",
+              "fallback": "Proyecto detenido por la separación de socios de la empresa.",
+              "active": false,
+              "url": "https://www.helayorpersonalizacion.net"
+            }
           ],
           "url": "proyect_14"
         }

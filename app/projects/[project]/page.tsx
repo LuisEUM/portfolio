@@ -14,7 +14,7 @@ function Project() {
     (project) => project.url === currentPathname
   );
   const projectId = project.id ? project.id : 0;
-  const dataProject = text.portfolio.projects[projectId-1];
+  const dataProject = text.portfolio.projects[projectId - 1];
 
   return (
     <div className="lg:flex  w-screen">
@@ -57,20 +57,49 @@ function Project() {
             <p className="my-3 text-justify text-base font-medium mt-5">
               {dataProject.description}
             </p>
-
+            {dataProject.urls &&
+              dataProject.urls.map((item, index) => (
+                <div
+                  className="flex flex-wrap gap-2 items-center align-middle justify-left mb-2"
+                  key={item.name}
+                >
+                  <p className="text-sm font-bold ">{item.name}</p>
+                  {item.active ? (
+                    <>
+                      <Link
+                        href={item.url}
+                        className=" inline-flex items-center rounded-md bg-gray-400/40 px-2 py-1 text-xs font-bold text-gray-600 ring-1 ring-inset ring-gray-500/10"
+                        target="_blank"
+                      >
+                       {item.url}
+                      </Link>
+                      {item.fallback && (
+                        <p className="text-xs text-red-700">{item.fallback}</p>
+                      )}
+                    </>
+                  ) : (
+                    <>
+                      <span className=" cursor-default inline-flex items-center rounded-md bg-gray-400/40 px-2 py-1 text-xs font-bold text-gray-600 ring-1 ring-inset ring-gray-500/10">
+                        {item.url}
+                      </span>
+                      <p className="text-xs text-red-700">{item.fallback}</p>
+                    </>
+                  )}
+                </div>
+              ))}
             <div className="flex flex-wrap gap-2 items-center align-middle justify-left my-">
               <p className="text-sm font-bold ">Etiquetas:</p>
               {dataProject.tags &&
                 dataProject.tags.map((tag, index) => (
                   <span
                     key={tag}
-                    className=" inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+                    className="cursor-default inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
                   >
                     #{tag}
                   </span>
                 ))}
             </div>
-            <div className="mt-5">
+            <div className="mt-5 ">
               <SocialButtons text={text} />
             </div>
           </div>
