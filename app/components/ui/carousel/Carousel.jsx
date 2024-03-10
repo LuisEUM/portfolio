@@ -215,12 +215,12 @@ export default function Carousel({
 
       {paginationThumbnails && (
         <div className="relative flex items-center justify-center">
-          <div className="flex px-5 self-center justify-self-center place-self-center content-center justify-center my-4">
+          <div className="flex px-5 self-center justify-self-center place-self-center content-center justify-center my-4 flex-wrap lg:flex-nowrap">
             {images.map((image, index) => {
               const isCurrent = index === page;
               return (
                 <div
-                  className="mx-2 my-auto cursor-pointer aspect-video flex self-center justify-self-center place-self-center content-center justify-center relative"
+                  className="mx-2 my-2 cursor-pointer aspect-video flex self-center justify-self-center place-self-center content-center justify-center relative min-w-[10%] lg:min-w-[0%] max-w-[20%] lg:max-w-none"
                   onClick={() => setPage(index)}
                   key={index}
                 >
@@ -231,10 +231,10 @@ export default function Carousel({
                     alt={image}
                     ref={imageRef}
                     src={image}
-                    className={`w-full h-full rounded lg:rounded-md object-cover border-2 border-white/50 ${
+                    className={`w-full h-full rounded lg:rounded-md object-cover border-2  ${
                       isCurrent
-                        ? "border-2 border-primary"
-                        : "hover:border-2 hover:border-primary"
+                        ? "border-primary"
+                        : "border-white/50 hover:border-primary"
                     } `}
                   />
                 </div>

@@ -71,7 +71,7 @@ function Project() {
                         className=" inline-flex items-center rounded-md bg-gray-400/40 px-2 py-1 text-xs font-bold text-gray-600 ring-1 ring-inset ring-gray-500/10"
                         target="_blank"
                       >
-                       {item.url}
+                        {item.url}
                       </Link>
                       {item.fallback && (
                         <p className="text-xs text-red-700">{item.fallback}</p>

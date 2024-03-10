@@ -482,7 +482,18 @@
             "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://tangle-offline-website.vercel.app"
+            },
+            {
+              "name": "Repository:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/tangle-offline-website"
+            }
           ],
           "url": "proyect_1"
         },
@@ -507,7 +518,18 @@
             "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://toprestaurant-production.up.railway.app"
+            },
+            {
+              "name": "Repository:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/TopRestaurant"
+            }
           ],
           "url": "proyect_2"
         },
@@ -534,7 +556,18 @@
             "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://menuproject-production.up.railway.app"
+            },
+            {
+              "name": "Repository:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/theBigMenu/menuProject"
+            }
           ],
           "url": "proyect_3"
         },
@@ -564,7 +597,18 @@
             "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Website",
+              "fallback": "",
+              "active": true,
+              "url": "https://alkitu.com/gousty"
+            },
+            {
+              "name": "Repository:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/Gousty_the_ghost"
+            }
           ],
           "url": "proyect_4"
         },
@@ -779,7 +823,8 @@
             "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
             "https://lh3.googleusercontent.com/d/15_u_j6y2RRwDCEJyu07pX8g8gXbS53T9",
             "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
-            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
+            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ",
+            "https://lh3.googleusercontent.com/d/180EMdSBVV1_gSbUgH15TtwdCPaRRhAVP"
           ],
           "urls": [
             {
@@ -813,7 +858,12 @@
             "https://lh3.googleusercontent.com/d/1xl0vWLf6X7cv2R88FOrzBIjJ9w64AvTr"
           ],
           "urls": [
-            { "name": "Website", "fallback": "Project transferred in january 2024.", "active": true, "url": "https://aircrewaviation.com" }
+            {
+              "name": "Website",
+              "fallback": "Project transferred in january 2024.",
+              "active": true,
+              "url": "https://aircrewaviation.com"
+            }
           ],
           "url": "proyect_12"
         },
@@ -849,7 +899,7 @@
             "Logos",
             "Branding",
             "SEO",
-            "Offline_Design"
+            "Offline_Designs"
           ],
           "description": "description",
           "tags": [
@@ -867,7 +917,9 @@
             "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
             "https://lh3.googleusercontent.com/d/1NxyHQAvqNlglZ-i_Dk_zShYnuChDTBDH",
             "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
-            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
+            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg",
+            "https://lh3.googleusercontent.com/d/1BsjfnELAMGSFscbkg1OvzDMtQEXAjxsL",
+            "https://lh3.googleusercontent.com/d/1g90eCSaeORhb3f0wRJhu1-jUeORsTdt4"
           ],
           "urls": [
             {
@@ -878,6 +930,88 @@
             }
           ],
           "url": "proyect_14"
+        },
+        {
+          "id": 15,
+          "title": "Ernesto Fuenmayor",
+          "categories": ["Logos", "Branding", "Audiovisuals"],
+          "description": "description",
+          "tags": ["Adobe_Illustrator", "Adobe_After_Effects"],
+          "image": "https://lh3.googleusercontent.com/d/1WNH2TApngkV0ECaMPWWZ6nhQpP664hMW",
+          "gallery": [
+            "https://lh3.googleusercontent.com/d/1WNH2TApngkV0ECaMPWWZ6nhQpP664hMW",
+            "https://lh3.googleusercontent.com/d/1bDcUNykCEwAmNztTU3M3lt3fL8V32gKV",
+            "https://lh3.googleusercontent.com/d/1LOmVpGtME3wzLJZK6EyOrajFoI3NnhBS",
+            "https://lh3.googleusercontent.com/d/1b_Zv4cXEYdfHz_IYSzya3J55q6xNjFTi"
+          ],
+          "urls": [
+            {
+              "name": "Youtube (Video):",
+              "fallback": "",
+              "active": true,
+              "url": "https://youtu.be/8A0cttGm-r0?si=E0CulEHtwjXS63J5"
+            }
+          ],
+          "url": "proyect_15"
+        },
+        {
+          "id": 16,
+          "title": "Ciutat de las Artes y las Ciencias",
+          "categories": ["Web_Design", "UX/UI"],
+          "description": "description",
+          "tags": ["Figma", "Adobe_Premiere"],
+          "image": "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
+          "gallery": [
+            "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
+            "https://lh3.googleusercontent.com/d/1-iwLs17wvWdWk0yRrWE4MVOA40caQX_J",
+            "https://lh3.googleusercontent.com/d/1GYfkPLERuUdxB0RLOzefQsjeIqmQ8_qf",
+            "https://lh3.googleusercontent.com/d/1-ex_oJDqLA3UXRUILXTKJ7bFqFj5j-0E",
+            "https://lh3.googleusercontent.com/d/1eglubV4R80-W56e1egAJonrpChfVSgnH",
+            "https://lh3.googleusercontent.com/d/1I23xQKo0LhMSw7roDzBjNepZ7C0J7DR7",
+            "https://lh3.googleusercontent.com/d/1gSvpEdnwUskqj0nB-JKTowx-zsr84Lqs",
+            "https://lh3.googleusercontent.com/d/1G8nnny2rqOEMcmNFZI4H11IIypIDQzer",
+            "https://lh3.googleusercontent.com/d/1gQG2mHOP6BwTURiZ6TNLfKOa6q2910iL",
+            "https://lh3.googleusercontent.com/d/1XwsM04e5rk2_l36R17Tu9ZI3K9tgv1Pp",
+            "https://lh3.googleusercontent.com/d/19d31tq4CsV9dIsZMNxoTno_x_YvOSJYR",
+            "https://lh3.googleusercontent.com/d/1crugRPuiLNO6vvkJPsHe7qxj4XDKG0IW",
+            "https://lh3.googleusercontent.com/d/1IRyo8Kg5rEuV6KJ4t_OduId6YGxAjPfJ",
+            "https://lh3.googleusercontent.com/d/1P6NHneMdKkp2sfWJ9PnwBRvU9C5cbkCo",
+            "https://lh3.googleusercontent.com/d/1wK1OMOFva5Ou2xAVOJB9gOmUycuKXbRB",
+            "https://lh3.googleusercontent.com/d/1YDf5o9s_0enyQovht64T6VT6Ba3ADrPz"
+          ],
+          "urls": [
+            {
+              "name": "Youtube (Video):",
+              "fallback": "",
+              "active": true,
+              "url": "https://youtu.be/ke4Q96SN2Hg?si=cM4o-ErCWHPX824G"
+            },
+            {
+              "name": "Flow del Prototipo para Mobile:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/29y7z6a9"
+            },
+            {
+              "name": "Flow del Prototipo para Desktop:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/5n7zwhxm"
+            },
+            {
+              "name": "Proyecto completo en Figma:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/ynfm2uje"
+            },
+            {
+              "name": "Página original:",
+              "fallback": "",
+              "active": true,
+              "url": "https://www.cac.es/va/home.html"
+            }
+          ],
+          "url": "proyect_16"
         }
       ]
     },
@@ -1309,7 +1443,7 @@
             "src": "/images/testimonials-luis/farooq-khader.jpeg",
             "name": "Farooq Khader",
             "position": "Co-Founder and CTO at Tangle",
-            "description": "Luis es un gran desarrollador web con una increíble atención al detalle. Su afán por la tecnología más innovadora nos impulsó a trasladar nuestro sitio web a una tecnología mejor: NextJS. También se comprometió mucho para que los resultados estuvieran a la altura de la imaginación y satisfacción de nuestro diseñador. Sus técnicas de programación estructurada facilitaron que nuestro equipo interno se hiciera cargo de su trabajo sin problemas. Su paciencia en la colaboración con otros miembros del equipo / freelancers también valió la pena, ahorrando tiempo y esfuerzo para el equipo. Recomiendo encarecidamente a Luis como un gran desarrollador web.",
+            "description": "Luis es un gran desarrollador web con una increíble atención al detalle. Su afán por la tecnología más innovadora nos impulsó a trasladar nuestro sitio web: a una tecnología mejor: NextJS. También se comprometió mucho para que los resultados estuvieran a la altura de la imaginación y satisfacción de nuestro diseñador. Sus técnicas de programación estructurada facilitaron que nuestro equipo interno se hiciera cargo de su trabajo sin problemas. Su paciencia en la colaboración con otros miembros del equipo / freelancers también valió la pena, ahorrando tiempo y esfuerzo para el equipo. Recomiendo encarecidamente a Luis como un gran desarrollador web.",
             "url": "https://www.linkedin.com/in/farooqkhader/",
             "icon": "/icons/footer/linkedin.svg"
           },
@@ -1406,7 +1540,18 @@
             "https://lh3.googleusercontent.com/d/1pWujZJgHVAxCyB-7Tzot7fQTTgUoBCng"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Sitio Web:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tangle-offline-website.vercel.app"
+            },
+            {
+              "name": "Repositorio:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/tangle-offline-website"
+            }
           ],
           "url": "proyect_1"
         },
@@ -1431,7 +1576,18 @@
             "https://lh3.googleusercontent.com/d/12u3dFEUBzBQUA5SB_lrLqf88JQc5f_YH"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Sitio Web:",
+              "fallback": "",
+              "active": true,
+              "url": "https://toprestaurant-production.up.railway.app"
+            },
+            {
+              "name": "Repositorio:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/TopRestaurant"
+            }
           ],
           "url": "proyect_2"
         },
@@ -1458,7 +1614,18 @@
             "https://lh3.googleusercontent.com/d/1SMG5982fnJTPqtUTr6sLMsu3PMOzdCnB"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Sitio Web:",
+              "fallback": "",
+              "active": true,
+              "url": "https://menuproject-production.up.railway.app"
+            },
+            {
+              "name": "Repositorio:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/theBigMenu/menuProject"
+            }
           ],
           "url": "proyect_3"
         },
@@ -1488,7 +1655,18 @@
             "https://lh3.googleusercontent.com/d/1qKuBLPf9E8_4LZh7m28-nMzN6CesQTZr"
           ],
           "urls": [
-            { "name": "Website", "fallback": "", "active": true, "url": "" }
+            {
+              "name": "Sitio Web:",
+              "fallback": "",
+              "active": true,
+              "url": "https://alkitu.com/gousty"
+            },
+            {
+              "name": "Repositorio:",
+              "fallback": "",
+              "active": true,
+              "url": "https://github.com/LuisEUM/Gousty_the_ghost"
+            }
           ],
           "url": "proyect_4"
         },
@@ -1520,7 +1698,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://desiertosaharatrips.com"
@@ -1550,7 +1728,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://canastilla.com.es"
@@ -1609,7 +1787,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://funda-mania.com"
@@ -1646,7 +1824,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://elmejorvidente.es"
@@ -1669,7 +1847,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "http://clinicadysdental.com"
@@ -1703,11 +1881,12 @@
             "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
             "https://lh3.googleusercontent.com/d/15_u_j6y2RRwDCEJyu07pX8g8gXbS53T9",
             "https://lh3.googleusercontent.com/d/119mFMANIrFS2wlwq26pLwhSP9KjIoKQk",
-            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ"
+            "https://lh3.googleusercontent.com/d/1lLJ37eHKRnKOorB1sfOnRJ-jGCOzh-CQ",
+            "https://lh3.googleusercontent.com/d/180EMdSBVV1_gSbUgH15TtwdCPaRRhAVP"
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://transitobar.es"
@@ -1738,7 +1917,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "Proyecto traspasado en enero de 2024.",
               "active": true,
               "url": "https://aircrewaviation.com"
@@ -1761,7 +1940,7 @@
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "",
               "active": true,
               "url": "https://detailcar.es"
@@ -1778,7 +1957,7 @@
             "Logos",
             "Branding",
             "SEO",
-            "Offline_Design"
+            "Offline_Designs"
           ],
           "description": "description",
           "tags": [
@@ -1796,17 +1975,105 @@
             "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
             "https://lh3.googleusercontent.com/d/1NxyHQAvqNlglZ-i_Dk_zShYnuChDTBDH",
             "https://lh3.googleusercontent.com/d/1-QTUZkA4BYSSwcAJAKRrs6Rd39_Of7-N",
-            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg"
+            "https://lh3.googleusercontent.com/d/1Dd5ETwnJny_3k27iVh9VjxFSBGJ92LYg",
+            "https://lh3.googleusercontent.com/d/1BsjfnELAMGSFscbkg1OvzDMtQEXAjxsL",
+            "https://lh3.googleusercontent.com/d/1g90eCSaeORhb3f0wRJhu1-jUeORsTdt4"
           ],
           "urls": [
             {
-              "name": "Website",
+              "name": "Sitio Web:",
               "fallback": "Proyecto detenido por la separación de socios de la empresa.",
               "active": false,
               "url": "https://www.helayorpersonalizacion.net"
             }
           ],
           "url": "proyect_14"
+        },
+        {
+          "id": 15,
+          "title": "Ernesto Fuenmayor",
+          "categories": ["Logos", "Branding", "Audiovisuals"],
+          "description": "description",
+          "tags": [
+            "Adobe_Illustrator",
+            "Adobe_PhotoShop",
+            "Adobe_After_Effects"
+          ],
+          "image": "https://lh3.googleusercontent.com/d/1WNH2TApngkV0ECaMPWWZ6nhQpP664hMW",
+          "gallery": [
+            "https://lh3.googleusercontent.com/d/1WNH2TApngkV0ECaMPWWZ6nhQpP664hMW",
+            "https://lh3.googleusercontent.com/d/1bDcUNykCEwAmNztTU3M3lt3fL8V32gKV",
+            "https://lh3.googleusercontent.com/d/1LOmVpGtME3wzLJZK6EyOrajFoI3NnhBS",
+            "https://lh3.googleusercontent.com/d/1b_Zv4cXEYdfHz_IYSzya3J55q6xNjFTi"
+          ],
+          "urls": [
+            {
+              "name": "Youtube (Video):",
+              "fallback": "",
+              "active": true,
+              "url": "https://youtu.be/8A0cttGm-r0?si=E0CulEHtwjXS63J5"
+            }
+          ],
+          "url": "proyect_15"
+        },
+        {
+          "id": 16,
+          "title": "Ciutat de las Artes y las Ciencias",
+          "categories": ["Web_Design", "UX/UI"],
+          "description": "description",
+          "tags": ["Figma", "Adobe_Premiere"],
+          "image": "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
+          "gallery": [
+            "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
+            "https://lh3.googleusercontent.com/d/1-iwLs17wvWdWk0yRrWE4MVOA40caQX_J",
+            "https://lh3.googleusercontent.com/d/1GYfkPLERuUdxB0RLOzefQsjeIqmQ8_qf",
+            "https://lh3.googleusercontent.com/d/1-ex_oJDqLA3UXRUILXTKJ7bFqFj5j-0E",
+            "https://lh3.googleusercontent.com/d/1eglubV4R80-W56e1egAJonrpChfVSgnH",
+            "https://lh3.googleusercontent.com/d/1I23xQKo0LhMSw7roDzBjNepZ7C0J7DR7",
+            "https://lh3.googleusercontent.com/d/1gSvpEdnwUskqj0nB-JKTowx-zsr84Lqs",
+            "https://lh3.googleusercontent.com/d/1G8nnny2rqOEMcmNFZI4H11IIypIDQzer",
+            "https://lh3.googleusercontent.com/d/1gQG2mHOP6BwTURiZ6TNLfKOa6q2910iL",
+            "https://lh3.googleusercontent.com/d/1XwsM04e5rk2_l36R17Tu9ZI3K9tgv1Pp",
+            "https://lh3.googleusercontent.com/d/19d31tq4CsV9dIsZMNxoTno_x_YvOSJYR",
+            "https://lh3.googleusercontent.com/d/1crugRPuiLNO6vvkJPsHe7qxj4XDKG0IW",
+            "https://lh3.googleusercontent.com/d/1IRyo8Kg5rEuV6KJ4t_OduId6YGxAjPfJ",
+            "https://lh3.googleusercontent.com/d/1P6NHneMdKkp2sfWJ9PnwBRvU9C5cbkCo",
+            "https://lh3.googleusercontent.com/d/1wK1OMOFva5Ou2xAVOJB9gOmUycuKXbRB",
+            "https://lh3.googleusercontent.com/d/1YDf5o9s_0enyQovht64T6VT6Ba3ADrPz"
+          ],
+          "urls": [
+            {
+              "name": "Youtube (Video):",
+              "fallback": "",
+              "active": true,
+              "url": "https://youtu.be/ke4Q96SN2Hg?si=cM4o-ErCWHPX824G"
+            },
+            {
+              "name": "Flow del Prototipo para Mobile:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/29y7z6a9"
+            },
+            {
+              "name": "Flow del Prototipo para Desktop:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/5n7zwhxm"
+            },
+            {
+              "name": "Proyecto completo en Figma:",
+              "fallback": "",
+              "active": true,
+              "url": "https://tinyurl.com/ynfm2uje"
+            },
+            {
+              "name": "Página original:",
+              "fallback": "",
+              "active": true,
+              "url": "https://www.cac.es/va/home.html"
+            }
+          ],
+          "url": "proyect_16"
         }
       ]
     },
