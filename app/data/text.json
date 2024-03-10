@@ -133,7 +133,7 @@
     "home": {
       "sections": [
         { "name": "Hero", "id": "hero-section" },
-        { "name": "Category", "id": "category-section" },
+        { "name": "Categories", "id": "category-section" },
         { "name": "Projects", "id": "projects-section" },
         { "name": "Skills", "id": "skills-section" },
         { "name": "Passion", "id": "passion-section" },
@@ -447,6 +447,10 @@
           "name": "Offline_Designs"
         },
         {
+          "id": "uxUi",
+          "name": "UX/UI"
+        },
+        {
           "id": "seo",
           "name": "SEO"
         },
@@ -459,14 +463,17 @@
         {
           "id": 1,
           "title": "Tangle",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development"],
+          "description": "Gracias al equipo de Tangle por haber realizado el diseño base de la web en Figma.",
+          "tags": [
+            "GitHub",
+            "NextJS",
+            "NodeJS",
+            "ExpressJS",
+            "TailwindCSS",
+            "Framer_Motion",
+            "ESlint"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
@@ -479,14 +486,17 @@
         {
           "id": 2,
           "title": "Top Top",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development", "Web_Design", "Web_Apps"],
+          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del backend de la app",
+          "tags": [
+            "GitHub",
+            "MongoDB",
+            "ExpressJS",
+            "ReactJS",
+            "NodeJS",
+            "Bootstrap",
+            "Framer Motion"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
@@ -498,13 +508,15 @@
         {
           "id": 3,
           "title": "Big Menu",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
-          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "categories": ["Web_Development", "Web_Design", "Web_Apps"],
+          "description": "Especial gracias a XXXX de IronHack por su colaboracion en el desarrollo del backend de la app",
           "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
+            "GitHub",
+            "MongoDB",
+            "ExpressJS",
+            "NodeJS",
+            "Handlebars",
+            "Bootstrap"
           ],
           "image": "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
           "gallery": [
@@ -521,13 +533,19 @@
           "id": 4,
           "title": "Gousty",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Apps",
+            "Web_Design",
+            "Video_Games"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del juego",
+          "tags": [
+            "Adobe_Illustrator",
+            "GitHub",
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+          ],
           "image": "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
           "gallery": [
             "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
@@ -542,13 +560,21 @@
           "id": 5,
           "title": "Desierto Sahara Trips",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
@@ -561,14 +587,16 @@
         {
           "id": 6,
           "title": "Canastilla",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development", "Web_Design", "Branding", "SEO"],
+          "description": "Gracias a Valeria Urdaneta por su apoyo en el diseño de la web.",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
@@ -582,13 +610,21 @@
           "id": 7,
           "title": "Eleale",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
@@ -601,14 +637,16 @@
         {
           "id": 8,
           "title": "Funda Manía",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
           "gallery": [
             "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
@@ -622,13 +660,22 @@
           "id": 9,
           "title": "El Mejor Vidente",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO",
+            "SEM"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
@@ -641,14 +688,9 @@
         {
           "id": 10,
           "title": "Clínica Diseño y Sonrisas",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
@@ -662,13 +704,23 @@
           "id": 11,
           "title": "Tránsito",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "SEO",
+            "Audiovisuals",
+            "Offline_Designs"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "Gracias especiales para Valeria Urdaneta por su colaboracion en el diseño de la web.",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator",
+            "Adobe_InDesign",
+            "Photography",
+            "Adobe_PhotoShop"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
@@ -681,14 +733,16 @@
         {
           "id": 12,
           "title": "Aircrew Aviation",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "categories": ["Web_Development", "Web_Design", "SEO", "SEM"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "titleTags": "Tags",
           "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
           ],
           "image": "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
           "gallery": [
@@ -702,14 +756,9 @@
         {
           "id": 13,
           "title": "Detailcar",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
             "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
@@ -723,13 +772,24 @@
           "id": 14,
           "title": "Helayor",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO",
+            "Offline_Design"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator",
+            "Adobe_InDesign",
+            "Adobe_PhotoShop"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
@@ -1231,6 +1291,10 @@
           "name": "Offline_Designs"
         },
         {
+          "id": "uxUi",
+          "name": "UX/UI"
+        },
+        {
           "id": "seo",
           "name": "SEO"
         },
@@ -1243,14 +1307,17 @@
         {
           "id": 1,
           "title": "Tangle",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development"],
+          "description": "Gracias al equipo de Tangle por haber realizado el diseño base de la web en Figma.",
+          "tags": [
+            "GitHub",
+            "NextJS",
+            "NodeJS",
+            "ExpressJS",
+            "TailwindCSS",
+            "Framer_Motion",
+            "ESlint"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1qr-X_JG0VnWBh1ncGPAKT5UOOtv1Ymg8",
@@ -1263,14 +1330,17 @@
         {
           "id": 2,
           "title": "Top Top",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development", "Web_Design", "Web_Apps"],
+          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del backend de la app",
+          "tags": [
+            "GitHub",
+            "MongoDB",
+            "ExpressJS",
+            "ReactJS",
+            "NodeJS",
+            "Bootstrap",
+            "Framer Motion"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
@@ -1282,13 +1352,15 @@
         {
           "id": 3,
           "title": "Big Menu",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
-          "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
+          "categories": ["Web_Development", "Web_Design", "Web_Apps"],
+          "description": "Especial gracias a XXXX de IronHack por su colaboracion en el desarrollo del backend de la app",
           "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
+            "GitHub",
+            "MongoDB",
+            "ExpressJS",
+            "NodeJS",
+            "Handlebars",
+            "Bootstrap"
           ],
           "image": "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
           "gallery": [
@@ -1305,13 +1377,19 @@
           "id": 4,
           "title": "Gousty",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Apps",
+            "Web_Design",
+            "Video_Games"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del juego",
+          "tags": [
+            "Adobe_Illustrator",
+            "GitHub",
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+          ],
           "image": "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
           "gallery": [
             "https://lh3.googleusercontent.com/d/11KXaqoKlk3VYGlavOUXPcLBEk2xJchJA",
@@ -1326,13 +1404,21 @@
           "id": 5,
           "title": "Desierto Sahara Trips",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1adXiKkTYUmuFTlS3Ex6CclMHNW6tSsZg",
@@ -1345,14 +1431,16 @@
         {
           "id": 6,
           "title": "Canastilla",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+          "categories": ["Web_Development", "Web_Design", "Branding", "SEO"],
+          "description": "Gracias a Valeria Urdaneta por su apoyo en el diseño de la web.",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
           "image": "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1-t-HT1z7AJmNf0S-cympMXkGtAZu37lZ",
@@ -1366,13 +1454,21 @@
           "id": 7,
           "title": "Eleale",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1ZgGszKCks1OHYZVHK3ZMA3E96cBkfc0m",
@@ -1385,14 +1481,16 @@
         {
           "id": 8,
           "title": "Funda Manía",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
           "gallery": [
             "https://lh3.googleusercontent.com/d/18iIa7Wr2XGKn-gtCXSI_oQQNLAiHUrW2",
@@ -1406,13 +1504,22 @@
           "id": 9,
           "title": "El Mejor Vidente",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO",
+            "SEM"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1sk_St7kGZ5LS_myymE2PeUrrcocbvEYc",
@@ -1425,14 +1532,9 @@
         {
           "id": 10,
           "title": "Clínica Diseño y Sonrisas",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
@@ -1446,13 +1548,23 @@
           "id": 11,
           "title": "Tránsito",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "SEO",
+            "Audiovisuals",
+            "Offline_Designs"
           ],
-          "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "description": "Gracias especiales para Valeria Urdaneta por su colaboracion en el diseño de la web.",
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator",
+            "Adobe_InDesign",
+            "Photography",
+            "Adobe_PhotoShop"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1VSaQ40emziHCyQPqXlh9l6y7vbtyjoQ9",
@@ -1465,14 +1577,16 @@
         {
           "id": 12,
           "title": "Aircrew Aviation",
-          "categories": ["Branding", "Web_Design", "UI/UX", "Extended_Reality"],
+          "categories": ["Web_Development", "Web_Design", "SEO", "SEM"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "titleTags": "Tags",
           "tags": [
-            "Adobe Illustrator",
-            "Adobe InDesign",
-            "Figma",
-            "Food Business"
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator"
           ],
           "image": "https://lh3.googleusercontent.com/d/1XyK6mGS1NHuIlaQ4W9rKNdVYG29kwsjm",
           "gallery": [
@@ -1486,14 +1600,9 @@
         {
           "id": 13,
           "title": "Detailcar",
-          "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
-          ],
+          "categories": ["Web_Development", "SEO"],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
             "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
@@ -1507,13 +1616,24 @@
           "id": 14,
           "title": "Helayor",
           "categories": [
-            "category_1",
-            "category_2",
-            "category_3",
-            "category_4"
+            "Web_Development",
+            "Web_Design",
+            "Logos",
+            "Branding",
+            "SEO",
+            "Offline_Design"
           ],
           "description": "description",
-          "tags": ["tag_1", "tag_2", "tag_3", "tag_4"],
+          "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "WordPress",
+            "Elementor",
+            "Adobe_Illustrator",
+            "Adobe_InDesign",
+            "Adobe_PhotoShop"
+          ],
           "image": "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
           "gallery": [
             "https://lh3.googleusercontent.com/d/1KQmSw20mgfrQ78QyQ7sTq-Yf1bfF3GVd",
