@@ -131,6 +131,14 @@
       ]
     },
     "home": {
+      "sections": [
+        { "name": "Hero", "id": "hero-section" },
+        { "name": "Category", "id": "category-section" },
+        { "name": "Projects", "id": "projects-section" },
+        { "name": "Skills", "id": "skills-section" },
+        { "name": "Passion", "id": "passion-section" },
+        { "name": "Testimonials", "id": "testimonials-section" }
+      ],
       "heroSection": {
         "subtitle": {
           "before": "<",
@@ -143,7 +151,7 @@
           "lastname": "Urdaneta"
         },
         "quote": "FullStack Web Developer, Graphic Designer, Digital Marketing",
-        "description": "I help businesses to improve their communication, digitalization and connection with their brand.",
+        "description": "I make businesses and projects reach their full growth potential with my multidisciplinary skills.",
         "files": {
           "src": "/files/CV_EN_Luis_Eduardo_Urdaneta_Martucci.pdf",
           "name": "CV Luis Eduardo Urdaneta Martucci - English 2023.pdf"
@@ -404,31 +412,47 @@
     },
     "portfolio": {
       "title": "Projects",
-      "description": "10,000+ beautiful, modern ios work, designs, illustrations, and graphic elements",
+      "description": "Curious? Click on my projects and find out what I've been building.",
       "categories": [
+        {
+          "id": "webDevelopment",
+          "name": "Web_Development"
+        },
+        {
+          "id": "webDev",
+          "name": "Web_Design"
+        },
+        {
+          "id": "webApps",
+          "name": "Web_Apps"
+        },
+        {
+          "id": "logos",
+          "name": "Logos"
+        },
+        {
+          "id": "audiovisuals",
+          "name": "Audiovisuals"
+        },
         {
           "id": "branding",
           "name": "Branding"
         },
         {
-          "id": "webDesign",
-          "name": "Web_Design"
+          "id": "videoGames",
+          "name": "Video_Games"
         },
         {
-          "id": "uxUi",
-          "name": "UI/UX"
+          "id": "offlineDesigns",
+          "name": "Offline_Designs"
         },
         {
-          "id": "extendedReality",
-          "name": "Extended_Reality"
+          "id": "seo",
+          "name": "SEO"
         },
         {
-          "id": "3dArt",
-          "name": "3d_Art"
-        },
-        {
-          "id": "motionDesign",
-          "name": "Motion_Design"
+          "id": "sem",
+          "name": "SEM"
         }
       ],
       "projects": [
@@ -890,6 +914,14 @@
       ]
     },
     "home": {
+      "sections": [
+        { "name": "Inicio", "id": "hero-section" },
+        { "name": "Categorias", "id": "category-section" },
+        { "name": "Proyectos", "id": "projects-section" },
+        { "name": "Habilidades", "id": "skills-section" },
+        { "name": "Pasión", "id": "passion-section" },
+        { "name": "Testimonios", "id": "testimonials-section" }
+      ],
       "heroSection": {
         "subtitle": {
           "before": "<",
@@ -902,7 +934,7 @@
           "lastname": "Urdaneta"
         },
         "quote": "Desarrollador Web FullStack, Diseñador Gráfico, Marketing Digital",
-        "description": "Ayudo a negocios a mejorar su comunicación, digitalización y conexión con su marca.",
+        "description": "Hago que las empresas y los proyectos alcancen todo su potencial de crecimiento gracias a mis competencias multidisciplinares.",
         "files": {
           "src": "/files/CV_ES_Luis_Eduardo_Urdaneta_Martucci.pdf",
           "name": "CV Luis Eduardo Urdaneta Martucci - Español 2023.pdf"
@@ -1164,31 +1196,47 @@
     },
     "portfolio": {
       "title": "Proyectos",
-      "description": "Más de 10.000 hermosos y modernos trabajos, diseños, ilustraciones y elementos gráficos para iOS",
+      "description": "¿Curioso? Haz clic en mis proyectos y descubre lo que he estado construyendo.",
       "categories": [
         {
+          "id": "webDevelopment",
+          "name": "Web_Development"
+        },
+        {
+          "id": "webDev",
+          "name": "Web_Design"
+        },
+        {
+          "id": "webApps",
+          "name": "Web_Apps"
+        },
+        {
+          "id": "logos",
+          "name": "Logos"
+        },
+        {
+          "id": "audiovisuals",
+          "name": "Audiovisuals"
+        },
+        {
           "id": "branding",
-          "name": "Creación_de_marca"
+          "name": "Branding"
         },
         {
-          "id": "webDesign",
-          "name": "Diseño_Web"
+          "id": "videoGames",
+          "name": "Video_Games"
         },
         {
-          "id": "uxUi",
-          "name": "UI/UX"
+          "id": "offlineDesigns",
+          "name": "Offline_Designs"
         },
         {
-          "id": "extendedReality",
-          "name": "Realidad_Extendida"
+          "id": "seo",
+          "name": "SEO"
         },
         {
-          "id": "3dArt",
-          "name": "Arte_3D"
-        },
-        {
-          "id": "motionDesign",
-          "name": "Gráficos_animados"
+          "id": "sem",
+          "name": "SEM"
         }
       ],
       "projects": [

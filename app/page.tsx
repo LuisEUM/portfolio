@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <TailwindGrid fullSize>
-        <SideBar />
+        <SideBar text={text}/>
         <div className="gap-y-[19vw] md:gap-y-[20vw] lg:gap-y-[14vw] flex-col flex col-span-full  mt-20 md:mt-24 lg:mt-20 md:pt-8">
           <div id="hero-section">
             <Hero text={text} />

@@ -57,11 +57,17 @@ export default function FilterCategories({
           draggable
             ? "justify-center hover:cursor-default focus:cursor-grabbing target:cursor-grabbing"
             : "justify-start hover:cursor-grab"
-        } h-12 flex  overflow-hidden relative w-screen justify-center items-center content-center  ${className}`}
+        } h-12 flex  overflow-hidden relative w-screen justify-start items-center content-center  ${className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       >
+        {draggable === false && (
+          <div className="absolute z-30 rigth-0 top-0 w-full flex justify-between  pointer-events-none opacity-90">
+            <div className="w-[20%] from-[#0F0F0F] via-[#0F0F0F] via-10% md:via-10% to-transparent to-80% md:to-20% bg-gradient-to-r h-12 pointer-events-none" />
+            <div className="w-[20%] from-[#0F0F0F] via-[#0F0F0F] via-10% md:via-10% to-transparent to-80% md:to-20% bg-gradient-to-l h-12 pointer-events-none" />
+          </div>
+        )}
         <motion.div
           ref={categoriesRef}
           dragPropagation
@@ -73,10 +79,12 @@ export default function FilterCategories({
           style={{ x: 0 }}
           dragTransition={{ bounceStiffness: 600, bounceDamping: 20 }}
           id="categories"
-          className={`h-12 flex flex-row justify-start items-center text-center self-center   mx-auto ${draggable ? '' : 'absolute top-0 left-0'} `}
+          className={`h-12 flex flex-row justify-start items-center text-center  relative   ${
+            draggable ? "self-center" : "self-start pl-[10%]"
+          } `}
           onDragEnd={(event, info) => {
             if (info.offset.x >= categoriesWidth) {
-              alert('yes')
+              alert("yes");
             }
           }}
           whileTap={{ cursor: draggable ? "default" : "grabbing" }}

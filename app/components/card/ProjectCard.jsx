@@ -18,11 +18,11 @@ const ProjectCard = ({ project }) => {
       initial="hidden"
       animate="show"
       exit="hidden"
-      className="rounded-2xl overflow-hidden dark:bg-gray-700"
+      className="rounded-2xl overflow-hidden dark:bg-gray-700 "
     >
       <Link
         href={"projects/" + project.url}
-        className="group aspect-video w-full overflow-hidden rounded-2xl  bg-gray-200 dark:bg-gray-700 "
+        className="group aspect-video w-full overflow-hidden rounded-2xl lg:opacity-75 hover:opacity-100 bg-gray-200 dark:bg-gray-700 relative"
         key={project.url}
       >
         <Suspense
@@ -40,12 +40,13 @@ const ProjectCard = ({ project }) => {
             </div>
           }
         >
+          <div className="w-full h-full absolute bg-gray-700  top-0 left-0 animate-pulse -z-20"/>
           <Image
             src={project.image}
             width={1080}
             height={720}
             alt="Tall slender porcelain bottle with natural clay textured body and cork stopper."
-            className="w-full aspect-video object-cover object-center group-hover:opacity-75 rounded-2xl "
+            className="w-full aspect-video object-cover object-center group-hover:opacity-100 transition-all rounded-2xl bg-gray-700  "
             blurDataURL={project.image}
           />
         </Suspense>
