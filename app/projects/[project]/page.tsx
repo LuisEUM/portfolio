@@ -3,9 +3,10 @@ import TextSlider from "@/app/components/slider/TextSlider";
 import SocialButtons from "@/app/components/ui/contact/SocialButtons";
 import Carousel from "@/app/components/ui/carousel/Carousel";
 import { LanguageContext } from "@/app/context/languageContext";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Project() {
   const { text } = useContext(LanguageContext);
@@ -15,6 +16,25 @@ function Project() {
   );
   const projectId = project.id ? project.id : 0;
   const dataProject = text.portfolio.projects[projectId - 1];
+
+  // State for managing description expand/collapse
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [displayedDescription, setDisplayedDescription] = useState("");
+
+  // Toggle the expand state
+  const toggleExpand = () => setIsExpanded(!isExpanded);
+
+  // Set initial description to the first 50 words
+  useEffect(() => {
+    if (!isExpanded) {
+      const words = dataProject.description.split(" ");
+      setDisplayedDescription(
+        words.slice(0, 50).join(" ") + (words.length > 50 ? "..." : "")
+      );
+    } else {
+      setDisplayedDescription(dataProject.description);
+    }
+  }, [isExpanded, dataProject.description]);
 
   return (
     <div className="lg:flex  w-screen">
@@ -30,7 +50,6 @@ function Project() {
             immagesArray={dataProject.gallery}
           />
         </div>
-
         <TextSlider />
       </section>
       <section className="w-full lg:w-[40%] lg:min-h-screen bg-zinc-300 text-zinc-800 flex-row justify-center items-center  px-11 flex py-14 lg:py-36">
@@ -39,6 +58,9 @@ function Project() {
             <h1 className="text-stone-900 text-3xl font-black uppercase ">
               {dataProject.title}
             </h1>
+            <p className="my-3 text-justify text-base font-medium mt-2 whitespace-pre-wrap ">
+              {dataProject.about}
+            </p>
             <div className="mt-1 flex flex-wrap gap-2 items-center align-middle justify-left ">
               <h2 className="text-zinc-800 text-xs font-bold uppercase  ">
                 {dataProject.categories &&
@@ -53,9 +75,33 @@ function Project() {
               </h2>
             </div>
           </div>
-          <div className="px-5">
-            <p className="my-3 text-justify text-base font-medium mt-5">
-              {dataProject.description}
+          <p className="my-3 text-justify text-sm font-medium mt-5 whitespace-pre-wrap ">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              >
+                <AnimatePresence>
+                  <motion.p
+                    key={isExpanded.toString()}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0, transition: { duration: 0 } }}
+                    transition={{ duration: 0.5 }}
+                    className=""
+                  >
+                    {displayedDescription}{" "}
+                    <motion.button
+                      onClick={toggleExpand}
+                      className="text-primary font-bold bg-black/80 border border-primary px-2 rounded text-sm hover:text-primary/75 transition duration-300 ease-in-out ml-2 mb-2"
+                      whileTap={{ scale: 0.9 }}
+                      whileHover={{ scale: 1.1 }}
+                    >
+                      {isExpanded ? "Read Less" : "Read More"}
+                    </motion.button>
+                  </motion.p>
+                </AnimatePresence>
+              </motion.div>
             </p>
             {dataProject.urls &&
               dataProject.urls.map((item, index) => (
@@ -102,7 +148,6 @@ function Project() {
             <div className="mt-5 ">
               <SocialButtons text={text} />
             </div>
-          </div>
         </div>
       </section>
     </div>

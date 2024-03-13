@@ -463,8 +463,9 @@
         {
           "id": 1,
           "title": "Tangle",
-          "categories": ["Web_Development"],
-          "description": "Gracias al equipo de Tangle por haber realizado el diseño base de la web en Figma.",
+          "categories": ["Web_Development", "Web_Apps"],
+          "description": "After completing the bootcamp at \"Ironhack,\" I had the opportunity to do remote internships in English for 4 months at an innovative startup based in Amsterdam, the Netherlands. My contribution included executing two projects, with the standout being the creation of a website.\n\nThe initial concept for the website was designed in Figma by another team member. My task was to bring this design to life, selecting the most appropriate stack for the company's needs. Given the prevailing familiarity within the team with the MERN stack, I chose to develop the website using NextJS, aiming to improve its indexing on major browsers.\n\nIt is relevant to note that a few months after the project's completion, REACT announced its recommendation to choose one of the popular React-based frameworks in the community, among which NextJS is included. This fact validates the strategic choice made during the project development, reaffirming the quality and relevance of the selected technology.",
+          "about": "Tangle is a university social ecosystem that connects students within the same institution, combating loneliness in the cities across the globe.",
           "tags": [
             "GitHub",
             "NextJS",
@@ -501,7 +502,8 @@
           "id": 2,
           "title": "Top Top",
           "categories": ["Web_Development", "Web_Design", "Web_Apps"],
-          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del backend de la app",
+          "description": "In my third project during the Ironhack web development bootcamp, I created a mobile web application that served as a social platform for exploring nearby restaurants, adding them to favorites, and accessing their menus and reservations.\n\nThis work expanded the capabilities of my previous project, which focused on CRUD for digital menus and restaurants, by introducing a new reservations service, significantly enhancing its value for users and establishments. This experience reinforced my ability to design more sophisticated web solutions, showcasing my proficiency in using MVC, React, and libraries like Bootstrap and Framer Motion, gradually solidifying my position as a competent and versatile full-stack developer.",
+          "about": "Top Top Restaurants is a mobile web application that redefines the dining experience by allowing users to discover nearby restaurants as if it were a social network, and easily manage reservations.          ",
           "tags": [
             "GitHub",
             "MongoDB",
@@ -509,7 +511,9 @@
             "ReactJS",
             "NodeJS",
             "Bootstrap",
-            "Framer Motion"
+            "Framer_Motion",
+            "Axios",
+            "Docker"
           ],
           "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
@@ -537,7 +541,8 @@
           "id": 3,
           "title": "Big Menu",
           "categories": ["Web_Development", "Web_Design", "Web_Apps"],
-          "description": "Especial gracias a XXXX de IronHack por su colaboracion en el desarrollo del backend de la app",
+          "description": "My second project in the Ironhack web development bootcamp was the creation of a web application designed for digital menu management in restaurants or restaurant chains. This web app allows CRUD operations (Create, Read, Update, Delete) on menus, making it easy for owners to efficiently update and maintain their culinary offerings in real-time.\n\nFor the backend logic, I implemented the Model-View-Controller (MVC) design pattern, enabling a clear and efficient code structure as well as a separation of responsibilities within the application. This architecture was crucial for keeping the project organized and facilitating its scalability.\n\nThis project not only showcases my ability to integrate various technologies in the development of complex web solutions but also demonstrates my understanding of design patterns like MVC for creating structured and maintainable web applications.",
+          "about": "Big Menu is a desktop web application for the efficient management of digital menus in restaurants. It enables owners to update their culinary offerings in real-time with simple operations. The MVC architecture ensures organized code and scalability.",
           "tags": [
             "GitHub",
             "MongoDB",
@@ -580,7 +585,8 @@
             "Web_Design",
             "Video_Games"
           ],
-          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del juego",
+          "description": "In my first project during the web development bootcamp at Ironhack, I took on the challenge of creating a computer game. I used HTML5 and JavaScript to develop the game logic and manipulate objects on the canvas, complemented by CSS3 for the design and layout of the interface. GitHub served as the version control platform, while environment and character graphics were created using Adobe Illustrator. This project not only showcases my ability to combine front-end development with graphic design but also culminates in an interactive game that reflects my competence in integrating web technologies and design tools.\n\nI deeply appreciate Pedro Salazar for his support in the final stage. Together, in just 3 weeks, we fulfilled a childhood dream by creating this video game, while managing other work commitments. Effective task coordination and the ability to work as a team under pressure were crucial in meeting this challenge in such a short time, demonstrating our passion and commitment to the realization of innovative projects.",
+          "about": "'Gousty, The Ghost' is a vibrant platformer mini-game set in a dark forest, filled with challenging Slimes. Control Gousty with the keyboard, using his special abilities to confront enemies and overcome levels. An intense adventure awaits you, where strategy and skill are essential.",
           "tags": [
             "Adobe_Illustrator",
             "GitHub",
@@ -623,6 +629,7 @@
             "SEO"
           ],
           "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -653,6 +660,7 @@
           "title": "Canastilla",
           "categories": ["Web_Development", "Web_Design", "Branding", "SEO"],
           "description": "Gracias a Valeria Urdaneta por su apoyo en el diseño de la web.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -689,6 +697,7 @@
             "SEO"
           ],
           "description": "Cleaning company that likes to provide 100% satisfaction to  commercial, residential, business, and more.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -712,6 +721,7 @@
           "title": "Funda Manía",
           "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -749,6 +759,7 @@
             "SEM"
           ],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -779,6 +790,7 @@
           "title": "Clínica Diseño y Sonrisas",
           "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
+          "about": "",
           "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
@@ -807,6 +819,7 @@
             "Offline_Designs"
           ],
           "description": "Gracias especiales para Valeria Urdaneta por su colaboracion en el diseño de la web.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -842,6 +855,7 @@
           "categories": ["Web_Development", "Web_Design", "SEO", "SEM"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "titleTags": "Tags",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -872,6 +886,7 @@
           "title": "Detailcar",
           "categories": ["Web_Development", "SEO"],
           "description": "description",
+          "about": "",
           "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
@@ -902,6 +917,7 @@
             "Offline_Designs"
           ],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -936,6 +952,7 @@
           "title": "Ernesto Fuenmayor",
           "categories": ["Logos", "Branding", "Audiovisuals"],
           "description": "description",
+          "about": "",
           "tags": ["Adobe_Illustrator", "Adobe_After_Effects"],
           "image": "https://lh3.googleusercontent.com/d/1WNH2TApngkV0ECaMPWWZ6nhQpP664hMW",
           "gallery": [
@@ -959,6 +976,7 @@
           "title": "Ciutat de las Artes y las Ciencias",
           "categories": ["Web_Design", "UX/UI"],
           "description": "description",
+          "about": "",
           "tags": ["Figma", "Adobe_Premiere"],
           "image": "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
           "gallery": [
@@ -1522,7 +1540,8 @@
           "id": 1,
           "title": "Tangle",
           "categories": ["Web_Development"],
-          "description": "Gracias al equipo de Tangle por haber realizado el diseño base de la web en Figma.",
+          "description": "Después de completar el bootcamp en \"Ironhack,\" tuve la oportunidad de realizar prácticas remotas en inglés durante 4 meses en una innovadora startup con sede en Ámsterdam, Países Bajos. Mi contribución incluyó la ejecución de dos proyectos, destacándose entre ellos la creación de una página web.\n\nLa concepción inicial de la página web fue diseñada en Figma por otro miembro del equipo. Mi tarea consistió en llevar a la realidad este diseño, seleccionando el Stack más apropiado para las necesidades de la empresa. Dada la familiaridad predominante en el equipo con el Stack MERN, opté por desarrollar la página web utilizando NextJS, con el objetivo de mejorar su indexación en los principales navegadores.\n\nEs relevante señalar que unos meses después de la finalización del proyecto, REACT anunció su recomendación de elegir uno de los frameworks basados en React populares en la comunidad, entre los cuales se encuentra NextJS. Este hecho valida la elección estratégica realizada durante el desarrollo del proyecto, reafirmando la calidad y pertinencia de la tecnología seleccionada.",
+          "about": "Tangle is a university social ecosystem that connects students within the same institution, combating loneliness in the cities across the globe.",
           "tags": [
             "GitHub",
             "NextJS",
@@ -1559,7 +1578,8 @@
           "id": 2,
           "title": "Top Top",
           "categories": ["Web_Development", "Web_Design", "Web_Apps"],
-          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del backend de la app",
+          "description": "En mi tercer proyecto durante el bootcamp de programación web en Ironhack, creé una aplicación web móvil que servía como una plataforma social para explorar restaurantes cercanos, añadirlos a favoritos y acceder a sus menús y reservas.\n\nEste trabajo amplió las capacidades de mi proyecto previo, que se centraba en el CRUD de menús y restaurantes digitales, al introducir un nuevo servicio de reservas, mejorando significativamente su valor para usuarios y establecimientos. Esta experiencia reforzó mi habilidad para diseñar soluciones web más sofisticadas, demostrando mi destreza en el uso de MVC, React y bibliotecas como Bootstrap y Framer Motion, consolidándome cada vez un poco más como un desarrollador full-stack competente y versátil.",
+          "about": "Top Top Restaurants es una aplicación web móvil que redefine la experiencia gastronómica al permitir a los usuarios descubrir restaurantes cercanos como si fuese una red social, y gestionar reservas fácilmente.",
           "tags": [
             "GitHub",
             "MongoDB",
@@ -1567,7 +1587,9 @@
             "ReactJS",
             "NodeJS",
             "Bootstrap",
-            "Framer Motion"
+            "Framer_Motion",
+            "Axios",
+            "Docker"
           ],
           "image": "https://lh3.googleusercontent.com/d/1RXElI694I-yzJCrVeOXfZIPO6A29peFc",
           "gallery": [
@@ -1595,14 +1617,16 @@
           "id": 3,
           "title": "Big Menu",
           "categories": ["Web_Development", "Web_Design", "Web_Apps"],
-          "description": "Especial gracias a XXXX de IronHack por su colaboracion en el desarrollo del backend de la app",
+          "description": "Mi segundo proyecto en el bootcamp de programación web de Ironhack fue el desarrollo de una aplicación web diseñada para la gestión de menús digitales para restaurantes o cadenas de restaurantes. Esta web app permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los menús, facilitando a los propietarios la actualización y mantenimiento de sus ofertas culinarias de manera eficiente y en tiempo real.\n\nPara la lógica del backend, implementé el patrón de diseño Modelo Vista Controlador (MVC), lo que permitió una estructuración clara y eficiente del código, así como una separación de responsabilidades dentro de la aplicación. Esta arquitectura fue clave para mantener el proyecto organizado y facilitar su escalabilidad.\n\nEste proyecto no solo refleja mi habilidad para integrar diversas tecnologías en la creación de soluciones web complejas sino que también demuestra mi comprensión de patrones de diseño como MVC para desarrollar aplicaciones web estructuradas y mantenibles.",
+          "about": "Big Menu es una aplicación web para ordenadores que se engarga de la gestión eficiente de menús digitales en restaurantes. Facilita a los dueños la actualización en tiempo real de sus ofertas culinarias con operaciones sencillas.",
           "tags": [
             "GitHub",
             "MongoDB",
             "ExpressJS",
             "NodeJS",
             "Handlebars",
-            "Bootstrap"
+            "Bootstrap",
+            "Docker"
           ],
           "image": "https://lh3.googleusercontent.com/d/1C_ICEORfRBZdiHL83SSLJ4CU-bmOX_xO",
           "gallery": [
@@ -1638,7 +1662,8 @@
             "Web_Design",
             "Video_Games"
           ],
-          "description": "Especial gracias a Pedro por su colaboracion en el desarrollo del juego",
+          "description": "En mi primer proyecto durante el bootcamp de programación web en Ironhack, tomé el desafío de crear un videojuego para ordenador. Utilicé HTML5 y JavaScript para desarrollar la lógica del juego y manipular objetos en canvas, complementando con CSS3 para el diseño y maquetación de la interfaz. GitHub sirvió como plataforma de control de versiones, mientras que los gráficos de ambiente y personajes fueron creados con Adobe Illustrator. Este proyecto no solo evidencia mi capacidad para combinar desarrollo front-end con diseño gráfico, sino que también culmina en un juego interactivo que refleja mi competencia en integrar tecnologías web y herramientas de diseño.\n\nAgradezco profundamente a Pedro Salazar por su apoyo en la etapa final. Juntos, y en solo 3 semanas, realizamos un sueño de infancia creando este videojuego, mientras manejábamos otros compromisos laborales. La coordinación efectiva de tareas y la capacidad para trabajar en equipo bajo presión fueron fundamentales para cumplir con este desafío en tan corto tiempo, evidenciando nuestra pasión y compromiso por la realización de proyectos innovadores.",
+          "about": "'Gousty, The Ghost' es un vibrante mini-juego de plataforma ambientado en un bosque oscuro, lleno de Slimes desafiantes. Controla a Gousty con el teclado, usando sus habilidades especiales para enfrentarte a los enemigos y superar los niveles. Una aventura intensa te espera, donde estrategia y habilidad son esenciales.",
           "tags": [
             "Adobe_Illustrator",
             "GitHub",
@@ -1681,6 +1706,7 @@
             "SEO"
           ],
           "description": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1711,6 +1737,7 @@
           "title": "Canastilla",
           "categories": ["Web_Development", "Web_Design", "Branding", "SEO"],
           "description": "Gracias a Valeria Urdaneta por su apoyo en el diseño de la web.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1747,6 +1774,7 @@
             "SEO"
           ],
           "description": "Empresa estadounidense de limpieza que le gusta proporcionar el 100% de satisfacción a comerciales, residenciales, empresas, y más.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1770,6 +1798,7 @@
           "title": "Funda Manía",
           "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1807,6 +1836,7 @@
             "SEM"
           ],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1837,6 +1867,7 @@
           "title": "Clínica Diseño y Sonrisas",
           "categories": ["Web_Development", "Web_Design", "SEO"],
           "description": "description",
+          "about": "",
           "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/1ytUvXx7WWmc5r7PEMq8aKGIe_KpwZSsh",
           "gallery": [
@@ -1865,6 +1896,7 @@
             "Offline_Designs"
           ],
           "description": "Gracias especiales para Valeria Urdaneta por su colaboracion en el diseño de la web.",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1900,6 +1932,7 @@
           "categories": ["Web_Development", "Web_Design", "SEO", "SEM"],
           "description": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim.",
           "titleTags": "Tags",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1930,6 +1963,7 @@
           "title": "Detailcar",
           "categories": ["Web_Development", "SEO"],
           "description": "description",
+          "about": "",
           "tags": ["HTML5", "CSS3", "JavaScript", "WordPress", "Elementor"],
           "image": "https://lh3.googleusercontent.com/d/17Dyw_OLNuZ_u7iOwmqQBMDO78dJy2EIW",
           "gallery": [
@@ -1960,6 +1994,7 @@
             "Offline_Designs"
           ],
           "description": "description",
+          "about": "",
           "tags": [
             "HTML5",
             "CSS3",
@@ -1994,6 +2029,7 @@
           "title": "Ernesto Fuenmayor",
           "categories": ["Logos", "Branding", "Audiovisuals"],
           "description": "description",
+          "about": "",
           "tags": [
             "Adobe_Illustrator",
             "Adobe_PhotoShop",
@@ -2021,6 +2057,7 @@
           "title": "Ciutat de las Artes y las Ciencias",
           "categories": ["Web_Design", "UX/UI"],
           "description": "description",
+          "about": "",
           "tags": ["Figma", "Adobe_Premiere"],
           "image": "https://lh3.googleusercontent.com/d/1vU5JcpdyKIJteUbMQM0K_VRoRqpGx8pI",
           "gallery": [
