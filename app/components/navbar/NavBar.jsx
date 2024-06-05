@@ -51,10 +51,17 @@ export default function NavBar() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      setIsScrollingDown(currentScrollY > prevScrollY.current);
+
+      // Prevent the navbar from disappearing when the user is at the top of the page
+      if (currentScrollY < window.innerHeight) {
+        setIsScrollingDown(false);
+      } else {
+        setIsScrollingDown(currentScrollY > prevScrollY.current);
+      }
+
       prevScrollY.current = currentScrollY;
     };
-
+    
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -146,7 +153,9 @@ export default function NavBar() {
                     {isOpen && (
                       <BackdropLeftToRigth onClick={() => toggleOpen()}>
                         <motion.div
-                          className={`fixed h-screen top-0 right-0 bottom-0 bg-[#121212] ${isOpen && "w-7/12"} max-w-full min-w-[300px] overflow-hidden`}
+                          className={`fixed h-screen top-0 right-0 bottom-0 bg-[#121212] ${
+                            isOpen && "w-7/12"
+                          } max-w-full min-w-[300px] overflow-hidden`}
                           initial="closed"
                           animate="open"
                           exit="closed"
