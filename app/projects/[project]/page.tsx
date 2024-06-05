@@ -93,11 +93,11 @@ function Project() {
                   {displayedDescription}{" "}
                   <motion.button
                     onClick={toggleExpand}
-                    className="text-primary font-bold bg-black/80 border border-primary px-2 rounded text-sm hover:text-primary/75 transition duration-300 ease-in-out ml-2 mb-2"
+                    className="text-gray-200   bg-gray-600 border border-gray-900 px-2 py-1 my-1 rounded-full text-xs hover:text-gray-200/75 transition duration-300 ease-in-out ml-2 mb-2 "
                     whileTap={{ scale: 0.9 }}
                     whileHover={{ scale: 1.1 }}
                   >
-                    {isExpanded ? "Read Less" : "Read More"}
+                    {isExpanded ? "Read Less ˄" : "Read More ˅"}
                   </motion.button>
                 </motion.p>
               </AnimatePresence>
