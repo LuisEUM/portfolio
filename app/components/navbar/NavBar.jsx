@@ -154,7 +154,7 @@ export default function NavBar() {
                       <BackdropLeftToRigth onClick={() => toggleOpen()}>
                         <motion.div
                           className={`fixed h-[100dvh] top-0 right-0 bottom-0 bg-[#121212] ${
-                            isOpen && "w-7/12"
+                            isOpen && "flex"
                           } max-w-full min-w-[300px] overflow-hidden`}
                           initial="closed"
                           animate="open"
