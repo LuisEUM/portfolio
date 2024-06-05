@@ -21,8 +21,8 @@ export const RiveAnimation = ({
   if (!hover && rive) rive.play("Loop");
 
   return (
-    <div className="w-full h-full">
-      <RiveComponent className="w-full h-full" />
+    <div className="w-full h-full flex justify-center items-center">
+      <RiveComponent className="h-[80%] w-full md:h-full" />
     </div>
   );
 };
