@@ -1,10 +1,7 @@
-
-export default function Blog () {
+export default function Blog() {
   return (
     <>
-      <div className='h-[calc(100vh-100px)] bg-blue-200 w-full'>
-
-      </div>
+      <div className="h-[calc(100dvh-100px)] bg-blue-200 w-full"></div>
     </>
-  )
+  );
 }

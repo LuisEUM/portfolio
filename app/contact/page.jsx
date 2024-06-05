@@ -1,9 +1,7 @@
-
-export default function Contact () {
+export default function Contact() {
   return (
     <>
-      <div className='h-[calc(100vh-100px)] bg-red-200'>
-      </div>
+      <div className="h-[calc(100dvh-100px)] bg-red-200"></div>
     </>
-  )
+  );
 }

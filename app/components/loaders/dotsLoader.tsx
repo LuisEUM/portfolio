@@ -14,9 +14,9 @@ const containerVariants = {
 };
 
 type DotsLoaderProps = {
-  count?: number,
-  className?: string,
-  setLoading: (loading: boolean) => void,
+  count?: number;
+  className?: string;
+  setLoading: (loading: boolean) => void;
 };
 
 const DotsLoader = ({ count = 5, className, setLoading }: DotsLoaderProps) => {
@@ -51,7 +51,7 @@ const DotsLoader = ({ count = 5, className, setLoading }: DotsLoaderProps) => {
       <motion.div
         className="absolute"
         initial={{
-          y: "100vh",
+          y: "100dvh",
           height: 20,
           width: 20,
           borderRadius: 20,

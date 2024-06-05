@@ -50,10 +50,13 @@ function TextSlider({ children, velocity, reverse }: IconsSliderProps) {
     <>
       <div className="w-full -rotate-90 origin-top-right absolute -left-48 top-0 pointer-events-none">
         <motion.div
-          className="whitespace-nowrap z-100 w-[100vh] text flex "
+          className="whitespace-nowrap z-100 w-[100dvh] text flex "
           ref={sliderContentRef}
           animate={{
-            translateX: [reverse ? -sliderContentWidth : 0, reverse ? 0 : -sliderContentWidth * 2],
+            translateX: [
+              reverse ? -sliderContentWidth : 0,
+              reverse ? 0 : -sliderContentWidth * 2,
+            ],
           }}
           transition={{
             type: "linear",

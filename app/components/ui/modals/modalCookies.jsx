@@ -16,7 +16,7 @@ const dropIn = {
     },
   },
   closed: {
-    y: "100vh",
+    y: "100dvh",
     transition: {
       type: "spring",
       damping: 25,

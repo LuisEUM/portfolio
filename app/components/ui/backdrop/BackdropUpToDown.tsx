@@ -15,7 +15,7 @@ const BackdropUpToDown = ({ children, onClick }) => {
       },
     },
     closed: {
-      y: "-100vh",
+      y: "-100dvh",
       opacity: 0,
       transition: {
         type: "spring",
@@ -38,11 +38,9 @@ const BackdropUpToDown = ({ children, onClick }) => {
     },
     exit: {
       opacity: 0,
-            y: "-100vh",
-
+      y: "-100dvh",
     },
   };
-
 
   return (
     <>
@@ -62,11 +60,7 @@ const BackdropUpToDown = ({ children, onClick }) => {
         animate="open"
         exit="closed"
       >
-        <AnimatePresence
-          initial={false}
-          mode="wait"
-          onExitComplete={onClick}
-        >
+        <AnimatePresence initial={false} mode="wait" onExitComplete={onClick}>
           {children}
         </AnimatePresence>
       </motion.div>
