@@ -52,7 +52,7 @@ const MainMenu = ({ isOpen, toggleOpen, setModalOpenNavbar }) => {
       className="flex-row group-first:border-b-2 top-[75px] right-0 fixed flex col-span-full  h-full  items-start  justify-center "
       ref={ref}
     >
-      <AnimatePresence>
+      <AnimatePresence mode="wait">
         {isOpen && (
           <div className="w-full min-w-[300px] flex justify-between items-center">
             <div className="min-w-[300px] flex flex-col w-full">
