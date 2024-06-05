@@ -28,9 +28,9 @@ const TextsLoader = ({ className }) => {
       animate="animate"
       className={`flex bg-zinc-900 ${
         blink && "invert"
-      } gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
+      } gap-4 items-center justify-center h-[100dvh] mx-auto overflow-hidden relative  ${className}`}
     >
-      <div className="absolute h-screen w-3/4 bg-red- flex items-center">
+      <div className="absolute h-[100dvh] w-3/4 bg-red- flex items-center">
         {!safeRemove && (
           <BlinkWordsChangers
             words={["Don't", "blink"]}

@@ -1,20 +1,20 @@
-'use client'
-import { createContext, useEffect, useRef, useState } from 'react'
-import textData from '../data/text.json'
+"use client";
+import { createContext, useEffect, useRef, useState } from "react";
+import textData from "../data/text.json";
 // import imageData from '../data/images.json'
-import { AnimatePresence, LayoutGroup, motion, useInView } from 'framer-motion'
-import { getCookie, setCookie } from 'cookies-next'
-import TextsLoader from '../components/loaders/textsLoader'
-import CookiesSoundButton from '../components/ui/buttons/cookiesButton'
+import { AnimatePresence, LayoutGroup, motion, useInView } from "framer-motion";
+import { getCookie, setCookie } from "cookies-next";
+import TextsLoader from "../components/loaders/textsLoader";
+import CookiesSoundButton from "../components/ui/buttons/cookiesButton";
 
-export const LanguageContext = createContext()
+export const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [languageCookie, setLanguageCookie] = useState(getCookie('language'))
-  const [text, setText] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: false })
+  const [languageCookie, setLanguageCookie] = useState(getCookie("language"));
+  const [text, setText] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
   const container = {
     hidden: { opacity: 0 },
@@ -22,10 +22,10 @@ export const LanguageProvider = ({ children }) => {
       opacity: 1,
       transition: {
         staggerChildren: 1,
-        delayChildren: 0.25 * i
-      }
-    })
-  }
+        delayChildren: 0.25 * i,
+      },
+    }),
+  };
 
   // const child = {
   //   show: {
@@ -52,32 +52,30 @@ export const LanguageProvider = ({ children }) => {
 
   useEffect(() => {
     if (languageCookie === undefined) {
-      setCookie('language', 'en')
+      setCookie("language", "en");
     }
 
-    const finalText = getText(languageCookie, textData)
-    setText(finalText)
-  }, [languageCookie])
+    const finalText = getText(languageCookie, textData);
+    setText(finalText);
+  }, [languageCookie]);
 
   return (
     <LayoutGroup>
       <AnimatePresence>
-        {(loading || (text === null))
-          ? (
-            <motion.div
-              key='loader'
-              className='h-screen grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full'
-              variants={container}
-              initial='hidden'
-              animate={isInView ? 'show' : 'hidden'}
-              ref={ref}
-              // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
-            >
+        {loading || text === null ? (
+          <motion.div
+            key="loader"
+            className="h-[100dvh] grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full"
+            variants={container}
+            initial="hidden"
+            animate={isInView ? "show" : "hidden"}
+            ref={ref}
+            // onAnimationComplete={() => { setTimeout(()=>{setLoading(false)}, 2000) }}
+          >
+            {/* <TextsLoader setLoading={setLoading}/> */}
+            <TextsLoader setLoading={setLoading} />
 
-              {/* <TextsLoader setLoading={setLoading}/> */}
-              <TextsLoader setLoading={setLoading}/>
-
-              {/* <div
+            {/* <div
                 className='max-w-full bg-transparent'
                 variants={child}
                 key='Loading'
@@ -92,25 +90,26 @@ export const LanguageProvider = ({ children }) => {
                 />
                 <p> loading </p>
               </div> */}
-              <CookiesSoundButton/>
-            </motion.div>
-            )
-          : (
-            <LanguageContext.Provider value={{ text, setLanguageCookie }}>{children}</LanguageContext.Provider>
-            )}
+            <CookiesSoundButton />
+          </motion.div>
+        ) : (
+          <LanguageContext.Provider value={{ text, setLanguageCookie }}>
+            {children}
+          </LanguageContext.Provider>
+        )}
       </AnimatePresence>
     </LayoutGroup>
-  )
-}
+  );
+};
 
-function getText (languageCookie, textData) {
+function getText(languageCookie, textData) {
   if (languageCookie === undefined) {
-    return textData.en
-  } else if (languageCookie.includes('en')) {
-    return textData.en
-  } else if (languageCookie.includes('es')) {
-    return textData.es
+    return textData.en;
+  } else if (languageCookie.includes("en")) {
+    return textData.en;
+  } else if (languageCookie.includes("es")) {
+    return textData.es;
   } else {
-    return textData.en
+    return textData.en;
   }
 }

@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useEffect, useRef, useState } from "react";
 import textData from "../data/text.json";
-import { AnimatePresence, LayoutGroup, motion, useInView } from 'framer-motion'
+import { AnimatePresence, LayoutGroup, motion, useInView } from "framer-motion";
 import { getCookie, setCookie } from "cookies-next";
 import DotsLoader from "../components/loaders/dotsLoader";
 
@@ -11,8 +11,8 @@ export const LanguageProvider = ({ children }) => {
   const [languageCookie, setLanguageCookie] = useState(getCookie("language"));
   const [text, setText] = useState(textData.es);
   const [loading, setLoading] = useState(true);
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: false })
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
 
   const container = {
     hidden: { opacity: 0 },
@@ -20,10 +20,10 @@ export const LanguageProvider = ({ children }) => {
       opacity: 1,
       transition: {
         staggerChildren: 1,
-        delayChildren: 0.25 * i
-      }
-    })
-  }
+        delayChildren: 0.25 * i,
+      },
+    }),
+  };
 
   useEffect(() => {
     if (languageCookie === undefined) {
@@ -39,7 +39,7 @@ export const LanguageProvider = ({ children }) => {
         {loading || text === null ? (
           <motion.div
             key="loader"
-            className="h-screen grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full"
+            className="h-[100dvh] grid grid-cols-1 align-middle justify-around overflow-hidden max-w-full"
             variants={container}
             initial="hidden"
             animate={isInView ? "show" : "hidden"}

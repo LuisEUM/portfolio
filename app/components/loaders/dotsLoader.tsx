@@ -25,7 +25,7 @@ const DotsLoader = ({ count = 5, className, setLoading }: DotsLoaderProps) => {
       variants={containerVariants}
       initial="initial"
       animate="animate"
-      className={`flex bg-zinc-900 gap-4 items-center justify-center h-screen mx-auto overflow-hidden relative  ${className}`}
+      className={`flex bg-zinc-900 gap-4 items-center justify-center h-[100dvh] mx-auto overflow-hidden relative  ${className}`}
     >
       <motion.div
         className="absolute"
