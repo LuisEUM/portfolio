@@ -19,24 +19,18 @@ function CategoriesCard({ container, centerOrder }) {
         className="w-full relative group items-end flex text-center rounded-3xl content-center justify-center mt-7"
       >
         <div
-          className="w-full max-w-full mx-auto relative  bg-zinc-900   rounded-3xl flex-col content-center items-center justify-center  cursor-pointer py-11 "
+          className="w-full max-w-full mx-auto relative bg-zinc-900 rounded-3xl flex-col content-center items-center justify-center cursor-pointer py-11"
           onMouseDown={() => setHover(true)}
           onMouseUp={() => setHover(false)}
         >
-          <motion.div
-            className={
-              true
-                ? "max-h-56 aspect-square mx-auto [&>*]:max-w-full "
-                : "max-h-32 aspect-square mx-auto [&>*]:max-w-full flex-wrap"
-            }
-          >
+          <motion.div className="max-h-56 w-full aspect-square mx-auto flex justify-center items-center overflow-hidden">
             <RiveAnimation
               hover={centerOrder === container.order || hover}
               artboardName={container?.artboardName}
             />
           </motion.div>
           <motion.div>
-            <h3 className="text-center  text-xl font-black uppercase m-auto w-full ">
+            <h3 className="text-center text-xl font-black uppercase m-auto w-full ">
               {container?.name?.split("").map((word, wordIndex) => {
                 if (word === "_") return <span key={wordIndex}> </span>;
                 return <span key={wordIndex}>{word}</span>;

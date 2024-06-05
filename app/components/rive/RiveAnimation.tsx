@@ -17,10 +17,12 @@ export const RiveAnimation = ({
     artboard: artboardName,
   });
 
-  console.log(rive?.contents)
-
   if (hover && rive) rive.play(hoverAnimationName);
   if (!hover && rive) rive.play("Loop");
 
-  return <RiveComponent />;
+  return (
+    <div className="w-full h-full">
+      <RiveComponent className="w-full h-full" />
+    </div>
+  );
 };
