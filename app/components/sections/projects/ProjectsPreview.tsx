@@ -20,9 +20,10 @@ function ProjectsPreview({ text }) {
   );
 
   // Extracting images for the carousel
-  const projectImages = text.portfolio.projects.map((project) => ({
+  const projectImages = text.portfolio.projects.slice(0, 6).map((project) => ({
     order: project.id,
     src: project.image,
+    url: project.url,
   }));
 
   return (
@@ -66,7 +67,7 @@ function ProjectsPreview({ text }) {
       <div className="block md:hidden pb-7 pt-5">
         {projectImages && (
           <FlexCarousel
-            dataCards={projectImages.slice(contentStart, contentEnd)}
+            dataCards={projectImages}
             width={70}
             reduceGap={15}
             key="image"

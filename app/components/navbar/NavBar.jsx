@@ -12,9 +12,9 @@ import ContactModalButton from "../ui/buttons/ContactModalButton";
 import ModalContact from "../ui/modals/modalContact";
 import { usePathname } from "next/navigation";
 
-const sidebar = {
+const sidebarVariants = {
   open: {
-    clipPath: "inset(0 0 0 0%)",
+    clipPath: "inset(0% 0% 0% 0%)",
     transition: {
       type: "spring",
       stiffness: 40,
@@ -24,7 +24,7 @@ const sidebar = {
     },
   },
   closed: {
-    clipPath: "inset(0 0 0 100%)",
+    clipPath: "inset(0% 0% 0% 100%)",
     transition: {
       type: "spring",
       stiffness: 40,
@@ -45,35 +45,37 @@ export default function NavBar() {
   const routes = text.menu.routes;
   const currentPathname = usePathname();
 
-  const [scrollY, setScrollY] = useState(0);
   const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const prevScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      const newScrollY = window.scrollY;
-      setIsScrollingDown(newScrollY > scrollY);
-      setScrollY(newScrollY);
+      const currentScrollY = window.scrollY;
+      setIsScrollingDown(currentScrollY > prevScrollY.current);
+      prevScrollY.current = currentScrollY;
     };
 
-    if (isOpen) {
-      window.removeEventListener("scroll", handleScroll);
-      document.body.style.overflowX = "hidden";
-    } else {
-      window.addEventListener("scroll", handleScroll);
-      document.body.style.overflowX = "visible";
-    }
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollY, isOpen]);
+  }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen]);
 
   return (
     <AnimatePresence mode="wait">
       {!isScrollingDown && (
         <motion.nav
           initial={{ y: "-5rem", opacity: 0 }}
-          animate={{ y: "0rem", opacity: 1}}
+          animate={{ y: "0rem", opacity: 1 }}
           transition={{
             delay: 0.5,
             type: "spring",
@@ -81,23 +83,17 @@ export default function NavBar() {
             damping: 30,
           }}
           exit={{ y: "-5rem" }}
-          className={`h-20 max-w-full z-50 fixed ${
-            isScrollingDown ? "-top-20" : "top-0"
-          } left-0 w-full bg-zinc-950/40 backdrop-blur-lg bg-clip-padding backdrop-filter shadow-l`}
+          className={`h-20 w-full fixed top-0 left-0 z-50 bg-zinc-950/40 backdrop-blur-lg shadow-l`}
         >
           <TailwindGrid fullSize>
-            <div className="w-full lg:w-11/12 absolute top-0 right-0 col-span-full flex justify-end ">
-              <div className=" flex h-20 justify-between w-full lg:w-12/12 self-end  ">
-                <div className=" ml-8 col-span-2 flex justify-center items-center">
-                  <Link
-                    href="/"
-                    className="w-full self-center flex items-center cursor-pointer"
-                  >
-                    {/* <motion.img layoutId='navbarLogo' src={imageData.logos[0]} alt='Luis Urdaneta Logo' width='50px' height='50px' className='max-h-[50px] max-w-full' /> */}
+            <div className="w-full lg:w-11/12 absolute top-0 right-0 col-span-full flex justify-end">
+              <div className="flex h-20 justify-between w-full lg:w-12/12 self-end">
+                <div className="ml-8 col-span-2 flex justify-center items-center">
+                  <Link href="/" className="flex items-center cursor-pointer">
                     <motion.p
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.9 }}
-                      className="font-main_regular  text-3xl font-bold "
+                      className="font-main_regular text-3xl font-bold"
                     >
                       <span className="text-primary">&lt;</span>
                       <span className="hidden md:inline">LuisUrdaneta</span>
@@ -122,14 +118,13 @@ export default function NavBar() {
                         className={
                           currentPathname === route.pathname
                             ? "self-center flex items-center text-primary font-bold rounded-md px-4 h-8 uppercase"
-                            : "self-center flex items-center text-zinc-100  hover:scale-105 hover:text-primary transition-all font-bold rounded-md px-4 h-8 uppercase"
+                            : "self-center flex items-center text-zinc-100 hover:scale-105 hover:text-primary transition-all font-bold rounded-md px-4 h-8 uppercase"
                         }
                       >
                         {route.name}
                       </Link>
                     </motion.div>
                   ))}
-
                   <div className="flex justify-center px-4">
                     <ContactModalButton />
                   </div>
@@ -141,8 +136,7 @@ export default function NavBar() {
                   initial={false}
                   animate={isOpen ? "open" : "closed"}
                   ref={containerRef}
-                  // if you prefer to make the elements behind touchable change to flex instead w-full
-                  className=" lg:hidden top-0 right-0 bottom-0 h-20"
+                  className="lg:hidden h-20"
                 >
                   <AnimatePresence
                     initial={false}
@@ -152,13 +146,11 @@ export default function NavBar() {
                     {isOpen && (
                       <BackdropLeftToRigth onClick={() => toggleOpen()}>
                         <motion.div
-                          className={`fixed h-screen top-0 right-0 bottom-0 max-w-full min-w-[300px] overflow-hidden -z-30 bg-[#121212] ${
-                            isOpen && "w-7/12"
-                          } `}
+                          className={`fixed h-screen top-0 right-0 bottom-0 bg-[#121212] ${isOpen && "w-7/12"} max-w-full min-w-[300px] overflow-hidden`}
                           initial="closed"
                           animate="open"
                           exit="closed"
-                          variants={sidebar}
+                          variants={sidebarVariants}
                           layout
                           layoutId="sidebar"
                           onClick={(e) => e.stopPropagation()}
@@ -179,7 +171,6 @@ export default function NavBar() {
                   >
                     {modalOpenNavbar && <ModalContact handleClose={close} />}
                   </AnimatePresence>
-
                   <ToggleMenu isOpen={isOpen} toggle={() => toggleOpen()} />
                 </motion.nav>
               </div>
