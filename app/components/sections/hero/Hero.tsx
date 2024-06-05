@@ -43,10 +43,7 @@ function Hero({ text }) {
           </p>
         </div>
         <div className="flex-col justify-center items-center gap-[23px] flex col-span-full  lg:col-start-2  lg:gap-10 lg:inline-flex mt-6 md:mt-12 md:flex-row w-full lg:justify-start ">
-          <a
-            href={hero.files.src}
-            download={hero.files.name}
-          >
+          <a href={hero.files.src} download={hero.files.name} className="w-full lg:w-auto">
             <PrimaryButton text={hero.buttons.primary} />
           </a>
           <Link href="/projects?category=All&page=1" className="w-full">

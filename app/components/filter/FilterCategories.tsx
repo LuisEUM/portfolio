@@ -28,7 +28,7 @@ export default function FilterCategories({
   const [draggable, setDraggable] = useState(false);
 
   useEffect(() => {
-    if (screenWidth >= categoriesWidth) {
+    if (screenWidth >= 1700 && categoriesWidth > 1700) {
       setDraggable(true);
     } else {
       setDraggable(false);
@@ -63,7 +63,7 @@ export default function FilterCategories({
         exit={{ opacity: 0 }}
       >
         {draggable === false && (
-          <div className="absolute z-30 rigth-0 top-0 w-full flex justify-between  pointer-events-none opacity-90">
+          <div className="absolute z-30 right-0 top-0 w-full flex justify-between  pointer-events-none opacity-90">
             <div className="w-[20%] from-[#0F0F0F] via-[#0F0F0F] via-10% md:via-10% to-transparent to-80% md:to-20% bg-gradient-to-r h-12 pointer-events-none" />
             <div className="w-[20%] from-[#0F0F0F] via-[#0F0F0F] via-10% md:via-10% to-transparent to-80% md:to-20% bg-gradient-to-l h-12 pointer-events-none" />
           </div>

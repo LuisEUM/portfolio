@@ -26,8 +26,8 @@ function CategoriesCard({ container, centerOrder }) {
           <motion.div
             className={
               true
-                ? "max-h-56 aspect-square mx-auto  max-w-full "
-                : "max-h-32 aspect-square mx-auto max-w-full flex-wrap"
+                ? "max-h-56 aspect-square mx-auto [&>*]:max-w-full "
+                : "max-h-32 aspect-square mx-auto [&>*]:max-w-full flex-wrap"
             }
           >
             <RiveAnimation

@@ -8,14 +8,6 @@ import ParallaxText from "../../slider/ParallaxText";
 import SecondaryButton from "../../ui/buttons/SecondaryButton";
 import FlexCarousel from "../../ui/carousel/flex-carousel/FlexCarousel";
 
-const cards = [
-  { order: 1, src: "https://picsum.photos/id/200/900/1600" },
-  { order: 2, src: "https://picsum.photos/id/202/900/1600" },
-  { order: 3, src: "https://picsum.photos/id/203/900/1600" },
-  { order: 4, src: "https://picsum.photos/id/204/900/1600" },
-  { order: 5, src: "https://picsum.photos/id/199/900/1600" },
-];
-
 function ProjectsPreview({ text }) {
   const projects = useState(text.portfolio.projects);
   const previewProjects = text.home.projectsPreviewSection;
@@ -27,20 +19,11 @@ function ProjectsPreview({ text }) {
     Math.min(contentStart + 6, text.portfolio.projects.length)
   );
 
-  // useEffect(() => {
-  //   // Generate a random number for contentStart
-  //   setContentStart(
-  //     Math.floor(Math.random() * (text.portfolio.projects.length - 6))
-  //   );
-
-  //   // Ensure that contentEnd is always 6 more than contentStart and not greater than text.portfolio.projects.length
-  //   setContentEnd(ccccccccccccccc);
-
-  //   console.log(contentStart, contentEnd);
-
-  //   console.log(projects);
-  //   return () => {};
-  // }, [projects]);
+  // Extracting images for the carousel
+  const projectImages = text.portfolio.projects.map((project) => ({
+    order: project.id,
+    src: project.image,
+  }));
 
   return (
     <div className="relative flex-col flex col-span-full  bg-yellow-500/0 ">
@@ -81,9 +64,9 @@ function ProjectsPreview({ text }) {
         </TailwindGrid>
       </div>
       <div className="block md:hidden pb-7 pt-5">
-        {cards && (
+        {projectImages && (
           <FlexCarousel
-            dataCards={cards}
+            dataCards={projectImages.slice(contentStart, contentEnd)}
             width={70}
             reduceGap={15}
             key="image"
